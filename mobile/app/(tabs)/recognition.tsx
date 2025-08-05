@@ -11,7 +11,7 @@ import {
 
 const { width, height } = Dimensions.get('window');
 
-const Recognition: React.FC = () => {
+export default function Recognition() {
   return (
     <SafeAreaView style={styles.container}>
       <ScrollView contentContainerStyle={styles.scrollContent}>
@@ -28,17 +28,17 @@ const Recognition: React.FC = () => {
               <Text style={styles.cameraPlaceholderText}>Camera Preview</Text>
             </View>
           </View>
-          
+
           {/* Camera Controls */}
           <View style={styles.cameraControls}>
             <TouchableOpacity style={styles.controlButton}>
               <Text style={styles.controlButtonText}>Upload</Text>
             </TouchableOpacity>
-            
+
             <TouchableOpacity style={styles.captureButton}>
               <View style={styles.captureButtonInner} />
             </TouchableOpacity>
-            
+
             <TouchableOpacity style={styles.controlButton}>
               <Text style={styles.controlButtonText}>Switch</Text>
             </TouchableOpacity>
@@ -50,7 +50,7 @@ const Recognition: React.FC = () => {
           <TouchableOpacity style={styles.primaryButton}>
             <Text style={styles.primaryButtonText}>Take Photo</Text>
           </TouchableOpacity>
-          
+
           <TouchableOpacity style={styles.secondaryButton}>
             <Text style={styles.secondaryButtonText}>Choose from Gallery</Text>
           </TouchableOpacity>
@@ -64,23 +64,23 @@ const Recognition: React.FC = () => {
               <Text style={styles.copyButtonText}>Copy</Text>
             </TouchableOpacity>
           </View>
-          
+
           <View style={styles.resultBox}>
             <Text style={styles.resultPlaceholder}>
               The extracted text will appear here after processing the image...
             </Text>
           </View>
-          
+
           {/* Result Actions */}
           <View style={styles.resultActions}>
             <TouchableOpacity style={styles.actionBtn}>
               <Text style={styles.actionBtnText}>Translate</Text>
             </TouchableOpacity>
-            
+
             <TouchableOpacity style={styles.actionBtn}>
               <Text style={styles.actionBtnText}>Save</Text>
             </TouchableOpacity>
-            
+
             <TouchableOpacity style={styles.actionBtn}>
               <Text style={styles.actionBtnText}>Share</Text>
             </TouchableOpacity>
@@ -89,7 +89,7 @@ const Recognition: React.FC = () => {
       </ScrollView>
     </SafeAreaView>
   );
-};
+}
 
 const styles = StyleSheet.create({
   container: {
@@ -285,5 +285,3 @@ const styles = StyleSheet.create({
     fontWeight: '600',
   },
 });
-
-export default Recognition;

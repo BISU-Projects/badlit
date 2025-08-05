@@ -9,8 +9,7 @@ import {
   SafeAreaView,
 } from 'react-native';
 
-const Explore = () => {
-  // Sample Kulitan characters with their meanings
+export default function Explore() {
   const kulitanCharacters = [
     { character: 'ᜀ', romanization: 'A', meaning: 'Base vowel sound "a"' },
     { character: 'ᜊ', romanization: 'BA', meaning: 'Consonant "b" with inherent "a"' },
@@ -32,7 +31,7 @@ const Explore = () => {
   return (
     <SafeAreaView style={styles.container}>
       <StatusBar backgroundColor="#af1400" barStyle="light-content" />
-      
+
       {/* Header */}
       <View style={styles.header}>
         <Text style={styles.headerTitle}>Explore Kulitan</Text>
@@ -42,13 +41,13 @@ const Explore = () => {
       </View>
 
       <ScrollView style={styles.content} showsVerticalScrollIndicator={false}>
-        
+
         {/* About Section */}
         <View style={styles.aboutSection}>
           <Text style={styles.sectionTitle}>About Kulitan</Text>
           <Text style={styles.aboutText}>
-            Kulitan is the indigenous writing system of the Kapampangan people of Pampanga, Philippines. 
-            This ancient script, also known as Súlat Kapampángan, dates back to at least the 16th century 
+            Kulitan is the indigenous writing system of the Kapampangan people of Pampanga, Philippines.
+            This ancient script, also known as Súlat Kapampángan, dates back to at least the 16th century
             and represents one of the Philippines' rich cultural heritage scripts.
           </Text>
         </View>
@@ -84,7 +83,7 @@ const Explore = () => {
         {/* Quick Actions */}
         <View style={styles.actionsSection}>
           <Text style={styles.sectionTitle}>Quick Actions</Text>
-          
+
           <TouchableOpacity style={styles.actionButton}>
             <View style={styles.actionContent}>
               <Text style={styles.actionIcon}>🎯</Text>
@@ -121,7 +120,7 @@ const Explore = () => {
       </ScrollView>
     </SafeAreaView>
   );
-};
+}
 
 const styles = StyleSheet.create({
   container: {
@@ -296,5 +295,3 @@ const styles = StyleSheet.create({
     height: 32,
   },
 });
-
-export default Explore;

@@ -1,119 +1,138 @@
 import React from 'react';
-import {
-  View,
-  Text,
-  StyleSheet,
-  ScrollView,
-  TouchableOpacity,
-  Dimensions,
-} from 'react-native';
+import { ScrollView, StyleSheet, Dimensions, View } from 'react-native';
 import { Image } from 'expo-image';
+import {
+  Text,
+  Surface,
+  Button,
+  Card,
+  useTheme,
+  TouchableRipple,
+} from 'react-native-paper';
 
 const { width } = Dimensions.get('window');
 
 export default function HomeScreen() {
+  const theme = useTheme();
+
   return (
     <ScrollView style={styles.container} showsVerticalScrollIndicator={false}>
       {/* Header Section */}
-      <View style={styles.header}>
+      <Surface style={styles.header} elevation={4}>
         <View style={styles.headerContent}>
-          <Text style={styles.welcomeText}>Welcome to</Text>
-          <Text style={styles.appName}>Kulitan</Text>
-          <Text style={styles.subtitle}>
+          <Text variant="bodyMedium" style={styles.welcomeText}>Welcome to</Text>
+          <Text variant="headlineLarge" style={styles.appName}>Kulitan</Text>
+          <Text variant="bodySmall" style={styles.subtitle}>
             Discover and translate the ancient Kapampangan script
           </Text>
         </View>
         <View style={styles.headerImage}>
-          <View style={styles.kulitanSymbol}>
+          <Surface style={styles.kulitanSymbol}>
             <Text style={styles.symbolText}>ᜃᜓᜎᜒᜆᜈ᜔</Text>
-          </View>
+          </Surface>
         </View>
-      </View>
+      </Surface>
 
-      {/* Main Features Section */}
+      {/* Features Section */}
       <View style={styles.featuresContainer}>
-        <Text style={styles.sectionTitle}>Features</Text>
-        
-        {/* Recognition Feature Card */}
-        <TouchableOpacity style={styles.featureCard} activeOpacity={0.8}>
-          <View style={styles.featureIconContainer}>
-            <View style={styles.recognitionIcon}>
-              <Text style={styles.iconText}>📷</Text>
-            </View>
-          </View>
-          <View style={styles.featureContent}>
-            <Text style={styles.featureTitle}>Scan & Translate</Text>
-            <Text style={styles.featureDescription}>
-              Use your camera to scan Kulitan text and instantly translate it to English or Tagalog
-            </Text>
-            <View style={styles.featureBadge}>
-              <Text style={styles.badgeText}>Recognition</Text>
-            </View>
-          </View>
-          <View style={styles.arrowIcon}>
-            <Text style={styles.arrow}>→</Text>
-          </View>
-        </TouchableOpacity>
+        <Text variant="titleLarge" style={styles.sectionTitle}>Features</Text>
 
-        {/* Explore Feature Card */}
-        <TouchableOpacity style={styles.featureCard} activeOpacity={0.8}>
-          <View style={styles.featureIconContainer}>
-            <View style={styles.exploreIcon}>
-              <Text style={styles.iconText}>📚</Text>
+        {/* Feature Card 1 */}
+        <TouchableRipple style={styles.featureCard} rippleColor="rgba(0, 0, 0, .1)">
+          <View style={styles.featureInner}>
+            <View style={styles.featureIconContainer}>
+              <Surface style={styles.recognitionIcon}>
+                <Text style={styles.iconText}>📷</Text>
+              </Surface>
+            </View>
+            <View style={styles.featureContent}>
+              <Text variant="titleMedium" style={styles.featureTitle}>Scan & Translate</Text>
+              <Text variant="bodySmall" style={styles.featureDescription}>
+                Use your camera to scan Kulitan text and instantly translate it to English or Tagalog
+              </Text>
+              <Surface style={styles.featureBadge}>
+                <Text style={styles.badgeText}>Recognition</Text>
+              </Surface>
+            </View>
+            <View style={styles.arrowIcon}>
+              <Text style={styles.arrow}>→</Text>
             </View>
           </View>
-          <View style={styles.featureContent}>
-            <Text style={styles.featureTitle}>Learn Kulitan</Text>
-            <Text style={styles.featureDescription}>
-              Explore the rich history and learn to read and write the ancient Kapampangan script
-            </Text>
-            <View style={styles.featureBadge}>
-              <Text style={styles.badgeText}>Explore</Text>
+        </TouchableRipple>
+
+        {/* Feature Card 2 */}
+        <TouchableRipple style={styles.featureCard} rippleColor="rgba(0, 0, 0, .1)">
+          <View style={styles.featureInner}>
+            <View style={styles.featureIconContainer}>
+              <Surface style={styles.exploreIcon}>
+                <Text style={styles.iconText}>📚</Text>
+              </Surface>
+            </View>
+            <View style={styles.featureContent}>
+              <Text variant="titleMedium" style={styles.featureTitle}>Learn Kulitan</Text>
+              <Text variant="bodySmall" style={styles.featureDescription}>
+                Explore the rich history and learn to read and write the ancient Kapampangan script
+              </Text>
+              <Surface style={styles.featureBadge}>
+                <Text style={styles.badgeText}>Explore</Text>
+              </Surface>
+            </View>
+            <View style={styles.arrowIcon}>
+              <Text style={styles.arrow}>→</Text>
             </View>
           </View>
-          <View style={styles.arrowIcon}>
-            <Text style={styles.arrow}>→</Text>
-          </View>
-        </TouchableOpacity>
+        </TouchableRipple>
       </View>
 
-      {/* Quick Stats Section */}
+      {/* Quick Stats */}
       <View style={styles.statsContainer}>
-        <Text style={styles.sectionTitle}>About Kulitan</Text>
+        <Text variant="titleLarge" style={styles.sectionTitle}>About Kulitan</Text>
         <View style={styles.statsGrid}>
-          <View style={styles.statCard}>
+          <Surface style={styles.statCard}>
             <Text style={styles.statNumber}>17th</Text>
             <Text style={styles.statLabel}>Century</Text>
             <Text style={styles.statDesc}>Origin period</Text>
-          </View>
-          <View style={styles.statCard}>
+          </Surface>
+          <Surface style={styles.statCard}>
             <Text style={styles.statNumber}>37</Text>
             <Text style={styles.statLabel}>Characters</Text>
             <Text style={styles.statDesc}>Basic symbols</Text>
-          </View>
-          <View style={styles.statCard}>
+          </Surface>
+          <Surface style={styles.statCard}>
             <Text style={styles.statNumber}>100+</Text>
             <Text style={styles.statLabel}>Words</Text>
             <Text style={styles.statDesc}>In database</Text>
-          </View>
+          </Surface>
         </View>
       </View>
 
       {/* Call to Action */}
       <View style={styles.ctaContainer}>
-        <Text style={styles.ctaTitle}>Start Your Journey</Text>
-        <Text style={styles.ctaDescription}>
+        <Text variant="titleLarge" style={styles.ctaTitle}>Start Your Journey</Text>
+        <Text variant="bodyMedium" style={styles.ctaDescription}>
           Begin exploring the beautiful world of Kulitan script and connect with Kapampangan heritage
         </Text>
-        
+
         <View style={styles.ctaButtons}>
-          <TouchableOpacity style={styles.primaryButton} activeOpacity={0.8}>
-            <Text style={styles.primaryButtonText}>Start Scanning</Text>
-          </TouchableOpacity>
-          
-          <TouchableOpacity style={styles.secondaryButton} activeOpacity={0.8}>
-            <Text style={styles.secondaryButtonText}>Learn First</Text>
-          </TouchableOpacity>
+          <Button
+            mode="contained"
+            buttonColor="#af1400"
+            style={styles.primaryButton}
+            contentStyle={{ paddingVertical: 8 }}
+            onPress={() => {}}
+          >
+            Start Scanning
+          </Button>
+
+          <Button
+            mode="outlined"
+            textColor="#af1400"
+            style={styles.secondaryButton}
+            contentStyle={{ paddingVertical: 8 }}
+            onPress={() => {}}
+          >
+            Learn First
+          </Button>
         </View>
       </View>
 
@@ -141,19 +160,15 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   welcomeText: {
-    fontSize: 16,
     color: '#FFFFFF',
     opacity: 0.9,
     marginBottom: 4,
   },
   appName: {
-    fontSize: 32,
-    fontWeight: 'bold',
     color: '#FFFFFF',
     marginBottom: 8,
   },
   subtitle: {
-    fontSize: 14,
     color: '#FFFFFF',
     opacity: 0.8,
     lineHeight: 20,
@@ -180,9 +195,6 @@ const styles = StyleSheet.create({
     paddingTop: 32,
   },
   sectionTitle: {
-    fontSize: 24,
-    fontWeight: 'bold',
-    color: '#000000',
     marginBottom: 20,
   },
   featureCard: {
@@ -190,18 +202,13 @@ const styles = StyleSheet.create({
     borderRadius: 16,
     padding: 20,
     marginBottom: 16,
-    flexDirection: 'row',
-    alignItems: 'center',
-    shadowColor: '#000000',
-    shadowOffset: {
-      width: 0,
-      height: 2,
-    },
-    shadowOpacity: 0.1,
-    shadowRadius: 8,
-    elevation: 4,
     borderWidth: 1,
     borderColor: '#F0F0F0',
+    elevation: 2,
+  },
+  featureInner: {
+    flexDirection: 'row',
+    alignItems: 'center',
   },
   featureIconContainer: {
     marginRight: 16,
@@ -229,15 +236,10 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   featureTitle: {
-    fontSize: 18,
-    fontWeight: 'bold',
-    color: '#000000',
     marginBottom: 4,
   },
   featureDescription: {
-    fontSize: 14,
     color: '#666666',
-    lineHeight: 20,
     marginBottom: 8,
   },
   featureBadge: {
@@ -299,45 +301,26 @@ const styles = StyleSheet.create({
     paddingBottom: 20,
   },
   ctaTitle: {
-    fontSize: 24,
-    fontWeight: 'bold',
-    color: '#000000',
     textAlign: 'center',
     marginBottom: 8,
   },
   ctaDescription: {
-    fontSize: 16,
-    color: '#666666',
     textAlign: 'center',
     lineHeight: 24,
     marginBottom: 32,
+    color: '#666666',
   },
   ctaButtons: {
     gap: 12,
   },
   primaryButton: {
-    backgroundColor: '#af1400',
     borderRadius: 12,
-    paddingVertical: 16,
-    alignItems: 'center',
-  },
-  primaryButtonText: {
-    fontSize: 16,
-    fontWeight: '600',
-    color: '#FFFFFF',
+    marginBottom: 8,
   },
   secondaryButton: {
-    backgroundColor: 'transparent',
     borderRadius: 12,
-    paddingVertical: 16,
-    alignItems: 'center',
-    borderWidth: 2,
     borderColor: '#af1400',
-  },
-  secondaryButtonText: {
-    fontSize: 16,
-    fontWeight: '600',
-    color: '#af1400',
+    borderWidth: 2,
   },
   bottomSpacing: {
     height: 20,
