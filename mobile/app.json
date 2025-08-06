@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "KuliTra",
-    "slug": "A mobile Image Recognition App",
+    "slug": "KuliTra",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/kt.png",
