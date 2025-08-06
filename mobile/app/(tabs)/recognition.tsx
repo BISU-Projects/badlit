@@ -7,6 +7,7 @@ import {
   SafeAreaView,
   ScrollView,
   Dimensions,
+  StatusBar,
 } from 'react-native';
 
 const { width, height } = Dimensions.get('window');
@@ -14,6 +15,7 @@ const { width, height } = Dimensions.get('window');
 export default function Recognition() {
   return (
     <SafeAreaView style={styles.container}>
+      <StatusBar barStyle="dark-content" backgroundColor="#ffffff" />
       <ScrollView contentContainerStyle={styles.scrollContent}>
         {/* Header */}
         <View style={styles.header}>
