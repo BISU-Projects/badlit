@@ -1,26 +1,32 @@
 /**
- * Below are the colors that are used in the app. The colors are defined in the light and dark mode.
- * There are many other ways to style your app. For example, [Nativewind](https://www.nativewind.dev/), [Tamagui](https://tamagui.dev/), [unistyles](https://reactnativeunistyles.vercel.app), etc.
+ * App color palette used throughout the app, based on the HomeScreen component.
  */
 
-const tintColorLight = '#0a7ea4';
-const tintColorDark = '#fff';
-
 export const Colors = {
-  light: {
-    text: '#11181C',
-    background: '#fff',
-    tint: tintColorLight,
-    icon: '#687076',
-    tabIconDefault: '#687076',
-    tabIconSelected: tintColorLight,
-  },
-  dark: {
-    text: '#ECEDEE',
-    background: '#151718',
-    tint: tintColorDark,
-    icon: '#9BA1A6',
-    tabIconDefault: '#9BA1A6',
-    tabIconSelected: tintColorDark,
-  },
+  // Primary accent used for buttons, headers, highlights
+  primary: "#af1400",             // Antique Red (primary accent color)
+
+  // Backgrounds
+  background: "#FFFFFF",          // General screen background
+  surface: "#F8F8F8",             // Stat cards and soft backgrounds
+  card: "#FFFFFF",                // Feature cards
+
+  // Text colors
+  textPrimary: "#000000",         // Main title text
+  textSecondary: "#666666",       // Subtitles and descriptive text
+  textOnPrimary: "#FFFFFF",       // Text on colored buttons or header
+
+  // Borders & subtle dividers
+  border: "#F0F0F0",              // Card border color
+
+  // Icon and highlight backgrounds
+  iconBackground: "rgba(175, 20, 0, 0.1)",
+
+  // Buttons
+  buttonPrimary: "#af1400",
+  buttonText: "#FFFFFF",
+  buttonOutline: "#af1400",
+
+  // Others
+  ripple: "rgba(0, 0, 0, 0.1)",   // TouchableRipple effect
 };
