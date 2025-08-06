@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "KuliTra",
-    "slug": "A mobile Image Recognition App",
+    "slug": "KuliTra",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/kt.png",
@@ -16,7 +16,8 @@
         "foregroundImage": "./assets/images/kt.png",
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true
+      "edgeToEdgeEnabled": true,
+      "package": "com.chaos23.KuliTra"
     },
     "web": {
       "bundler": "metro",
@@ -37,6 +38,12 @@
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "351cc8e1-6725-4ad0-998d-abfbef332d58"
+      }
     }
   }
 }
