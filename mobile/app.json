@@ -16,7 +16,8 @@
         "foregroundImage": "./assets/images/kt.png",
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true
+      "edgeToEdgeEnabled": true,
+      "package": "com.chaos23.KuliTra"
     },
     "web": {
       "bundler": "metro",
