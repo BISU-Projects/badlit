@@ -36,25 +36,34 @@ export default function HomeScreen() {
   };
   
   return (
-    <>
-      <StatusBar style="auto" translucent />
-      <ScrollView style={styles.container} showsVerticalScrollIndicator={false}>
-        {/* Header Section */}
-        <View style={[styles.header, { marginTop: statusBarHeight }]}>
-          <View style={styles.headerContent}>
-            <Text style={styles.welcomeText}>Welcome to</Text>
-            <Text style={styles.appName}>KuliTra</Text>
-            <Text style={styles.subtitle}>
-              Discover and translate the ancient Kapampangan script
-            </Text>
-          </View>
-          <View style={styles.headerImage}>
-            <View style={styles.kulitanSymbol}>
-              <Text style={styles.symbolText}>ᜃᜓᜎᜒᜆᜈ᜔</Text>
-            </View>
+    <View style={styles.container}>
+      <StatusBar style="dark" translucent />
+      
+      {/* Transparent Status Bar Spacer */}
+      <View style={[styles.statusBarSpacer, { height: statusBarHeight }]} />
+      
+      {/* Fixed Header */}
+      <View style={styles.header}>
+        <View style={styles.headerContent}>
+          <Text style={styles.welcomeText}>Welcome to</Text>
+          <Text style={styles.appName}>KuliTra</Text>
+          <Text style={styles.subtitle}>
+            Discover and translate the ancient Kapampangan script
+          </Text>
+        </View>
+        <View style={styles.headerImage}>
+          <View style={styles.kulitanSymbol}>
+            <Text style={styles.symbolText}>ᜃᜓᜎᜒᜆᜈ᜔</Text>
           </View>
         </View>
+      </View>
 
+      {/* Scrollable Content */}
+      <ScrollView 
+        style={styles.scrollView} 
+        contentContainerStyle={styles.scrollContent}
+        showsVerticalScrollIndicator={false}
+      >
         {/* Main Features Section */}
         <View style={styles.featuresContainer}>
           <Text style={styles.sectionTitle}>Features</Text>
@@ -135,7 +144,7 @@ export default function HomeScreen() {
         {/* Bottom Spacing */}
         <View style={styles.bottomSpacing} />
       </ScrollView>
-    </>
+    </View>
   );
 }
 
@@ -144,14 +153,32 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#FFFFFF',
   },
+  statusBarSpacer: {
+    backgroundColor: 'transparent', // Changed from '#af1400' to transparent
+  },
+  scrollView: {
+    flex: 1,
+  },
+  scrollContent: {
+    flexGrow: 1,
+    paddingTop: 20,
+  },
   header: {
     paddingHorizontal: 24,
-    paddingTop: 20,
-    paddingBottom: 40,
+    paddingVertical: 20,
     backgroundColor: '#af1400',
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
+    shadowColor: '#000000',
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    shadowOpacity: 0.25,
+    shadowRadius: 8,
+    elevation: 8,
+    zIndex: 1000,
   },
   headerContent: {
     flex: 1,
