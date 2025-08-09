@@ -5,11 +5,23 @@ import {
   ScrollView,
   TouchableOpacity,
   StyleSheet,
-  StatusBar,
-  SafeAreaView,
+  Platform,
+  StatusBar as RNStatusBar,
 } from 'react-native';
+import { StatusBar } from 'expo-status-bar';
+
+// Get status bar height
+const getStatusBarHeight = () => {
+  if (Platform.OS === 'ios') {
+    return 44; // Standard iOS status bar height
+  } else {
+    return RNStatusBar.currentHeight || 24; // Android status bar height
+  }
+};
 
 export default function Explore() {
+  const statusBarHeight = getStatusBarHeight();
+
   const kulitanCharacters = [
     { character: 'ᜀ', romanization: 'A', meaning: 'Base vowel sound "a"' },
     { character: 'ᜊ', romanization: 'BA', meaning: 'Consonant "b" with inherent "a"' },
@@ -29,11 +41,11 @@ export default function Explore() {
   ];
 
   return (
-    <SafeAreaView style={styles.container}>
-      <StatusBar backgroundColor="#af1400" barStyle="light-content" />
+    <View style={styles.container}>
+      <StatusBar style="dark" translucent />
 
       {/* Header */}
-      <View style={styles.header}>
+      <View style={[styles.header, { marginTop: statusBarHeight }]}>
         <Text style={styles.headerTitle}>Explore Kulitan</Text>
         <Text style={styles.headerSubtitle}>
           Ancient Kapampangan Script
@@ -118,7 +130,7 @@ export default function Explore() {
         {/* Footer Space */}
         <View style={styles.footerSpace} />
       </ScrollView>
-    </SafeAreaView>
+    </View>
   );
 }
 
