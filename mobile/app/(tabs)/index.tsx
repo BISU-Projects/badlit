@@ -6,120 +6,136 @@ import {
   ScrollView,
   TouchableOpacity,
   Dimensions,
+  Platform,
+  StatusBar as RNStatusBar,
 } from 'react-native';
-import { Image } from 'expo-image';
+import { StatusBar } from 'expo-status-bar';
+import { router } from 'expo-router';
 
 const { width } = Dimensions.get('window');
 
+// Get status bar height
+const getStatusBarHeight = () => {
+  if (Platform.OS === 'ios') {
+    return 44; // Standard iOS status bar height
+  } else {
+    return RNStatusBar.currentHeight || 24; // Android status bar height
+  }
+};
+
 export default function HomeScreen() {
+  const statusBarHeight = getStatusBarHeight();
+  
+  // Navigation handlers
+  const handleCameraNavigation = () => {
+    router.push('/(tabs)/recognition');
+  };
+
+  const handleCharactersNavigation = () => {
+    router.push('/(tabs)/explore');
+  };
+  
   return (
-    <ScrollView style={styles.container} showsVerticalScrollIndicator={false}>
-      {/* Header Section */}
-      <View style={styles.header}>
-        <View style={styles.headerContent}>
-          <Text style={styles.welcomeText}>Welcome to</Text>
-          <Text style={styles.appName}>Kulitan</Text>
-          <Text style={styles.subtitle}>
-            Discover and translate the ancient Kapampangan script
-          </Text>
-        </View>
-        <View style={styles.headerImage}>
-          <View style={styles.kulitanSymbol}>
-            <Text style={styles.symbolText}>ᜃᜓᜎᜒᜆᜈ᜔</Text>
-          </View>
-        </View>
-      </View>
-
-      {/* Main Features Section */}
-      <View style={styles.featuresContainer}>
-        <Text style={styles.sectionTitle}>Features</Text>
-        
-        {/* Recognition Feature Card */}
-        <TouchableOpacity style={styles.featureCard} activeOpacity={0.8}>
-          <View style={styles.featureIconContainer}>
-            <View style={styles.recognitionIcon}>
-              <Text style={styles.iconText}>📷</Text>
-            </View>
-          </View>
-          <View style={styles.featureContent}>
-            <Text style={styles.featureTitle}>Scan & Translate</Text>
-            <Text style={styles.featureDescription}>
-              Use your camera to scan Kulitan text and instantly translate it to English or Tagalog
+    <>
+      <StatusBar style="auto" translucent />
+      <ScrollView style={styles.container} showsVerticalScrollIndicator={false}>
+        {/* Header Section */}
+        <View style={[styles.header, { marginTop: statusBarHeight }]}>
+          <View style={styles.headerContent}>
+            <Text style={styles.welcomeText}>Welcome to</Text>
+            <Text style={styles.appName}>KuliTra</Text>
+            <Text style={styles.subtitle}>
+              Discover and translate the ancient Kapampangan script
             </Text>
-            <View style={styles.featureBadge}>
-              <Text style={styles.badgeText}>Recognition</Text>
+          </View>
+          <View style={styles.headerImage}>
+            <View style={styles.kulitanSymbol}>
+              <Text style={styles.symbolText}>ᜃᜓᜎᜒᜆᜈ᜔</Text>
             </View>
-          </View>
-          <View style={styles.arrowIcon}>
-            <Text style={styles.arrow}>→</Text>
-          </View>
-        </TouchableOpacity>
-
-        {/* Explore Feature Card */}
-        <TouchableOpacity style={styles.featureCard} activeOpacity={0.8}>
-          <View style={styles.featureIconContainer}>
-            <View style={styles.exploreIcon}>
-              <Text style={styles.iconText}>📚</Text>
-            </View>
-          </View>
-          <View style={styles.featureContent}>
-            <Text style={styles.featureTitle}>Learn Kulitan</Text>
-            <Text style={styles.featureDescription}>
-              Explore the rich history and learn to read and write the ancient Kapampangan script
-            </Text>
-            <View style={styles.featureBadge}>
-              <Text style={styles.badgeText}>Explore</Text>
-            </View>
-          </View>
-          <View style={styles.arrowIcon}>
-            <Text style={styles.arrow}>→</Text>
-          </View>
-        </TouchableOpacity>
-      </View>
-
-      {/* Quick Stats Section */}
-      <View style={styles.statsContainer}>
-        <Text style={styles.sectionTitle}>About Kulitan</Text>
-        <View style={styles.statsGrid}>
-          <View style={styles.statCard}>
-            <Text style={styles.statNumber}>17th</Text>
-            <Text style={styles.statLabel}>Century</Text>
-            <Text style={styles.statDesc}>Origin period</Text>
-          </View>
-          <View style={styles.statCard}>
-            <Text style={styles.statNumber}>37</Text>
-            <Text style={styles.statLabel}>Characters</Text>
-            <Text style={styles.statDesc}>Basic symbols</Text>
-          </View>
-          <View style={styles.statCard}>
-            <Text style={styles.statNumber}>100+</Text>
-            <Text style={styles.statLabel}>Words</Text>
-            <Text style={styles.statDesc}>In database</Text>
           </View>
         </View>
-      </View>
 
-      {/* Call to Action */}
-      <View style={styles.ctaContainer}>
-        <Text style={styles.ctaTitle}>Start Your Journey</Text>
-        <Text style={styles.ctaDescription}>
-          Begin exploring the beautiful world of Kulitan script and connect with Kapampangan heritage
-        </Text>
-        
-        <View style={styles.ctaButtons}>
-          <TouchableOpacity style={styles.primaryButton} activeOpacity={0.8}>
-            <Text style={styles.primaryButtonText}>Start Scanning</Text>
-          </TouchableOpacity>
+        {/* Main Features Section */}
+        <View style={styles.featuresContainer}>
+          <Text style={styles.sectionTitle}>Features</Text>
           
-          <TouchableOpacity style={styles.secondaryButton} activeOpacity={0.8}>
-            <Text style={styles.secondaryButtonText}>Learn First</Text>
+          {/* Recognition Feature Card */}
+          <TouchableOpacity 
+            style={styles.featureCard} 
+            activeOpacity={0.8}
+            onPress={handleCameraNavigation}
+          >
+            <View style={styles.featureIconContainer}>
+              <View style={styles.recognitionIcon}>
+                <Text style={styles.iconText}>📷</Text>
+              </View>
+            </View>
+            <View style={styles.featureContent}>
+              <Text style={styles.featureTitle}>Scan & Translate</Text>
+              <Text style={styles.featureDescription}>
+                Use your camera to scan Kulitan text and instantly translate it to English or Tagalog
+              </Text>
+              <View style={styles.featureBadge}>
+                <Text style={styles.badgeText}>Recognition</Text>
+              </View>
+            </View>
+            <View style={styles.arrowIcon}>
+              <Text style={styles.arrow}>→</Text>
+            </View>
+          </TouchableOpacity>
+
+          {/* Explore Feature Card */}
+          <TouchableOpacity 
+            style={styles.featureCard} 
+            activeOpacity={0.8}
+            onPress={handleCharactersNavigation}
+          >
+            <View style={styles.featureIconContainer}>
+              <View style={styles.exploreIcon}>
+                <Text style={styles.iconText}>📚</Text>
+              </View>
+            </View>
+            <View style={styles.featureContent}>
+              <Text style={styles.featureTitle}>Learn Kulitan</Text>
+              <Text style={styles.featureDescription}>
+                Explore the rich history and learn to read and write the ancient Kapampangan script
+              </Text>
+              <View style={styles.featureBadge}>
+                <Text style={styles.badgeText}>Explore</Text>
+              </View>
+            </View>
+            <View style={styles.arrowIcon}>
+              <Text style={styles.arrow}>→</Text>
+            </View>
           </TouchableOpacity>
         </View>
-      </View>
 
-      {/* Bottom Spacing */}
-      <View style={styles.bottomSpacing} />
-    </ScrollView>
+        {/* Quick Stats Section */}
+        <View style={styles.statsContainer}>
+          <Text style={styles.sectionTitle}>About Kulitan</Text>
+          <View style={styles.statsGrid}>
+            <View style={styles.statCard}>
+              <Text style={styles.statNumber}>17th</Text>
+              <Text style={styles.statLabel}>Century</Text>
+              <Text style={styles.statDesc}>Origin period</Text>
+            </View>
+            <View style={styles.statCard}>
+              <Text style={styles.statNumber}>37</Text>
+              <Text style={styles.statLabel}>Characters</Text>
+              <Text style={styles.statDesc}>Basic symbols</Text>
+            </View>
+            <View style={styles.statCard}>
+              <Text style={styles.statNumber}>100+</Text>
+              <Text style={styles.statLabel}>Words</Text>
+              <Text style={styles.statDesc}>In database</Text>
+            </View>
+          </View>
+        </View>
+
+        {/* Bottom Spacing */}
+        <View style={styles.bottomSpacing} />
+      </ScrollView>
+    </>
   );
 }
 
@@ -130,7 +146,7 @@ const styles = StyleSheet.create({
   },
   header: {
     paddingHorizontal: 24,
-    paddingTop: 60,
+    paddingTop: 20,
     paddingBottom: 40,
     backgroundColor: '#af1400',
     flexDirection: 'row',
