@@ -44,11 +44,8 @@ export default function Explore() {
     <View style={styles.container}>
       <StatusBar style="dark" translucent />
 
-      {/* Status Bar Spacer */}
-      <View style={[styles.statusBarSpacer, { height: statusBarHeight }]} />
-
-      {/* Fixed Header */}
-      <View style={styles.header}>
+      {/* Header */}
+      <View style={[styles.header, { marginTop: statusBarHeight }]}>
         <Text style={styles.headerTitle}>Explore Kulitan</Text>
         <Text style={styles.headerSubtitle}>
           Ancient Kapampangan Script
@@ -142,24 +139,12 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#ffffff',
   },
-  statusBarSpacer: {
-    backgroundColor: '#ffffff',
-  },
   header: {
     backgroundColor: '#af1400',
     paddingHorizontal: 20,
-    paddingVertical: 20,
-    borderBottomWidth: 1,
-    borderBottomColor: '#8f1200',
-    shadowColor: '#000000',
-    shadowOffset: {
-      width: 0,
-      height: 2,
-    },
-    shadowOpacity: 0.1,
-    shadowRadius: 3,
-    elevation: 4,
-    zIndex: 1000,
+    paddingVertical: 24,
+    borderBottomLeftRadius: 20,
+    borderBottomRightRadius: 20,
   },
   headerTitle: {
     fontSize: 28,

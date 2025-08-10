@@ -8,42 +8,21 @@ import {
   ScrollView,
   Dimensions,
   StatusBar,
-  Platform,
 } from 'react-native';
 
 const { width, height } = Dimensions.get('window');
 
-// Get status bar height
-const getStatusBarHeight = () => {
-  if (Platform.OS === 'ios') {
-    return 44; // Standard iOS status bar height
-  } else {
-    return StatusBar.currentHeight || 24; // Android status bar height
-  }
-};
-
 export default function Recognition() {
-  const statusBarHeight = getStatusBarHeight();
-
   return (
-    <View style={styles.container}>
-      <StatusBar barStyle="dark-content" backgroundColor="#ffffff" translucent />
-      
-      {/* Status Bar Spacer */}
-      <View style={[styles.statusBarSpacer, { height: statusBarHeight }]} />
-      
-      {/* Fixed Header */}
-      <View style={styles.header}>
-        <Text style={styles.headerTitle}>Text Recognition</Text>
-        <Text style={styles.headerSubtitle}>Capture or upload an image to translate text</Text>
-      </View>
+    <SafeAreaView style={styles.container}>
+      <StatusBar barStyle="dark-content" backgroundColor="#ffffff" />
+      <ScrollView contentContainerStyle={styles.scrollContent}>
+        {/* Header */}
+        <View style={styles.header}>
+          <Text style={styles.headerTitle}>Text Recognition</Text>
+          <Text style={styles.headerSubtitle}>Capture or upload an image to translate text</Text>
+        </View>
 
-      {/* Scrollable Content */}
-      <ScrollView 
-        style={styles.scrollView}
-        contentContainerStyle={styles.scrollContent}
-        showsVerticalScrollIndicator={false}
-      >
         {/* Camera Preview Area */}
         <View style={styles.cameraContainer}>
           <View style={styles.cameraPreview}>
@@ -110,7 +89,7 @@ export default function Recognition() {
           </View>
         </View>
       </ScrollView>
-    </View>
+    </SafeAreaView>
   );
 }
 
@@ -119,25 +98,14 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#ffffff',
   },
-  statusBarSpacer: {
-    backgroundColor: '#ffffff',
+  scrollContent: {
+    flexGrow: 1,
+    paddingBottom: 20,
   },
   header: {
     paddingHorizontal: 20,
     paddingVertical: 20,
     alignItems: 'center',
-    backgroundColor: '#ffffff',
-    borderBottomWidth: 1,
-    borderBottomColor: '#e0e0e0',
-    shadowColor: '#000000',
-    shadowOffset: {
-      width: 0,
-      height: 2,
-    },
-    shadowOpacity: 0.1,
-    shadowRadius: 3,
-    elevation: 3,
-    zIndex: 1000,
   },
   headerTitle: {
     fontSize: 28,
@@ -149,14 +117,6 @@ const styles = StyleSheet.create({
     fontSize: 16,
     color: '#666666',
     textAlign: 'center',
-  },
-  scrollView: {
-    flex: 1,
-  },
-  scrollContent: {
-    flexGrow: 1,
-    paddingTop: 20,
-    paddingBottom: 20,
   },
   cameraContainer: {
     paddingHorizontal: 20,
