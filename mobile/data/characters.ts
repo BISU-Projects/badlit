@@ -4,6 +4,7 @@ export interface KulitanCharacter {
   name: string;
   character: string;
   image: string;
+  audio: any; // Audio file require() statement
   pronunciation: string;
   category: 'Basic Vowel' | 'Basic Consonant' | 'Consonant with I' | 'Consonant with U' | 'Consonant with E' | 'Consonant with O' | 'Final Consonant';
   rarity: 'Common' | 'Uncommon' | 'Rare';
@@ -24,6 +25,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
     name: 'A',
     character: 'ᜀ',
     image: require('@/assets/images/kt-logo.png'),
+    audio: require('@/assets/audio/babe.mp3'),
     pronunciation: 'a',
     category: 'Basic Vowel',
     rarity: 'Common',
@@ -52,6 +54,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
     name: 'I',
     character: 'ᜁ',
     image: require('@/assets/images/kt-logo.png'),
+    audio: require('@/assets/audio/babe.mp3'),
     pronunciation: 'i',
     category: 'Basic Vowel',
     rarity: 'Common',
@@ -80,6 +83,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
     name: 'U',
     character: 'ᜂ',
     image: require('@/assets/images/kt-logo.png'),
+    audio: require('@/assets/audio/babe.mp3'),
     pronunciation: 'u',
     category: 'Basic Vowel',
     rarity: 'Common',
@@ -108,6 +112,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
     name: 'E',
     character: 'ᜃᜒ',
     image: require('@/assets/images/kt-logo.png'),
+    audio: require('@/assets/audio/babe.mp3'),
     pronunciation: 'e',
     category: 'Basic Vowel',
     rarity: 'Common',
@@ -136,6 +141,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
     name: 'O',
     character: 'ᜃᜓ',
     image: require('@/assets/images/kt-logo.png'),
+    audio: require('@/assets/audio/babe.mp3'),
     pronunciation: 'o',
     category: 'Basic Vowel',
     rarity: 'Common',
@@ -164,6 +170,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
     name: 'GA',
     character: 'ᜄ',
     image: require('@/assets/images/kt-logo.png'),
+    audio: require('@/assets/audio/babe.mp3'),
     pronunciation: 'ga',
     category: 'Basic Consonant',
     rarity: 'Common',
@@ -192,6 +199,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
     name: 'KA',
     character: 'ᜃ',
     image: require('@/assets/images/kt-logo.png'),
+    audio: require('@/assets/audio/babe.mp3'),
     pronunciation: 'ka',
     category: 'Basic Consonant',
     rarity: 'Common',
@@ -220,6 +228,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
     name: 'NGA',
     character: 'ᜅ',
     image: require('@/assets/images/kt-logo.png'),
+    audio: require('@/assets/audio/babe.mp3'),
     pronunciation: 'nga',
     category: 'Basic Consonant',
     rarity: 'Common',
@@ -248,6 +257,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
     name: 'TA',
     character: 'ᜆ',
     image: require('@/assets/images/kt-logo.png'),
+    audio: require('@/assets/audio/babe.mp3'),
     pronunciation: 'ta',
     category: 'Basic Consonant',
     rarity: 'Common',
@@ -276,6 +286,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
     name: 'DA',
     character: 'ᜇ',
     image: require('@/assets/images/kt-logo.png'),
+    audio: require('@/assets/audio/babe.mp3'),
     pronunciation: 'da',
     category: 'Basic Consonant',
     rarity: 'Common',
