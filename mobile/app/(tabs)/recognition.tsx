@@ -133,10 +133,10 @@ export default function Recognition() {
         title: "📸 Camera Tips",
         tips: [
           "Hold your phone steady for clear shots",
-          "Get close to capture bamboo details",
+          "Get close to capture character details",
           "Focus on nodes, and culm features",
           "Use natural lighting when possible",
-          "Avoid shadows on the bamboo"
+          "Avoid shadows on the character"
         ]
       };
     } else {
@@ -144,10 +144,10 @@ export default function Recognition() {
         title: "🖼️ Gallery Tips",
         tips: [
           "Choose high-resolution images",
-          "Select photos with clear bamboo features",
+          "Select photos with clear character features",
           "Avoid heavily cropped images",
           "Pick images with good contrast",
-          "Ensure bamboo is the main subject"
+          "Ensure character is the main subject"
         ]
       };
     }
@@ -323,7 +323,7 @@ export default function Recognition() {
             end={{ x: 1, y: 1 }}
             style={[styles.headerGradient, { paddingTop: statusBarHeight + 20 }]}
           >
-            <Text style={styles.title}>Bamboo Scanner</Text>
+            <Text style={styles.title}>Character Scanner</Text>
             <Text style={styles.subtitle}>AI-powered species identification</Text>
           </LinearGradient>
         </View>
@@ -364,7 +364,7 @@ export default function Recognition() {
             <View style={styles.loadingCard}>
               <ActivityIndicator size="large" color={Colors.primary} />
               <Text style={styles.loadingTitle}>Analyzing Image</Text>
-              <Text style={styles.loadingText}>Our AI is identifying the bamboo species...</Text>
+              <Text style={styles.loadingText}>Our AI is identifying the character species...</Text>
             </View>
           </View>
         )}
