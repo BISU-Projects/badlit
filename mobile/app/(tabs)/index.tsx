@@ -32,7 +32,7 @@ export default function HomeScreen() {
   };
 
   const handleCharactersNavigation = () => {
-    router.push('/(tabs)/explore');
+    router.push('/(tabs)/characters');
   };
   
   return (
