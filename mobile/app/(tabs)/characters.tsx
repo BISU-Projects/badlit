@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useCallback } from 'react';
 import {
   StyleSheet,
   FlatList,
@@ -26,41 +26,18 @@ const getStatusBarHeight = () => {
   return RNStatusBar.currentHeight || 24;
 };
 
-export default function CharactersScreen() {
-  const router = useRouter();
-  const statusBarHeight = getStatusBarHeight();
-
-  const [searchQuery, setSearchQuery] = useState('');
-  const [selectedRarity, setSelectedRarity] = useState<string | null>(null);
-  const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
-
-  const rarityOptions = getAllRarities();
-  const categoryOptions = getAllCategories();
-
-  const filteredData = useMemo(() => {
-    if (!searchQuery && !selectedRarity && !selectedCategory) {
-      return sampleCharactersData;
-    }
-    const lowerQuery = searchQuery.toLowerCase();
-    return sampleCharactersData.filter(character => {
-      const matchesSearch =
-        character.name.toLowerCase().includes(lowerQuery);
-      const matchesRarity = !selectedRarity || character.rarity === selectedRarity;
-      const matchesCategory = !selectedCategory || character.category === selectedCategory;
-      return matchesSearch && matchesRarity && matchesCategory;
-    });
-  }, [searchQuery, selectedRarity, selectedCategory]);
-
-  const handleCharacterPress = (character: KulitanCharacter) => {
-    router.push({
-      pathname: '/characters/detail',
-      params: { id: character.id }
-    });
-  };
+// Memoized Character Card Component
+const CharacterCard = React.memo<{
+  item: KulitanCharacter;
+  index: number;
+  onPress: (character: KulitanCharacter) => void;
+}>(({ item, index, onPress }) => {
+  const handlePress = useCallback(() => onPress(item), [item, onPress]);
 
   const getRarityColor = (rarity: string) => {
     switch (rarity) {
       case 'Common': return Colors.success;
+      case 'Very Common': return Colors.success;
       case 'Uncommon': return Colors.warning;
       case 'Rare': return Colors.error;
       default: return Colors.textSecondary;
@@ -70,7 +47,9 @@ export default function CharactersScreen() {
   const getCategoryColor = (category: string) => {
     switch (category) {
       case 'Basic Vowel': return '#FF6B6B';
+      case 'Pure Vowel': return '#FF6B6B';
       case 'Basic Consonant': return '#4ECDC4';
+      case 'Complex Consonant': return '#4ECDC4';
       case 'Consonant with I': return '#45B7D1';
       case 'Consonant with U': return '#96CEB4';
       case 'Consonant with E': return '#FFEAA7';
@@ -80,19 +59,29 @@ export default function CharactersScreen() {
     }
   };
 
-  const renderCharacterCard = ({ item, index }: { item: KulitanCharacter; index: number }) => (
+  const rarityColor = useMemo(() => getRarityColor(item.rarity), [item.rarity]);
+  const categoryColor = useMemo(() => getCategoryColor(item.category), [item.category]);
+
+  return (
     <Animated.View
       entering={FadeIn.delay(index * 50)}
       layout={Layout.springify()}
       style={styles.cardContainer}
     >
-      <TouchableOpacity onPress={() => handleCharacterPress(item)} activeOpacity={0.8}>
+      <TouchableOpacity onPress={handlePress} activeOpacity={0.8}>
         <Surface style={styles.characterCard} elevation={2}>
-          {/* Large Character Display */}
+          {/* Character Image Display */}
           <View style={styles.characterContainer}>
-            <Text style={styles.kulitanCharacter}>{item.character}</Text>
+            <Image 
+              source={item.image}
+              style={styles.characterImage}
+              contentFit="contain"
+              transition={200}
+              cachePolicy="memory-disk"
+              priority="normal"
+            />
             <View style={styles.rarityBadge}>
-              <Text style={[styles.rarityText, { color: getRarityColor(item.rarity) }]}>
+              <Text style={[styles.rarityText, { color: rarityColor }]}>
                 {item.rarity}
               </Text>
             </View>
@@ -111,18 +100,14 @@ export default function CharactersScreen() {
                 <Text style={styles.infoIcon}>🔤</Text>
                 <Text style={styles.infoText}>{item.type}</Text>
               </View>
-              {/* <View style={styles.infoItem}>
-                <Text style={styles.infoIcon}>🎯</Text>
-                <Text style={styles.infoText} numberOfLines={1}>{item.soundDescription}</Text>
-              </View> */}
             </View>
             
             <Text style={[
               styles.categoryText,
               {
-                backgroundColor: getCategoryColor(item.category) + '20',
-                borderColor: getCategoryColor(item.category),
-                color: getCategoryColor(item.category)
+                backgroundColor: categoryColor + '20',
+                borderColor: categoryColor,
+                color: categoryColor
               }
             ]}>
               {item.category}
@@ -132,6 +117,90 @@ export default function CharactersScreen() {
       </TouchableOpacity>
     </Animated.View>
   );
+});
+
+CharacterCard.displayName = 'CharacterCard';
+
+// Memoized Filter Chip Component
+const FilterChip = React.memo<{
+  label: string;
+  isSelected: boolean;
+  onPress: () => void;
+}>(({ label, isSelected, onPress }) => (
+  <TouchableOpacity
+    style={[
+      styles.filterChip,
+      isSelected && styles.filterChipSelected
+    ]}
+    onPress={onPress}
+  >
+    <Text
+      style={[
+        styles.filterChipText,
+        isSelected && styles.filterChipTextSelected
+      ]}
+    >
+      {label}
+    </Text>
+  </TouchableOpacity>
+));
+
+FilterChip.displayName = 'FilterChip';
+
+export default function CharactersScreen() {
+  const router = useRouter();
+  const statusBarHeight = getStatusBarHeight();
+
+  const [searchQuery, setSearchQuery] = useState('');
+  const [selectedRarity, setSelectedRarity] = useState<string | null>(null);
+  const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
+
+  // Memoize static data to prevent re-computation
+  const rarityOptions = useMemo(() => getAllRarities(), []);
+  const categoryOptions = useMemo(() => getAllCategories(), []);
+
+  const filteredData = useMemo(() => {
+    if (!searchQuery && !selectedRarity && !selectedCategory) {
+      return sampleCharactersData;
+    }
+    const lowerQuery = searchQuery.toLowerCase();
+    return sampleCharactersData.filter(character => {
+      const matchesSearch = character.name.toLowerCase().includes(lowerQuery);
+      const matchesRarity = !selectedRarity || character.rarity === selectedRarity;
+      const matchesCategory = !selectedCategory || character.category === selectedCategory;
+      return matchesSearch && matchesRarity && matchesCategory;
+    });
+  }, [searchQuery, selectedRarity, selectedCategory]);
+
+  // Memoized callbacks to prevent re-renders
+  const handleCharacterPress = useCallback((character: KulitanCharacter) => {
+    router.push({
+      pathname: '/characters/detail',
+      params: { id: character.id }
+    });
+  }, [router]);
+
+  const handleRarityFilter = useCallback((rarity: string) => {
+    setSelectedRarity(prev => prev === rarity ? null : rarity);
+  }, []);
+
+  const handleCategoryFilter = useCallback((category: string) => {
+    setSelectedCategory(prev => prev === category ? null : category);
+  }, []);
+
+  const renderCharacterCard = useCallback(({ item, index }: { item: KulitanCharacter; index: number }) => (
+    <CharacterCard 
+      item={item} 
+      index={index} 
+      onPress={handleCharacterPress} 
+    />
+  ), [handleCharacterPress]);
+
+  // Memoized key extractor
+  const keyExtractor = useCallback((item: KulitanCharacter) => item.id, []);
+
+  // Memoized separator component
+  const ItemSeparatorComponent = useCallback(() => <View style={styles.separator} />, []);
 
   return (
     <>
@@ -162,45 +231,23 @@ export default function CharactersScreen() {
             horizontal
             showsHorizontalScrollIndicator={false}
             style={styles.filterScroll}
-            contentContainerStyle={{ paddingRight: 8 }}
+            contentContainerStyle={styles.filterScrollContent}
           >
             {rarityOptions.map(r => (
-              <TouchableOpacity
+              <FilterChip
                 key={r}
-                style={[
-                  styles.filterChip,
-                  selectedRarity === r && styles.filterChipSelected
-                ]}
-                onPress={() => setSelectedRarity(selectedRarity === r ? null : r)}
-              >
-                <Text
-                  style={[
-                    styles.filterChipText,
-                    selectedRarity === r && styles.filterChipTextSelected
-                  ]}
-                >
-                  {r}
-                </Text>
-              </TouchableOpacity>
+                label={r}
+                isSelected={selectedRarity === r}
+                onPress={() => handleRarityFilter(r)}
+              />
             ))}
             {categoryOptions.map(c => (
-              <TouchableOpacity
+              <FilterChip
                 key={c}
-                style={[
-                  styles.filterChip,
-                  selectedCategory === c && styles.filterChipSelected
-                ]}
-                onPress={() => setSelectedCategory(selectedCategory === c ? null : c)}
-              >
-                <Text
-                  style={[
-                    styles.filterChipText,
-                    selectedCategory === c && styles.filterChipTextSelected
-                  ]}
-                >
-                  {c}
-                </Text>
-              </TouchableOpacity>
+                label={c}
+                isSelected={selectedCategory === c}
+                onPress={() => handleCategoryFilter(c)}
+              />
             ))}
           </ScrollView>
         </View>
@@ -208,12 +255,21 @@ export default function CharactersScreen() {
         <FlatList
           data={filteredData}
           renderItem={renderCharacterCard}
-          keyExtractor={(item) => item.id}
+          keyExtractor={keyExtractor}
           numColumns={2}
           columnWrapperStyle={filteredData.length > 1 ? styles.row : null}
           showsVerticalScrollIndicator={false}
           contentContainerStyle={styles.listContent}
-          ItemSeparatorComponent={() => <View style={styles.separator} />}
+          ItemSeparatorComponent={ItemSeparatorComponent}
+          // Performance optimizations
+          removeClippedSubviews={true}
+          maxToRenderPerBatch={10}
+          windowSize={10}
+          initialNumToRender={8}
+          updateCellsBatchingPeriod={100}
+          getItemLayout={undefined} // Let FlatList calculate automatically for variable heights
+          // Disable nested scrolling if not needed
+          nestedScrollEnabled={false}
         />
       </View>
     </>
@@ -255,6 +311,9 @@ const styles = StyleSheet.create({
   },
   filterScroll: {
     flexGrow: 0,
+  },
+  filterScrollContent: {
+    paddingRight: 8,
   },
   filterChip: {
     paddingHorizontal: 14,
@@ -314,11 +373,10 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
   },
-  kulitanCharacter: {
-    fontSize: 48,
-    fontWeight: 'bold',
-    color: '#af1400',
-    textAlign: 'center',
+  characterImage: {
+    width: 80,
+    height: 80,
+    borderRadius: 8,
   },
   rarityBadge: {
     position: 'absolute',

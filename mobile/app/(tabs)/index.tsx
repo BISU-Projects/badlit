@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
   View,
   Text,
@@ -8,23 +8,48 @@ import {
   Dimensions,
   Platform,
   StatusBar as RNStatusBar,
+  TextInput,
+  Alert,
+  Modal,
 } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
 import { router } from 'expo-router';
+import { 
+  translateEnglishToKulitan, 
+  translateTagalogToKulitan,
+  translateKulitanToEnglish, 
+  translateKulitanToTagalog,
+  translateText,
+  TranslationResult,
+} from '@/data/translation';
 
 const { width } = Dimensions.get('window');
 
 // Get status bar height
 const getStatusBarHeight = () => {
   if (Platform.OS === 'ios') {
-    return 44; // Standard iOS status bar height
+    return 44;
   } else {
-    return RNStatusBar.currentHeight || 24; // Android status bar height
+    return RNStatusBar.currentHeight || 24;
   }
 };
 
+type TranslationDirection = 'englishToKulitan' | 'tagalogToKulitan' | 'kulitanToEnglish' | 'kulitanToTagalog';
+
+const translationOptions = [
+  { value: 'englishToKulitan', label: 'English → Kulitan' },
+  { value: 'tagalogToKulitan', label: 'Tagalog → Kulitan' },
+  { value: 'kulitanToEnglish', label: 'Kulitan → English' },
+  { value: 'kulitanToTagalog', label: 'Kulitan → Tagalog' },
+];
+
 export default function HomeScreen() {
   const statusBarHeight = getStatusBarHeight();
+  const [translationInput, setTranslationInput] = useState('');
+  const [translationResults, setTranslationResults] = useState<TranslationResult[]>([]);
+  const [translationDirection, setTranslationDirection] = useState<TranslationDirection>('englishToKulitan');
+  const [showTranslation, setShowTranslation] = useState(false);
+  const [showDropdown, setShowDropdown] = useState(false);
   
   // Navigation handlers
   const handleCameraNavigation = () => {
@@ -33,6 +58,52 @@ export default function HomeScreen() {
 
   const handleCharactersNavigation = () => {
     router.push('/(tabs)/characters');
+  };
+
+  // Translation handlers
+  const handleTranslate = () => {
+    if (!translationInput.trim()) {
+      Alert.alert('Input Required', 'Please enter text to translate');
+      return;
+    }
+
+    const results = translateText(translationInput, translationDirection);
+    setTranslationResults(results);
+    setShowTranslation(true);
+  };
+
+  const handleDirectionChange = (direction: TranslationDirection) => {
+    setTranslationDirection(direction);
+    setTranslationInput('');
+    setTranslationResults([]);
+    setShowTranslation(false);
+    setShowDropdown(false);
+  };
+
+  const clearTranslation = () => {
+    setTranslationInput('');
+    setTranslationResults([]);
+    setShowTranslation(false);
+  };
+
+  const getPlaceholderText = () => {
+    switch (translationDirection) {
+      case 'englishToKulitan':
+        return 'Enter English words... (e.g., "hello water mother")';
+      case 'tagalogToKulitan':
+        return 'Maglagay ng mga salitang Tagalog... (e.g., "tubig nanay")';
+      case 'kulitanToEnglish':
+        return 'Enter Kulitan words... (e.g., "ᜃᜓᜋᜓᜐ᜔ᜆ ᜇᜓᜈᜓᜋ᜔")';
+      case 'kulitanToTagalog':
+        return 'Maglagay ng mga salitang Kulitan...';
+      default:
+        return 'Enter text...';
+    }
+  };
+
+  const getCurrentDirectionLabel = () => {
+    const option = translationOptions.find(opt => opt.value === translationDirection);
+    return option ? option.label : '';
   };
   
   return (
@@ -45,7 +116,7 @@ export default function HomeScreen() {
             <Text style={styles.welcomeText}>Welcome to</Text>
             <Text style={styles.appName}>KuliTra</Text>
             <Text style={styles.subtitle}>
-              Discover and translate the ancient Kapampangan script
+              Discover and translate Kapampangan words in Kulitan script
             </Text>
           </View>
           <View style={styles.headerImage}>
@@ -53,6 +124,119 @@ export default function HomeScreen() {
               <Text style={styles.symbolText}>ᜃᜓᜎᜒᜆᜈ᜔</Text>
             </View>
           </View>
+        </View>
+
+        {/* Quick Translation Section */}
+        <View style={styles.quickTranslationContainer}>
+          <Text style={styles.sectionTitle}>Word Translator</Text>
+          
+          {/* Translation Direction Dropdown */}
+          <View style={styles.dropdownContainer}>
+            <TouchableOpacity 
+              style={styles.dropdownButton}
+              onPress={() => setShowDropdown(!showDropdown)}
+            >
+              <Text style={styles.dropdownButtonText}>{getCurrentDirectionLabel()}</Text>
+              <Text style={styles.dropdownArrow}>{showDropdown ? '▲' : '▼'}</Text>
+            </TouchableOpacity>
+
+            {/* Dropdown Modal */}
+            <Modal
+              visible={showDropdown}
+              transparent={true}
+              animationType="fade"
+              onRequestClose={() => setShowDropdown(false)}
+            >
+              <TouchableOpacity 
+                style={styles.modalOverlay}
+                activeOpacity={1}
+                onPress={() => setShowDropdown(false)}
+              >
+                <View style={styles.dropdownModal}>
+                  {translationOptions.map((option) => (
+                    <TouchableOpacity
+                      key={option.value}
+                      style={[
+                        styles.dropdownOption,
+                        translationDirection === option.value && styles.activeDropdownOption
+                      ]}
+                      onPress={() => handleDirectionChange(option.value as TranslationDirection)}
+                    >
+                      <Text style={[
+                        styles.dropdownOptionText,
+                        translationDirection === option.value && styles.activeDropdownOptionText
+                      ]}>
+                        {option.label}
+                      </Text>
+                    </TouchableOpacity>
+                  ))}
+                </View>
+              </TouchableOpacity>
+            </Modal>
+          </View>
+
+          {/* Input Field */}
+          <View style={styles.inputContainer}>
+            <TextInput
+              style={styles.translationInput}
+              value={translationInput}
+              onChangeText={setTranslationInput}
+              placeholder={getPlaceholderText()}
+              placeholderTextColor="#999"
+              multiline={true}
+              numberOfLines={2}
+            />
+          </View>
+
+          {/* Action Buttons */}
+          <View style={styles.translationButtons}>
+            <TouchableOpacity style={styles.translateButton} onPress={handleTranslate}>
+              <Text style={styles.translateButtonText}>Translate</Text>
+            </TouchableOpacity>
+            {(translationInput || showTranslation) && (
+              <TouchableOpacity style={styles.clearButton} onPress={clearTranslation}>
+                <Text style={styles.clearButtonText}>Clear</Text>
+              </TouchableOpacity>
+            )}
+          </View>
+
+          {/* Translation Results */}
+          {showTranslation && (
+            <View style={styles.translationResultsContainer}>
+              <Text style={styles.resultsLabel}>Translation:</Text>
+              <View style={styles.resultsDisplay}>
+                {translationResults.map((result, index) => (
+                  <View key={index} style={styles.wordResult}>
+                    <Text style={styles.originalWord}>{result.originalWord}</Text>
+                    <Text style={styles.arrow}>↓</Text>
+                    <Text style={[styles.translatedWord, !result.isTranslatable && styles.untranslatableWord]}>
+                      {result.translatedWord}
+                    </Text>
+                    {result.wordData && (
+                      <>
+                        <Text style={styles.pronunciation}>/{result.wordData.pronunciation}/</Text>
+                        {result.wordData.tagalog !== result.wordData.english && (
+                          <Text style={styles.alternateTranslation}>
+                            {translationDirection.includes('kulitan') ? 
+                              `Tagalog: ${result.wordData.tagalog}` : 
+                              `Kapampangan: ${result.wordData.kapampangan}`
+                            }
+                          </Text>
+                        )}
+                      </>
+                    )}
+                  </View>
+                ))}
+              </View>
+              
+              {/* Translation Summary */}
+              <View style={styles.translationSummary}>
+                <Text style={styles.summaryText}>
+                  Translated: {translationResults.filter(r => r.isTranslatable).length} / {translationResults.length} words
+                </Text>
+              </View>
+            </View>
+          )}
         </View>
 
         {/* Main Features Section */}
@@ -120,14 +304,14 @@ export default function HomeScreen() {
               <Text style={styles.statDesc}>Origin period</Text>
             </View>
             <View style={styles.statCard}>
-              <Text style={styles.statNumber}>37</Text>
-              <Text style={styles.statLabel}>Characters</Text>
-              <Text style={styles.statDesc}>Basic symbols</Text>
+              <Text style={styles.statNumber}>20</Text>
+              <Text style={styles.statLabel}>Words</Text>
+              <Text style={styles.statDesc}>Available</Text>
             </View>
             <View style={styles.statCard}>
-              <Text style={styles.statNumber}>100+</Text>
-              <Text style={styles.statLabel}>Words</Text>
-              <Text style={styles.statDesc}>In database</Text>
+              <Text style={styles.statNumber}>6</Text>
+              <Text style={styles.statLabel}>Categories</Text>
+              <Text style={styles.statDesc}>Word groups</Text>
             </View>
           </View>
         </View>
@@ -191,9 +375,201 @@ const styles = StyleSheet.create({
     color: '#FFFFFF',
     fontWeight: 'bold',
   },
-  featuresContainer: {
+  
+  // Quick Translation Styles
+  quickTranslationContainer: {
     paddingHorizontal: 24,
     paddingTop: 32,
+    paddingBottom: 24,
+    backgroundColor: '#FFFFFF',
+    marginBottom: 16,
+  },
+  
+  // Dropdown Styles
+  dropdownContainer: {
+    marginBottom: 16,
+    zIndex: 1000,
+  },
+  dropdownButton: {
+    backgroundColor: '#F8F9FA',
+    borderRadius: 12,
+    padding: 16,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    borderWidth: 1,
+    borderColor: '#E0E0E0',
+  },
+  dropdownButtonText: {
+    fontSize: 16,
+    fontWeight: '600',
+    color: '#333',
+  },
+  dropdownArrow: {
+    fontSize: 12,
+    color: '#666',
+  },
+  modalOverlay: {
+    flex: 1,
+    backgroundColor: 'rgba(0, 0, 0, 0.3)',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  dropdownModal: {
+    backgroundColor: '#FFFFFF',
+    borderRadius: 12,
+    minWidth: 280,
+    maxWidth: width * 0.8,
+    marginHorizontal: 24,
+    shadowColor: '#000000',
+    shadowOffset: {
+      width: 0,
+      height: 4,
+    },
+    shadowOpacity: 0.3,
+    shadowRadius: 8,
+    elevation: 8,
+  },
+  dropdownOption: {
+    paddingVertical: 16,
+    paddingHorizontal: 20,
+    borderBottomWidth: 1,
+    borderBottomColor: '#F0F0F0',
+  },
+  activeDropdownOption: {
+    backgroundColor: '#af1400',
+  },
+  dropdownOptionText: {
+    fontSize: 16,
+    color: '#333',
+    fontWeight: '500',
+  },
+  activeDropdownOptionText: {
+    color: '#FFFFFF',
+    fontWeight: '600',
+  },
+  
+  inputContainer: {
+    marginBottom: 16,
+  },
+  translationInput: {
+    backgroundColor: '#F8F9FA',
+    borderRadius: 12,
+    padding: 16,
+    fontSize: 16,
+    borderWidth: 1,
+    borderColor: '#E0E0E0',
+    minHeight: 60,
+    textAlignVertical: 'top',
+  },
+  translationButtons: {
+    flexDirection: 'row',
+    gap: 12,
+    marginBottom: 20,
+  },
+  translateButton: {
+    flex: 1,
+    backgroundColor: '#af1400',
+    borderRadius: 12,
+    paddingVertical: 14,
+    alignItems: 'center',
+  },
+  translateButtonText: {
+    fontSize: 16,
+    fontWeight: '600',
+    color: '#FFFFFF',
+  },
+  clearButton: {
+    paddingHorizontal: 20,
+    paddingVertical: 14,
+    borderRadius: 12,
+    borderWidth: 1,
+    borderColor: '#af1400',
+    alignItems: 'center',
+  },
+  clearButtonText: {
+    fontSize: 16,
+    fontWeight: '600',
+    color: '#af1400',
+  },
+  
+  // Translation Results Styles
+  translationResultsContainer: {
+    backgroundColor: '#F8F9FA',
+    borderRadius: 12,
+    padding: 16,
+    borderWidth: 1,
+    borderColor: '#E0E0E0',
+  },
+  resultsLabel: {
+    fontSize: 16,
+    fontWeight: '600',
+    color: '#000',
+    marginBottom: 12,
+  },
+  resultsDisplay: {
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    gap: 12,
+    marginBottom: 16,
+  },
+  wordResult: {
+    alignItems: 'center',
+    backgroundColor: '#FFFFFF',
+    borderRadius: 12,
+    padding: 16,
+    flex: 1,
+    minWidth: '45%',
+  },
+  originalWord: {
+    fontSize: 16,
+    fontWeight: '600',
+    color: '#333',
+    marginBottom: 6,
+    textAlign: 'center',
+  },
+  arrow: {
+    fontSize: 16,
+    color: '#666',
+    marginBottom: 6,
+  },
+  translatedWord: {
+    fontSize: 28,
+    fontWeight: 'bold',
+    color: '#af1400',
+    marginBottom: 6,
+    textAlign: 'center',
+  },
+  untranslatableWord: {
+    color: '#999',
+    fontSize: 16,
+  },
+  pronunciation: {
+    fontSize: 12,
+    color: '#666',
+    fontStyle: 'italic',
+    marginBottom: 4,
+  },
+  alternateTranslation: {
+    fontSize: 11,
+    color: '#888',
+    textAlign: 'center',
+  },
+  translationSummary: {
+    alignItems: 'center',
+    paddingTop: 12,
+    borderTopWidth: 1,
+    borderTopColor: '#E0E0E0',
+  },
+  summaryText: {
+    fontSize: 14,
+    color: '#666',
+  },
+
+  // Features Styles
+  featuresContainer: {
+    paddingHorizontal: 24,
+    paddingTop: 16,
   },
   sectionTitle: {
     fontSize: 24,
@@ -271,11 +647,6 @@ const styles = StyleSheet.create({
   arrowIcon: {
     marginLeft: 12,
   },
-  arrow: {
-    fontSize: 20,
-    color: '#af1400',
-    fontWeight: 'bold',
-  },
   statsContainer: {
     paddingHorizontal: 24,
     paddingTop: 32,
@@ -308,52 +679,6 @@ const styles = StyleSheet.create({
     fontSize: 12,
     color: '#666666',
     textAlign: 'center',
-  },
-  ctaContainer: {
-    paddingHorizontal: 24,
-    paddingTop: 40,
-    paddingBottom: 20,
-  },
-  ctaTitle: {
-    fontSize: 24,
-    fontWeight: 'bold',
-    color: '#000000',
-    textAlign: 'center',
-    marginBottom: 8,
-  },
-  ctaDescription: {
-    fontSize: 16,
-    color: '#666666',
-    textAlign: 'center',
-    lineHeight: 24,
-    marginBottom: 32,
-  },
-  ctaButtons: {
-    gap: 12,
-  },
-  primaryButton: {
-    backgroundColor: '#af1400',
-    borderRadius: 12,
-    paddingVertical: 16,
-    alignItems: 'center',
-  },
-  primaryButtonText: {
-    fontSize: 16,
-    fontWeight: '600',
-    color: '#FFFFFF',
-  },
-  secondaryButton: {
-    backgroundColor: 'transparent',
-    borderRadius: 12,
-    paddingVertical: 16,
-    alignItems: 'center',
-    borderWidth: 2,
-    borderColor: '#af1400',
-  },
-  secondaryButtonText: {
-    fontSize: 16,
-    fontWeight: '600',
-    color: '#af1400',
   },
   bottomSpacing: {
     height: 20,
