@@ -6,8 +6,8 @@ export interface KulitanCharacter {
   image: string;
   audio: any; // Audio file require() statement
   pronunciation: string;
-  category: 'Basic Vowel' | 'Basic Consonant' | 'Consonant with I' | 'Consonant with U' | 'Consonant with E' | 'Consonant with O' | 'Final Consonant';
-  rarity: 'Common' | 'Uncommon' | 'Rare';
+  category: 'Basic Vowel' | 'Vowel' | 'Pure Vowel' | 'Basic Consonant' | 'Complex Consonant' | 'Consonant with I' | 'Consonant with U' | 'Consonant with E' | 'Consonant with O' | 'Final Consonant';
+  rarity: 'Common' | 'Very Common' | 'Uncommon' | 'Rare';
   origin: string;
   type: string;
   soundDescription: string;
@@ -25,7 +25,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
     name: 'A',
     character: 'ᜀ',
     image: require('@/assets/images/kt-logo.png'),
-    audio: require('@/assets/audio/babe.mp3'),
+    audio: require('@/assets/audio/a.mp3'),
     pronunciation: 'a',
     category: 'Basic Vowel',
     rarity: 'Common',
@@ -51,126 +51,10 @@ export const sampleCharactersData: KulitanCharacter[] = [
   },
   {
     id: '2',
-    name: 'I',
-    character: 'ᜁ',
-    image: require('@/assets/images/kt-logo.png'),
-    audio: require('@/assets/audio/babe.mp3'),
-    pronunciation: 'i',
-    category: 'Basic Vowel',
-    rarity: 'Common',
-    origin: 'Kapampangan Script',
-    type: 'Independent Vowel',
-    soundDescription: 'Close front vowel sound',
-    description: 'The vowel "I" in Kulitan script, representing the close front vowel sound /i/. This character is essential for forming many Kapampangan words and is often combined with consonants.',
-    uses: [
-      'Beginning of words',
-      'Standalone vowel',
-      'Syllabic combinations',
-      'Modified consonant sounds'
-    ],
-    characteristics: [
-      'Distinctive curved form',
-      'High frequency in text',
-      'Forms basis for "i" vowel combinations',
-      'Essential for proper pronunciation'
-    ],
-    learningTips: 'Remember this represents the "ee" sound in English. Practice distinguishing it from other vowel forms.',
-    writingInstructions: 'Draw the characteristic curved stroke with attention to the distinctive shape',
-    combinations: ['ki', 'gi', 'ngi', 'ti', 'di', 'ni', 'li', 'si', 'mi', 'pi', 'bi']
-  },
-  {
-    id: '3',
-    name: 'U',
-    character: 'ᜂ',
-    image: require('@/assets/images/kt-logo.png'),
-    audio: require('@/assets/audio/babe.mp3'),
-    pronunciation: 'u',
-    category: 'Basic Vowel',
-    rarity: 'Common',
-    origin: 'Kapampangan Script',
-    type: 'Independent Vowel',
-    soundDescription: 'Close back vowel sound',
-    description: 'The vowel "U" in Kulitan script, representing the close back vowel sound /u/. This rounded vowel is crucial for many Kapampangan words and appears in various combinations.',
-    uses: [
-      'Beginning of words',
-      'Standalone vowel',
-      'Rounded vowel combinations',
-      'Final syllable sounds'
-    ],
-    characteristics: [
-      'Rounded vowel representation',
-      'Appears in many native words',
-      'Base for "u" vowel combinations',
-      'Important for proper pronunciation'
-    ],
-    learningTips: 'This represents the "oo" sound in English. Focus on the rounded mouth position when pronouncing.',
-    writingInstructions: 'Draw with smooth, flowing strokes maintaining the characteristic shape',
-    combinations: ['ku', 'gu', 'ngu', 'tu', 'du', 'nu', 'lu', 'su', 'mu', 'pu', 'bu']
-  },
-  {
-    id: '4',
-    name: 'E',
-    character: 'ᜃᜒ',
-    image: require('@/assets/images/kt-logo.png'),
-    audio: require('@/assets/audio/babe.mp3'),
-    pronunciation: 'e',
-    category: 'Basic Vowel',
-    rarity: 'Common',
-    origin: 'Kapampangan Script',
-    type: 'Modified Vowel',
-    soundDescription: 'Mid front vowel sound',
-    description: 'The vowel "E" in Kulitan script, typically represented by adding an "i" marker to consonants. This mid front vowel is common in Kapampangan and represents the /e/ sound.',
-    uses: [
-      'Mid vowel sounds',
-      'Common in borrowed words',
-      'Syllabic modifications',
-      'Vowel harmony patterns'
-    ],
-    characteristics: [
-      'Modified form using diacritics',
-      'Mid front vowel position',
-      'Common in modern Kapampangan',
-      'Requires vowel marker'
-    ],
-    learningTips: 'This is like the "eh" sound in English. Practice adding the vowel marker to consonants.',
-    writingInstructions: 'Add the appropriate vowel marker to the base consonant form',
-    combinations: ['ke', 'ge', 'nge', 'te', 'de', 'ne', 'le', 'se', 'me', 'pe', 'be']
-  },
-  {
-    id: '5',
-    name: 'O',
-    character: 'ᜃᜓ',
-    image: require('@/assets/images/kt-logo.png'),
-    audio: require('@/assets/audio/babe.mp3'),
-    pronunciation: 'o',
-    category: 'Basic Vowel',
-    rarity: 'Common',
-    origin: 'Kapampangan Script',
-    type: 'Modified Vowel',
-    soundDescription: 'Mid back vowel sound',
-    description: 'The vowel "O" in Kulitan script, represented by adding a "u" marker to consonants. This mid back vowel represents the /o/ sound and is frequently used in Kapampangan.',
-    uses: [
-      'Mid back vowel sounds',
-      'Common in native words',
-      'Syllabic modifications',
-      'Rounded vowel expressions'
-    ],
-    characteristics: [
-      'Modified form using diacritics',
-      'Mid back vowel position',
-      'Rounded vowel quality',
-      'Requires vowel marker'
-    ],
-    learningTips: 'This represents the "oh" sound in English. Practice the rounded lip position when pronouncing.',
-    writingInstructions: 'Add the "u" vowel marker to the base consonant to create the "o" sound',
-    combinations: ['ko', 'go', 'ngo', 'to', 'do', 'no', 'lo', 'so', 'mo', 'po', 'bo']
-  },
-  {
-    id: '6',
     name: 'GA',
     character: 'ᜄ',
     image: require('@/assets/images/kt-logo.png'),
-    audio: require('@/assets/audio/babe.mp3'),
+    audio: require('@/assets/audio/a.mp3'),
     pronunciation: 'ga',
     category: 'Basic Consonant',
     rarity: 'Common',
@@ -195,11 +79,11 @@ export const sampleCharactersData: KulitanCharacter[] = [
     combinations: ['ga', 'gi', 'gu', 'ge', 'go']
   },
   {
-    id: '7',
+    id: '3',
     name: 'KA',
     character: 'ᜃ',
     image: require('@/assets/images/kt-logo.png'),
-    audio: require('@/assets/audio/babe.mp3'),
+    audio: require('@/assets/audio/a.mp3'),
     pronunciation: 'ka',
     category: 'Basic Consonant',
     rarity: 'Common',
@@ -224,11 +108,11 @@ export const sampleCharactersData: KulitanCharacter[] = [
     combinations: ['ka', 'ki', 'ku', 'ke', 'ko']
   },
   {
-    id: '8',
+    id: '4',
     name: 'NGA',
     character: 'ᜅ',
     image: require('@/assets/images/kt-logo.png'),
-    audio: require('@/assets/audio/babe.mp3'),
+    audio: require('@/assets/audio/a.mp3'),
     pronunciation: 'nga',
     category: 'Basic Consonant',
     rarity: 'Common',
@@ -253,11 +137,11 @@ export const sampleCharactersData: KulitanCharacter[] = [
     combinations: ['nga', 'ngi', 'ngu', 'nge', 'ngo']
   },
   {
-    id: '9',
+    id: '5',
     name: 'TA',
     character: 'ᜆ',
     image: require('@/assets/images/kt-logo.png'),
-    audio: require('@/assets/audio/babe.mp3'),
+    audio: require('@/assets/audio/a.mp3'),
     pronunciation: 'ta',
     category: 'Basic Consonant',
     rarity: 'Common',
@@ -282,11 +166,11 @@ export const sampleCharactersData: KulitanCharacter[] = [
     combinations: ['ta', 'ti', 'tu', 'te', 'to']
   },
   {
-    id: '10',
+    id: '6',
     name: 'DA',
     character: 'ᜇ',
     image: require('@/assets/images/kt-logo.png'),
-    audio: require('@/assets/audio/babe.mp3'),
+    audio: require('@/assets/audio/a.mp3'),
     pronunciation: 'da',
     category: 'Basic Consonant',
     rarity: 'Common',
@@ -309,7 +193,2541 @@ export const sampleCharactersData: KulitanCharacter[] = [
     learningTips: 'Voiced "da" sound as in "dad". Note the difference from the voiceless "ta".',
     writingInstructions: 'Practice the specific stroke sequence that distinguishes this from similar characters',
     combinations: ['da', 'di', 'du', 'de', 'do']
-  }
+  },
+  {
+    id: '7',
+    name: 'NA',
+    character: 'ᜈ',
+    image: require('@/assets/images/kt-logo.png'),
+    audio: require('@/assets/audio/a.mp3'),
+    pronunciation: 'na',
+    category: 'Basic Consonant',
+    rarity: 'Common',
+    origin: 'Kapampangan Script',
+    type: 'Consonant-Vowel Combination',
+    soundDescription: 'Voiced alveolar nasal with "a" vowel',
+    description: 'The syllable "NA" in Kulitan script, representing the voiced alveolar nasal /n/ with the vowel /a/. This is a very common character in Kapampangan words.',
+    uses: [
+      'Word formation',
+      'Common syllable structure',
+      'Nasal consonant expressions',
+      'Building block for words'
+    ],
+    characteristics: [
+      'Voiced alveolar nasal',
+      'High frequency character',
+      'Simple stroke pattern',
+      'Foundation for "n" sound family'
+    ],
+    learningTips: 'Simple "na" sound as in "nap". Practice the smooth nasal sound.',
+    writingInstructions: 'Draw the characteristic strokes for the nasal "na" sound',
+    combinations: ['na', 'ni', 'nu', 'ne', 'no']
+  },
+  {
+    id: '8',
+    name: 'LA',
+    character: 'ᜎ',
+    image: require('@/assets/images/kt-logo.png'),
+    audio: require('@/assets/audio/a.mp3'),
+    pronunciation: 'la',
+    category: 'Basic Consonant',
+    rarity: 'Common',
+    origin: 'Kapampangan Script',
+    type: 'Consonant-Vowel Combination',
+    soundDescription: 'Voiced alveolar lateral with "a" vowel',
+    description: 'The syllable "LA" in Kulitan script, representing the voiced alveolar lateral /l/ with the vowel /a/. This character is frequently used in Kapampangan vocabulary.',
+    uses: [
+      'Word formation',
+      'Common in native words',
+      'Lateral consonant expressions',
+      'Building block for syllables'
+    ],
+    characteristics: [
+      'Voiced alveolar lateral',
+      'Distinctive curved form',
+      'Common character',
+      'Base for "l" sound variations'
+    ],
+    learningTips: 'Clear "la" sound as in "lap". Practice the lateral tongue position.',
+    writingInstructions: 'Draw the distinctive curved pattern for the "la" sound',
+    combinations: ['la', 'li', 'lu', 'le', 'lo']
+  },
+  {
+    id: '9',
+    name: 'SA',
+    character: 'ᜐ',
+    image: require('@/assets/images/kt-logo.png'),
+    audio: require('@/assets/audio/a.mp3'),
+    pronunciation: 'sa',
+    category: 'Basic Consonant',
+    rarity: 'Common',
+    origin: 'Kapampangan Script',
+    type: 'Consonant-Vowel Combination',
+    soundDescription: 'Voiceless alveolar fricative with "a" vowel',
+    description: 'The syllable "SA" in Kulitan script, representing the voiceless alveolar fricative /s/ with the vowel /a/. This character appears frequently in Kapampangan text.',
+    uses: [
+      'Word beginnings and middles',
+      'Common syllable structure',
+      'Fricative consonant expressions',
+      'Base for vowel modifications'
+    ],
+    characteristics: [
+      'Voiceless alveolar fricative',
+      'High frequency character',
+      'Clear stroke pattern',
+      'Foundation for "s" sound family'
+    ],
+    learningTips: 'Sharp "sa" sound as in "sap". Practice the fricative pronunciation.',
+    writingInstructions: 'Draw the clean strokes that form the "sa" character',
+    combinations: ['sa', 'si', 'su', 'se', 'so']
+  },
+  {
+    id: '10',
+    name: 'MA',
+    character: 'ᜋ',
+    image: require('@/assets/images/kt-logo.png'),
+    audio: require('@/assets/audio/a.mp3'),
+    pronunciation: 'ma',
+    category: 'Basic Consonant',
+    rarity: 'Common',
+    origin: 'Kapampangan Script',
+    type: 'Consonant-Vowel Combination',
+    soundDescription: 'Voiced bilabial nasal with "a" vowel',
+    description: 'The syllable "MA" in Kulitan script, representing the voiced bilabial nasal /m/ with the vowel /a/. This is one of the most common characters in the script.',
+    uses: [
+      'Word beginnings',
+      'Very common in vocabulary',
+      'Nasal consonant expressions',
+      'Base for vowel modifications'
+    ],
+    characteristics: [
+      'Voiced bilabial nasal',
+      'Extremely high frequency',
+      'Simple, recognizable form',
+      'Foundation for "m" sound family'
+    ],
+    learningTips: 'Basic "ma" sound as in "map". One of the easiest characters to learn.',
+    writingInstructions: 'Practice the simple, clear strokes for this common character',
+    combinations: ['ma', 'mi', 'mu', 'me', 'mo']
+  },
+  {
+    id: '11',
+    name: 'PA',
+    character: 'ᜉ',
+    image: require('@/assets/images/kt-logo.png'),
+    audio: require('@/assets/audio/a.mp3'),
+    pronunciation: 'pa',
+    category: 'Basic Consonant',
+    rarity: 'Common',
+    origin: 'Kapampangan Script',
+    type: 'Consonant-Vowel Combination',
+    soundDescription: 'Voiceless bilabial stop with "a" vowel',
+    description: 'The syllable "PA" in Kulitan script, representing the voiceless bilabial stop /p/ with the vowel /a/. This character is very common in Kapampangan words.',
+    uses: [
+      'Word beginnings',
+      'Common syllable structure',
+      'Building block for words',
+      'Base for vowel modifications'
+    ],
+    characteristics: [
+      'Voiceless bilabial stop',
+      'High frequency character',
+      'Clear, distinct form',
+      'Foundation for "p" sound family'
+    ],
+    learningTips: 'Sharp "pa" sound as in "pat". Practice the bilabial stop.',
+    writingInstructions: 'Draw the distinctive strokes for the "pa" character',
+    combinations: ['pa', 'pi', 'pu', 'pe', 'po']
+  },
+  {
+    id: '12',
+    name: 'BA',
+    character: 'ᜊ',
+    image: require('@/assets/images/kt-logo.png'),
+    audio: require('@/assets/audio/a.mp3'),
+    pronunciation: 'ba',
+    category: 'Basic Consonant',
+    rarity: 'Common',
+    origin: 'Kapampangan Script',
+    type: 'Consonant-Vowel Combination',
+    soundDescription: 'Voiced bilabial stop with "a" vowel',
+    description: 'The syllable "BA" in Kulitan script, representing the voiced bilabial stop /b/ with the vowel /a/. This character appears frequently in Kapampangan vocabulary.',
+    uses: [
+      'Word beginnings and middles',
+      'Common syllable structure',
+      'Voiced consonant expressions',
+      'Base for vowel modifications'
+    ],
+    characteristics: [
+      'Voiced bilabial stop',
+      'High frequency character',
+      'Distinctive stroke pattern',
+      'Foundation for "b" sound family'
+    ],
+    learningTips: 'Voiced "ba" sound as in "bat". Note the difference from voiceless "pa".',
+    writingInstructions: 'Practice the specific strokes that distinguish this from "pa"',
+    combinations: ['ba', 'bi', 'bu', 'be', 'bo']
+  },
+  {
+    id: '13',
+    name: 'I',
+    character: 'ᜁ',
+    image: require('@/assets/images/kt-logo.png'),
+    audio: require('@/assets/audio/a.mp3'),
+    pronunciation: 'i',
+    category: 'Basic Vowel',
+    rarity: 'Common',
+    origin: 'Kapampangan Script',
+    type: 'Independent Vowel',
+    soundDescription: 'Close front vowel sound',
+    description: 'The vowel "I" in Kulitan script, representing the close front vowel sound /i/. This character is essential for forming many Kapampangan words and is often combined with consonants.',
+    uses: [
+      'Beginning of words',
+      'Standalone vowel',
+      'Syllabic combinations',
+      'Modified consonant sounds'
+    ],
+    characteristics: [
+      'Distinctive curved form',
+      'High frequency in text',
+      'Forms basis for "i" vowel combinations',
+      'Essential for proper pronunciation'
+    ],
+    learningTips: 'Remember this represents the "ee" sound in English. Practice distinguishing it from other vowel forms.',
+    writingInstructions: 'Draw the characteristic curved stroke with attention to the distinctive shape',
+    combinations: ['ki', 'gi', 'ngi', 'ti', 'di', 'ni', 'li', 'si', 'mi', 'pi', 'bi']
+  },
+  {
+    id: '14',
+    name: 'GI',
+    character: 'ᜄᜒ',
+    image: require('@/assets/images/kt-logo.png'),
+    audio: require('@/assets/audio/a.mp3'),
+    pronunciation: 'gi',
+    category: 'Basic Consonant',
+    rarity: 'Common',
+    origin: 'Kapampangan Script',
+    type: 'Consonant-Vowel Combination',
+    soundDescription: 'Voiced velar stop with "i" vowel',
+    description: 'The syllable "GI" in Kulitan script, formed by adding the "i" vowel marker to the "ga" character. This represents the voiced velar consonant /g/ with the vowel /i/.',
+    uses: [
+      'Word formation',
+      'Syllabic combinations',
+      'Modified consonant sounds',
+      'Common in vocabulary'
+    ],
+    characteristics: [
+      'Modified "ga" with "i" marker',
+      'Voiced velar consonant',
+      'Requires diacritical mark',
+      'Part of "g" sound family'
+    ],
+    learningTips: 'Hard "g" sound with "ee" vowel, like "geese". Practice adding the vowel marker.',
+    writingInstructions: 'Add the "i" vowel marker to the base "ga" character',
+    combinations: ['ga', 'gi', 'gu', 'ge', 'go']
+  },
+  {
+    id: '15',
+    name: 'KI',
+    character: 'ᜃᜒ',
+    image: require('@/assets/images/kt-logo.png'),
+    audio: require('@/assets/audio/a.mp3'),
+    pronunciation: 'ki',
+    category: 'Basic Consonant',
+    rarity: 'Common',
+    origin: 'Kapampangan Script',
+    type: 'Consonant-Vowel Combination',
+    soundDescription: 'Voiceless velar stop with "i" vowel',
+    description: 'The syllable "KI" in Kulitan script, formed by adding the "i" vowel marker to the "ka" character. This represents the voiceless velar consonant /k/ with the vowel /i/.',
+    uses: [
+      'Word formation',
+      'Common syllable structure',
+      'Modified consonant sounds',
+      'Building block for words'
+    ],
+    characteristics: [
+      'Modified "ka" with "i" marker',
+      'Voiceless velar consonant',
+      'Requires diacritical mark',
+      'Part of "k" sound family'
+    ],
+    learningTips: 'Like "key" but with a shorter vowel sound. Practice the vowel modification.',
+    writingInstructions: 'Add the "i" vowel marker to the base "ka" character',
+    combinations: ['ka', 'ki', 'ku', 'ke', 'ko']
+  },
+  {
+    id: '16',
+    name: 'NGI',
+    character: 'ᜅᜒ',
+    image: require('@/assets/images/kt-logo.png'),
+    audio: require('@/assets/audio/a.mp3'),
+    pronunciation: 'ngi',
+    category: 'Basic Consonant',
+    rarity: 'Common',
+    origin: 'Kapampangan Script',
+    type: 'Consonant-Vowel Combination',
+    soundDescription: 'Voiced velar nasal with "i" vowel',
+    description: 'The syllable "NGI" in Kulitan script, formed by adding the "i" vowel marker to the "nga" character. This represents the voiced velar nasal /ŋ/ with the vowel /i/.',
+    uses: [
+      'Word formation',
+      'Nasal consonant combinations',
+      'Modified consonant sounds',
+      'Syllabic structures'
+    ],
+    characteristics: [
+      'Modified "nga" with "i" marker',
+      'Voiced velar nasal',
+      'Requires diacritical mark',
+      'Part of "ng" sound family'
+    ],
+    learningTips: 'The "ng" sound from "sing" with "ee" vowel. Practice the nasal quality.',
+    writingInstructions: 'Add the "i" vowel marker to the base "nga" character',
+    combinations: ['nga', 'ngi', 'ngu', 'nge', 'ngo']
+  },
+  {
+    id: '17',
+    name: 'TI',
+    character: 'ᜆᜒ',
+    image: require('@/assets/images/kt-logo.png'),
+    audio: require('@/assets/audio/a.mp3'),
+    pronunciation: 'ti',
+    category: 'Basic Consonant',
+    rarity: 'Common',
+    origin: 'Kapampangan Script',
+    type: 'Consonant-Vowel Combination',
+    soundDescription: 'Voiceless alveolar stop with "i" vowel',
+    description: 'The syllable "TI" in Kulitan script, formed by adding the "i" vowel marker to the "ta" character. This represents the voiceless alveolar consonant /t/ with the vowel /i/.',
+    uses: [
+      'Word formation',
+      'Common syllable structure',
+      'Modified consonant sounds',
+      'Building block for words'
+    ],
+    characteristics: [
+      'Modified "ta" with "i" marker',
+      'Voiceless alveolar consonant',
+      'Requires diacritical mark',
+      'Part of "t" sound family'
+    ],
+    learningTips: 'Like "tea" but with a shorter vowel. Practice the clean "t" sound.',
+    writingInstructions: 'Add the "i" vowel marker to the base "ta" character',
+    combinations: ['ta', 'ti', 'tu', 'te', 'to']
+  },
+  {
+    id: '18',
+    name: 'DI',
+    character: 'ᜇᜒ',
+    image: require('@/assets/images/kt-logo.png'),
+    audio: require('@/assets/audio/a.mp3'),
+    pronunciation: 'di',
+    category: 'Basic Consonant',
+    rarity: 'Common',
+    origin: 'Kapampangan Script',
+    type: 'Consonant-Vowel Combination',
+    soundDescription: 'Voiced alveolar stop with "i" vowel',
+    description: 'The syllable "DI" in Kulitan script, formed by adding the "i" vowel marker to the "da" character. This represents the voiced alveolar consonant /d/ with the vowel /i/.',
+    uses: [
+      'Word formation',
+      'Voiced consonant combinations',
+      'Modified consonant sounds',
+      'Syllabic structures'
+    ],
+    characteristics: [
+      'Modified "da" with "i" marker',
+      'Voiced alveolar consonant',
+      'Requires diacritical mark',
+      'Part of "d" sound family'
+    ],
+    learningTips: 'Voiced "dee" sound. Note the difference from voiceless "ti".',
+    writingInstructions: 'Add the "i" vowel marker to the base "da" character',
+    combinations: ['da', 'di', 'du', 'de', 'do']
+  },
+  {
+    id: '19',
+    name: 'NI',
+    character: 'ᜈᜒ',
+    image: require('@/assets/images/kt-logo.png'),
+    audio: require('@/assets/audio/a.mp3'),
+    pronunciation: 'ni',
+    category: 'Basic Consonant',
+    rarity: 'Common',
+    origin: 'Kapampangan Script',
+    type: 'Consonant-Vowel Combination',
+    soundDescription: 'Voiced alveolar nasal with "i" vowel',
+    description: 'The syllable "NI" in Kulitan script, formed by adding the "i" vowel marker to the "na" character. This represents the voiced alveolar nasal /n/ with the vowel /i/.',
+    uses: [
+      'Word formation',
+      'Nasal consonant combinations',
+      'Modified consonant sounds',
+      'Common syllable structure'
+    ],
+    characteristics: [
+      'Modified "na" with "i" marker',
+      'Voiced alveolar nasal',
+      'Requires diacritical mark',
+      'Part of "n" sound family'
+    ],
+    learningTips: 'Simple "nee" sound with nasal quality. Practice the smooth pronunciation.',
+    writingInstructions: 'Add the "i" vowel marker to the base "na" character',
+    combinations: ['na', 'ni', 'nu', 'ne', 'no']
+  },
+  {
+    id: '20',
+    name: 'LI',
+    character: 'ᜎᜒ',
+    image: require('@/assets/images/kt-logo.png'),
+    audio: require('@/assets/audio/a.mp3'),
+    pronunciation: 'li',
+    category: 'Basic Consonant',
+    rarity: 'Common',
+    origin: 'Kapampangan Script',
+    type: 'Consonant-Vowel Combination',
+    soundDescription: 'Voiced alveolar lateral with "i" vowel',
+    description: 'The syllable "LI" in Kulitan script, formed by adding the "i" vowel marker to the "la" character. This represents the voiced alveolar lateral /l/ with the vowel /i/.',
+    uses: [
+      'Word formation',
+      'Lateral consonant combinations',
+      'Modified consonant sounds',
+      'Building block for words'
+    ],
+    characteristics: [
+      'Modified "la" with "i" marker',
+      'Voiced alveolar lateral',
+      'Requires diacritical mark',
+      'Part of "l" sound family'
+    ],
+    learningTips: 'Like "lee" with clear lateral sound. Practice the tongue position.',
+    writingInstructions: 'Add the "i" vowel marker to the base "la" character',
+    combinations: ['la', 'li', 'lu', 'le', 'lo']
+  },
+  {
+    id: '21',
+    name: 'SI',
+    character: 'ᜐᜒ',
+    image: require('@/assets/images/kt-logo.png'),
+    audio: require('@/assets/audio/a.mp3'),
+    pronunciation: 'si',
+    category: 'Basic Consonant',
+    rarity: 'Common',
+    origin: 'Kapampangan Script',
+    type: 'Consonant-Vowel Combination',
+    soundDescription: 'Voiceless alveolar fricative with "i" vowel',
+    description: 'The syllable "SI" in Kulitan script, formed by adding the "i" vowel marker to the "sa" character. This represents the voiceless alveolar fricative /s/ with the vowel /i/.',
+    uses: [
+      'Word formation',
+      'Fricative consonant combinations',
+      'Modified consonant sounds',
+      'Common syllable structure'
+    ],
+    characteristics: [
+      'Modified "sa" with "i" marker',
+      'Voiceless alveolar fricative',
+      'Requires diacritical mark',
+      'Part of "s" sound family'
+    ],
+    learningTips: 'Sharp "see" sound with fricative quality. Practice the clear pronunciation.',
+    writingInstructions: 'Add the "i" vowel marker to the base "sa" character',
+    combinations: ['sa', 'si', 'su', 'se', 'so']
+  },
+  {
+    id: '22',
+    name: 'MI',
+    character: 'ᜋᜒ',
+    image: require('@/assets/images/kt-logo.png'),
+    audio: require('@/assets/audio/a.mp3'),
+    pronunciation: 'mi',
+    category: 'Basic Consonant',
+    rarity: 'Common',
+    origin: 'Kapampangan Script',
+    type: 'Consonant-Vowel Combination',
+    soundDescription: 'Voiced bilabial nasal with "i" vowel',
+    description: 'The syllable "MI" in Kulitan script, combining the bilabial nasal consonant /m/ with the vowel /i/.',
+    uses: [
+      'Beginning of words',
+      'Common in Kapampangan vocabulary',
+      'Part of compound syllables',
+      'Base for further modifications'
+    ],
+    characteristics: [
+      'Bilabial nasal consonant base',
+      'High front vowel',
+      'Smooth pronunciation',
+      'Fundamental CV structure'
+    ],
+    learningTips: 'Pronounce as "mee" with a clear "m" sound followed by the "i" vowel.',
+    writingInstructions: 'Draw the "ma" base character and add the "i" diacritic mark',
+    combinations: ['mi', 'ma', 'mu', 'me', 'mo']
+  },
+   {
+    id: '23',
+    name: 'PI',
+    character: 'ᜉᜒ',
+    image: require('@/assets/images/kt-logo.png'),
+    audio: require('@/assets/audio/a.mp3'),
+    pronunciation: 'pi',
+    category: 'Basic Consonant',
+    rarity: 'Common',
+    origin: 'Kapampangan Script',
+    type: 'Consonant-Vowel Combination',
+    soundDescription: 'Voiceless bilabial stop with "i" vowel',
+    description: 'The syllable "PI" in Kulitan script, combining the voiceless bilabial consonant /p/ with the vowel /i/.',
+    uses: [
+      'Beginning of syllables',
+      'Word formation',
+      'Common in names',
+      'Base for vowel modifications'
+    ],
+    characteristics: [
+      'Voiceless bilabial consonant',
+      'High front vowel',
+      'Clear articulation',
+      'Basic CV pattern'
+    ],
+    learningTips: 'Pronounce like "pee" with a sharp "p" sound.',
+    writingInstructions: 'Write the "pa" base form and add the "i" vowel marker',
+    combinations: ['pi', 'pa', 'pu', 'pe', 'po']
+  },
+  {
+    id: '24',
+    name: 'BI',
+    character: 'ᜊᜒ',
+    image: require('@/assets/images/kt-logo.png'),
+    audio: require('@/assets/audio/a.mp3'),
+    pronunciation: 'bi',
+    category: 'Basic Consonant',
+    rarity: 'Common',
+    origin: 'Kapampangan Script',
+    type: 'Consonant-Vowel Combination',
+    soundDescription: 'Voiced bilabial stop with "i" vowel',
+    description: 'The syllable "BI" in Kulitan script, combining the voiced bilabial consonant /b/ with the vowel /i/.',
+    uses: [
+      'Word beginnings',
+      'Syllable formation',
+      'Common in vocabulary',
+      'Base for modifications'
+    ],
+    characteristics: [
+      'Voiced bilabial consonant',
+      'High front vowel',
+      'Soft pronunciation',
+      'Fundamental structure'
+    ],
+    learningTips: 'Pronounce as "bee" with a soft "b" sound.',
+    writingInstructions: 'Form the "ba" character and add the "i" diacritic',
+    combinations: ['bi', 'ba', 'bu', 'be', 'bo']
+  },
+{
+    id: '25',
+    name: 'U',
+    character: 'ᜂ',
+    image: require('@/assets/images/kt-logo.png'),
+    audio: require('@/assets/audio/a.mp3'),
+    pronunciation: 'u',
+    category: 'Basic Vowel',
+    rarity: 'Common',
+    origin: 'Kapampangan Script',
+    type: 'Independent Vowel',
+    soundDescription: 'Close back rounded vowel sound',
+    description: 'The basic vowel "U" in Kulitan script. This represents the close back rounded vowel sound /u/ and is one of the fundamental vowel characters.',
+    uses: [
+      'Standalone vowel',
+      'Beginning of words',
+      'Part of diphthongs',
+      'Base for combinations'
+    ],
+    characteristics: [
+      'Back rounded vowel',
+      'Independent character',
+      'High frequency usage',
+      'Simple form'
+    ],
+    learningTips: 'Pronounce like "oo" in "moon". Essential vowel sound in Kulitan.',
+    writingInstructions: 'Draw the characteristic curved form for the "u" vowel',
+    combinations: ['ku', 'gu', 'ngu', 'tu', 'du', 'nu', 'lu', 'su', 'mu', 'pu', 'bu']
+  },
+  {
+    id: '26',
+    name: 'GU',
+    character: 'ᜄᜓ',
+    image: require('@/assets/images/kt-logo.png'),
+    audio: require('@/assets/audio/a.mp3'),
+    pronunciation: 'gu',
+    category: 'Basic Consonant',
+    rarity: 'Common',
+    origin: 'Kapampangan Script',
+    type: 'Consonant-Vowel Combination',
+    soundDescription: 'Voiced velar stop with "u" vowel',
+    description: 'The syllable "GU" in Kulitan script, combining the voiced velar consonant /g/ with the vowel /u/.',
+    uses: [
+      'Beginning of syllables',
+      'Word formation',
+      'Common combinations',
+      'Base for modifications'
+    ],
+    characteristics: [
+      'Voiced velar consonant',
+      'Back rounded vowel',
+      'Strong articulation',
+      'CV combination'
+    ],
+    learningTips: 'Pronounce like "goo" with a hard "g" sound.',
+    writingInstructions: 'Write the "ga" base and add the "u" vowel marker',
+    combinations: ['gu', 'ga', 'gi', 'ge', 'go']
+  },
+{
+    id: '27',
+    name: 'KU',
+    character: 'ᜃᜓ',
+    image: require('@/assets/images/kt-logo.png'),
+    audio: require('@/assets/audio/a.mp3'),
+    pronunciation: 'ku',
+    category: 'Basic Consonant',
+    rarity: 'Common',
+    origin: 'Kapampangan Script',
+    type: 'Consonant-Vowel Combination',
+    soundDescription: 'Voiceless velar stop with "u" vowel',
+    description: 'The syllable "KU" in Kulitan script, combining the voiceless velar consonant /k/ with the vowel /u/.',
+    uses: [
+      'Word beginnings',
+      'Syllable formation',
+      'Common in names',
+      'Base for diacritics'
+    ],
+    characteristics: [
+      'Voiceless velar consonant',
+      'Back rounded vowel',
+      'Clear pronunciation',
+      'Basic structure'
+    ],
+    learningTips: 'Pronounce like "coo" with a sharp "k" sound.',
+    writingInstructions: 'Form the "ka" character with the "u" vowel modification',
+    combinations: ['ku', 'ka', 'ki', 'ke', 'ko']
+  },
+  {
+    id: '28',
+    name: 'NGU',
+    character: 'ᜅᜓ',
+    image: require('@/assets/images/kt-logo.png'),
+    audio: require('@/assets/audio/a.mp3'),
+    pronunciation: 'ngu',
+    category: 'Basic Consonant',
+    rarity: 'Common',
+    origin: 'Kapampangan Script',
+    type: 'Consonant-Vowel Combination',
+    soundDescription: 'Voiced velar nasal with "u" vowel',
+    description: 'The syllable "NGU" in Kulitan script, combining the voiced velar nasal consonant /ŋ/ with the vowel /u/.',
+    uses: [
+      'Word formation',
+      'Syllable combinations',
+      'Nasal sound representation',
+      'Base for modifications'
+    ],
+    characteristics: [
+      'Velar nasal consonant',
+      'Back rounded vowel',
+      'Nasal articulation',
+      'Unique sound combination'
+    ],
+    learningTips: 'The "ng" sound as in "sing" followed by "oo". Practice the nasal quality.',
+    writingInstructions: 'Write the "nga" base character with the "u" vowel marker',
+    combinations: ['ngu', 'nga', 'ngi', 'nge', 'ngo']
+  },
+  {
+    id: '29',
+    name: 'TU',
+    character: 'ᜆᜓ',
+    image: require('@/assets/images/kt-logo.png'),
+    audio: require('@/assets/audio/a.mp3'),
+    pronunciation: 'tu',
+    category: 'Basic Consonant',
+    rarity: 'Common',
+    origin: 'Kapampangan Script',
+    type: 'Consonant-Vowel Combination',
+    soundDescription: 'Voiceless alveolar stop with "u" vowel',
+    description: 'The syllable "TU" in Kulitan script, combining the voiceless alveolar consonant /t/ with the vowel /u/.',
+    uses: [
+      'Beginning of words',
+      'Syllable construction',
+      'Common combinations',
+      'Base for variations'
+    ],
+    characteristics: [
+      'Voiceless alveolar consonant',
+      'Back rounded vowel',
+      'Sharp articulation',
+      'CV pattern'
+    ],
+    learningTips: 'Pronounce like "too" with a clear "t" sound.',
+    writingInstructions: 'Form the "ta" character and add the "u" vowel modification',
+    combinations: ['tu', 'ta', 'ti', 'te', 'to']
+  },
+  {
+    id: '30',
+    name: 'DU',
+    character: 'ᜇᜓ',
+    image: require('@/assets/images/kt-logo.png'),
+    audio: require('@/assets/audio/a.mp3'),
+    pronunciation: 'du',
+    category: 'Basic Consonant',
+    rarity: 'Common',
+    origin: 'Kapampangan Script',
+    type: 'Consonant-Vowel Combination',
+    soundDescription: 'Voiced alveolar stop with "u" vowel',
+    description: 'The syllable "DU" in Kulitan script, combining the voiced alveolar consonant /d/ with the vowel /u/.',
+    uses: [
+      'Word formation',
+      'Syllable building',
+      'Common in vocabulary',
+      'Base for modifications'
+    ],
+    characteristics: [
+      'Voiced alveolar consonant',
+      'Back rounded vowel',
+      'Soft articulation',
+      'Basic CV structure'
+    ],
+    learningTips: 'Pronounce like "do" but with the "oo" vowel sound.',
+    writingInstructions: 'Write the "da" base character with the "u" vowel marker',
+    combinations: ['du', 'da', 'di', 'de', 'do']
+  },
+ {
+    id: '31',
+    name: 'NU',
+    character: 'ᜈᜓ',
+    image: require('@/assets/images/kt-logo.png'),
+    audio: require('@/assets/audio/a.mp3'),
+    pronunciation: 'nu',
+    category: 'Basic Consonant',
+    rarity: 'Common',
+    origin: 'Kapampangan Script',
+    type: 'Consonant-Vowel Combination',
+    soundDescription: 'Voiced alveolar nasal with "u" vowel',
+    description: 'The syllable "NU" in Kulitan script, combining the voiced alveolar nasal consonant /n/ with the vowel /u/.',
+    uses: [
+      'Beginning of syllables',
+      'Word construction',
+      'Nasal sound combinations',
+      'Base for variations'
+    ],
+    characteristics: [
+      'Alveolar nasal consonant',
+      'Back rounded vowel',
+      'Nasal quality',
+      'Smooth transition'
+    ],
+    learningTips: 'Pronounce like "new" but with the "oo" sound. Focus on the nasal quality.',
+    writingInstructions: 'Form the "na" character and add the "u" vowel modification',
+    combinations: ['nu', 'na', 'ni', 'ne', 'no']
+  },
+  {
+    id: '32',
+    name: 'LU',
+    character: 'ᜎᜓ',
+    image: require('@/assets/images/kt-logo.png'),
+    audio: require('@/assets/audio/a.mp3'),
+    pronunciation: 'lu',
+    category: 'Basic Consonant',
+    rarity: 'Common',
+    origin: 'Kapampangan Script',
+    type: 'Consonant-Vowel Combination',
+    soundDescription: 'Voiced alveolar lateral with "u" vowel',
+    description: 'The syllable "LU" in Kulitan script, combining the voiced alveolar lateral consonant /l/ with the vowel /u/.',
+    uses: [
+      'Word beginnings',
+      'Syllable formation',
+      'Common combinations',
+      'Base for modifications'
+    ],
+    characteristics: [
+      'Alveolar lateral consonant',
+      'Back rounded vowel',
+      'Liquid sound quality',
+      'Smooth articulation'
+    ],
+    learningTips: 'Pronounce like "loo" with a clear "l" sound.',
+    writingInstructions: 'Write the "la" base character with the "u" vowel marker',
+    combinations: ['lu', 'la', 'li', 'le', 'lo']
+  },
+  {
+    id: '33',
+    name: 'SU',
+    character: 'ᜐᜓ',
+    image: require('@/assets/images/kt-logo.png'),
+    audio: require('@/assets/audio/a.mp3'),
+    pronunciation: 'su',
+    category: 'Basic Consonant',
+    rarity: 'Common',
+    origin: 'Kapampangan Script',
+    type: 'Consonant-Vowel Combination',
+    soundDescription: 'Voiceless alveolar fricative with "e" vowel',
+    description: 'The syllable "SE" in Kulitan script, combining the voiceless alveolar fricative consonant /s/ with the vowel /e/.',
+    uses: [
+      'Beginning of words',
+      'Syllable construction',
+      'Common in vocabulary',
+      'Base for variations'
+    ],
+    characteristics: [
+      'Voiceless fricative consonant',
+      'Mid front vowel',
+      'Sibilant quality',
+      'CV combination'
+    ],
+    learningTips: 'Pronounce like "set" but just the "se" sound.',
+    writingInstructions: 'Form the "sa" character and add the "e" vowel modification',
+    combinations: ['se', 'sa', 'si', 'su', 'so']
+  },
+  {
+  id: '34',
+  name: 'MU',
+  character: 'ᜋᜓ',
+  image: require('@/assets/images/kt-logo.png'),
+  audio: require('@/assets/audio/a.mp3'),
+  pronunciation: 'mu',
+  category: 'Basic Consonant',
+  rarity: 'Common',
+  origin: 'Kapampangan Script',
+  type: 'Consonant-Vowel Combination',
+  soundDescription: 'Bilabial nasal with "u" vowel',
+  description: 'The syllable "MU" in Kulitan script, combining the bilabial nasal consonant /m/ with the vowel /u/.',
+  uses: [
+    'Beginning of words',
+    'Syllable construction',
+    'Common in vocabulary',
+    'Base for variations'
+  ],
+  characteristics: [
+    'Voiced nasal consonant',
+    'High back vowel',
+    'Bilabial articulation',
+    'CV combination'
+  ],
+  learningTips: 'Pronounce like "moon" but just the "mu" sound.',
+  writingInstructions: 'Form the "ma" character and add the "u" vowel modification',
+  combinations: ['mu', 'ma', 'mi', 'me', 'mo']
+},
+{
+  id: '35',
+  name: 'PU',
+  character: 'ᜉᜓ',
+  image: require('@/assets/images/kt-logo.png'),
+  audio: require('@/assets/audio/a.mp3'),
+  pronunciation: 'pu',
+  category: 'Basic Consonant',
+  rarity: 'Common',
+  origin: 'Kapampangan Script',
+  type: 'Consonant-Vowel Combination',
+  soundDescription: 'Voiceless bilabial plosive with "u" vowel',
+  description: 'The syllable "PU" in Kulitan script, combining the voiceless bilabial plosive consonant /p/ with the vowel /u/.',
+  uses: [
+    'Beginning of words',
+    'Syllable construction',
+    'Common in vocabulary',
+    'Base for variations'
+  ],
+  characteristics: [
+    'Voiceless plosive consonant',
+    'High back vowel',
+    'Bilabial articulation',
+    'CV combination'
+  ],
+  learningTips: 'Pronounce like "put" but just the "pu" sound.',
+  writingInstructions: 'Form the "pa" character and add the "u" vowel modification',
+  combinations: ['pu', 'pa', 'pi', 'pe', 'po']
+},
+{
+  id: '36',
+  name: 'BU',
+  character: 'ᜊᜓ',
+  image: require('@/assets/images/kt-logo.png'),
+  audio: require('@/assets/audio/a.mp3'),
+  pronunciation: 'bu',
+  category: 'Basic Consonant',
+  rarity: 'Common',
+  origin: 'Kapampangan Script',
+  type: 'Consonant-Vowel Combination',
+  soundDescription: 'Voiced bilabial plosive with "u" vowel',
+  description: 'The syllable "BU" in Kulitan script, combining the voiced bilabial plosive consonant /b/ with the vowel /u/.',
+  uses: [
+    'Beginning of words',
+    'Syllable construction',
+    'Common in vocabulary',
+    'Base for variations'
+  ],
+  characteristics: [
+    'Voiced plosive consonant',
+    'High back vowel',
+    'Bilabial articulation',
+    'CV combination'
+  ],
+  learningTips: 'Pronounce like "book" but just the "bu" sound.',
+  writingInstructions: 'Form the "ba" character and add the "u" vowel modification',
+  combinations: ['bu', 'ba', 'bi', 'be', 'bo']
+},
+{
+  id: '37',
+  name: 'E',
+  character: 'ᜁ',
+  image: require('@/assets/images/kt-logo.png'),
+  audio: require('@/assets/audio/a.mp3'),
+  pronunciation: 'e',
+  category: 'Vowel',
+  rarity: 'Common',
+  origin: 'Kapampangan Script',
+  type: 'Pure Vowel',
+  soundDescription: 'Mid front vowel',
+  description: 'The vowel "E" in Kulitan script, representing the mid front vowel /e/.',
+  uses: [
+    'Standalone vowel',
+    'Word formation',
+    'Vowel modification',
+    'Syllable nucleus'
+  ],
+  characteristics: [
+    'Mid vowel',
+    'Front articulation',
+    'Unrounded vowel',
+    'Pure vowel sound'
+  ],
+  learningTips: 'Pronounce like the "e" in "pet" or "bed".',
+  writingInstructions: 'Write as a standalone vowel character',
+  combinations: ['e', 'ea', 'ei', 'eu', 'eo']
+},
+{
+  id: '38',
+  name: 'GE',
+  character: 'ᜄᜒ',
+  image: require('@/assets/images/kt-logo.png'),
+  audio: require('@/assets/audio/a.mp3'),
+  pronunciation: 'ge',
+  category: 'Basic Consonant',
+  rarity: 'Common',
+  origin: 'Kapampangan Script',
+  type: 'Consonant-Vowel Combination',
+  soundDescription: 'Voiced velar plosive with "e" vowel',
+  description: 'The syllable "GE" in Kulitan script, combining the voiced velar plosive consonant /g/ with the vowel /e/.',
+  uses: [
+    'Beginning of words',
+    'Syllable construction',
+    'Common in vocabulary',
+    'Base for variations'
+  ],
+  characteristics: [
+    'Voiced plosive consonant',
+    'Mid front vowel',
+    'Velar articulation',
+    'CV combination'
+  ],
+  learningTips: 'Pronounce like "get" but just the "ge" sound.',
+  writingInstructions: 'Form the "ga" character and add the "e" vowel modification',
+  combinations: ['ge', 'ga', 'gi', 'gu', 'go']
+},
+{
+  id: '39',
+  name: 'KE',
+  character: 'ᜃᜒ',
+  image: require('@/assets/images/kt-logo.png'),
+  audio: require('@/assets/audio/a.mp3'),
+  pronunciation: 'ke',
+  category: 'Basic Consonant',
+  rarity: 'Common',
+  origin: 'Kapampangan Script',
+  type: 'Consonant-Vowel Combination',
+  soundDescription: 'Voiceless velar plosive with "e" vowel',
+  description: 'The syllable "KE" in Kulitan script, combining the voiceless velar plosive consonant /k/ with the vowel /e/.',
+  uses: [
+    'Beginning of words',
+    'Syllable construction',
+    'Common in vocabulary',
+    'Base for variations'
+  ],
+  characteristics: [
+    'Voiceless plosive consonant',
+    'Mid front vowel',
+    'Velar articulation',
+    'CV combination'
+  ],
+  learningTips: 'Pronounce like "kept" but just the "ke" sound.',
+  writingInstructions: 'Form the "ka" character and add the "e" vowel modification',
+  combinations: ['ke', 'ka', 'ki', 'ku', 'ko']
+},
+{
+  id: '40',
+  name: 'NGE',
+  character: 'ᜅᜒ',
+  image: require('@/assets/images/kt-logo.png'),
+  audio: require('@/assets/audio/a.mp3'),
+  pronunciation: 'nge',
+  category: 'Basic Consonant',
+  rarity: 'Common',
+  origin: 'Kapampangan Script',
+  type: 'Consonant-Vowel Combination',
+  soundDescription: 'Voiced velar nasal with "e" vowel',
+  description: 'The syllable "NGE" in Kulitan script, combining the voiced velar nasal consonant /ŋ/ with the vowel /e/.',
+  uses: [
+    'Beginning of words',
+    'Syllable construction',
+    'Common in vocabulary',
+    'Base for variations'
+  ],
+  characteristics: [
+    'Voiced nasal consonant',
+    'Mid front vowel',
+    'Velar articulation',
+    'CV combination'
+  ],
+  learningTips: 'Pronounce like the "ng" in "sing" followed by "e".',
+  writingInstructions: 'Form the "nga" character and add the "e" vowel modification',
+  combinations: ['nge', 'nga', 'ngi', 'ngu', 'ngo']
+},
+{
+  id: '41',
+  name: 'TE',
+  character: 'ᜆᜒ',
+  image: require('@/assets/images/kt-logo.png'),
+  audio: require('@/assets/audio/a.mp3'),
+  pronunciation: 'te',
+  category: 'Basic Consonant',
+  rarity: 'Common',
+  origin: 'Kapampangan Script',
+  type: 'Consonant-Vowel Combination',
+  soundDescription: 'Voiceless alveolar plosive with "e" vowel',
+  description: 'The syllable "TE" in Kulitan script, combining the voiceless alveolar plosive consonant /t/ with the vowel /e/.',
+  uses: [
+    'Beginning of words',
+    'Syllable construction',
+    'Common in vocabulary',
+    'Base for variations'
+  ],
+  characteristics: [
+    'Voiceless plosive consonant',
+    'Mid front vowel',
+    'Alveolar articulation',
+    'CV combination'
+  ],
+  learningTips: 'Pronounce like "ten" but just the "te" sound.',
+  writingInstructions: 'Form the "ta" character and add the "e" vowel modification',
+  combinations: ['te', 'ta', 'ti', 'tu', 'to']
+},
+{
+  id: '42',
+  name: 'DE',
+  character: 'ᜇᜒ',
+  image: require('@/assets/images/kt-logo.png'),
+  audio: require('@/assets/audio/a.mp3'),
+  pronunciation: 'de',
+  category: 'Basic Consonant',
+  rarity: 'Common',
+  origin: 'Kapampangan Script',
+  type: 'Consonant-Vowel Combination',
+  soundDescription: 'Voiced alveolar plosive with "e" vowel',
+  description: 'The syllable "DE" in Kulitan script, combining the voiced alveolar plosive consonant /d/ with the vowel /e/.',
+  uses: [
+    'Beginning of words',
+    'Syllable construction',
+    'Common in vocabulary',
+    'Base for variations'
+  ],
+  characteristics: [
+    'Voiced plosive consonant',
+    'Mid front vowel',
+    'Alveolar articulation',
+    'CV combination'
+  ],
+  learningTips: 'Pronounce like "den" but just the "de" sound.',
+  writingInstructions: 'Form the "da" character and add the "e" vowel modification',
+  combinations: ['de', 'da', 'di', 'du', 'do']
+},
+{
+  id: '43',
+  name: 'NE',
+  character: 'ᜈᜒ',
+  image: require('@/assets/images/kt-logo.png'),
+  audio: require('@/assets/audio/a.mp3'),
+  pronunciation: 'ne',
+  category: 'Basic Consonant',
+  rarity: 'Common',
+  origin: 'Kapampangan Script',
+  type: 'Consonant-Vowel Combination',
+  soundDescription: 'Voiced alveolar nasal with "e" vowel',
+  description: 'The syllable "NE" in Kulitan script, combining the voiced alveolar nasal consonant /n/ with the vowel /e/.',
+  uses: [
+    'Beginning of words',
+    'Syllable construction',
+    'Common in vocabulary',
+    'Base for variations'
+  ],
+  characteristics: [
+    'Voiced nasal consonant',
+    'Mid front vowel',
+    'Alveolar articulation',
+    'CV combination'
+  ],
+  learningTips: 'Pronounce like "net" but just the "ne" sound.',
+  writingInstructions: 'Form the "na" character and add the "e" vowel modification',
+  combinations: ['ne', 'na', 'ni', 'nu', 'no']
+},
+{
+  id: '44',
+  name: 'LE',
+  character: 'ᜎᜒ',
+  image: require('@/assets/images/kt-logo.png'),
+  audio: require('@/assets/audio/a.mp3'),
+  pronunciation: 'le',
+  category: 'Basic Consonant',
+  rarity: 'Common',
+  origin: 'Kapampangan Script',
+  type: 'Consonant-Vowel Combination',
+  soundDescription: 'Voiced alveolar lateral approximant with "e" vowel',
+  description: 'The syllable "LE" in Kulitan script, combining the voiced alveolar lateral approximant consonant /l/ with the vowel /e/.',
+  uses: [
+    'Beginning of words',
+    'Syllable construction',
+    'Common in vocabulary',
+    'Base for variations'
+  ],
+  characteristics: [
+    'Voiced lateral consonant',
+    'Mid front vowel',
+    'Alveolar articulation',
+    'CV combination'
+  ],
+  learningTips: 'Pronounce like "let" but just the "le" sound.',
+  writingInstructions: 'Form the "la" character and add the "e" vowel modification',
+  combinations: ['le', 'la', 'li', 'lu', 'lo']
+},
+{
+  id: '45',
+  name: 'SE',
+  character: 'ᜐᜒ',
+  image: require('@/assets/images/kt-logo.png'),
+  audio: require('@/assets/audio/a.mp3'),
+  pronunciation: 'se',
+  category: 'Basic Consonant',
+  rarity: 'Common',
+  origin: 'Kapampangan Script',
+  type: 'Consonant-Vowel Combination',
+  soundDescription: 'Voiceless alveolar fricative with "e" vowel',
+  description: 'The syllable "SE" in Kulitan script, combining the voiceless alveolar fricative consonant /s/ with the vowel /e/.',
+  uses: [
+    'Beginning of words',
+    'Syllable construction',
+    'Common in vocabulary',
+    'Base for variations'
+  ],
+  characteristics: [
+    'Voiceless fricative consonant',
+    'Mid front vowel',
+    'Sibilant quality',
+    'CV combination'
+  ],
+  learningTips: 'Pronounce like "set" but just the "se" sound.',
+  writingInstructions: 'Form the "sa" character and add the "e" vowel modification',
+  combinations: ['se', 'sa', 'si', 'su', 'so']
+},
+{
+  id: '46',
+  name: 'ME',
+  character: 'ᜋᜒ',
+  image: require('@/assets/images/kt-logo.png'),
+  audio: require('@/assets/audio/a.mp3'),
+  pronunciation: 'me',
+  category: 'Basic Consonant',
+  rarity: 'Common',
+  origin: 'Kapampangan Script',
+  type: 'Consonant-Vowel Combination',
+  soundDescription: 'Bilabial nasal with "e" vowel',
+  description: 'The syllable "ME" in Kulitan script, combining the bilabial nasal consonant /m/ with the vowel /e/.',
+  uses: [
+    'Beginning of words',
+    'Syllable construction',
+    'Common in vocabulary',
+    'Base for variations'
+  ],
+  characteristics: [
+    'Voiced nasal consonant',
+    'Mid front vowel',
+    'Bilabial articulation',
+    'CV combination'
+  ],
+  learningTips: 'Pronounce like "met" but just the "me" sound.',
+  writingInstructions: 'Form the "ma" character and add the "e" vowel modification',
+  combinations: ['me', 'ma', 'mi', 'mu', 'mo']
+},
+{
+  id: '47',
+  name: 'PE',
+  character: 'ᜉᜒ',
+  image: require('@/assets/images/kt-logo.png'),
+  audio: require('@/assets/audio/a.mp3'),
+  pronunciation: 'pe',
+  category: 'Basic Consonant',
+  rarity: 'Common',
+  origin: 'Kapampangan Script',
+  type: 'Consonant-Vowel Combination',
+  soundDescription: 'Voiceless bilabial plosive with "e" vowel',
+  description: 'The syllable "PE" in Kulitan script, combining the voiceless bilabial plosive consonant /p/ with the vowel /e/.',
+  uses: [
+    'Beginning of words',
+    'Syllable construction',
+    'Common in vocabulary',
+    'Base for variations'
+  ],
+  characteristics: [
+    'Voiceless plosive consonant',
+    'Mid front vowel',
+    'Bilabial articulation',
+    'CV combination'
+  ],
+  learningTips: 'Pronounce like "pet" but just the "pe" sound.',
+  writingInstructions: 'Form the "pa" character and add the "e" vowel modification',
+  combinations: ['pe', 'pa', 'pi', 'pu', 'po']
+},
+{
+  id: '48',
+  name: 'BE',
+  character: 'ᜊᜒ',
+  image: require('@/assets/images/kt-logo.png'),
+  audio: require('@/assets/audio/a.mp3'),
+  pronunciation: 'be',
+  category: 'Basic Consonant',
+  rarity: 'Common',
+  origin: 'Kapampangan Script',
+  type: 'Consonant-Vowel Combination',
+  soundDescription: 'Voiced bilabial plosive with "e" vowel',
+  description: 'The syllable "BE" in Kulitan script, combining the voiced bilabial plosive consonant /b/ with the vowel /e/.',
+  uses: [
+    'Beginning of words',
+    'Syllable construction',
+    'Common in vocabulary',
+    'Base for variations'
+  ],
+  characteristics: [
+    'Voiced plosive consonant',
+    'Mid front vowel',
+    'Bilabial articulation',
+    'CV combination'
+  ],
+  learningTips: 'Pronounce like "bet" but just the "be" sound.',
+  writingInstructions: 'Form the "ba" character and add the "e" vowel modification',
+  combinations: ['be', 'ba', 'bi', 'bu', 'bo']
+},
+{
+  id: '49',
+  name: 'O',
+  character: 'ᜂ',
+  image: require('@/assets/images/kt-logo.png'),
+  audio: require('@/assets/audio/a.mp3'),
+  pronunciation: 'o',
+  category: 'Pure Vowel',
+  rarity: 'Common',
+  origin: 'Kapampangan Script',
+  type: 'Vowel',
+  soundDescription: 'Mid back rounded vowel',
+  description: 'The vowel "O" in Kulitan script, representing the mid back rounded vowel /o/.',
+  uses: [
+    'Standalone vowel',
+    'Word formation',
+    'Vowel modification',
+    'Common in exclamations'
+  ],
+  characteristics: [
+    'Mid back vowel',
+    'Rounded lips',
+    'Pure vowel sound',
+    'Standalone character'
+  ],
+  learningTips: 'Pronounce like the "o" in "boat" but shorter.',
+  writingInstructions: 'Single stroke forming an oval shape',
+  combinations: ['o', 'bo', 'ko', 'go', 'mo']
+},
+{
+  id: '50',
+  name: 'GO',
+  character: 'ᜄᜓ',
+  image: require('@/assets/images/kt-logo.png'),
+  audio: require('@/assets/audio/a.mp3'),
+  pronunciation: 'go',
+  category: 'Basic Consonant',
+  rarity: 'Common',
+  origin: 'Kapampangan Script',
+  type: 'Consonant-Vowel Combination',
+  soundDescription: 'Voiced velar plosive with "o" vowel',
+  description: 'The syllable "GO" in Kulitan script, combining the voiced velar plosive consonant /g/ with the vowel /o/.',
+  uses: [
+    'Beginning of words',
+    'Syllable construction',
+    'Action words',
+    'Direction indicators'
+  ],
+  characteristics: [
+    'Voiced plosive consonant',
+    'Mid back rounded vowel',
+    'Velar articulation',
+    'CV combination'
+  ],
+  learningTips: 'Pronounce like "go" in English.',
+  writingInstructions: 'Form the "ga" character and add the "o" vowel modification',
+  combinations: ['go', 'ga', 'gi', 'gu', 'ge']
+},
+{
+  id: '51',
+  name: 'KO',
+  character: 'ᜃᜓ',
+  image: require('@/assets/images/kt-logo.png'),
+  audio: require('@/assets/audio/a.mp3'),
+  pronunciation: 'ko',
+  category: 'Basic Consonant',
+  rarity: 'Very Common',
+  origin: 'Kapampangan Script',
+  type: 'Consonant-Vowel Combination',
+  soundDescription: 'Voiceless velar plosive with "o" vowel',
+  description: 'The syllable "KO" in Kulitan script, combining the voiceless velar plosive consonant /k/ with the vowel /o/.',
+  uses: [
+    'Pronoun usage',
+    'Possession indicator',
+    'Common in sentences',
+    'Personal reference'
+  ],
+  characteristics: [
+    'Voiceless plosive consonant',
+    'Mid back rounded vowel',
+    'Velar articulation',
+    'Frequent in speech'
+  ],
+  learningTips: 'Pronounce like "core" but just the "ko" sound.',
+  writingInstructions: 'Form the "ka" character and add the "o" vowel modification',
+  combinations: ['ko', 'ka', 'ki', 'ku', 'ke']
+},
+{
+  id: '52',
+  name: 'NGO',
+  character: 'ᜅᜓ',
+  image: require('@/assets/images/kt-logo.png'),
+  audio: require('@/assets/audio/a.mp3'),
+  pronunciation: 'ngo',
+  category: 'Basic Consonant',
+  rarity: 'Common',
+  origin: 'Kapampangan Script',
+  type: 'Consonant-Vowel Combination',
+  soundDescription: 'Voiced velar nasal with "o" vowel',
+  description: 'The syllable "NGO" in Kulitan script, combining the voiced velar nasal consonant /ŋ/ with the vowel /o/.',
+  uses: [
+    'Word formation',
+    'Syllable construction',
+    'Common in nouns',
+    'Linking syllable'
+  ],
+  characteristics: [
+    'Voiced nasal consonant',
+    'Mid back rounded vowel',
+    'Velar articulation',
+    'Nasal airflow'
+  ],
+  learningTips: 'Pronounce like "sing" + "o" but start with the "ng" sound.',
+  writingInstructions: 'Form the "nga" character and add the "o" vowel modification',
+  combinations: ['ngo', 'nga', 'ngi', 'ngu', 'nge']
+},
+{
+  id: '53',
+  name: 'TO',
+  character: 'ᜆᜓ',
+  image: require('@/assets/images/kt-logo.png'),
+  audio: require('@/assets/audio/a.mp3'),
+  pronunciation: 'to',
+  category: 'Basic Consonant',
+  rarity: 'Very Common',
+  origin: 'Kapampangan Script',
+  type: 'Consonant-Vowel Combination',
+  soundDescription: 'Voiceless alveolar plosive with "o" vowel',
+  description: 'The syllable "TO" in Kulitan script, combining the voiceless alveolar plosive consonant /t/ with the vowel /o/.',
+  uses: [
+    'Preposition usage',
+    'Direction marker',
+    'Common connector',
+    'Sentence structure'
+  ],
+  characteristics: [
+    'Voiceless plosive consonant',
+    'Mid back rounded vowel',
+    'Alveolar articulation',
+    'High frequency usage'
+  ],
+  learningTips: 'Pronounce like "toe" but shorter.',
+  writingInstructions: 'Form the "ta" character and add the "o" vowel modification',
+  combinations: ['to', 'ta', 'ti', 'tu', 'te']
+},
+{
+  id: '54',
+  name: 'DO',
+  character: 'ᜇᜓ',
+  image: require('@/assets/images/kt-logo.png'),
+  audio: require('@/assets/audio/a.mp3'),
+  pronunciation: 'do',
+  category: 'Basic Consonant',
+  rarity: 'Common',
+  origin: 'Kapampangan Script',
+  type: 'Consonant-Vowel Combination',
+  soundDescription: 'Voiced alveolar plosive with "o" vowel',
+  description: 'The syllable "DO" in Kulitan script, combining the voiced alveolar plosive consonant /d/ with the vowel /o/.',
+  uses: [
+    'Action indicator',
+    'Verb formation',
+    'Common in commands',
+    'Syllable building'
+  ],
+  characteristics: [
+    'Voiced plosive consonant',
+    'Mid back rounded vowel',
+    'Alveolar articulation',
+    'CV combination'
+  ],
+  learningTips: 'Pronounce like "dough" but shorter.',
+  writingInstructions: 'Form the "da" character and add the "o" vowel modification',
+  combinations: ['do', 'da', 'di', 'du', 'de']
+},
+{
+  id: '55',
+  name: 'NO',
+  character: 'ᜈᜓ',
+  image: require('@/assets/images/kt-logo.png'),
+  audio: require('@/assets/audio/a.mp3'),
+  pronunciation: 'no',
+  category: 'Basic Consonant',
+  rarity: 'Very Common',
+  origin: 'Kapampangan Script',
+  type: 'Consonant-Vowel Combination',
+  soundDescription: 'Voiced alveolar nasal with "o" vowel',
+  description: 'The syllable "NO" in Kulitan script, combining the voiced alveolar nasal consonant /n/ with the vowel /o/.',
+  uses: [
+    'Negation',
+    'Common response',
+    'Sentence particle',
+    'Frequent in speech'
+  ],
+  characteristics: [
+    'Voiced nasal consonant',
+    'Mid back rounded vowel',
+    'Alveolar articulation',
+    'Nasal airflow'
+  ],
+  learningTips: 'Pronounce like "no" in English.',
+  writingInstructions: 'Form the "na" character and add the "o" vowel modification',
+  combinations: ['no', 'na', 'ni', 'nu', 'ne']
+},
+{
+  id: '56',
+  name: 'LO',
+  character: 'ᜎᜓ',
+  image: require('@/assets/images/kt-logo.png'),
+  audio: require('@/assets/audio/a.mp3'),
+  pronunciation: 'lo',
+  category: 'Basic Consonant',
+  rarity: 'Common',
+  origin: 'Kapampangan Script',
+  type: 'Consonant-Vowel Combination',
+  soundDescription: 'Voiced alveolar lateral with "o" vowel',
+  description: 'The syllable "LO" in Kulitan script, combining the voiced alveolar lateral consonant /l/ with the vowel /o/.',
+  uses: [
+    'Word formation',
+    'Syllable construction',
+    'Common in nouns',
+    'Descriptive words'
+  ],
+  characteristics: [
+    'Voiced lateral consonant',
+    'Mid back rounded vowel',
+    'Alveolar articulation',
+    'Liquid sound'
+  ],
+  learningTips: 'Pronounce like "low" but shorter.',
+  writingInstructions: 'Form the "la" character and add the "o" vowel modification',
+  combinations: ['lo', 'la', 'li', 'lu', 'le']
+},
+{
+  id: '57',
+  name: 'SO',
+  character: 'ᜐᜓ',
+  image: require('@/assets/images/kt-logo.png'),
+  audio: require('@/assets/audio/a.mp3'),
+  pronunciation: 'so',
+  category: 'Basic Consonant',
+  rarity: 'Common',
+  origin: 'Kapampangan Script',
+  type: 'Consonant-Vowel Combination',
+  soundDescription: 'Voiceless alveolar fricative with "o" vowel',
+  description: 'The syllable "SO" in Kulitan script, combining the voiceless alveolar fricative consonant /s/ with the vowel /o/.',
+  uses: [
+    'Conjunction usage',
+    'Connector word',
+    'Sentence linking',
+    'Common particle'
+  ],
+  characteristics: [
+    'Voiceless fricative consonant',
+    'Mid back rounded vowel',
+    'Alveolar articulation',
+    'Sibilant sound'
+  ],
+  learningTips: 'Pronounce like "so" in English.',
+  writingInstructions: 'Form the "sa" character and add the "o" vowel modification',
+  combinations: ['so', 'sa', 'si', 'su', 'se']
+},
+{
+  id: '58',
+  name: 'MO',
+  character: 'ᜋᜓ',
+  image: require('@/assets/images/kt-logo.png'),
+  audio: require('@/assets/audio/a.mp3'),
+  pronunciation: 'mo',
+  category: 'Basic Consonant',
+  rarity: 'Very Common',
+  origin: 'Kapampangan Script',
+  type: 'Consonant-Vowel Combination',
+  soundDescription: 'Voiced bilabial nasal with "o" vowel',
+  description: 'The syllable "MO" in Kulitan script, combining the voiced bilabial nasal consonant /m/ with the vowel /o/.',
+  uses: [
+    'Possessive marker',
+    'Second person reference',
+    'Common in sentences',
+    'Personal pronoun part'
+  ],
+  characteristics: [
+    'Voiced nasal consonant',
+    'Mid back rounded vowel',
+    'Bilabial articulation',
+    'High frequency'
+  ],
+  learningTips: 'Pronounce like "mow" but shorter.',
+  writingInstructions: 'Form the "ma" character and add the "o" vowel modification',
+  combinations: ['mo', 'ma', 'mi', 'mu', 'me']
+},
+{
+  id: '59',
+  name: 'PO',
+  character: 'ᜉᜓ',
+  image: require('@/assets/images/kt-logo.png'),
+  audio: require('@/assets/audio/a.mp3'),
+  pronunciation: 'po',
+  category: 'Basic Consonant',
+  rarity: 'Very Common',
+  origin: 'Kapampangan Script',
+  type: 'Consonant-Vowel Combination',
+  soundDescription: 'Voiceless bilabial plosive with "o" vowel',
+  description: 'The syllable "PO" in Kulitan script, combining the voiceless bilabial plosive consonant /p/ with the vowel /o/.',
+  uses: [
+    'Respect marker',
+    'Politeness particle',
+    'Common in formal speech',
+    'Honorific usage'
+  ],
+  characteristics: [
+    'Voiceless plosive consonant',
+    'Mid back rounded vowel',
+    'Bilabial articulation',
+    'Cultural significance'
+  ],
+  learningTips: 'Pronounce like "paw" but with "o" sound.',
+  writingInstructions: 'Form the "pa" character and add the "o" vowel modification',
+  combinations: ['po', 'pa', 'pi', 'pu', 'pe']
+},
+{
+  id: '60',
+  name: 'BO',
+  character: 'ᜊᜓ',
+  image: require('@/assets/images/kt-logo.png'),
+  audio: require('@/assets/audio/a.mp3'),
+  pronunciation: 'bo',
+  category: 'Basic Consonant',
+  rarity: 'Common',
+  origin: 'Kapampangan Script',
+  type: 'Consonant-Vowel Combination',
+  soundDescription: 'Voiced bilabial plosive with "o" vowel',
+  description: 'The syllable "BO" in Kulitan script, combining the voiced bilabial plosive consonant /b/ with the vowel /o/.',
+  uses: [
+    'Word formation',
+    'Syllable construction',
+    'Common in vocabulary',
+    'Base for variations'
+  ],
+  characteristics: [
+    'Voiced plosive consonant',
+    'Mid back rounded vowel',
+    'Bilabial articulation',
+    'CV combination'
+  ],
+  learningTips: 'Pronounce like "bow" (as in bow and arrow).',
+  writingInstructions: 'Form the "ba" character and add the "o" vowel modification',
+  combinations: ['bo', 'ba', 'bi', 'bu', 'be']
+},
+{
+  id: '61',
+  name: 'GÍ',
+  character: 'ᜄᜒ',
+  image: require('@/assets/images/kt-logo.png'),
+  audio: require('@/assets/audio/a.mp3'),
+  pronunciation: 'gí',
+  category: 'Basic Consonant',
+  rarity: 'Common',
+  origin: 'Kapampangan Script',
+  type: 'Consonant-Vowel Combination',
+  soundDescription: 'Voiced velar plosive with "i" vowel',
+  description: 'The syllable "GÍ" in Kulitan script, combining the voiced velar plosive consonant /g/ with the vowel /i/.',
+  uses: [
+    'Word formation',
+    'Syllable construction',
+    'Verb prefixes',
+    'Common in action words'
+  ],
+  characteristics: [
+    'Voiced plosive consonant',
+    'High front vowel',
+    'Velar articulation',
+    'CV combination'
+  ],
+  learningTips: 'Pronounce like "gee" in English.',
+  writingInstructions: 'Form the "ga" character and add the "i" vowel modification',
+  combinations: ['gí', 'ga', 'go', 'gu', 'ge']
+},
+{
+  id: '62',
+  name: 'KÍ',
+  character: 'ᜃᜒ',
+  image: require('@/assets/images/kt-logo.png'),
+  audio: require('@/assets/audio/a.mp3'),
+  pronunciation: 'kí',
+  category: 'Basic Consonant',
+  rarity: 'Common',
+  origin: 'Kapampangan Script',
+  type: 'Consonant-Vowel Combination',
+  soundDescription: 'Voiceless velar plosive with "i" vowel',
+  description: 'The syllable "KÍ" in Kulitan script, combining the voiceless velar plosive consonant /k/ with the vowel /i/.',
+  uses: [
+    'Word formation',
+    'Syllable construction',
+    'Common in nouns',
+    'Question particles'
+  ],
+  characteristics: [
+    'Voiceless plosive consonant',
+    'High front vowel',
+    'Velar articulation',
+    'Sharp sound'
+  ],
+  learningTips: 'Pronounce like "key" in English.',
+  writingInstructions: 'Form the "ka" character and add the "i" vowel modification',
+  combinations: ['kí', 'ka', 'ko', 'ku', 'ke']
+},
+{
+  id: '63',
+  name: 'NGÍ',
+  character: 'ᜅᜒ',
+  image: require('@/assets/images/kt-logo.png'),
+  audio: require('@/assets/audio/a.mp3'),
+  pronunciation: 'ngí',
+  category: 'Basic Consonant',
+  rarity: 'Common',
+  origin: 'Kapampangan Script',
+  type: 'Consonant-Vowel Combination',
+  soundDescription: 'Voiced velar nasal with "i" vowel',
+  description: 'The syllable "NGÍ" in Kulitan script, combining the voiced velar nasal consonant /ŋ/ with the vowel /i/.',
+  uses: [
+    'Word formation',
+    'Syllable construction',
+    'Linking syllable',
+    'Common in compound words'
+  ],
+  characteristics: [
+    'Voiced nasal consonant',
+    'High front vowel',
+    'Velar articulation',
+    'Nasal airflow'
+  ],
+  learningTips: 'Start with "ng" sound from "sing" then add "ee".',
+  writingInstructions: 'Form the "nga" character and add the "i" vowel modification',
+  combinations: ['ngí', 'nga', 'ngo', 'ngu', 'nge']
+},
+{
+  id: '64',
+  name: 'TÍ',
+  character: 'ᜆᜒ',
+  image: require('@/assets/images/kt-logo.png'),
+  audio: require('@/assets/audio/a.mp3'),
+  pronunciation: 'tí',
+  category: 'Basic Consonant',
+  rarity: 'Very Common',
+  origin: 'Kapampangan Script',
+  type: 'Consonant-Vowel Combination',
+  soundDescription: 'Voiceless alveolar plosive with "i" vowel',
+  description: 'The syllable "TÍ" in Kulitan script, combining the voiceless alveolar plosive consonant /t/ with the vowel /i/.',
+  uses: [
+    'Article usage',
+    'Definite marker',
+    'Very common particle',
+    'Sentence structure'
+  ],
+  characteristics: [
+    'Voiceless plosive consonant',
+    'High front vowel',
+    'Alveolar articulation',
+    'Extremely frequent'
+  ],
+  learningTips: 'Pronounce like "tea" in English.',
+  writingInstructions: 'Form the "ta" character and add the "i" vowel modification',
+  combinations: ['tí', 'ta', 'to', 'tu', 'te']
+},
+{
+  id: '65',
+  name: 'DÍ',
+  character: 'ᜇᜒ',
+  image: require('@/assets/images/kt-logo.png'),
+  audio: require('@/assets/audio/a.mp3'),
+  pronunciation: 'dí',
+  category: 'Basic Consonant',
+  rarity: 'Common',
+  origin: 'Kapampangan Script',
+  type: 'Consonant-Vowel Combination',
+  soundDescription: 'Voiced alveolar plosive with "i" vowel',
+  description: 'The syllable "DÍ" in Kulitan script, combining the voiced alveolar plosive consonant /d/ with the vowel /i/.',
+  uses: [
+    'Negation marker',
+    'Common prefix',
+    'Word formation',
+    'Grammatical particle'
+  ],
+  characteristics: [
+    'Voiced plosive consonant',
+    'High front vowel',
+    'Alveolar articulation',
+    'Functional usage'
+  ],
+  learningTips: 'Pronounce like "dee" in English.',
+  writingInstructions: 'Form the "da" character and add the "i" vowel modification',
+  combinations: ['dí', 'da', 'do', 'du', 'de']
+},
+{
+  id: '66',
+  name: 'NÍ',
+  character: 'ᜈᜒ',
+  image: require('@/assets/images/kt-logo.png'),
+  audio: require('@/assets/audio/a.mp3'),
+  pronunciation: 'ní',
+  category: 'Basic Consonant',
+  rarity: 'Very Common',
+  origin: 'Kapampangan Script',
+  type: 'Consonant-Vowel Combination',
+  soundDescription: 'Voiced alveolar nasal with "i" vowel',
+  description: 'The syllable "NÍ" in Kulitan script, combining the voiced alveolar nasal consonant /n/ with the vowel /i/.',
+  uses: [
+    'Possessive marker',
+    'Genitive particle',
+    'Very common in sentences',
+    'Grammatical connector'
+  ],
+  characteristics: [
+    'Voiced nasal consonant',
+    'High front vowel',
+    'Alveolar articulation',
+    'High frequency usage'
+  ],
+  learningTips: 'Pronounce like "knee" in English.',
+  writingInstructions: 'Form the "na" character and add the "i" vowel modification',
+  combinations: ['ní', 'na', 'no', 'nu', 'ne']
+},
+{
+  id: '67',
+  name: 'LÍ',
+  character: 'ᜎᜒ',
+  image: require('@/assets/images/kt-logo.png'),
+  audio: require('@/assets/audio/a.mp3'),
+  pronunciation: 'lí',
+  category: 'Basic Consonant',
+  rarity: 'Common',
+  origin: 'Kapampangan Script',
+  type: 'Consonant-Vowel Combination',
+  soundDescription: 'Voiced alveolar lateral with "i" vowel',
+  description: 'The syllable "LÍ" in Kulitan script, combining the voiced alveolar lateral consonant /l/ with the vowel /i/.',
+  uses: [
+    'Word formation',
+    'Syllable construction',
+    'Common in descriptive words',
+    'Name components'
+  ],
+  characteristics: [
+    'Voiced lateral consonant',
+    'High front vowel',
+    'Alveolar articulation',
+    'Liquid sound'
+  ],
+  learningTips: 'Pronounce like "lee" in English.',
+  writingInstructions: 'Form the "la" character and add the "i" vowel modification',
+  combinations: ['lí', 'la', 'lo', 'lu', 'le']
+},
+{
+  id: '68',
+  name: 'SÍ',
+  character: 'ᜐᜒ',
+  image: require('@/assets/images/kt-logo.png'),
+  audio: require('@/assets/audio/a.mp3'),
+  pronunciation: 'sí',
+  category: 'Basic Consonant',
+  rarity: 'Very Common',
+  origin: 'Kapampangan Script',
+  type: 'Consonant-Vowel Combination',
+  soundDescription: 'Voiceless alveolar fricative with "i" vowel',
+  description: 'The syllable "SÍ" in Kulitan script, combining the voiceless alveolar fricative consonant /s/ with the vowel /i/.',
+  uses: [
+    'Personal marker',
+    'Name prefix',
+    'Very common particle',
+    'Subject marker'
+  ],
+  characteristics: [
+    'Voiceless fricative consonant',
+    'High front vowel',
+    'Alveolar articulation',
+    'Extremely frequent'
+  ],
+  learningTips: 'Pronounce like "see" in English.',
+  writingInstructions: 'Form the "sa" character and add the "i" vowel modification',
+  combinations: ['sí', 'sa', 'so', 'su', 'se']
+},
+{
+  id: '69',
+  name: 'MÍ',
+  character: 'ᜋᜒ',
+  image: require('@/assets/images/kt-logo.png'),
+  audio: require('@/assets/audio/a.mp3'),
+  pronunciation: 'mí',
+  category: 'Basic Consonant',
+  rarity: 'Common',
+  origin: 'Kapampangan Script',
+  type: 'Consonant-Vowel Combination',
+  soundDescription: 'Voiced bilabial nasal with "i" vowel',
+  description: 'The syllable "MÍ" in Kulitan script, combining the voiced bilabial nasal consonant /m/ with the vowel /i/.',
+  uses: [
+    'Word formation',
+    'Personal reference',
+    'Common in names',
+    'Syllable construction'
+  ],
+  characteristics: [
+    'Voiced nasal consonant',
+    'High front vowel',
+    'Bilabial articulation',
+    'Nasal airflow'
+  ],
+  learningTips: 'Pronounce like "me" in English.',
+  writingInstructions: 'Form the "ma" character and add the "i" vowel modification',
+  combinations: ['mí', 'ma', 'mo', 'mu', 'me']
+},
+{
+  id: '70',
+  name: 'PÍ',
+  character: 'ᜉᜒ',
+  image: require('@/assets/images/kt-logo.png'),
+  audio: require('@/assets/audio/a.mp3'),
+  pronunciation: 'pí',
+  category: 'Basic Consonant',
+  rarity: 'Common',
+  origin: 'Kapampangan Script',
+  type: 'Consonant-Vowel Combination',
+  soundDescription: 'Voiceless bilabial plosive with "i" vowel',
+  description: 'The syllable "PÍ" in Kulitan script, combining the voiceless bilabial plosive consonant /p/ with the vowel /i/.',
+  uses: [
+    'Word formation',
+    'Action prefixes',
+    'Common in verbs',
+    'Syllable building'
+  ],
+  characteristics: [
+    'Voiceless plosive consonant',
+    'High front vowel',
+    'Bilabial articulation',
+    'Sharp sound'
+  ],
+  learningTips: 'Pronounce like "pea" in English.',
+  writingInstructions: 'Form the "pa" character and add the "i" vowel modification',
+  combinations: ['pí', 'pa', 'po', 'pu', 'pe']
+},
+{
+  id: '71',
+  name: 'BÍ',
+  character: 'ᜊᜒ',
+  image: require('@/assets/images/kt-logo.png'),
+  audio: require('@/assets/audio/a.mp3'),
+  pronunciation: 'bí',
+  category: 'Basic Consonant',
+  rarity: 'Common',
+  origin: 'Kapampangan Script',
+  type: 'Consonant-Vowel Combination',
+  soundDescription: 'Voiced bilabial plosive with "i" vowel',
+  description: 'The syllable "BÍ" in Kulitan script, combining the voiced bilabial plosive consonant /b/ with the vowel /i/.',
+  uses: [
+    'Word formation',
+    'Syllable construction',
+    'Common in vocabulary',
+    'Action indicators'
+  ],
+  characteristics: [
+    'Voiced plosive consonant',
+    'High front vowel',
+    'Bilabial articulation',
+    'CV combination'
+  ],
+  learningTips: 'Pronounce like "bee" in English.',
+  writingInstructions: 'Form the "ba" character and add the "i" vowel modification',
+  combinations: ['bí', 'ba', 'bo', 'bu', 'be']
+},
+{
+  id: '72',
+  name: 'GÚ',
+  character: 'ᜄᜓ',
+  image: require('@/assets/images/kt-logo.png'),
+  audio: require('@/assets/audio/a.mp3'),
+  pronunciation: 'gú',
+  category: 'Basic Consonant',
+  rarity: 'Common',
+  origin: 'Kapampangan Script',
+  type: 'Consonant-Vowel Combination',
+  soundDescription: 'Voiced velar plosive with "u" vowel',
+  description: 'The syllable "GÚ" in Kulitan script, combining the voiced velar plosive consonant /g/ with the vowel /u/.',
+  uses: [
+    'Word formation',
+    'Syllable construction',
+    'Common in vocabulary',
+    'Root formation'
+  ],
+  characteristics: [
+    'Voiced plosive consonant',
+    'High back vowel',
+    'Velar articulation',
+    'CV combination'
+  ],
+  learningTips: 'Pronounce like "goo" in English.',
+  writingInstructions: 'Form the "ga" character and add the "u" vowel modification',
+  combinations: ['gú', 'ga', 'gi', 'go', 'ge']
+},
+
+{
+  id: '73',
+  name: 'KÚ',
+  character: 'ᜃᜓ',
+  image: require('@/assets/images/kt-logo.png'),
+  audio: require('@/assets/audio/a.mp3'),
+  pronunciation: 'kú',
+  category: 'Basic Consonant',
+  rarity: 'Common',
+  origin: 'Kapampangan Script',
+  type: 'Consonant-Vowel Combination',
+  soundDescription: 'Voiceless velar plosive with "u" vowel',
+  description: 'The syllable "KÚ" in Kulitan script, combining the voiceless velar plosive consonant /k/ with the vowel /u/.',
+  uses: [
+    'Word formation',
+    'Syllable construction',
+    'Common in vocabulary',
+    'Grammatical markers'
+  ],
+  characteristics: [
+    'Voiceless plosive consonant',
+    'High back vowel',
+    'Velar articulation',
+    'CV combination'
+  ],
+  learningTips: 'Pronounce like "coo" in English.',
+  writingInstructions: 'Form the "ka" character and add the "u" vowel modification',
+  combinations: ['kú', 'ka', 'ki', 'ko', 'ke']
+},
+
+{
+  id: '74',
+  name: 'NGÚ',
+  character: 'ᜅᜓ',
+  image: require('@/assets/images/kt-logo.png'),
+  audio: require('@/assets/audio/a.mp3'),
+  pronunciation: 'ngú',
+  category: 'Basic Consonant',
+  rarity: 'Common',
+  origin: 'Kapampangan Script',
+  type: 'Consonant-Vowel Combination',
+  soundDescription: 'Voiced velar nasal with "u" vowel',
+  description: 'The syllable "NGÚ" in Kulitan script, combining the voiced velar nasal consonant /ŋ/ with the vowel /u/.',
+  uses: [
+    'Word formation',
+    'Syllable construction',
+    'Common in vocabulary',
+    'Nasal indicators'
+  ],
+  characteristics: [
+    'Voiced nasal consonant',
+    'High back vowel',
+    'Velar articulation',
+    'CV combination'
+  ],
+  learningTips: 'Pronounce like "ng" in "sing" + "oo".',
+  writingInstructions: 'Form the "nga" character and add the "u" vowel modification',
+  combinations: ['ngú', 'nga', 'ngi', 'ngo', 'nge']
+},
+
+{
+  id: '75',
+  name: 'TÚ',
+  character: 'ᜆᜓ',
+  image: require('@/assets/images/kt-logo.png'),
+  audio: require('@/assets/audio/a.mp3'),
+  pronunciation: 'tú',
+  category: 'Basic Consonant',
+  rarity: 'Common',
+  origin: 'Kapampangan Script',
+  type: 'Consonant-Vowel Combination',
+  soundDescription: 'Voiceless alveolar plosive with "u" vowel',
+  description: 'The syllable "TÚ" in Kulitan script, combining the voiceless alveolar plosive consonant /t/ with the vowel /u/.',
+  uses: [
+    'Word formation',
+    'Syllable construction',
+    'Common in vocabulary',
+    'Pronoun formation'
+  ],
+  characteristics: [
+    'Voiceless plosive consonant',
+    'High back vowel',
+    'Alveolar articulation',
+    'CV combination'
+  ],
+  learningTips: 'Pronounce like "too" in English.',
+  writingInstructions: 'Form the "ta" character and add the "u" vowel modification',
+  combinations: ['tú', 'ta', 'ti', 'to', 'te']
+},
+
+{
+  id: '76',
+  name: 'DÚ',
+  character: 'ᜇᜓ',
+  image: require('@/assets/images/kt-logo.png'),
+  audio: require('@/assets/audio/a.mp3'),
+  pronunciation: 'dú',
+  category: 'Basic Consonant',
+  rarity: 'Common',
+  origin: 'Kapampangan Script',
+  type: 'Consonant-Vowel Combination',
+  soundDescription: 'Voiced alveolar plosive with "u" vowel',
+  description: 'The syllable "DÚ" in Kulitan script, combining the voiced alveolar plosive consonant /d/ with the vowel /u/.',
+  uses: [
+    'Word formation',
+    'Syllable construction',
+    'Common in vocabulary',
+    'Direction indicators'
+  ],
+  characteristics: [
+    'Voiced plosive consonant',
+    'High back vowel',
+    'Alveolar articulation',
+    'CV combination'
+  ],
+  learningTips: 'Pronounce like "doo" in English.',
+  writingInstructions: 'Form the "da" character and add the "u" vowel modification',
+  combinations: ['dú', 'da', 'di', 'do', 'de']
+},
+
+{
+  id: '77',
+  name: 'NÚ',
+  character: 'ᜈᜓ',
+  image: require('@/assets/images/kt-logo.png'),
+  audio: require('@/assets/audio/a.mp3'),
+  pronunciation: 'nú',
+  category: 'Basic Consonant',
+  rarity: 'Common',
+  origin: 'Kapampangan Script',
+  type: 'Consonant-Vowel Combination',
+  soundDescription: 'Voiced alveolar nasal with "u" vowel',
+  description: 'The syllable "NÚ" in Kulitan script, combining the voiced alveolar nasal consonant /n/ with the vowel /u/.',
+  uses: [
+    'Word formation',
+    'Syllable construction',
+    'Common in vocabulary',
+    'Grammatical particles'
+  ],
+  characteristics: [
+    'Voiced nasal consonant',
+    'High back vowel',
+    'Alveolar articulation',
+    'CV combination'
+  ],
+  learningTips: 'Pronounce like "noo" in English.',
+  writingInstructions: 'Form the "na" character and add the "u" vowel modification',
+  combinations: ['nú', 'na', 'ni', 'no', 'ne']
+},
+
+{
+  id: '78',
+  name: 'LÚ',
+  character: 'ᜎᜓ',
+  image: require('@/assets/images/kt-logo.png'),
+  audio: require('@/assets/audio/a.mp3'),
+  pronunciation: 'lú',
+  category: 'Basic Consonant',
+  rarity: 'Common',
+  origin: 'Kapampangan Script',
+  type: 'Consonant-Vowel Combination',
+  soundDescription: 'Voiced alveolar lateral with "u" vowel',
+  description: 'The syllable "LÚ" in Kulitan script, combining the voiced alveolar lateral consonant /l/ with the vowel /u/.',
+  uses: [
+    'Word formation',
+    'Syllable construction',
+    'Common in vocabulary',
+    'Location indicators'
+  ],
+  characteristics: [
+    'Voiced lateral consonant',
+    'High back vowel',
+    'Alveolar articulation',
+    'CV combination'
+  ],
+  learningTips: 'Pronounce like "loo" in English.',
+  writingInstructions: 'Form the "la" character and add the "u" vowel modification',
+  combinations: ['lú', 'la', 'li', 'lo', 'le']
+},
+
+{
+  id: '79',
+  name: 'SÚ',
+  character: 'ᜐᜓ',
+  image: require('@/assets/images/kt-logo.png'),
+  audio: require('@/assets/audio/a.mp3'),
+  pronunciation: 'sú',
+  category: 'Basic Consonant',
+  rarity: 'Common',
+  origin: 'Kapampangan Script',
+  type: 'Consonant-Vowel Combination',
+  soundDescription: 'Voiceless alveolar fricative with "u" vowel',
+  description: 'The syllable "SÚ" in Kulitan script, combining the voiceless alveolar fricative consonant /s/ with the vowel /u/.',
+  uses: [
+    'Word formation',
+    'Syllable construction',
+    'Common in vocabulary',
+    'Possessive markers'
+  ],
+  characteristics: [
+    'Voiceless fricative consonant',
+    'High back vowel',
+    'Alveolar articulation',
+    'CV combination'
+  ],
+  learningTips: 'Pronounce like "sue" in English.',
+  writingInstructions: 'Form the "sa" character and add the "u" vowel modification',
+  combinations: ['sú', 'sa', 'si', 'so', 'se']
+},
+
+{
+  id: '80',
+  name: 'MÚ',
+  character: 'ᜋᜓ',
+  image: require('@/assets/images/kt-logo.png'),
+  audio: require('@/assets/audio/a.mp3'),
+  pronunciation: 'mú',
+  category: 'Basic Consonant',
+  rarity: 'Common',
+  origin: 'Kapampangan Script',
+  type: 'Consonant-Vowel Combination',
+  soundDescription: 'Voiced bilabial nasal with "u" vowel',
+  description: 'The syllable "MÚ" in Kulitan script, combining the voiced bilabial nasal consonant /m/ with the vowel /u/.',
+  uses: [
+    'Word formation',
+    'Syllable construction',
+    'Common in vocabulary',
+    'Possessive pronouns'
+  ],
+  characteristics: [
+    'Voiced nasal consonant',
+    'High back vowel',
+    'Bilabial articulation',
+    'CV combination'
+  ],
+  learningTips: 'Pronounce like "moo" in English.',
+  writingInstructions: 'Form the "ma" character and add the "u" vowel modification',
+  combinations: ['mú', 'ma', 'mi', 'mo', 'me']
+},
+
+{
+  id: '81',
+  name: 'PÚ',
+  character: 'ᜉᜓ',
+  image: require('@/assets/images/kt-logo.png'),
+  audio: require('@/assets/audio/a.mp3'),
+  pronunciation: 'pú',
+  category: 'Basic Consonant',
+  rarity: 'Common',
+  origin: 'Kapampangan Script',
+  type: 'Consonant-Vowel Combination',
+  soundDescription: 'Voiceless bilabial plosive with "u" vowel',
+  description: 'The syllable "PÚ" in Kulitan script, combining the voiceless bilabial plosive consonant /p/ with the vowel /u/.',
+  uses: [
+    'Word formation',
+    'Syllable construction',
+    'Common in vocabulary',
+    'Direction markers'
+  ],
+  characteristics: [
+    'Voiceless plosive consonant',
+    'High back vowel',
+    'Bilabial articulation',
+    'CV combination'
+  ],
+  learningTips: 'Pronounce like "poo" in English.',
+  writingInstructions: 'Form the "pa" character and add the "u" vowel modification',
+  combinations: ['pú', 'pa', 'pi', 'po', 'pe']
+},
+
+{
+  id: '82',
+  name: 'BÚ',
+  character: 'ᜊᜓ',
+  image: require('@/assets/images/kt-logo.png'),
+  audio: require('@/assets/audio/a.mp3'),
+  pronunciation: 'bú',
+  category: 'Basic Consonant',
+  rarity: 'Common',
+  origin: 'Kapampangan Script',
+  type: 'Consonant-Vowel Combination',
+  soundDescription: 'Voiced bilabial plosive with "u" vowel',
+  description: 'The syllable "BÚ" in Kulitan script, combining the voiced bilabial plosive consonant /b/ with the vowel /u/.',
+  uses: [
+    'Word formation',
+    'Syllable construction',
+    'Common in vocabulary',
+    'Object indicators'
+  ],
+  characteristics: [
+    'Voiced plosive consonant',
+    'High back vowel',
+    'Bilabial articulation',
+    'CV combination'
+  ],
+  learningTips: 'Pronounce like "boo" in English.',
+  writingInstructions: 'Form the "ba" character and add the "u" vowel modification',
+  combinations: ['bú', 'ba', 'bi', 'bo', 'be']
+},
+{
+  id: '83',
+  name: 'GANG',
+  character: 'ᜄᜅ᜔',
+  image: require('@/assets/images/kt-logo.png'),
+  audio: require('@/assets/audio/a.mp3'),
+  pronunciation: 'gang',
+  category: 'Complex Consonant',
+  rarity: 'Common',
+  origin: 'Kapampangan Script',
+  type: 'Consonant Cluster',
+  soundDescription: 'Voiced velar plosive with nasal ending',
+  description: 'The syllable "GANG" in Kulitan script, combining the voiced velar plosive /g/ with the nasal cluster /aŋ/.',
+  uses: [
+    'Word formation',
+    'Complex syllable construction',
+    'Common in vocabulary',
+    'Plural markers'
+  ],
+  characteristics: [
+    'Voiced plosive consonant',
+    'Mid central vowel',
+    'Nasal cluster ending',
+    'CVC combination'
+  ],
+  learningTips: 'Pronounce like "gang" in English.',
+  writingInstructions: 'Form the "ga" character and add the "ng" final consonant marker',
+  combinations: ['gang', 'ga', 'gi', 'go', 'gu']
+},
+
+{
+  id: '84',
+  name: 'KANK',
+  character: 'ᜃᜅ᜔',
+  image: require('@/assets/images/kt-logo.png'),
+  audio: require('@/assets/audio/a.mp3'),
+  pronunciation: 'kank',
+  category: 'Complex Consonant',
+  rarity: 'Common',
+  origin: 'Kapampangan Script',
+  type: 'Consonant Cluster',
+  soundDescription: 'Voiceless velar plosive with nasal ending',
+  description: 'The syllable "KANG" in Kulitan script, combining the voiceless velar plosive /k/ with the nasal cluster /aŋ/.',
+  uses: [
+    'Word formation',
+    'Complex syllable construction',
+    'Common in vocabulary',
+    'Grammatical particles'
+  ],
+  characteristics: [
+    'Voiceless plosive consonant',
+    'Mid central vowel',
+    'Nasal cluster ending',
+    'CVC combination'
+  ],
+  learningTips: 'Pronounce like "kang" (similar to "clung" without the "l").',
+  writingInstructions: 'Form the "ka" character and add the "ng" final consonant marker',
+  combinations: ['kang', 'ka', 'ki', 'ko', 'ku']
+},
+{
+  id: '85',
+  name: 'NGANG',
+  character: 'ᜅᜅ᜔',
+  image: require('@/assets/images/kt-logo.png'),
+  audio: require('@/assets/audio/a.mp3'),
+  pronunciation: 'ngang',
+  category: 'Complex Consonant',
+  rarity: 'Common',
+  origin: 'Kapampangan Script',
+  type: 'Consonant Cluster',
+  soundDescription: 'Voiced velar nasal with nasal ending',
+  description: 'The syllable "NGANG" in Kulitan script, combining the voiced velar nasal /ŋ/ with the nasal cluster /aŋ/.',
+  uses: [
+    'Word formation',
+    'Complex syllable construction',
+    'Common in vocabulary',
+    'Temporal markers'
+  ],
+  characteristics: [
+    'Voiced nasal consonant',
+    'Mid central vowel',
+    'Nasal cluster ending',
+    'CVC combination'
+  ],
+  learningTips: 'Double nasal sound - "ng" + "ang".',
+  writingInstructions: 'Form the "nga" character and add the "ng" final consonant marker',
+  combinations: ['ngang', 'nga', 'ngi', 'ngo', 'ngu']
+},
+{
+  id: '86',
+  name: 'TANG',
+  character: 'ᜆᜅ᜔',
+  image: require('@/assets/images/kt-logo.png'),
+  audio: require('@/assets/audio/a.mp3'),
+  pronunciation: 'tang',
+  category: 'Complex Consonant',
+  rarity: 'Common',
+  origin: 'Kapampangan Script',
+  type: 'Consonant Cluster',
+  soundDescription: 'Voiceless alveolar plosive with nasal ending',
+  description: 'The syllable "TANG" in Kulitan script, combining the voiceless alveolar plosive /t/ with the nasal cluster /aŋ/.',
+  uses: [
+    'Word formation',
+    'Complex syllable construction',
+    'Common in vocabulary',
+    'Temporal markers'
+  ],
+  characteristics: [
+    'Voiceless plosive consonant',
+    'Mid central vowel',
+    'Nasal cluster ending',
+    'CVC combination'
+  ],
+  learningTips: 'Sharp "t" sound followed by nasal "ang".',
+  writingInstructions: 'Form the "ta" character and add the "ng" final consonant marker',
+  combinations: ['tang', 'ta', 'ti', 'to', 'tu']
+},
+{
+  id: '87',
+  name: 'DANG',
+  character: 'ᜇᜅ᜔',
+  image: require('@/assets/images/kt-logo.png'),
+  audio: require('@/assets/audio/a.mp3'),
+  pronunciation: 'dang',
+  category: 'Complex Consonant',
+  rarity: 'Common',
+  origin: 'Kapampangan Script',
+  type: 'Consonant Cluster',
+  soundDescription: 'Voiced alveolar plosive with nasal ending',
+  description: 'The syllable "DANG" in Kulitan script, combining the voiced alveolar plosive /d/ with the nasal cluster /aŋ/.',
+  uses: [
+    'Word formation',
+    'Complex syllable construction',
+    'Common in vocabulary',
+    'Exclamations'
+  ],
+  characteristics: [
+    'Voiced plosive consonant',
+    'Mid central vowel',
+    'Nasal cluster ending',
+    'CVC combination'
+  ],
+  learningTips: 'Soft "d" sound followed by nasal "ang".',
+  writingInstructions: 'Form the "da" character and add the "ng" final consonant marker',
+  combinations: ['dang', 'da', 'di', 'do', 'du']
+},
+{
+  id: '88',
+  name: 'NANG',
+  character: 'ᜈᜅ᜔',
+  image: require('@/assets/images/kt-logo.png'),
+  audio: require('@/assets/audio/a.mp3'),
+  pronunciation: 'nang',
+  category: 'Complex Consonant',
+  rarity: 'Very Common',
+  origin: 'Kapampangan Script',
+  type: 'Consonant Cluster',
+  soundDescription: 'Voiced alveolar nasal with nasal ending',
+  description: 'The syllable "NANG" in Kulitan script, combining the voiced alveolar nasal /n/ with the nasal cluster /aŋ/.',
+  uses: [
+    'Word formation',
+    'Grammar particles',
+    'Very common in sentences',
+    'Temporal and causal markers'
+  ],
+  characteristics: [
+    'Voiced nasal consonant',
+    'Mid central vowel',
+    'Nasal cluster ending',
+    'CVC combination'
+  ],
+  learningTips: 'Double nasal sound - "n" + "ang".',
+  writingInstructions: 'Form the "na" character and add the "ng" final consonant marker',
+  combinations: ['nang', 'na', 'ni', 'no', 'nu']
+},
+{
+  id: '89',
+  name: 'LANG',
+  character: 'ᜎᜅ᜔',
+  image: require('@/assets/images/kt-logo.png'),
+  audio: require('@/assets/audio/a.mp3'),
+  pronunciation: 'lang',
+  category: 'Complex Consonant',
+  rarity: 'Very Common',
+  origin: 'Kapampangan Script',
+  type: 'Consonant Cluster',
+  soundDescription: 'Voiced lateral approximant with nasal ending',
+  description: 'The syllable "LANG" in Kulitan script, combining the voiced lateral approximant /l/ with the nasal cluster /aŋ/.',
+  uses: [
+    'Word formation',
+    'Grammar particles',
+    'Limiting expressions',
+    'Common adverbs'
+  ],
+  characteristics: [
+    'Voiced lateral consonant',
+    'Mid central vowel',
+    'Nasal cluster ending',
+    'CVC combination'
+  ],
+  learningTips: 'Liquid "l" sound followed by nasal "ang".',
+  writingInstructions: 'Form the "la" character and add the "ng" final consonant marker',
+  combinations: ['lang', 'la', 'li', 'lo', 'lu']
+},
+{
+  id: '90',
+  name: 'SANG',
+  character: 'ᜐᜅ᜔',
+  image: require('@/assets/images/kt-logo.png'),
+  audio: require('@/assets/audio/a.mp3'),
+  pronunciation: 'sang',
+  category: 'Complex Consonant',
+  rarity: 'Common',
+  origin: 'Kapampangan Script',
+  type: 'Consonant Cluster',
+  soundDescription: 'Voiceless alveolar fricative with nasal ending',
+  description: 'The syllable "SANG" in Kulitan script, combining the voiceless alveolar fricative /s/ with the nasal cluster /aŋ/.',
+  uses: [
+    'Word formation',
+    'Articles and determiners',
+    'Numerical expressions',
+    'Common prefixes'
+  ],
+  characteristics: [
+    'Voiceless fricative consonant',
+    'Mid central vowel',
+    'Nasal cluster ending',
+    'CVC combination'
+  ],
+  learningTips: 'Sharp "s" sound followed by nasal "ang".',
+  writingInstructions: 'Form the "sa" character and add the "ng" final consonant marker',
+  combinations: ['sang', 'sa', 'si', 'so', 'su']
+},
+{
+  id: '91',
+  name: 'MANG',
+  character: 'ᜋᜅ᜔',
+  image: require('@/assets/images/kt-logo.png'),
+  audio: require('@/assets/audio/a.mp3'),
+  pronunciation: 'mang',
+  category: 'Complex Consonant',
+  rarity: 'Common',
+  origin: 'Kapampangan Script',
+  type: 'Consonant Cluster',
+  soundDescription: 'Voiced bilabial nasal with nasal ending',
+  description: 'The syllable "MANG" in Kulitan script, combining the voiced bilabial nasal /m/ with the nasal cluster /aŋ/.',
+  uses: [
+    'Word formation',
+    'Professional titles',
+    'Action prefixes',
+    'Honorific expressions'
+  ],
+  characteristics: [
+    'Voiced nasal consonant',
+    'Mid central vowel',
+    'Nasal cluster ending',
+    'CVC combination'
+  ],
+  learningTips: 'Double nasal sound - "m" + "ang".',
+  writingInstructions: 'Form the "ma" character and add the "ng" final consonant marker',
+  combinations: ['mang', 'ma', 'mi', 'mo', 'mu']
+},
+{
+  id: '92',
+  name: 'PANG',
+  character: 'ᜉᜅ᜔',
+  image: require('@/assets/images/kt-logo.png'),
+  audio: require('@/assets/audio/a.mp3'),
+  pronunciation: 'pang',
+  category: 'Complex Consonant',
+  rarity: 'Common',
+  origin: 'Kapampangan Script',
+  type: 'Consonant Cluster',
+  soundDescription: 'Voiceless bilabial plosive with nasal ending',
+  description: 'The syllable "PANG" in Kulitan script, combining the voiceless bilabial plosive /p/ with the nasal cluster /aŋ/.',
+  uses: [
+    'Word formation',
+    'Instrumental prefixes',
+    'Purpose markers',
+    'Common verb prefixes'
+  ],
+  characteristics: [
+    'Voiceless plosive consonant',
+    'Mid central vowel',
+    'Nasal cluster ending',
+    'CVC combination'
+  ],
+  learningTips: 'Sharp "p" sound followed by nasal "ang".',
+  writingInstructions: 'Form the "pa" character and add the "ng" final consonant marker',
+  combinations: ['pang', 'pa', 'pi', 'po', 'pu']
+},
+{
+  id: '93',
+  name: 'BANG',
+  character: 'ᜊᜅ᜔',
+  image: require('@/assets/images/kt-logo.png'),
+  audio: require('@/assets/audio/a.mp3'),
+  pronunciation: 'bang',
+  category: 'Complex Consonant',
+  rarity: 'Common',
+  origin: 'Kapampangan Script',
+  type: 'Consonant Cluster',
+  soundDescription: 'Voiced bilabial plosive with nasal ending',
+  description: 'The syllable "BANG" in Kulitan script, combining the voiced bilabial plosive /b/ with the nasal cluster /aŋ/.',
+  uses: [
+    'Word formation',
+    'Exclamations',
+    'Sound effects',
+    'Common syllables in names'
+  ],
+  characteristics: [
+    'Voiced plosive consonant',
+    'Mid central vowel',
+    'Nasal cluster ending',
+    'CVC combination'
+  ],
+  learningTips: 'Soft "b" sound followed by nasal "ang".',
+  writingInstructions: 'Form the "ba" character and add the "ng" final consonant marker',
+  combinations: ['bang', 'ba', 'bi', 'bo', 'bu']
+}
 ];
 
 // Helper function to get character by ID

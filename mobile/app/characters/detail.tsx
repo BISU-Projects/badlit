@@ -10,6 +10,7 @@ import {
   Alert,
 } from 'react-native';
 import { Text, Surface, Chip, Divider } from 'react-native-paper';
+import { Image } from 'expo-image';
 import { StatusBar } from 'expo-status-bar';
 import { useRouter, useLocalSearchParams } from 'expo-router';
 import { LinearGradient } from 'expo-linear-gradient';
@@ -129,6 +130,7 @@ export default function CharacterDetailScreen() {
   const getCategoryColor = (category: string) => {
     switch (category) {
       case 'Basic Vowel': return '#FF6B6B';
+      case 'Vowel': return '#FF6B6B';
       case 'Basic Consonant': return '#4ECDC4';
       case 'Consonant with I': return '#45B7D1';
       case 'Consonant with U': return '#96CEB4';
@@ -161,8 +163,15 @@ export default function CharacterDetailScreen() {
               style={styles.gradientBackground}
             >
               <Animated.View style={[styles.characterDisplayWrapper, headerAnimatedStyle]}>
-                {/* Large Kulitan Character */}
-                <Text style={styles.heroCharacter}>{character.character}</Text>
+                {/* Large Character Image */}
+                <View style={styles.heroImageContainer}>
+                  <Image 
+                    source={character.image}
+                    style={styles.heroCharacterImage}
+                    contentFit="contain"
+                    transition={300}
+                  />
+                </View>
                 
                 {/* Sound Button */}
                 <TouchableOpacity
@@ -362,14 +371,28 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
   },
-  heroCharacter: {
-    fontSize: 120,
-    fontWeight: 'bold',
-    color: 'white',
-    textAlign: 'center',
-    textShadowColor: 'rgba(0,0,0,0.3)',
-    textShadowOffset: { width: 0, height: 2 },
-    textShadowRadius: 4,
+  // New styles for hero image
+  heroImageContainer: {
+    width: 160,
+    height: 160,
+    backgroundColor: 'rgba(255, 255, 255, 0.15)',
+    borderRadius: 80,
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderWidth: 3,
+    borderColor: 'rgba(255, 255, 255, 0.3)',
+    shadowColor: '#000',
+    shadowOffset: {
+      width: 0,
+      height: 4,
+    },
+    shadowOpacity: 0.3,
+    shadowRadius: 8,
+  },
+  heroCharacterImage: {
+    width: 120,
+    height: 120,
+    borderRadius: 60,
   },
   
   // Sound Button
