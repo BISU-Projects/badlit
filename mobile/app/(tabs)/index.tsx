@@ -11,17 +11,14 @@ import {
   TextInput,
   Alert,
   Modal,
+  Image,
 } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
 import { router } from 'expo-router';
 import { 
-  translateEnglishToKulitan, 
-  translateTagalogToKulitan,
-  translateKulitanToEnglish, 
-  translateKulitanToTagalog,
-  translateText,
   TranslationResult,
 } from '@/data/translation';
+import { findCharacterByPronunciation, KulitanCharacter, sampleCharactersData } from '@/data/characters';
 
 const { width } = Dimensions.get('window');
 
@@ -34,19 +31,102 @@ const getStatusBarHeight = () => {
   }
 };
 
-type TranslationDirection = 'englishToKulitan' | 'tagalogToKulitan' | 'kulitanToEnglish' | 'kulitanToTagalog';
+type TranslationDirection = 'englishToKulitan' | 'tagalogToKulitan';
+
+interface CharacterImageResult {
+  syllable: string;
+  character?: KulitanCharacter;
+}
+
+interface EnhancedTranslationResult extends TranslationResult {
+  characterImages: CharacterImageResult[];
+}
 
 const translationOptions = [
   { value: 'englishToKulitan', label: 'English → Kulitan' },
   { value: 'tagalogToKulitan', label: 'Tagalog → Kulitan' },
-  { value: 'kulitanToEnglish', label: 'Kulitan → English' },
-  { value: 'kulitanToTagalog', label: 'Kulitan → Tagalog' },
 ];
+
+// Helper function to find character by name (transliterated form)
+const findCharacterByName = (name: string): KulitanCharacter | undefined => {
+  return sampleCharactersData.find(character => 
+    character.name.toLowerCase() === name.toLowerCase()
+  );
+};
+
+// Updated helper function to get character images based on input text
+const getCharacterImagesByInput = (input: string): CharacterImageResult[] => {
+  if (!input) return [];
+
+  const results: CharacterImageResult[] = [];
+  const inputLower = input.toLowerCase();
+  
+  // Define syllable patterns in order of priority (longer patterns first)
+  const syllablePatterns = ['ngang', 'tang', 'nga', 'ka', 'ga', 'ta', 'a'];
+  
+  let remaining = inputLower;
+  
+  while (remaining.length > 0) {
+    let matched = false;
+    
+    // Try to match syllable patterns first (longer to shorter)
+    for (const pattern of syllablePatterns) {
+      if (remaining.startsWith(pattern)) {
+        const character = findCharacterByName(pattern.toUpperCase());
+        results.push({
+          syllable: pattern,
+          character
+        });
+        remaining = remaining.slice(pattern.length);
+        matched = true;
+        break;
+      }
+    }
+    
+    // If no pattern matched, try single character
+    if (!matched) {
+      const singleChar = remaining[0];
+      const character = findCharacterByName(singleChar.toUpperCase());
+      results.push({
+        syllable: singleChar,
+        character
+      });
+      remaining = remaining.slice(1);
+    }
+  }
+  
+  return results;
+};
+
+// Enhanced translation function that includes character images based on name matching
+const translateTextWithImages = (input: string, direction: TranslationDirection): EnhancedTranslationResult[] => {
+  // Split input into words
+  const words = input.trim().split(/\s+/);
+  
+  return words.map(word => {
+    // For each word, create a result
+    const result: EnhancedTranslationResult = {
+      originalWord: word,
+      translatedWord: word, // This will be the transliterated form
+      isTranslatable: true,
+      wordData: undefined,
+      characterImages: []
+    };
+
+    // Get character images based on the input word using name matching
+    result.characterImages = getCharacterImagesByInput(word);
+    
+    // Check if we found any characters
+    result.isTranslatable = result.characterImages.some(img => img.character !== undefined);
+    
+    return result;
+  });
+};
 
 export default function HomeScreen() {
   const statusBarHeight = getStatusBarHeight();
   const [translationInput, setTranslationInput] = useState('');
-  const [translationResults, setTranslationResults] = useState<TranslationResult[]>([]);
+  const [translationResults, setTranslationResults] = useState<EnhancedTranslationResult[]>([]);
   const [translationDirection, setTranslationDirection] = useState<TranslationDirection>('englishToKulitan');
   const [showTranslation, setShowTranslation] = useState(false);
   const [showDropdown, setShowDropdown] = useState(false);
@@ -67,7 +147,7 @@ export default function HomeScreen() {
       return;
     }
 
-    const results = translateText(translationInput, translationDirection);
+    const results = translateTextWithImages(translationInput, translationDirection);
     setTranslationResults(results);
     setShowTranslation(true);
   };
@@ -89,13 +169,9 @@ export default function HomeScreen() {
   const getPlaceholderText = () => {
     switch (translationDirection) {
       case 'englishToKulitan':
-        return 'Enter English words... (e.g., "hello water mother")';
+        return 'Enter text to convert to Kulitan... (e.g., "a ka nga ta")';
       case 'tagalogToKulitan':
-        return 'Maglagay ng mga salitang Tagalog... (e.g., "tubig nanay")';
-      case 'kulitanToEnglish':
-        return 'Enter Kulitan words... (e.g., "ᜃᜓᜋᜓᜐ᜔ᜆ ᜇᜓᜈᜓᜋ᜔")';
-      case 'kulitanToTagalog':
-        return 'Maglagay ng mga salitang Kulitan...';
+        return 'Maglagay ng teksto... (e.g., "a ka nga ta")';
       default:
         return 'Enter text...';
     }
@@ -204,35 +280,112 @@ export default function HomeScreen() {
           {showTranslation && (
             <View style={styles.translationResultsContainer}>
               <Text style={styles.resultsLabel}>Translation:</Text>
-              <View style={styles.resultsDisplay}>
-                {translationResults.map((result, index) => (
-                  <View key={index} style={styles.wordResult}>
-                    <Text style={styles.originalWord}>{result.originalWord}</Text>
-                    <Text style={styles.arrow}>↓</Text>
-                    <Text style={[styles.translatedWord, !result.isTranslatable && styles.untranslatableWord]}>
-                      {result.translatedWord}
-                    </Text>
-                    {result.wordData && (
-                      <>
-                        <Text style={styles.pronunciation}>/{result.wordData.pronunciation}/</Text>
-                        {result.wordData.tagalog !== result.wordData.english && (
-                          <Text style={styles.alternateTranslation}>
-                            {translationDirection.includes('kulitan') ? 
-                              `Tagalog: ${result.wordData.tagalog}` : 
-                              `Kapampangan: ${result.wordData.kapampangan}`
-                            }
-                          </Text>
-                        )}
-                      </>
-                    )}
+              
+              {/* Multiple Words Grid */}
+              <ScrollView style={styles.resultsDisplay} nestedScrollEnabled={true}>
+                <View style={styles.wordsGrid}>
+                  {translationResults.map((result, index) => (
+                    <View key={index} style={styles.wordResult}>
+                      <Text style={styles.originalWord}>{result.originalWord}</Text>
+                      <Text style={styles.arrow}>↓</Text>
+                      
+                      {/* Character Images Display */}
+                      {result.characterImages.length > 0 && (
+                        <View style={styles.characterImagesContainer}>
+                          <ScrollView 
+                            horizontal 
+                            showsHorizontalScrollIndicator={false}
+                            contentContainerStyle={styles.characterImagesScroll}
+                            nestedScrollEnabled={true}
+                          >
+                            {result.characterImages.map((charResult, charIndex) => (
+                              <View key={charIndex} style={styles.characterImageItem}>
+                                {charResult.character ? (
+                                  <>
+                                    <View style={styles.imageContainer}>
+                                      <Image 
+                                        source={charResult.character.image}
+                                        style={styles.characterImage}
+                                        resizeMode="contain"
+                                      />
+                                    </View>
+                                    <Text style={styles.syllableText}>{charResult.character.name}</Text>
+                                  </>
+                                ) : (
+                                  <>
+                                    <View style={styles.missingCharacterPlaceholder}>
+                                      <Text style={styles.missingCharacterText}>?</Text>
+                                    </View>
+                                    <Text style={styles.syllableText}>{charResult.syllable}</Text>
+                                  </>
+                                )}
+                              </View>
+                            ))}
+                          </ScrollView>
+                        </View>
+                      )}
+                      
+                      <Text style={[styles.translatedWord, !result.isTranslatable && styles.untranslatableWord]}>
+                        {result.isTranslatable ? 'Found' : 'No match'}
+                      </Text>
+                      
+                      {result.characterImages.length > 0 && result.isTranslatable && (
+                        <Text style={styles.characterCount}>
+                          {result.characterImages.filter(c => c.character).length} chars
+                        </Text>
+                      )}
+                    </View>
+                  ))}
+                </View>
+                
+                {/* All Characters Combined Display */}
+                {translationResults.some(r => r.isTranslatable) && (
+                  <View style={styles.combinedResultsContainer}>
+                    <Text style={styles.combinedResultsLabel}>Complete Translation:</Text>
+                    <View style={styles.allCharactersContainer}>
+                      <ScrollView 
+                        horizontal 
+                        showsHorizontalScrollIndicator={false}
+                        contentContainerStyle={styles.allCharactersScroll}
+                        nestedScrollEnabled={true}
+                      >
+                        {translationResults.map((result, wordIndex) => (
+                          <View key={wordIndex} style={styles.wordGroup}>
+                            {result.characterImages.map((charResult, charIndex) => (
+                              charResult.character && (
+                                <View key={`${wordIndex}-${charIndex}`} style={styles.characterImageItem}>
+                                  <View style={styles.imageContainer}>
+                                    <Image 
+                                      source={charResult.character.image}
+                                      style={styles.characterImage}
+                                      resizeMode="contain"
+                                    />
+                                  </View>
+                                  <Text style={styles.syllableText}>{charResult.character.name}</Text>
+                                </View>
+                              )
+                            ))}
+                            {wordIndex < translationResults.length - 1 && (
+                              <View style={styles.wordSeparator}>
+                                <Text style={styles.separatorText}>•</Text>
+                              </View>
+                            )}
+                          </View>
+                        ))}
+                      </ScrollView>
+                    </View>
                   </View>
-                ))}
-              </View>
+                )}
+              </ScrollView>
               
               {/* Translation Summary */}
               <View style={styles.translationSummary}>
                 <Text style={styles.summaryText}>
-                  Translated: {translationResults.filter(r => r.isTranslatable).length} / {translationResults.length} words
+                  Found: {translationResults.filter(r => r.isTranslatable).length} / {translationResults.length} words
+                </Text>
+                <Text style={styles.summaryText}>
+                  Total characters: {translationResults.reduce((total, result) => 
+                    total + result.characterImages.filter(c => c.character).length, 0)}
                 </Text>
               </View>
             </View>
@@ -304,14 +457,14 @@ export default function HomeScreen() {
               <Text style={styles.statDesc}>Origin period</Text>
             </View>
             <View style={styles.statCard}>
-              <Text style={styles.statNumber}>20</Text>
-              <Text style={styles.statLabel}>Words</Text>
+              <Text style={styles.statNumber}>{sampleCharactersData.length}</Text>
+              <Text style={styles.statLabel}>Characters</Text>
               <Text style={styles.statDesc}>Available</Text>
             </View>
             <View style={styles.statCard}>
               <Text style={styles.statNumber}>6</Text>
               <Text style={styles.statLabel}>Categories</Text>
-              <Text style={styles.statDesc}>Word groups</Text>
+              <Text style={styles.statDesc}>Character groups</Text>
             </View>
           </View>
         </View>
@@ -493,13 +646,14 @@ const styles = StyleSheet.create({
     color: '#af1400',
   },
   
-  // Translation Results Styles
+  // Translation Results Styles - MULTIPLE WORDS SUPPORT
   translationResultsContainer: {
     backgroundColor: '#F8F9FA',
     borderRadius: 12,
     padding: 16,
     borderWidth: 1,
     borderColor: '#E0E0E0',
+    maxHeight: 500, // Increased max height for multiple words
   },
   resultsLabel: {
     fontSize: 16,
@@ -508,47 +662,143 @@ const styles = StyleSheet.create({
     marginBottom: 12,
   },
   resultsDisplay: {
+    maxHeight: 400, // Increased max height
+    marginBottom: 16,
+  },
+  wordsGrid: {
     flexDirection: 'row',
     flexWrap: 'wrap',
-    gap: 12,
-    marginBottom: 16,
+    justifyContent: 'space-between',
+    marginBottom: 20,
   },
   wordResult: {
     alignItems: 'center',
     backgroundColor: '#FFFFFF',
     borderRadius: 12,
-    padding: 16,
-    flex: 1,
-    minWidth: '45%',
+    padding: 12,
+    marginBottom: 12,
+    width: '48%', // Two words per row
+    minHeight: 120,
   },
   originalWord: {
-    fontSize: 16,
+    fontSize: 14,
     fontWeight: '600',
     color: '#333',
-    marginBottom: 6,
+    marginBottom: 4,
     textAlign: 'center',
   },
   arrow: {
-    fontSize: 16,
+    fontSize: 12,
     color: '#666',
-    marginBottom: 6,
+    marginBottom: 4,
   },
+  
+  // Character Images Styles - OPTIMIZED FOR MULTIPLE WORDS
+  characterImagesContainer: {
+    marginBottom: 8,
+    width: '100%',
+    minHeight: 60, // Reduced height for compact display
+  },
+  characterImagesScroll: {
+    alignItems: 'center',
+    paddingHorizontal: 4,
+    minHeight: 60,
+  },
+  characterImageItem: {
+    alignItems: 'center',
+    marginHorizontal: 3, // Reduced spacing for compact display
+    minWidth: 45, // Reduced width for more items
+  },
+  imageContainer: {
+    width: 35, // Smaller container for multiple words view
+    height: 35,
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: '#F0F0F0',
+    borderRadius: 6,
+    marginBottom: 2,
+  },
+  characterImage: {
+    width: 30,
+    height: 30,
+  },
+  missingCharacterPlaceholder: {
+    width: 35,
+    height: 35,
+    backgroundColor: '#E0E0E0',
+    borderRadius: 6,
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginBottom: 2,
+  },
+  missingCharacterText: {
+    fontSize: 14,
+    color: '#999',
+    fontWeight: 'bold',
+  },
+  syllableText: {
+    fontSize: 10,
+    color: '#666',
+    textAlign: 'center',
+    maxWidth: 45,
+  },
+  
   translatedWord: {
-    fontSize: 28,
+    fontSize: 12,
     fontWeight: 'bold',
     color: '#af1400',
-    marginBottom: 6,
+    marginBottom: 2,
     textAlign: 'center',
   },
   untranslatableWord: {
     color: '#999',
-    fontSize: 16,
+    fontSize: 11,
   },
-  pronunciation: {
-    fontSize: 12,
+  characterCount: {
+    fontSize: 10,
     color: '#666',
     fontStyle: 'italic',
-    marginBottom: 4,
+    textAlign: 'center',
+  },
+  
+  // Combined Results Styles - NEW
+  combinedResultsContainer: {
+    backgroundColor: '#FFFFFF',
+    borderRadius: 12,
+    padding: 16,
+    marginTop: 12,
+    borderWidth: 2,
+    borderColor: '#af1400',
+  },
+  combinedResultsLabel: {
+    fontSize: 16,
+    fontWeight: '700',
+    color: '#af1400',
+    marginBottom: 12,
+    textAlign: 'center',
+  },
+  allCharactersContainer: {
+    minHeight: 80,
+  },
+  allCharactersScroll: {
+    alignItems: 'center',
+    paddingHorizontal: 8,
+    minHeight: 80,
+  },
+  wordGroup: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginHorizontal: 4,
+  },
+  wordSeparator: {
+    marginHorizontal: 8,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  separatorText: {
+    fontSize: 20,
+    color: '#af1400',
+    fontWeight: 'bold',
   },
   alternateTranslation: {
     fontSize: 11,
@@ -562,8 +812,9 @@ const styles = StyleSheet.create({
     borderTopColor: '#E0E0E0',
   },
   summaryText: {
-    fontSize: 14,
+    fontSize: 12,
     color: '#666',
+    marginBottom: 2,
   },
 
   // Features Styles
