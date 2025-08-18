@@ -61,9 +61,33 @@ const getCharacterImagesByInput = (input: string): CharacterImageResult[] => {
   const results: CharacterImageResult[] = [];
   const inputLower = input.toLowerCase();
   
-  // Define syllable patterns in order of priority (longer patterns first)
-  const syllablePatterns = ['ngang', 'tang', 'nga', 'ka', 'ga', 'ta', 'a'];
-  
+ // Define syllable patterns in order of priority (longer patterns first)
+  const syllablePatterns = [
+    // 5-letter patterns
+    'ngang',
+    
+    // 4-letter patterns
+    'gang', 'kank', 'tang', 'dang', 'nang', 'lang', 'sang', 'mang', 'pang', 'bang',
+    'ngo', 'nge', 'ngu', 'nga', 'ngi',
+    
+    // 3-letter patterns with tones
+    'gí/î', 'kí/î', 'ngí/î', 'tí/î', 'dí/î', 'ní/î', 'lí/î', 'sí/î', 'mí/î', 'pí/î', 'bí/î',
+    'gú/û', 'kú/û', 'ngú/û', 'tú/û', 'dú/û', 'nú/û', 'lú/û', 'sú/û', 'mú/û', 'pú/û', 'bú/û',
+    
+    // 3-letter patterns
+    'nga', 'ngi', 'ngu', 'nge', 'ngo',
+    
+    // 2-letter patterns
+    'ga', 'ka', 'ta', 'da', 'na', 'la', 'sa', 'ma', 'pa', 'ba',
+    'gi', 'ki', 'ti', 'di', 'ni', 'li', 'si', 'mi', 'pi', 'bi',
+    'gu', 'ku', 'tu', 'du', 'nu', 'lu', 'su', 'mu', 'pu', 'bu',
+    'ge', 'ke', 'te', 'de', 'ne', 'le', 'se', 'me', 'pe', 'be',
+    'go', 'ko', 'to', 'do', 'no', 'lo', 'so', 'mo', 'po', 'bo',
+    
+    // 1-letter patterns (vowels)
+    'a', 'i', 'u', 'e', 'o'
+  ];
+
   let remaining = inputLower;
   
   while (remaining.length > 0) {
