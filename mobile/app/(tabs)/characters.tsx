@@ -374,8 +374,9 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   characterImage: {
-    width: 80,
-    height: 80,
+    marginTop: 40,
+    width: 120,
+    height: 120,
     borderRadius: 8,
   },
   rarityBadge: {
