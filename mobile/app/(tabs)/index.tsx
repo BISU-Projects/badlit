@@ -49,11 +49,42 @@ const translationOptions = [
 
 // Helper function to find character by name (transliterated form)
 const findCharacterByName = (name: string): KulitanCharacter | undefined => {
-  return sampleCharactersData.find(character => 
-    character.name.toLowerCase() === name.toLowerCase()
+  const nameLower = name.toLowerCase();
+  
+  // First, try exact match
+  let character = sampleCharactersData.find(char => 
+    char.name.toLowerCase() === nameLower
+  );
+  
+  if (character) return character;
+  
+  // Try matching by pronunciation
+  character = sampleCharactersData.find(char => 
+    char.pronunciation.toLowerCase() === nameLower
+  );
+  
+  if (character) return character;
+  
+  // For single consonants, try finding the consonant + 'a' combination
+  if (nameLower.length === 1 && /[bcdfghjklmnpqrstvwxyz]/.test(nameLower)) {
+    character = sampleCharactersData.find(char => 
+      char.name.toLowerCase() === nameLower + 'a' ||
+      char.pronunciation.toLowerCase() === nameLower + 'a'
+    );
+    
+    if (character) return character;
+  }
+  
+  // Try partial matching for complex cases
+  return sampleCharactersData.find(char => 
+    char.name.toLowerCase().includes(nameLower) ||
+    char.pronunciation.toLowerCase().includes(nameLower) ||
+    nameLower.includes(char.name.toLowerCase()) ||
+    nameLower.includes(char.pronunciation.toLowerCase())
   );
 };
 
+// Updated helper function to get character images based on input text
 // Updated helper function to get character images based on input text
 const getCharacterImagesByInput = (input: string): CharacterImageResult[] => {
   if (!input) return [];
@@ -61,7 +92,7 @@ const getCharacterImagesByInput = (input: string): CharacterImageResult[] => {
   const results: CharacterImageResult[] = [];
   const inputLower = input.toLowerCase();
   
- // Define syllable patterns in order of priority (longer patterns first)
+  // Define syllable patterns in order of priority (longer patterns first)
   const syllablePatterns = [
     // 5-letter patterns
     'ngang',
@@ -77,40 +108,75 @@ const getCharacterImagesByInput = (input: string): CharacterImageResult[] => {
     // 3-letter patterns
     'nga', 'ngi', 'ngu', 'nge', 'ngo',
     
-    // 2-letter patterns
+    // Common 3-letter syllables that might be missed
+    'tra', 'tri', 'tru', 'tre', 'tro',
+    'pra', 'pri', 'pru', 'pre', 'pro',
+    'bra', 'bri', 'bru', 'bre', 'bro',
+    'kra', 'kri', 'kru', 'kre', 'kro',
+    'dra', 'dri', 'dru', 'dre', 'dro',
+    'gra', 'gri', 'gru', 'gre', 'gro',
+    
+    // 2-letter patterns (consonant + vowel combinations)
     'ga', 'ka', 'ta', 'da', 'na', 'la', 'sa', 'ma', 'pa', 'ba',
     'gi', 'ki', 'ti', 'di', 'ni', 'li', 'si', 'mi', 'pi', 'bi',
     'gu', 'ku', 'tu', 'du', 'nu', 'lu', 'su', 'mu', 'pu', 'bu',
     'ge', 'ke', 'te', 'de', 'ne', 'le', 'se', 'me', 'pe', 'be',
     'go', 'ko', 'to', 'do', 'no', 'lo', 'so', 'mo', 'po', 'bo',
     
-    // 1-letter patterns (vowels)
-    'a', 'i', 'u', 'e', 'o'
+    // Additional 2-letter combinations that might be in your character set
+    'ra', 'ri', 'ru', 're', 'ro',
+    'wa', 'wi', 'wu', 'we', 'wo',
+    'ya', 'yi', 'yu', 'ye', 'yo',
+    'ha', 'hi', 'hu', 'he', 'ho',
+    
+    // Single letter patterns - ENHANCED SECTION
+    // Vowels
+    'a', 'i', 'u', 'e', 'o',
+    // Consonants (these will look for standalone consonant characters if they exist)
+    'ng', 'g', 'k', 't', 'd', 'n', 'l', 's', 'm', 'p', 'b',
+    // Additional single consonants that might exist in your character set
+    'r', 'w', 'y', 'h', 'f', 'v', 'j', 'c', 'x', 'z', 'q'
   ];
 
   let remaining = inputLower;
   
   while (remaining.length > 0) {
     let matched = false;
+    let longestMatch = '';
+    let matchedPattern = '';
     
-    // Try to match syllable patterns first (longer to shorter)
+    // Find the longest matching pattern starting from the current position
     for (const pattern of syllablePatterns) {
-      if (remaining.startsWith(pattern)) {
-        const character = findCharacterByName(pattern.toUpperCase());
-        results.push({
-          syllable: pattern,
-          character
-        });
-        remaining = remaining.slice(pattern.length);
-        matched = true;
-        break;
+      if (remaining.startsWith(pattern) && pattern.length > longestMatch.length) {
+        longestMatch = pattern;
+        matchedPattern = pattern;
       }
     }
     
-    // If no pattern matched, try single character
+    if (longestMatch) {
+      // Found a pattern match
+      const character = findCharacterByName(matchedPattern.toUpperCase());
+      results.push({
+        syllable: matchedPattern,
+        character
+      });
+      remaining = remaining.slice(longestMatch.length);
+      matched = true;
+    }
+    
+    // If no pattern matched, handle the single character with fallback behavior
     if (!matched) {
       const singleChar = remaining[0];
-      const character = findCharacterByName(singleChar.toUpperCase());
+      
+      // Try to find a character for this single letter
+      let character = findCharacterByName(singleChar.toUpperCase());
+      
+      // If no direct match found and it's a consonant, try to find a default vowel combination
+      if (!character && /[bcdfghjklmnpqrstvwxyz]/i.test(singleChar)) {
+        // Try consonant + 'a' combination as default (most common in Philippine languages)
+        character = findCharacterByName((singleChar + 'a').toUpperCase());
+      }
+      
       results.push({
         syllable: singleChar,
         character

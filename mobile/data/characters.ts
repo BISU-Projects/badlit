@@ -24,7 +24,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
   {
     id: '1',
     name: 'A',
-    image: require('@/assets/images/kt-logo.png'),
+    image: require('@/assets/images/a.jpg'),
     audio: require('@/assets/audio/a.mp3'),
     pronunciation: 'a',
     category: 'Basic Vowel',
@@ -52,7 +52,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
   {
     id: '2',
     name: 'GA',
-    image: require('@/assets/images/kt-logo.png'),
+    image: require('@/assets/images/ga.jpg'),
     audio: require('@/assets/audio/a.mp3'),
     pronunciation: 'ga',
     category: 'Basic Consonant',
@@ -80,7 +80,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
   {
     id: '3',
     name: 'KA',
-    image: require('@/assets/images/kt-logo.png'),
+    image: require('@/assets/images/ka.jpg'),
     audio: require('@/assets/audio/a.mp3'),
     pronunciation: 'ka',
     category: 'Basic Consonant',
@@ -108,7 +108,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
   {
     id: '4',
     name: 'NGA',
-    image: require('@/assets/images/kt-logo.png'),
+    image: require('@/assets/images/nga.jpg'),
     audio: require('@/assets/audio/a.mp3'),
     pronunciation: 'nga',
     category: 'Basic Consonant',

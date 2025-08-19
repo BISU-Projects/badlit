@@ -12,7 +12,7 @@ import {
 import { Text, Surface, Chip, Divider } from 'react-native-paper';
 import { Image } from 'expo-image';
 import { StatusBar } from 'expo-status-bar';
-import { useRouter, useLocalSearchParams } from 'expo-router';
+import { useRouter, useLocalSearchParams, Stack } from 'expo-router';
 import { LinearGradient } from 'expo-linear-gradient';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { AudioPlayer, useAudioPlayer, useAudioPlayerStatus } from 'expo-audio';
@@ -143,6 +143,7 @@ export default function CharacterDetailScreen() {
 
   return (
     <>
+      <Stack.Screen options={{ headerShown: false }} />
       <StatusBar style="light" />
       {Platform.OS === 'android' && (
         <RNStatusBar barStyle="light-content" translucent={true} />

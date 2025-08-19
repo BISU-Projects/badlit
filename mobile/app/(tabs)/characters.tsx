@@ -98,7 +98,7 @@ const CharacterCard = React.memo<{
             <View style={styles.characterInfo}>
               <View style={styles.infoItem}>
                 <Text style={styles.infoIcon}>🔤</Text>
-                <Text style={styles.infoText}>{item.type}</Text>
+                <Text style={styles.infoText} numberOfLines={1}>{item.type}</Text>
               </View>
             </View>
             
