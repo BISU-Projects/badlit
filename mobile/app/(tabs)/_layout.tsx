@@ -12,46 +12,112 @@ export default function TabLayout() {
     <Tabs
       screenOptions={{
         tabBarActiveTintColor: Colors.primary,
-        tabBarInactiveTintColor: Colors.textPrimary,
+        tabBarInactiveTintColor: Colors.textSecondary,
         headerShown: false,
         tabBarButton: HapticTab,
         tabBarBackground: TabBarBackground,
         tabBarStyle: Platform.select({
           ios: {
             position: 'absolute',
-            backgroundColor: Colors.card,
+            backgroundColor: 'white',
+            borderTopWidth: 0,
+            marginBottom: 0,
+            height: 80,
+            shadowColor: '#000',
+            shadowOffset: { width: 0, height: -2 }, // Shadow from top
+            shadowOpacity: 0.1,
+            shadowRadius: 8,
+            elevation: 8,
+          },
+          android: {
+            backgroundColor: 'white',
+            borderTopWidth: 0,
+            marginBottom: 0,
+            height: 70,
+            shadowColor: '#000',
+            shadowOffset: { width: 0, height: -2 }, // Shadow from top
+            shadowOpacity: 0.15,
+            shadowRadius: 8,
+            elevation: 12,
           },
           default: {
-            backgroundColor: Colors.card,
+            backgroundColor: 'white', 
+            height: 65,
           },
         }),
+        tabBarItemStyle: {
+          paddingVertical: 8,
+          borderRadius: 16,
+          marginHorizontal: 4,
+        },
+        tabBarLabelStyle: {
+          fontSize: 11,
+          fontWeight: '600',
+          marginTop: 4,
+          letterSpacing: 0.5,
+        },
+        tabBarIconStyle: {
+          marginBottom: -2,
+        },
       }}
     >
       <Tabs.Screen
         name="index"
         options={{
           title: 'Home',
-          tabBarIcon: ({ color }) => (
-            <MaterialCommunityIcons name="home-outline" size={28} color={color} />
+          tabBarIcon: ({ color, focused }) => (
+            <MaterialCommunityIcons 
+              name={focused ? "home" : "home-outline"} 
+              size={focused ? 26 : 24} 
+              color={color}
+              style={{
+                transform: [{ scale: focused ? 1.1 : 1 }],
+                opacity: focused ? 1 : 0.8,
+              }}
+            />
           ),
+          tabBarAccessibilityLabel: 'Home tab',
+          tabBarButtonTestID: 'home-tab',
         }}
       />
-       <Tabs.Screen
+      
+      <Tabs.Screen
         name="recognition"
         options={{
-          title: 'Recognition',
-          tabBarIcon: ({ color }) => (
-            <MaterialCommunityIcons name="camera-outline" size={28} color={color} />
+          title: 'Camera',
+          tabBarIcon: ({ color, focused }) => (
+            <MaterialCommunityIcons 
+              name={focused ? "camera" : "camera-outline"} 
+              size={focused ? 26 : 24} 
+              color={color}
+              style={{
+                transform: [{ scale: focused ? 1.1 : 1 }],
+                opacity: focused ? 1 : 0.8,
+              }}
+            />
           ),
+          tabBarAccessibilityLabel: 'Camera recognition tab',
+          tabBarButtonTestID: 'camera-tab',
         }}
       />
+      
       <Tabs.Screen
-        name="explore"
+        name="characters"
         options={{
           title: 'Characters',
-          tabBarIcon: ({ color }) => (
-            <MaterialCommunityIcons name="format-letter-case" size={28} color={color} />
+          tabBarIcon: ({ color, focused }) => (
+            <MaterialCommunityIcons 
+              name={focused ? "format-letter-case" : "format-letter-case-upper"} 
+              size={focused ? 26 : 24} 
+              color={color}
+              style={{
+                transform: [{ scale: focused ? 1.1 : 1 }],
+                opacity: focused ? 1 : 0.8,
+              }}
+            />
           ),
+          tabBarAccessibilityLabel: 'Characters tab',
+          tabBarButtonTestID: 'characters-tab',
         }}
       />
     </Tabs>

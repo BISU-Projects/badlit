@@ -4,7 +4,7 @@
     "slug": "KuliTra",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/kt.png",
+    "icon": "./assets/images/kt-logo.png",
     "scheme": "mobile",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
@@ -13,7 +13,7 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/kt.png",
+        "foregroundImage": "./assets/images/kt-logo.png",
         "backgroundColor": "#ffffff"
       },
       "edgeToEdgeEnabled": true,
@@ -22,14 +22,14 @@
     "web": {
       "bundler": "metro",
       "output": "static",
-      "favicon": "./assets/images/kt.png"
+      "favicon": "./assets/images/kt-logo.png"
     },
     "plugins": [
       "expo-router",
       [
         "expo-splash-screen",
         {
-          "image": "./assets/images/kt.png",
+          "image": "./assets/images/kt-logo.png",
           "imageWidth": 200,
           "resizeMode": "contain",
           "backgroundColor": "#ffffff"
