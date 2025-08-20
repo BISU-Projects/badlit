@@ -8,7 +8,7 @@ import {
   Platform,
   StatusBar as RNStatusBar,
   TextInput,
-  ScrollView
+  Modal,
 } from 'react-native';
 import { Text, Surface } from 'react-native-paper';
 import { Image } from 'expo-image';
@@ -121,31 +121,93 @@ const CharacterCard = React.memo<{
 
 CharacterCard.displayName = 'CharacterCard';
 
-// Memoized Filter Chip Component
-const FilterChip = React.memo<{
+// Dropdown Filter Component
+const FilterDropdown = React.memo<{
   label: string;
-  isSelected: boolean;
-  onPress: () => void;
-}>(({ label, isSelected, onPress }) => (
-  <TouchableOpacity
-    style={[
-      styles.filterChip,
-      isSelected && styles.filterChipSelected
-    ]}
-    onPress={onPress}
-  >
-    <Text
-      style={[
-        styles.filterChipText,
-        isSelected && styles.filterChipTextSelected
-      ]}
-    >
-      {label}
-    </Text>
-  </TouchableOpacity>
-));
+  value: string | null;
+  options: string[];
+  onSelect: (value: string | null) => void;
+  placeholder: string;
+}>(({ label, value, options, onSelect, placeholder }) => {
+  const [isVisible, setIsVisible] = useState(false);
 
-FilterChip.displayName = 'FilterChip';
+  const handleSelect = useCallback((option: string | null) => {
+    onSelect(option);
+    setIsVisible(false);
+  }, [onSelect]);
+
+  const displayValue = value || placeholder;
+
+  return (
+    <View style={styles.dropdownContainer}>
+      <TouchableOpacity
+        style={[styles.dropdownButton, value && styles.dropdownButtonSelected]}
+        onPress={() => setIsVisible(true)}
+      >
+        <Text style={[
+          styles.dropdownButtonText,
+          value && styles.dropdownButtonTextSelected
+        ]}>
+          {displayValue}
+        </Text>
+        <Text style={[
+          styles.dropdownArrow,
+          value && styles.dropdownArrowSelected
+        ]}>
+          ▼
+        </Text>
+      </TouchableOpacity>
+
+      <Modal
+        visible={isVisible}
+        transparent={true}
+        animationType="fade"
+        onRequestClose={() => setIsVisible(false)}
+      >
+        <TouchableOpacity
+          style={styles.modalOverlay}
+          activeOpacity={1}
+          onPress={() => setIsVisible(false)}
+        >
+          <View style={styles.dropdownModal}>
+            <Text style={styles.dropdownTitle}>{label}</Text>
+            
+            <TouchableOpacity
+              style={[styles.dropdownOption, !value && styles.dropdownOptionSelected]}
+              onPress={() => handleSelect(null)}
+            >
+              <Text style={[
+                styles.dropdownOptionText,
+                !value && styles.dropdownOptionTextSelected
+              ]}>
+                All {label}
+              </Text>
+              {!value && <Text style={styles.checkmark}>✓</Text>}
+            </TouchableOpacity>
+
+            {options.map((option) => (
+              <TouchableOpacity
+                key={option}
+                style={[styles.dropdownOption, value === option && styles.dropdownOptionSelected]}
+                onPress={() => handleSelect(option)}
+              >
+                <Text style={[
+                  styles.dropdownOptionText,
+                  value === option && styles.dropdownOptionTextSelected
+                ]}>
+                  {option}
+                </Text>
+                {value === option && <Text style={styles.checkmark}>✓</Text>}
+              </TouchableOpacity>
+            ))}
+          </View>
+        </TouchableOpacity>
+      </Modal>
+    </View>
+  );
+});
+
+FilterDropdown.displayName = 'FilterDropdown';
 
 export default function CharactersScreen() {
   const router = useRouter();
@@ -180,12 +242,12 @@ export default function CharactersScreen() {
     });
   }, [router]);
 
-  const handleRarityFilter = useCallback((rarity: string) => {
-    setSelectedRarity(prev => prev === rarity ? null : rarity);
+  const handleRarityFilter = useCallback((rarity: string | null) => {
+    setSelectedRarity(rarity);
   }, []);
 
-  const handleCategoryFilter = useCallback((category: string) => {
-    setSelectedCategory(prev => prev === category ? null : category);
+  const handleCategoryFilter = useCallback((category: string | null) => {
+    setSelectedCategory(category);
   }, []);
 
   const renderCharacterCard = useCallback(({ item, index }: { item: KulitanCharacter; index: number }) => (
@@ -227,29 +289,22 @@ export default function CharactersScreen() {
             autoCapitalize="none"
           />
 
-          <ScrollView
-            horizontal
-            showsHorizontalScrollIndicator={false}
-            style={styles.filterScroll}
-            contentContainerStyle={styles.filterScrollContent}
-          >
-            {rarityOptions.map(r => (
-              <FilterChip
-                key={r}
-                label={r}
-                isSelected={selectedRarity === r}
-                onPress={() => handleRarityFilter(r)}
-              />
-            ))}
-            {categoryOptions.map(c => (
-              <FilterChip
-                key={c}
-                label={c}
-                isSelected={selectedCategory === c}
-                onPress={() => handleCategoryFilter(c)}
-              />
-            ))}
-          </ScrollView>
+          <View style={styles.filtersContainer}>
+            <FilterDropdown
+              label="Rarities"
+              value={selectedRarity}
+              options={rarityOptions}
+              onSelect={handleRarityFilter}
+              placeholder="All Rarities"
+            />
+            <FilterDropdown
+              label="Categories"
+              value={selectedCategory}
+              options={categoryOptions}
+              onSelect={handleCategoryFilter}
+              placeholder="All Categories"
+            />
+          </View>
         </View>
 
         <FlatList
@@ -307,22 +362,25 @@ const styles = StyleSheet.create({
     color: Colors.textPrimary,
     borderWidth: 1,
     borderColor: Colors.border,
-    marginBottom: 10,
+    marginBottom: 12,
   },
-  filterScroll: {
-    flexGrow: 0,
+  filtersContainer: {
+    flexDirection: 'row',
+    gap: 12,
   },
-  filterScrollContent: {
-    paddingRight: 8,
+  dropdownContainer: {
+    flex: 1,
   },
-  filterChip: {
+  dropdownButton: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    backgroundColor: Colors.surface,
+    borderRadius: 12,
     paddingHorizontal: 14,
-    paddingVertical: 8,
-    borderRadius: 20,
+    paddingVertical: Platform.OS === 'ios' ? 10 : 8,
     borderWidth: 1,
     borderColor: Colors.border,
-    marginRight: 8,
-    backgroundColor: Colors.surface,
     ...Platform.select({
       ios: {
         shadowColor: '#000',
@@ -335,16 +393,83 @@ const styles = StyleSheet.create({
       }
     })
   },
-  filterChipSelected: {
+  dropdownButtonSelected: {
     backgroundColor: Colors.primary,
     borderColor: Colors.primary,
   },
-  filterChipText: {
-    fontSize: 13,
+  dropdownButtonText: {
+    fontSize: 14,
     color: Colors.textPrimary,
+    flex: 1,
   },
-  filterChipTextSelected: {
+  dropdownButtonTextSelected: {
     color: '#fff',
+    fontWeight: '600',
+  },
+  dropdownArrow: {
+    fontSize: 12,
+    color: Colors.textSecondary,
+    marginLeft: 8,
+  },
+  dropdownArrowSelected: {
+    color: '#fff',
+  },
+  modalOverlay: {
+    flex: 1,
+    backgroundColor: 'rgba(0, 0, 0, 0.5)',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  dropdownModal: {
+    backgroundColor: Colors.surface,
+    borderRadius: 16,
+    minWidth: width * 0.75,
+    maxHeight: '70%',
+    ...Platform.select({
+      ios: {
+        shadowColor: '#000',
+        shadowOpacity: 0.25,
+        shadowOffset: { width: 0, height: 4 },
+        shadowRadius: 12,
+      },
+      android: {
+        elevation: 8,
+      }
+    })
+  },
+  dropdownTitle: {
+    fontSize: 18,
+    fontWeight: '600',
+    color: Colors.textPrimary,
+    paddingHorizontal: 20,
+    paddingVertical: 16,
+    borderBottomWidth: 1,
+    borderBottomColor: Colors.border,
+  },
+  dropdownOption: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    paddingHorizontal: 20,
+    paddingVertical: 16,
+    borderBottomWidth: 1,
+    borderBottomColor: Colors.border + '40',
+  },
+  dropdownOptionSelected: {
+    backgroundColor: Colors.primary + '10',
+  },
+  dropdownOptionText: {
+    fontSize: 16,
+    color: Colors.textPrimary,
+    flex: 1,
+  },
+  dropdownOptionTextSelected: {
+    color: Colors.primary,
+    fontWeight: '600',
+  },
+  checkmark: {
+    fontSize: 16,
+    color: Colors.primary,
     fontWeight: '600',
   },
   listContent: {

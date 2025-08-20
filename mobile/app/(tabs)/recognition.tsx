@@ -102,26 +102,32 @@ export default function Recognition() {
     }, 300);
   };
 
-  // Add this function to handle "See More" button press
   const handleSeeMore = () => {
     if (!result) return;
     
     const className = result.class || result.predicted_class || result.label || 'Unknown';
     
-    // Search for the species in your database
-    const foundSpecies = searchCharacters(className);
+    // Clean up the className - remove any extra whitespace or special characters
+    const cleanClassName = className.trim().toLowerCase();
+    
+    // Search for the species in your database with improved logic
+    const foundSpecies = searchCharacters(cleanClassName);
+    
+    console.log(`Searching for: "${cleanClassName}"`); // Debug log
+    console.log(`Found species:`, foundSpecies); // Debug log
     
     if (foundSpecies.length > 0) {
-      // If species found, navigate to detail page
+      // If multiple matches, you might want to show a selection dialog
+      // For now, we'll take the first (most exact) match
       router.push({
         pathname: '/characters/detail',
         params: { id: foundSpecies[0].id }
       });
     } else {
-      // If species not found, show alert or do nothing
+      // If species not found, show alert with suggestion
       Alert.alert(
         "Species Not Found",
-        `"${className}" is not available in our species database yet.`,
+        `"${className}" is not available in our species database yet. Please check if the species name is correct.`,
         [{ text: "OK" }]
       );
     }
