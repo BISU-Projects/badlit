@@ -1984,7 +1984,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
 {
   id: '71',
   name: 'bí/î',
-  image: require('@/assets/images/kt-logo.png'),
+  image: require('@/assets/images/bi-i.jpg'),
   audio: require('@/assets/audio/a.mp3'),
   pronunciation: 'bí',
   category: 'Basic Consonant',
@@ -2012,7 +2012,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
 {
   id: '72',
   name: 'gú/û',
-  image: require('@/assets/images/kt-logo.png'),
+  image: require('@/assets/images/gu-u.jpg'),
   audio: require('@/assets/audio/a.mp3'),
   pronunciation: 'gú',
   category: 'Basic Consonant',
@@ -2040,7 +2040,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
 {
   id: '73',
   name: 'kú/û',
-  image: require('@/assets/images/kt-logo.png'),
+  image: require('@/assets/images/ku-u.jpg'),
   audio: require('@/assets/audio/a.mp3'),
   pronunciation: 'kú',
   category: 'Basic Consonant',
@@ -2065,11 +2065,10 @@ export const sampleCharactersData: KulitanCharacter[] = [
   writingInstructions: 'Form the "ka" character and add the "u" vowel modification',
   combinations: ['kú', 'ka', 'ki', 'ko', 'ke']
 },
-
 {
   id: '74',
   name: 'ngú/û',
-  image: require('@/assets/images/kt-logo.png'),
+  image: require('@/assets/images/ngu-u.jpg'),
   audio: require('@/assets/audio/a.mp3'),
   pronunciation: 'ngú',
   category: 'Basic Consonant',
@@ -2098,7 +2097,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
 {
   id: '75',
   name: 'tú/û',
-  image: require('@/assets/images/kt-logo.png'),
+  image: require('@/assets/images/tu-u.jpg'),
   audio: require('@/assets/audio/a.mp3'),
   pronunciation: 'tú',
   category: 'Basic Consonant',
@@ -2127,7 +2126,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
 {
   id: '76',
   name: 'dú/û',
-  image: require('@/assets/images/kt-logo.png'),
+  image: require('@/assets/images/du-u.jpg'),
   audio: require('@/assets/audio/a.mp3'),
   pronunciation: 'dú',
   category: 'Basic Consonant',
@@ -2156,7 +2155,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
 {
   id: '77',
   name: 'nú/û',
-  image: require('@/assets/images/kt-logo.png'),
+  image: require('@/assets/images/nu-u.jpg'),
   audio: require('@/assets/audio/a.mp3'),
   pronunciation: 'nú',
   category: 'Basic Consonant',
@@ -2185,7 +2184,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
 {
   id: '78',
   name: 'lú/û',
-  image: require('@/assets/images/kt-logo.png'),
+  image: require('@/assets/images/lu-u.jpg'),
   audio: require('@/assets/audio/a.mp3'),
   pronunciation: 'lú',
   category: 'Basic Consonant',
@@ -2213,7 +2212,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
 {
   id: '79',
   name: 'sú/û',
-  image: require('@/assets/images/kt-logo.png'),
+  image: require('@/assets/images/su-u.jpg'),
   audio: require('@/assets/audio/a.mp3'),
   pronunciation: 'sú',
   category: 'Basic Consonant',
@@ -2241,7 +2240,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
 {
   id: '80',
   name: 'mú/û',
-  image: require('@/assets/images/kt-logo.png'),
+  image: require('@/assets/images/mu-u.jpg'),
   audio: require('@/assets/audio/a.mp3'),
   pronunciation: 'mú',
   category: 'Basic Consonant',
@@ -2269,7 +2268,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
 {
   id: '81',
   name: 'pú/û',
-  image: require('@/assets/images/kt-logo.png'),
+  image: require('@/assets/images/pu-u.jpg'),
   audio: require('@/assets/audio/a.mp3'),
   pronunciation: 'pú',
   category: 'Basic Consonant',
@@ -2297,7 +2296,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
 {
   id: '82',
   name: 'bú/û',
-  image: require('@/assets/images/kt-logo.png'),
+  image: require('@/assets/images/bu-u.jpg'),
   audio: require('@/assets/audio/a.mp3'),
   pronunciation: 'bú',
   category: 'Basic Consonant',
@@ -2325,7 +2324,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
 {
   id: '83',
   name: 'GANG',
-  image: require('@/assets/images/kt-logo.png'),
+  image: require('@/assets/images/gang.jpg'),
   audio: require('@/assets/audio/a.mp3'),
   pronunciation: 'gang',
   category: 'Complex Consonant',
@@ -2350,11 +2349,10 @@ export const sampleCharactersData: KulitanCharacter[] = [
   writingInstructions: 'Form the "ga" character and add the "ng" final consonant marker',
   combinations: ['gang', 'ga', 'gi', 'go', 'gu']
 },
-
 {
   id: '84',
   name: 'KANK',
-  image: require('@/assets/images/kt-logo.png'),
+  image: require('@/assets/images/kank.jpg'),
   audio: require('@/assets/audio/a.mp3'),
   pronunciation: 'kank',
   category: 'Complex Consonant',
@@ -2382,7 +2380,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
 {
   id: '85',
   name: 'NGANG',
-  image: require('@/assets/images/kt-logo.png'),
+  image: require('@/assets/images/ngang.jpg'),
   audio: require('@/assets/audio/a.mp3'),
   pronunciation: 'ngang',
   category: 'Complex Consonant',
@@ -2410,7 +2408,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
 {
   id: '86',
   name: 'TANG',
-  image: require('@/assets/images/kt-logo.png'),
+  image: require('@/assets/images/tang.jpg'),
   audio: require('@/assets/audio/a.mp3'),
   pronunciation: 'tang',
   category: 'Complex Consonant',
@@ -2438,7 +2436,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
 {
   id: '87',
   name: 'DANG',
-  image: require('@/assets/images/kt-logo.png'),
+  image: require('@/assets/images/dang.jpg'),
   audio: require('@/assets/audio/a.mp3'),
   pronunciation: 'dang',
   category: 'Complex Consonant',
@@ -2466,7 +2464,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
 {
   id: '88',
   name: 'NANG',
-  image: require('@/assets/images/kt-logo.png'),
+  image: require('@/assets/images/nang.jpg'),
   audio: require('@/assets/audio/a.mp3'),
   pronunciation: 'nang',
   category: 'Complex Consonant',
@@ -2494,7 +2492,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
 {
   id: '89',
   name: 'LANG',
-  image: require('@/assets/images/kt-logo.png'),
+  image: require('@/assets/images/lang.jpg'),
   audio: require('@/assets/audio/a.mp3'),
   pronunciation: 'lang',
   category: 'Complex Consonant',
@@ -2522,7 +2520,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
 {
   id: '90',
   name: 'SANG',
-  image: require('@/assets/images/kt-logo.png'),
+  image: require('@/assets/images/sang.jpg'),
   audio: require('@/assets/audio/a.mp3'),
   pronunciation: 'sang',
   category: 'Complex Consonant',
@@ -2550,7 +2548,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
 {
   id: '91',
   name: 'MANG',
-  image: require('@/assets/images/kt-logo.png'),
+  image: require('@/assets/images/mang.jpg'),
   audio: require('@/assets/audio/a.mp3'),
   pronunciation: 'mang',
   category: 'Complex Consonant',
@@ -2578,7 +2576,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
 {
   id: '92',
   name: 'PANG',
-  image: require('@/assets/images/kt-logo.png'),
+  image: require('@/assets/images/pang.jpg'),
   audio: require('@/assets/audio/a.mp3'),
   pronunciation: 'pang',
   category: 'Complex Consonant',
@@ -2606,7 +2604,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
 {
   id: '93',
   name: 'BANG',
-  image: require('@/assets/images/kt-logo.png'),
+  image: require('@/assets/images/bang.jpg'),
   audio: require('@/assets/audio/a.mp3'),
   pronunciation: 'bang',
   category: 'Complex Consonant',
