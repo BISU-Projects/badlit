@@ -136,7 +136,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
   {
     id: '5',
     name: 'TA',
-    image: require('@/assets/images/kt-logo.png'),
+    image: require('@/assets/images/ta.jpg'),
     audio: require('@/assets/audio/a.mp3'),
     pronunciation: 'ta',
     category: 'Basic Consonant',
@@ -164,7 +164,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
   {
     id: '6',
     name: 'DA',
-    image: require('@/assets/images/kt-logo.png'),
+    image: require('@/assets/images/da.jpg'),
     audio: require('@/assets/audio/a.mp3'),
     pronunciation: 'da',
     category: 'Basic Consonant',
@@ -192,7 +192,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
   {
     id: '7',
     name: 'NA',
-    image: require('@/assets/images/kt-logo.png'),
+    image: require('@/assets/images/na.jpg'),
     audio: require('@/assets/audio/a.mp3'),
     pronunciation: 'na',
     category: 'Basic Consonant',
@@ -220,7 +220,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
   {
     id: '8',
     name: 'LA',
-    image: require('@/assets/images/kt-logo.png'),
+    image: require('@/assets/images/la.jpg'),
     audio: require('@/assets/audio/a.mp3'),
     pronunciation: 'la',
     category: 'Basic Consonant',
@@ -248,7 +248,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
   {
     id: '9',
     name: 'SA',
-    image: require('@/assets/images/kt-logo.png'),
+    image: require('@/assets/images/sa.jpg'),
     audio: require('@/assets/audio/a.mp3'),
     pronunciation: 'sa',
     category: 'Basic Consonant',
@@ -276,7 +276,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
   {
     id: '10',
     name: 'MA',
-    image: require('@/assets/images/kt-logo.png'),
+    image: require('@/assets/images/ma.jpg'),
     audio: require('@/assets/audio/a.mp3'),
     pronunciation: 'ma',
     category: 'Basic Consonant',
@@ -304,7 +304,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
   {
     id: '11',
     name: 'PA',
-    image: require('@/assets/images/kt-logo.png'),
+    image: require('@/assets/images/pa.jpg'),
     audio: require('@/assets/audio/a.mp3'),
     pronunciation: 'pa',
     category: 'Basic Consonant',
@@ -332,7 +332,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
   {
     id: '12',
     name: 'BA',
-    image: require('@/assets/images/kt-logo.png'),
+    image: require('@/assets/images/ba.jpg'),
     audio: require('@/assets/audio/a.mp3'),
     pronunciation: 'ba',
     category: 'Basic Consonant',
@@ -360,7 +360,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
   {
     id: '13',
     name: 'I',
-    image: require('@/assets/images/kt-logo.png'),
+    image: require('@/assets/images/i.jpg'),
     audio: require('@/assets/audio/a.mp3'),
     pronunciation: 'i',
     category: 'Basic Vowel',
@@ -388,7 +388,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
   {
     id: '14',
     name: 'GI',
-    image: require('@/assets/images/kt-logo.png'),
+    image: require('@/assets/images/gi.jpg'),
     audio: require('@/assets/audio/a.mp3'),
     pronunciation: 'gi',
     category: 'Basic Consonant',
@@ -416,7 +416,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
   {
     id: '15',
     name: 'KI',
-    image: require('@/assets/images/kt-logo.png'),
+    image: require('@/assets/images/ki.jpg'),
     audio: require('@/assets/audio/a.mp3'),
     pronunciation: 'ki',
     category: 'Basic Consonant',
@@ -444,7 +444,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
   {
     id: '16',
     name: 'NGI',
-    image: require('@/assets/images/kt-logo.png'),
+    image: require('@/assets/images/ngi.jpg'),
     audio: require('@/assets/audio/a.mp3'),
     pronunciation: 'ngi',
     category: 'Basic Consonant',
@@ -472,7 +472,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
   {
     id: '17',
     name: 'TI',
-    image: require('@/assets/images/kt-logo.png'),
+    image: require('@/assets/images/ti.jpg'),
     audio: require('@/assets/audio/a.mp3'),
     pronunciation: 'ti',
     category: 'Basic Consonant',
@@ -500,7 +500,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
   {
     id: '18',
     name: 'DI',
-    image: require('@/assets/images/kt-logo.png'),
+    image: require('@/assets/images/di.jpg'),
     audio: require('@/assets/audio/a.mp3'),
     pronunciation: 'di',
     category: 'Basic Consonant',
@@ -528,7 +528,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
   {
     id: '19',
     name: 'NI',
-    image: require('@/assets/images/kt-logo.png'),
+    image: require('@/assets/images/ni.jpg'),
     audio: require('@/assets/audio/a.mp3'),
     pronunciation: 'ni',
     category: 'Basic Consonant',
@@ -556,7 +556,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
   {
     id: '20',
     name: 'LI',
-    image: require('@/assets/images/kt-logo.png'),
+    image: require('@/assets/images/li.jpg'),
     audio: require('@/assets/audio/a.mp3'),
     pronunciation: 'li',
     category: 'Basic Consonant',
@@ -1703,7 +1703,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
 },
 {
   id: '61',
-  name: 'GÍ',
+  name: 'gí/î',
   image: require('@/assets/images/kt-logo.png'),
   audio: require('@/assets/audio/a.mp3'),
   pronunciation: 'gí',
@@ -1731,7 +1731,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
 },
 {
   id: '62',
-  name: 'KÍ',
+  name: 'kí/î',
   image: require('@/assets/images/kt-logo.png'),
   audio: require('@/assets/audio/a.mp3'),
   pronunciation: 'kí',
@@ -1759,7 +1759,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
 },
 {
   id: '63',
-  name: 'NGÍ',
+  name: 'ngí/î',
   image: require('@/assets/images/kt-logo.png'),
   audio: require('@/assets/audio/a.mp3'),
   pronunciation: 'ngí',
@@ -1787,7 +1787,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
 },
 {
   id: '64',
-  name: 'TÍ',
+  name: 'tí/î',
   image: require('@/assets/images/kt-logo.png'),
   audio: require('@/assets/audio/a.mp3'),
   pronunciation: 'tí',
@@ -1815,7 +1815,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
 },
 {
   id: '65',
-  name: 'DÍ',
+  name: 'dí/î',
   image: require('@/assets/images/kt-logo.png'),
   audio: require('@/assets/audio/a.mp3'),
   pronunciation: 'dí',
@@ -1843,7 +1843,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
 },
 {
   id: '66',
-  name: 'NÍ',
+  name: 'ní/î',
   image: require('@/assets/images/kt-logo.png'),
   audio: require('@/assets/audio/a.mp3'),
   pronunciation: 'ní',
@@ -1871,7 +1871,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
 },
 {
   id: '67',
-  name: 'Lí',
+  name: 'lí/î',
   image: require('@/assets/images/kt-logo.png'),
   audio: require('@/assets/audio/a.mp3'),
   pronunciation: 'lí',
@@ -1899,7 +1899,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
 },
 {
   id: '68',
-  name: 'SÍ',
+  name: 'sí/î',
   image: require('@/assets/images/kt-logo.png'),
   audio: require('@/assets/audio/a.mp3'),
   pronunciation: 'sí',
@@ -1927,7 +1927,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
 },
 {
   id: '69',
-  name: 'MÍ',
+  name: 'mí/î',
   image: require('@/assets/images/kt-logo.png'),
   audio: require('@/assets/audio/a.mp3'),
   pronunciation: 'mí',
@@ -1955,7 +1955,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
 },
 {
   id: '70',
-  name: 'PÍ',
+  name: 'pí/î',
   image: require('@/assets/images/kt-logo.png'),
   audio: require('@/assets/audio/a.mp3'),
   pronunciation: 'pí',
@@ -1983,7 +1983,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
 },
 {
   id: '71',
-  name: 'BÍ',
+  name: 'bí/î',
   image: require('@/assets/images/kt-logo.png'),
   audio: require('@/assets/audio/a.mp3'),
   pronunciation: 'bí',
@@ -2011,7 +2011,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
 },
 {
   id: '72',
-  name: 'GÚ',
+  name: 'gú/û',
   image: require('@/assets/images/kt-logo.png'),
   audio: require('@/assets/audio/a.mp3'),
   pronunciation: 'gú',
@@ -2037,10 +2037,9 @@ export const sampleCharactersData: KulitanCharacter[] = [
   writingInstructions: 'Form the "ga" character and add the "u" vowel modification',
   combinations: ['gú', 'ga', 'gi', 'go', 'ge']
 },
-
 {
   id: '73',
-  name: 'KÚ',
+  name: 'kú/û',
   image: require('@/assets/images/kt-logo.png'),
   audio: require('@/assets/audio/a.mp3'),
   pronunciation: 'kú',
@@ -2069,7 +2068,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
 
 {
   id: '74',
-  name: 'NGÚ',
+  name: 'ngú/û',
   image: require('@/assets/images/kt-logo.png'),
   audio: require('@/assets/audio/a.mp3'),
   pronunciation: 'ngú',
@@ -2098,7 +2097,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
 
 {
   id: '75',
-  name: 'TÚ',
+  name: 'tú/û',
   image: require('@/assets/images/kt-logo.png'),
   audio: require('@/assets/audio/a.mp3'),
   pronunciation: 'tú',
@@ -2127,7 +2126,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
 
 {
   id: '76',
-  name: 'DÚ',
+  name: 'dú/û',
   image: require('@/assets/images/kt-logo.png'),
   audio: require('@/assets/audio/a.mp3'),
   pronunciation: 'dú',
@@ -2156,7 +2155,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
 
 {
   id: '77',
-  name: 'NÚ',
+  name: 'nú/û',
   image: require('@/assets/images/kt-logo.png'),
   audio: require('@/assets/audio/a.mp3'),
   pronunciation: 'nú',
@@ -2185,7 +2184,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
 
 {
   id: '78',
-  name: 'LÚ',
+  name: 'lú/û',
   image: require('@/assets/images/kt-logo.png'),
   audio: require('@/assets/audio/a.mp3'),
   pronunciation: 'lú',
@@ -2211,10 +2210,9 @@ export const sampleCharactersData: KulitanCharacter[] = [
   writingInstructions: 'Form the "la" character and add the "u" vowel modification',
   combinations: ['lú', 'la', 'li', 'lo', 'le']
 },
-
 {
   id: '79',
-  name: 'SÚ',
+  name: 'sú/û',
   image: require('@/assets/images/kt-logo.png'),
   audio: require('@/assets/audio/a.mp3'),
   pronunciation: 'sú',
@@ -2240,10 +2238,9 @@ export const sampleCharactersData: KulitanCharacter[] = [
   writingInstructions: 'Form the "sa" character and add the "u" vowel modification',
   combinations: ['sú', 'sa', 'si', 'so', 'se']
 },
-
 {
   id: '80',
-  name: 'MÚ',
+  name: 'mú/û',
   image: require('@/assets/images/kt-logo.png'),
   audio: require('@/assets/audio/a.mp3'),
   pronunciation: 'mú',
@@ -2269,10 +2266,9 @@ export const sampleCharactersData: KulitanCharacter[] = [
   writingInstructions: 'Form the "ma" character and add the "u" vowel modification',
   combinations: ['mú', 'ma', 'mi', 'mo', 'me']
 },
-
 {
   id: '81',
-  name: 'PÚ',
+  name: 'pú/û',
   image: require('@/assets/images/kt-logo.png'),
   audio: require('@/assets/audio/a.mp3'),
   pronunciation: 'pú',
@@ -2298,10 +2294,9 @@ export const sampleCharactersData: KulitanCharacter[] = [
   writingInstructions: 'Form the "pa" character and add the "u" vowel modification',
   combinations: ['pú', 'pa', 'pi', 'po', 'pe']
 },
-
 {
   id: '82',
-  name: 'BÚ',
+  name: 'bú/û',
   image: require('@/assets/images/kt-logo.png'),
   audio: require('@/assets/audio/a.mp3'),
   pronunciation: 'bú',
@@ -2653,14 +2648,51 @@ export const getCharactersByRarity = (rarity: string): KulitanCharacter[] => {
   return sampleCharactersData.filter(character => character.rarity === rarity);
 };
 
-// Helper function for search
+// Helper function for search with improved matching logic
 export const searchCharacters = (query: string): KulitanCharacter[] => {
-  const lowercaseQuery = query.toLowerCase();
+  if (!query || query.trim() === '') return [];
+  
+  const lowercaseQuery = query.toLowerCase().trim();
+  
+  // First, try exact match
+  const exactMatches = sampleCharactersData.filter(character => 
+    character.name.toLowerCase() === lowercaseQuery ||
+    character.pronunciation.toLowerCase() === lowercaseQuery
+  );
+  
+  if (exactMatches.length > 0) {
+    return exactMatches;
+  }
+  
+  // Then try starts with match
+  const startsWithMatches = sampleCharactersData.filter(character => 
+    character.name.toLowerCase().startsWith(lowercaseQuery) ||
+    character.pronunciation.toLowerCase().startsWith(lowercaseQuery)
+  );
+  
+  if (startsWithMatches.length > 0) {
+    return startsWithMatches;
+  }
+  
+  // Finally, fallback to contains match
   return sampleCharactersData.filter(character => 
     character.name.toLowerCase().includes(lowercaseQuery) ||
     character.pronunciation.toLowerCase().includes(lowercaseQuery) ||
     character.category.toLowerCase().includes(lowercaseQuery) ||
     character.soundDescription.toLowerCase().includes(lowercaseQuery)
+  );
+};
+
+// Alternative: If you want even more specific matching, you can use this version
+export const searchCharactersStrict = (query: string): KulitanCharacter[] => {
+  if (!query || query.trim() === '') return [];
+  
+  const lowercaseQuery = query.toLowerCase().trim();
+  
+  // Only exact matches for name and pronunciation
+  return sampleCharactersData.filter(character => 
+    character.name.toLowerCase() === lowercaseQuery ||
+    character.pronunciation.toLowerCase() === lowercaseQuery
   );
 };
 
