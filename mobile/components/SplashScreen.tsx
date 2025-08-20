@@ -7,6 +7,7 @@ import Animated, {
   withTiming,
   withDelay,
   withSequence,
+  withRepeat,
   Easing,
   interpolate,
 } from 'react-native-reanimated';
@@ -15,160 +16,155 @@ interface SplashScreenProps {
   onFinish: () => void;
 }
 
-const KulitanCharacter = ({ delay, character, translation }: { delay: number; character: string; translation: string }) => {
-  const characterOpacity = useSharedValue(0);
-  const translationOpacity = useSharedValue(0);
-  const arrowOpacity = useSharedValue(0);
+const LoadingDots = () => {
+  const dot1 = useSharedValue(0.3);
+  const dot2 = useSharedValue(0.3);
+  const dot3 = useSharedValue(0.3);
 
   useEffect(() => {
-    // Show Kulitan character first
-    characterOpacity.value = withDelay(
-      delay,
-      withTiming(1, { duration: 600, easing: Easing.out(Easing.quad) })
-    );
-    
-    // Show arrow
-    arrowOpacity.value = withDelay(
-      delay + 400,
-      withTiming(1, { duration: 300 })
-    );
-    
-    // Show translation
-    translationOpacity.value = withDelay(
-      delay + 700,
-      withTiming(1, { duration: 600, easing: Easing.out(Easing.quad) })
-    );
-  }, [delay]);
-
-  const characterStyle = useAnimatedStyle(() => {
-    return {
-      opacity: characterOpacity.value,
-      transform: [
-        {
-          scale: interpolate(characterOpacity.value, [0, 1], [0.5, 1]),
-        },
-        {
-          translateY: interpolate(characterOpacity.value, [0, 1], [10, 0]),
-        },
-      ],
+    const animateDots = () => {
+      dot1.value = withSequence(
+        withTiming(1, { duration: 500, easing: Easing.out(Easing.quad) }),
+        withTiming(0.3, { duration: 500 })
+      );
+      dot2.value = withDelay(200, withSequence(
+        withTiming(1, { duration: 500, easing: Easing.out(Easing.quad) }),
+        withTiming(0.3, { duration: 500 })
+      ));
+      dot3.value = withDelay(400, withSequence(
+        withTiming(1, { duration: 500, easing: Easing.out(Easing.quad) }),
+        withTiming(0.3, { duration: 500 })
+      ));
     };
-  });
 
-  const arrowStyle = useAnimatedStyle(() => {
-    return {
-      opacity: arrowOpacity.value,
-      transform: [
-        {
-          scale: interpolate(arrowOpacity.value, [0, 1], [0.8, 1]),
-        },
-      ],
+    const startAnimation = () => {
+      animateDots();
+      const interval = setInterval(animateDots, 1800);
+      return interval;
     };
-  });
 
-  const translationStyle = useAnimatedStyle(() => {
-    return {
-      opacity: translationOpacity.value,
-      transform: [
-        {
-          scale: interpolate(translationOpacity.value, [0, 1], [0.5, 1]),
-        },
-        {
-          translateY: interpolate(translationOpacity.value, [0, 1], [10, 0]),
-        },
-      ],
-    };
-  });
+    const delayTimeout = setTimeout(() => {
+      const interval = startAnimation();
+      return () => clearInterval(interval);
+    }, 1000);
+
+    return () => clearTimeout(delayTimeout);
+  }, []);
+
+  const dot1Style = useAnimatedStyle(() => ({
+    opacity: dot1.value,
+    transform: [{ scale: interpolate(dot1.value, [0.3, 1], [0.8, 1.2]) }]
+  }));
+
+  const dot2Style = useAnimatedStyle(() => ({
+    opacity: dot2.value,
+    transform: [{ scale: interpolate(dot2.value, [0.3, 1], [0.8, 1.2]) }]
+  }));
+
+  const dot3Style = useAnimatedStyle(() => ({
+    opacity: dot3.value,
+    transform: [{ scale: interpolate(dot3.value, [0.3, 1], [0.8, 1.2]) }]
+  }));
 
   return (
-    <View style={styles.characterContainer}>
-      <Animated.Text style={[styles.kulitanChar, characterStyle]}>
-        {character}
-      </Animated.Text>
-      <Animated.Text style={[styles.arrow, arrowStyle]}>
-        →
-      </Animated.Text>
-      <Animated.Text style={[styles.latinChar, translationStyle]}>
-        {translation}
-      </Animated.Text>
+    <View style={styles.loadingDotsContainer}>
+      <Animated.View style={[styles.dot, dot1Style]} />
+      <Animated.View style={[styles.dot, dot2Style]} />
+      <Animated.View style={[styles.dot, dot3Style]} />
     </View>
   );
 };
 
-const WritingAnimation = () => {
-  const strokeProgress = useSharedValue(0);
+const LogoIcon = () => {
+  const scale = useSharedValue(0);
+  const rotate = useSharedValue(0);
 
   useEffect(() => {
-    strokeProgress.value = withDelay(
-      500,
-      withTiming(1, { duration: 2000, easing: Easing.out(Easing.quad) })
+    scale.value = withTiming(1, { 
+      duration: 800, 
+      easing: Easing.out(Easing.back(1.2)) 
+    });
+    
+    rotate.value = withSequence(
+      withTiming(5, { duration: 800 }),
+      withRepeat(
+        withSequence(
+          withTiming(-2, { duration: 2000, easing: Easing.inOut(Easing.quad) }),
+          withTiming(2, { duration: 2000, easing: Easing.inOut(Easing.quad) })
+        ),
+        -1,
+        true
+      )
     );
   }, []);
 
-  const strokeStyle = useAnimatedStyle(() => {
-    return {
-      width: interpolate(strokeProgress.value, [0, 1], [0, 120]),
-      opacity: strokeProgress.value,
-    };
-  });
+  const logoStyle = useAnimatedStyle(() => ({
+    transform: [
+      { scale: scale.value },
+      { rotate: `${rotate.value}deg` }
+    ],
+  }));
 
   return (
-    <View style={styles.writingContainer}>
-      <Animated.View style={[styles.stroke, strokeStyle]} />
-    </View>
+    <Animated.View style={[styles.logoIcon, logoStyle]}>
+      <Text style={styles.logoIconText}>Kt</Text>
+    </Animated.View>
   );
 };
 
 export default function SplashScreen({ onFinish }: SplashScreenProps) {
   const textOpacity = useSharedValue(0);
-  const logoScale = useSharedValue(0);
+  const subtitleOpacity = useSharedValue(0);
+  const loadingOpacity = useSharedValue(0);
 
   useEffect(() => {
-    // Show logo first
-    logoScale.value = withTiming(1, { 
-      duration: 800, 
-      easing: Easing.out(Easing.back(1.5)) 
-    });
-    
-    // Show text after characters start appearing
+    // Staggered text animations
     textOpacity.value = withDelay(
-      1200,
-      withTiming(1, { duration: 800 })
+      400,
+      withTiming(1, { duration: 600, easing: Easing.out(Easing.quad) })
     );
 
-    // Finish animation after all characters have appeared
-    const totalDuration = 4500; // 4.5 seconds total
+    subtitleOpacity.value = withDelay(
+      700,
+      withTiming(1, { duration: 600, easing: Easing.out(Easing.quad) })
+    );
+
+    loadingOpacity.value = withDelay(
+      1000,
+      withTiming(1, { duration: 600, easing: Easing.out(Easing.quad) })
+    );
+
+    // Finish animation
+    const totalDuration = 4000;
     setTimeout(() => {
       onFinish();
     }, totalDuration);
-  }, []);
+  }, [onFinish]);
 
-  const textAnimatedStyle = useAnimatedStyle(() => {
-    return {
-      opacity: textOpacity.value,
-      transform: [
-        {
-          translateY: interpolate(textOpacity.value, [0, 1], [20, 0]),
-        },
-      ],
-    };
-  });
+  const textAnimatedStyle = useAnimatedStyle(() => ({
+    opacity: textOpacity.value,
+    transform: [
+      { translateY: interpolate(textOpacity.value, [0, 1], [20, 0]) },
+    ],
+  }));
 
-  const logoStyle = useAnimatedStyle(() => {
-    return {
-      transform: [
-        {
-          scale: interpolate(logoScale.value, [0, 1], [0.3, 1]),
-        },
-      ],
-      opacity: logoScale.value,
-    };
-  });
+  const subtitleAnimatedStyle = useAnimatedStyle(() => ({
+    opacity: subtitleOpacity.value,
+    transform: [
+      { translateY: interpolate(subtitleOpacity.value, [0, 1], [15, 0]) },
+    ],
+  }));
+
+  const loadingAnimatedStyle = useAnimatedStyle(() => ({
+    opacity: loadingOpacity.value,
+    transform: [
+      { translateY: interpolate(loadingOpacity.value, [0, 1], [10, 0]) },
+    ],
+  }));
 
   return (
     <>
-      {/* Fixed Status Bar Configuration */}
       <StatusBar style="dark" />
-      {/* Additional native status bar configuration for Android */}
       {Platform.OS === 'android' && (
         <RNStatusBar
           barStyle="dark-content"
@@ -177,30 +173,26 @@ export default function SplashScreen({ onFinish }: SplashScreenProps) {
       )}
       
       <View style={styles.container}>
-        {/* Logo/Brand area */}
-        <Animated.View style={[styles.logoContainer, logoStyle]}>
-          <Text style={styles.logoText}>ᜃᜓᜎᜒᜆ᜔</Text>
-          <WritingAnimation />
-        </Animated.View>
+        {/* Logo */}
+        <LogoIcon />
 
-        {/* Character translation examples */}
-        <View style={styles.translationContainer}>
-          <KulitanCharacter delay={800} character="ᜃ" translation="KA" />
-          <KulitanCharacter delay={1200} character="ᜎ" translation="LA" />
-          <KulitanCharacter delay={1600} character="ᜋ" translation="MA" />
-        </View>
-        
-        <Animated.Text style={[styles.loadingText, textAnimatedStyle]}>
+        {/* Main Title */}
+        <Animated.Text style={[styles.mainTitle, textAnimatedStyle]}>
           KuliTra
         </Animated.Text>
-        
-        <Animated.Text style={[styles.subText, textAnimatedStyle]}>
+
+        {/* Subtitle */}
+        <Animated.Text style={[styles.subtitle, subtitleAnimatedStyle]}>
           Kulitan Character Translation
         </Animated.Text>
-        
-        <Animated.Text style={[styles.loadingSubText, textAnimatedStyle]}>
-          Translating ancient script...
-        </Animated.Text>
+
+        {/* Loading Animation */}
+        <Animated.View style={[styles.loadingSection, loadingAnimatedStyle]}>
+          <LoadingDots />
+          <Text style={styles.loadingText}>
+            Loading translation tools...
+          </Text>
+        </Animated.View>
       </View>
     </>
   );
@@ -212,78 +204,61 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: '#fefefe',
-    paddingHorizontal: 20,
+    paddingHorizontal: 40,
   },
-  logoContainer: {
-    alignItems: 'center',
-    marginBottom: 40,
-  },
-  logoText: {
-    fontSize: 36,
-    color: '#8B4513',
-    fontWeight: 'bold',
-    marginBottom: 10,
-  },
-  writingContainer: {
-    height: 3,
-    width: 120,
-    backgroundColor: '#E5E5E5',
-    borderRadius: 1.5,
-    overflow: 'hidden',
-  },
-  stroke: {
-    height: 3,
+  logoIcon: {
+    width: 80,
+    height: 80,
+    borderRadius: 20,
     backgroundColor: '#8B4513',
-    borderRadius: 1.5,
-  },
-  translationContainer: {
+    justifyContent: 'center',
     alignItems: 'center',
-    marginBottom: 40,
-    gap: 20,
+    marginBottom: 30,
+    shadowColor: '#8B4513',
+    shadowOffset: { width: 0, height: 4 },
+    shadowOpacity: 0.2,
+    shadowRadius: 8,
+    elevation: 8,
   },
-  characterContainer: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 15,
-  },
-  kulitanChar: {
+  logoIconText: {
     fontSize: 32,
-    color: '#8B4513',
+    color: '#fefefe',
     fontWeight: 'bold',
-    width: 40,
-    textAlign: 'center',
-  },
-  arrow: {
-    fontSize: 20,
-    color: '#D2691E',
-    fontWeight: 'bold',
-  },
-  latinChar: {
-    fontSize: 24,
-    color: '#4A4A4A',
-    fontWeight: 'bold',
-    width: 40,
-    textAlign: 'center',
-  },
-  loadingText: {
-    fontSize: 28,
-    fontWeight: 'bold',
-    color: '#8B4513',
-    marginTop: 20,
-    textAlign: 'center',
     letterSpacing: 1,
   },
-  subText: {
+  mainTitle: {
+    fontSize: 32,
+    fontWeight: 'bold',
+    color: '#8B4513',
+    marginBottom: 8,
+    letterSpacing: 1.5,
+  },
+  subtitle: {
     fontSize: 16,
     color: '#D2691E',
-    marginTop: 5,
+    marginBottom: 50,
     textAlign: 'center',
-    fontWeight: '600',
+    fontWeight: '500',
   },
-  loadingSubText: {
+  loadingSection: {
+    alignItems: 'center',
+    gap: 20,
+  },
+  loadingDotsContainer: {
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
+    gap: 10,
+  },
+  dot: {
+    width: 12,
+    height: 12,
+    borderRadius: 6,
+    backgroundColor: '#8B4513',
+  },
+  loadingText: {
     fontSize: 14,
     color: '#8B7355',
-    marginTop: 8,
     textAlign: 'center',
     fontStyle: 'italic',
   },
