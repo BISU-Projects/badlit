@@ -84,6 +84,17 @@ export default function CharacterDetailScreen() {
     }
   };
 
+  // Navigation to drawing screen
+  const navigateToDrawing = () => {
+    router.push({
+      pathname: '/characters/drawing',
+      params: { 
+        id: character?.id,
+        name: character?.name 
+      }
+    });
+  };
+
   // Fallback if character not found
   if (!character) {
     return (
@@ -177,7 +188,7 @@ export default function CharacterDetailScreen() {
                 {/* Sound Button */}
                 <TouchableOpacity
                   style={styles.soundButton}
-                  onPress={playCharacterSound}
+                  // onPress={playCharacterSound}
                 >
                   <MaterialCommunityIcons 
                     name={isPlaying ? "pause" : "volume-medium"} 
@@ -220,6 +231,32 @@ export default function CharacterDetailScreen() {
             style={[styles.contentContainer, { marginTop: -CONTENT_OVERLAP }]}
           >
             <Surface style={styles.mainContent} elevation={4}>
+              {/* Practice Drawing Button - Featured at Top */}
+              <Animated.View entering={FadeIn.delay(250)} style={styles.section}>
+                <TouchableOpacity 
+                  style={styles.practiceButton}
+                  onPress={navigateToDrawing}
+                >
+                  <LinearGradient
+                    colors={['#28a745', '#20c997']}
+                    start={{ x: 0, y: 0 }}
+                    end={{ x: 1, y: 0 }}
+                    style={styles.practiceButtonGradient}
+                  >
+                    <View style={styles.practiceButtonContent}>
+                      <MaterialCommunityIcons name="draw" size={28} color="white" />
+                      <View style={styles.practiceButtonTextContainer}>
+                        <Text style={styles.practiceButtonTitle}>Practice Drawing</Text>
+                        <Text style={styles.practiceButtonSubtitle}>Learn to write {character.name}</Text>
+                      </View>
+                      <MaterialCommunityIcons name="arrow-right" size={24} color="white" />
+                    </View>
+                  </LinearGradient>
+                </TouchableOpacity>
+              </Animated.View>
+
+              <Divider style={styles.divider} />
+
               {/* Description Section */}
               <Animated.View entering={FadeIn.delay(300)} style={styles.section}>
                 <Text style={styles.sectionTitle}>About This Character</Text>
@@ -241,7 +278,7 @@ export default function CharacterDetailScreen() {
                   {/* Enhanced Sound Property with Clickable Audio */}
                   <TouchableOpacity 
                     style={styles.propertyItem}
-                    onPress={playCharacterSound}
+                    // onPress={playCharacterSound}
                   >
                     <MaterialCommunityIcons 
                       name={isPlaying ? "pause" : "volume-medium"} 
@@ -250,9 +287,6 @@ export default function CharacterDetailScreen() {
                     />
                     <Text style={styles.propertyLabel}>Sound (Tap to Play)</Text>
                     <Text style={styles.propertyValue}>/{character.pronunciation}/</Text>
-                    {/* {isPlaying && (
-                      <Text style={styles.playingText}>Playing...</Text>
-                    )} */}
                   </TouchableOpacity>
                   
                   <View style={styles.propertyItem}>
@@ -508,6 +542,47 @@ const styles = StyleSheet.create({
     borderTopRightRadius: 24,
     paddingTop: 24,
     minHeight: height - HEADER_HEIGHT + CONTENT_OVERLAP + 100,
+  },
+
+  // Practice Drawing Button Styles
+  practiceButton: {
+    borderRadius: 20,
+    overflow: 'hidden',
+    elevation: 6,
+    shadowColor: '#000',
+    shadowOffset: {
+      width: 0,
+      height: 3,
+    },
+    shadowOpacity: 0.15,
+    shadowRadius: 8,
+  },
+  practiceButtonGradient: {
+    padding: 4,
+  },
+  practiceButtonContent: {
+    backgroundColor: 'rgba(255,255,255,0.1)',
+    borderRadius: 16,
+    paddingVertical: 20,
+    paddingHorizontal: 24,
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+  },
+  practiceButtonTextContainer: {
+    flex: 1,
+    marginLeft: 16,
+  },
+  practiceButtonTitle: {
+    fontSize: 20,
+    fontWeight: '700',
+    color: 'white',
+    marginBottom: 4,
+  },
+  practiceButtonSubtitle: {
+    fontSize: 14,
+    color: 'rgba(255,255,255,0.9)',
+    fontWeight: '500',
   },
 
   // Sections
