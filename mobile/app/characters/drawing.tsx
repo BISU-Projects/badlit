@@ -124,6 +124,14 @@ export default function DrawingScreen() {
     clearResult();
   };
 
+  const tryAgain = () => {
+    clearCanvas();
+    // Optional: Add a small delay to show the clearing animation
+    setTimeout(() => {
+      clearResult();
+    }, 100);
+  };
+
   const captureDrawing = async (): Promise<string | null> => {
     try {
       if (!canvasRef.current) return null;
@@ -170,13 +178,34 @@ export default function DrawingScreen() {
 
     if (result.error) {
       return (
-        <Animated.View entering={FadeIn} style={styles.resultContainer}>
-          <Surface style={[styles.resultCard, styles.errorCard]} elevation={2}>
-            <MaterialCommunityIcons name="close-circle" size={48} color={Colors.error} />
-            <Text style={styles.resultTitle}>Recognition Failed</Text>
-            <Text style={styles.resultMessage}>{result.error}</Text>
-          </Surface>
-        </Animated.View>
+        <View style={styles.resultOverlay}>
+          <TouchableOpacity 
+            style={styles.resultBackdrop} 
+            activeOpacity={1}
+            onPress={() => {}} // Prevent dismissing by tapping backdrop
+          >
+            <Animated.View entering={FadeIn} style={styles.resultContainer}>
+              <Surface style={[styles.resultCard, styles.errorCard]} elevation={8 as any}>
+                <MaterialCommunityIcons name="close-circle" size={48} color={Colors.error} />
+                <Text style={styles.resultTitle}>Recognition Failed</Text>
+                <Text style={styles.resultMessage}>{result.error}</Text>
+                
+                <TouchableOpacity 
+                  style={styles.retryButton}
+                  onPress={tryAgain}
+                >
+                  <LinearGradient
+                    colors={[Colors.error, '#dc3545']}
+                    style={styles.retryButtonGradient}
+                  >
+                    <MaterialCommunityIcons name="refresh" size={20} color="white" />
+                    <Text style={styles.retryButtonText}>Try Again</Text>
+                  </LinearGradient>
+                </TouchableOpacity>
+              </Surface>
+            </Animated.View>
+          </TouchableOpacity>
+        </View>
       );
     }
 
@@ -187,44 +216,69 @@ export default function DrawingScreen() {
                      predictedClass.toLowerCase() === character?.name.toLowerCase();
 
     return (
-      <Animated.View entering={FadeIn} style={styles.resultContainer}>
-        <Surface style={[styles.resultCard, isCorrect ? styles.successCard : styles.warningCard]} elevation={4}>
-          <MaterialCommunityIcons 
-            name={isCorrect ? "check-circle" : "alert-circle"} 
-            size={48} 
-            color={isCorrect ? Colors.success : Colors.warning} 
-          />
-          <Text style={styles.resultTitle}>
-            {isCorrect ? "Great Job! 🎉" : "Keep Practicing! 💪"}
-          </Text>
-          <Text style={styles.resultMessage}>
-            {isCorrect 
-              ? `Perfect! You drew "${character?.name}" correctly!`
-              : `I detected "${predictedClass}" instead of "${character?.name}". Try again!`
-            }
-          </Text>
-          {confidence > 0 && (
-            <Text style={styles.confidenceText}>
-              Confidence: {(confidence * 100).toFixed(1)}%
-            </Text>
-          )}
-          
-          {isCorrect && (
-            <TouchableOpacity 
-              style={styles.continueButton}
-              onPress={() => router.back()}
-            >
-              <LinearGradient
-                colors={[Colors.success, '#28a745']}
-                style={styles.continueButtonGradient}
-              >
-                <MaterialCommunityIcons name="check" size={20} color="white" />
-                <Text style={styles.continueButtonText}>Continue Learning</Text>
-              </LinearGradient>
-            </TouchableOpacity>
-          )}
-        </Surface>
-      </Animated.View>
+      <View style={styles.resultOverlay}>
+        <TouchableOpacity 
+          style={styles.resultBackdrop} 
+          activeOpacity={1}
+          onPress={() => {}} // Prevent dismissing by tapping backdrop
+        >
+          <Animated.View entering={FadeIn} style={styles.resultContainer}>
+            <Surface style={[styles.resultCard, isCorrect ? styles.successCard : styles.warningCard]} elevation={8 as any}>
+              <MaterialCommunityIcons 
+                name={isCorrect ? "check-circle" : "alert-circle"} 
+                size={48} 
+                color={isCorrect ? Colors.success : Colors.warning} 
+              />
+              <Text style={styles.resultTitle}>
+                {isCorrect ? "Great Job! 🎉" : "Keep Practicing! 💪"}
+              </Text>
+              <Text style={styles.resultMessage}>
+                {isCorrect 
+                  ? `Perfect! You drew "${character?.name}" correctly!`
+                  : `I detected "${predictedClass}" instead of "${character?.name}". Try again!`
+                }
+              </Text>
+              {confidence > 0 && (
+                <Text style={styles.confidenceText}>
+                  Confidence: {(confidence * 100).toFixed(1)}%
+                </Text>
+              )}
+              
+              <View style={styles.resultButtonsContainer}>
+                {!isCorrect && (
+                  <TouchableOpacity 
+                    style={styles.retryButton}
+                    onPress={tryAgain}
+                  >
+                    <LinearGradient
+                      colors={[Colors.warning, '#ffc107']}
+                      style={styles.retryButtonGradient}
+                    >
+                      <MaterialCommunityIcons name="refresh" size={20} color="white" />
+                      <Text style={styles.retryButtonText}>Try Again</Text>
+                    </LinearGradient>
+                  </TouchableOpacity>
+                )}
+                
+                {isCorrect && (
+                  <TouchableOpacity 
+                    style={styles.continueButton}
+                    onPress={() => router.back()}
+                  >
+                    <LinearGradient
+                      colors={[Colors.success, '#28a745']}
+                      style={styles.continueButtonGradient}
+                    >
+                      <MaterialCommunityIcons name="check" size={20} color="white" />
+                      <Text style={styles.continueButtonText}>Continue Learning</Text>
+                    </LinearGradient>
+                  </TouchableOpacity>
+                )}
+              </View>
+            </Surface>
+          </Animated.View>
+        </TouchableOpacity>
+      </View>
     );
   };
 
@@ -269,7 +323,7 @@ export default function DrawingScreen() {
 
         {/* Reference Character */}
         <Animated.View entering={SlideInUp.delay(200)} style={styles.referenceSection}>
-          <Surface style={styles.referenceCard} elevation={2}>
+          <Surface style={styles.referenceCard} elevation={2 as any}>
             <Text style={styles.referenceTitle}>Reference Character</Text>
             <View style={styles.referenceImageContainer}>
               <Image 
@@ -284,7 +338,7 @@ export default function DrawingScreen() {
 
         {/* Drawing Canvas */}
         <Animated.View style={[styles.canvasSection, animatedStyle]}>
-          <Surface style={styles.canvasCard} elevation={3}>
+          <Surface style={styles.canvasCard} elevation={3 as any}>
             <Text style={styles.canvasTitle}>Your Drawing</Text>
             
             <View style={styles.canvasContainer}>
@@ -622,14 +676,38 @@ const styles = StyleSheet.create({
   },
 
   // Results
+  resultOverlay: {
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    right: 0,
+    bottom: 0,
+    zIndex: 1000,
+  },
+  resultBackdrop: {
+    flex: 1,
+    backgroundColor: 'rgba(0, 0, 0, 0.5)',
+    justifyContent: 'center',
+    alignItems: 'center',
+    paddingHorizontal: 20,
+  },
   resultContainer: {
-    margin: 16,
+    width: '100%',
+    maxWidth: 350,
   },
   resultCard: {
     backgroundColor: Colors.surface,
-    borderRadius: 16,
-    padding: 24,
+    borderRadius: 20,
+    padding: 28,
     alignItems: 'center',
+    shadowColor: '#000',
+    shadowOffset: {
+      width: 0,
+      height: 10,
+    },
+    shadowOpacity: 0.25,
+    shadowRadius: 20,
+    elevation: 20,
   },
   successCard: {
     borderWidth: 2,
@@ -661,15 +739,45 @@ const styles = StyleSheet.create({
     fontSize: 12,
     color: Colors.textSecondary,
     fontStyle: 'italic',
+    marginBottom: 16,
   },
-  continueButton: {
-    marginTop: 16,
+  
+  // Result Buttons Container
+  resultButtonsContainer: {
+    width: '100%',
+    gap: 12,
+  },
+  
+  // Retry Button (for "Keep Practicing" and errors)
+  retryButton: {
     borderRadius: 12,
     overflow: 'hidden',
+    width: '100%',
+  },
+  retryButtonGradient: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    paddingVertical: 12,
+    paddingHorizontal: 24,
+    gap: 8,
+  },
+  retryButtonText: {
+    fontSize: 16,
+    fontWeight: '600',
+    color: 'white',
+  },
+  
+  // Continue Button (for success)
+  continueButton: {
+    borderRadius: 12,
+    overflow: 'hidden',
+    width: '100%',
   },
   continueButtonGradient: {
     flexDirection: 'row',
     alignItems: 'center',
+    justifyContent: 'center',
     paddingVertical: 12,
     paddingHorizontal: 24,
     gap: 8,
