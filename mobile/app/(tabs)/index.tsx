@@ -287,7 +287,11 @@ export default function HomeScreen() {
           </View>
           <View style={styles.headerImage}>
             <View style={styles.kulitanSymbol}>
-              <Text style={styles.symbolText}>ᜃᜓᜎᜒᜆᜈ᜔</Text>
+              <Image 
+                source={require('@/assets/images/kt-logo1.png')} // Replace with your image path
+                style={styles.headerImageStyle}
+                resizeMode="contain"
+              />
             </View>
           </View>
         </View>
@@ -612,6 +616,11 @@ const styles = StyleSheet.create({
     borderRadius: 40,
     alignItems: 'center',
     justifyContent: 'center',
+    overflow: 'hidden',
+  },
+  headerImageStyle: {
+    width: 80,
+    height: 80, 
   },
   symbolText: {
     fontSize: 20,

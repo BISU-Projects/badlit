@@ -186,7 +186,7 @@ export default function CharacterDetailScreen() {
                 </View>
                 
                 {/* Sound Button */}
-                <TouchableOpacity
+                {/* <TouchableOpacity
                   style={styles.soundButton}
                   // onPress={playCharacterSound}
                 >
@@ -200,7 +200,7 @@ export default function CharacterDetailScreen() {
                       <MaterialCommunityIcons name="play" size={16} color={Colors.primary} />
                     </View>
                   )}
-                </TouchableOpacity>
+                </TouchableOpacity> */}
                 
                 <LinearGradient
                   colors={['transparent', 'rgba(0,0,0,0.3)']}
@@ -541,7 +541,7 @@ const styles = StyleSheet.create({
     borderTopLeftRadius: 24,
     borderTopRightRadius: 24,
     paddingTop: 24,
-    minHeight: height - HEADER_HEIGHT + CONTENT_OVERLAP + 100,
+    minHeight: height - HEADER_HEIGHT + CONTENT_OVERLAP,
   },
 
   // Practice Drawing Button Styles
@@ -727,6 +727,6 @@ const styles = StyleSheet.create({
   },
 
   bottomSpacing: {
-    height: 100,
+    height: 20,
   },
 });
