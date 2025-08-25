@@ -107,7 +107,7 @@ const LogoIcon = () => {
 
   return (
     <Animated.View style={[styles.logoIcon, logoStyle]}>
-      <Text style={styles.logoIconText}>Kt</Text>
+      <Text style={styles.logoIconText}>KT</Text>
     </Animated.View>
   );
 };

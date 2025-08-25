@@ -2,6 +2,7 @@ export const Colors = {
   // Primary accent used for buttons, headers, highlights
   primary: "#af1400", // Antique Red (primary accent color)
    primaryLight: "#FFF4F2", // Bright Spring Green
+   primaryMid: "#ee2005ff", // Soft Red
    primaryDark: "#6c1105ff", // Bright Spring Green
 
   // Backgrounds

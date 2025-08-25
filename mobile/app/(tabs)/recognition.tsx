@@ -198,7 +198,7 @@ export default function Recognition() {
                 onPress={tipsType === 'camera' ? proceedWithCamera : proceedWithGallery}
               >
                 <LinearGradient
-                  colors={[Colors.primary, Colors.primaryLight]}
+                  colors={[Colors.primary, Colors.primaryMid]}
                   start={{ x: 0, y: 0 }}
                   end={{ x: 1, y: 0 }}
                   style={styles.modalButtonGradient}
@@ -282,7 +282,7 @@ export default function Recognition() {
               disabled={!hasSpeciesInfo}
             >
               <LinearGradient
-                colors={hasSpeciesInfo ? [Colors.primary, Colors.primaryLight] : ['#C7C7CC', '#C7C7CC']}
+                colors={hasSpeciesInfo ? [Colors.primary, Colors.primaryMid] : ['#C7C7CC', '#C7C7CC']}
                 start={{ x: 0, y: 0 }}
                 end={{ x: 1, y: 0 }}
                 style={styles.seeMoreButtonGradient}
@@ -341,7 +341,7 @@ export default function Recognition() {
             disabled={loading}
           >
             <LinearGradient
-              colors={loading ? ['#C7C7CC', '#C7C7CC'] : [Colors.primary, Colors.primaryLight]}
+              colors={loading ? ['#C7C7CC', '#C7C7CC'] : [Colors.primary, Colors.primaryMid]}
               start={{ x: 0, y: 0 }}
               end={{ x: 1, y: 0 }}
               style={styles.buttonGradient}

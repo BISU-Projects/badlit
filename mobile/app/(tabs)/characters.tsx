@@ -48,6 +48,7 @@ const CharacterCard = React.memo<{
     switch (category) {
       case 'Basic Vowel': return '#FF6B6B';
       case 'Pure Vowel': return '#FF6B6B';
+      case 'Vowel': return '#FF6B6B';
       case 'Basic Consonant': return '#4ECDC4';
       case 'Complex Consonant': return '#4ECDC4';
       case 'Consonant with I': return '#45B7D1';
@@ -287,6 +288,7 @@ export default function CharactersScreen() {
             placeholderTextColor={Colors.textSecondary}
             autoCorrect={false}
             autoCapitalize="none"
+            maxLength={10}
           />
 
           <View style={styles.filtersContainer}>
