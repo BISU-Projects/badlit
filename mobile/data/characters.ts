@@ -58,7 +58,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
     category: 'Basic Consonant',
     rarity: 'Common',
     origin: 'Kapampangan Script',
-    type: 'Consonant-Vowel Combination',
+    type: 'Consonant-Vowel',
     soundDescription: 'Voiced velar stop with "a" vowel',
     description: 'The syllable "GA" in Kulitan script, combining the voiced velar consonant /g/ with the vowel /a/. This character represents a fundamental consonant-vowel combination in the script.',
     uses: [
@@ -86,7 +86,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
     category: 'Basic Consonant',
     rarity: 'Common',
     origin: 'Kapampangan Script',
-    type: 'Consonant-Vowel Combination',
+    type: 'Consonant-Vowel',
     soundDescription: 'Voiceless velar stop with "a" vowel',
     description: 'The syllable "KA" in Kulitan script, one of the most frequently used characters. It combines the voiceless velar consonant /k/ with the vowel /a/, forming a basic syllabic unit.',
     uses: [
@@ -114,7 +114,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
     category: 'Basic Consonant',
     rarity: 'Common',
     origin: 'Kapampangan Script',
-    type: 'Consonant-Vowel Combination',
+    type: 'Consonant-Vowel',
     soundDescription: 'Voiced velar nasal with "a" vowel',
     description: 'The syllable "NGA" in Kulitan script, representing the voiced velar nasal /ŋ/ combined with the vowel /a/. This sound is characteristic of Philippine languages and very common in Kapampangan.',
     uses: [
@@ -142,7 +142,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
     category: 'Basic Consonant',
     rarity: 'Common',
     origin: 'Kapampangan Script',
-    type: 'Consonant-Vowel Combination',
+    type: 'Consonant-Vowel',
     soundDescription: 'Voiceless alveolar stop with "a" vowel',
     description: 'The syllable "TA" in Kulitan script, combining the voiceless alveolar consonant /t/ with the vowel /a/. This is a fundamental character appearing frequently in Kapampangan text.',
     uses: [
@@ -170,7 +170,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
     category: 'Basic Consonant',
     rarity: 'Common',
     origin: 'Kapampangan Script',
-    type: 'Consonant-Vowel Combination',
+    type: 'Consonant-Vowel',
     soundDescription: 'Voiced alveolar stop with "a" vowel',
     description: 'The syllable "DA" in Kulitan script, representing the voiced alveolar consonant /d/ with the vowel /a/. This character is commonly used in Kapampangan words and names.',
     uses: [
@@ -198,7 +198,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
     category: 'Basic Consonant',
     rarity: 'Common',
     origin: 'Kapampangan Script',
-    type: 'Consonant-Vowel Combination',
+    type: 'Consonant-Vowel',
     soundDescription: 'Voiced alveolar nasal with "a" vowel',
     description: 'The syllable "NA" in Kulitan script, representing the voiced alveolar nasal /n/ with the vowel /a/. This is a very common character in Kapampangan words.',
     uses: [
@@ -226,7 +226,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
     category: 'Basic Consonant',
     rarity: 'Common',
     origin: 'Kapampangan Script',
-    type: 'Consonant-Vowel Combination',
+    type: 'Consonant-Vowel',
     soundDescription: 'Voiced alveolar lateral with "a" vowel',
     description: 'The syllable "LA" in Kulitan script, representing the voiced alveolar lateral /l/ with the vowel /a/. This character is frequently used in Kapampangan vocabulary.',
     uses: [
@@ -254,7 +254,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
     category: 'Basic Consonant',
     rarity: 'Common',
     origin: 'Kapampangan Script',
-    type: 'Consonant-Vowel Combination',
+    type: 'Consonant-Vowel',
     soundDescription: 'Voiceless alveolar fricative with "a" vowel',
     description: 'The syllable "SA" in Kulitan script, representing the voiceless alveolar fricative /s/ with the vowel /a/. This character appears frequently in Kapampangan text.',
     uses: [
@@ -282,7 +282,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
     category: 'Basic Consonant',
     rarity: 'Common',
     origin: 'Kapampangan Script',
-    type: 'Consonant-Vowel Combination',
+    type: 'Consonant-Vowel',
     soundDescription: 'Voiced bilabial nasal with "a" vowel',
     description: 'The syllable "MA" in Kulitan script, representing the voiced bilabial nasal /m/ with the vowel /a/. This is one of the most common characters in the script.',
     uses: [
@@ -310,7 +310,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
     category: 'Basic Consonant',
     rarity: 'Common',
     origin: 'Kapampangan Script',
-    type: 'Consonant-Vowel Combination',
+    type: 'Consonant-Vowel',
     soundDescription: 'Voiceless bilabial stop with "a" vowel',
     description: 'The syllable "PA" in Kulitan script, representing the voiceless bilabial stop /p/ with the vowel /a/. This character is very common in Kapampangan words.',
     uses: [
@@ -338,7 +338,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
     category: 'Basic Consonant',
     rarity: 'Common',
     origin: 'Kapampangan Script',
-    type: 'Consonant-Vowel Combination',
+    type: 'Consonant-Vowel',
     soundDescription: 'Voiced bilabial stop with "a" vowel',
     description: 'The syllable "BA" in Kulitan script, representing the voiced bilabial stop /b/ with the vowel /a/. This character appears frequently in Kapampangan vocabulary.',
     uses: [
@@ -394,7 +394,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
     category: 'Basic Consonant',
     rarity: 'Common',
     origin: 'Kapampangan Script',
-    type: 'Consonant-Vowel Combination',
+    type: 'Consonant-Vowel',
     soundDescription: 'Voiced velar stop with "i" vowel',
     description: 'The syllable "GI" in Kulitan script, formed by adding the "i" vowel marker to the "ga" character. This represents the voiced velar consonant /g/ with the vowel /i/.',
     uses: [
@@ -422,7 +422,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
     category: 'Basic Consonant',
     rarity: 'Common',
     origin: 'Kapampangan Script',
-    type: 'Consonant-Vowel Combination',
+    type: 'Consonant-Vowel',
     soundDescription: 'Voiceless velar stop with "i" vowel',
     description: 'The syllable "KI" in Kulitan script, formed by adding the "i" vowel marker to the "ka" character. This represents the voiceless velar consonant /k/ with the vowel /i/.',
     uses: [
@@ -450,7 +450,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
     category: 'Basic Consonant',
     rarity: 'Common',
     origin: 'Kapampangan Script',
-    type: 'Consonant-Vowel Combination',
+    type: 'Consonant-Vowel',
     soundDescription: 'Voiced velar nasal with "i" vowel',
     description: 'The syllable "NGI" in Kulitan script, formed by adding the "i" vowel marker to the "nga" character. This represents the voiced velar nasal /ŋ/ with the vowel /i/.',
     uses: [
@@ -478,7 +478,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
     category: 'Basic Consonant',
     rarity: 'Common',
     origin: 'Kapampangan Script',
-    type: 'Consonant-Vowel Combination',
+    type: 'Consonant-Vowel',
     soundDescription: 'Voiceless alveolar stop with "i" vowel',
     description: 'The syllable "TI" in Kulitan script, formed by adding the "i" vowel marker to the "ta" character. This represents the voiceless alveolar consonant /t/ with the vowel /i/.',
     uses: [
@@ -506,7 +506,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
     category: 'Basic Consonant',
     rarity: 'Common',
     origin: 'Kapampangan Script',
-    type: 'Consonant-Vowel Combination',
+    type: 'Consonant-Vowel',
     soundDescription: 'Voiced alveolar stop with "i" vowel',
     description: 'The syllable "DI" in Kulitan script, formed by adding the "i" vowel marker to the "da" character. This represents the voiced alveolar consonant /d/ with the vowel /i/.',
     uses: [
@@ -534,7 +534,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
     category: 'Basic Consonant',
     rarity: 'Common',
     origin: 'Kapampangan Script',
-    type: 'Consonant-Vowel Combination',
+    type: 'Consonant-Vowel',
     soundDescription: 'Voiced alveolar nasal with "i" vowel',
     description: 'The syllable "NI" in Kulitan script, formed by adding the "i" vowel marker to the "na" character. This represents the voiced alveolar nasal /n/ with the vowel /i/.',
     uses: [
@@ -562,7 +562,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
     category: 'Basic Consonant',
     rarity: 'Common',
     origin: 'Kapampangan Script',
-    type: 'Consonant-Vowel Combination',
+    type: 'Consonant-Vowel',
     soundDescription: 'Voiced alveolar lateral with "i" vowel',
     description: 'The syllable "LI" in Kulitan script, formed by adding the "i" vowel marker to the "la" character. This represents the voiced alveolar lateral /l/ with the vowel /i/.',
     uses: [
@@ -590,7 +590,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
     category: 'Basic Consonant',
     rarity: 'Common',
     origin: 'Kapampangan Script',
-    type: 'Consonant-Vowel Combination',
+    type: 'Consonant-Vowel',
     soundDescription: 'Voiceless alveolar fricative with "i" vowel',
     description: 'The syllable "SI" in Kulitan script, formed by adding the "i" vowel marker to the "sa" character. This represents the voiceless alveolar fricative /s/ with the vowel /i/.',
     uses: [
@@ -618,7 +618,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
     category: 'Basic Consonant',
     rarity: 'Common',
     origin: 'Kapampangan Script',
-    type: 'Consonant-Vowel Combination',
+    type: 'Consonant-Vowel',
     soundDescription: 'Voiced bilabial nasal with "i" vowel',
     description: 'The syllable "MI" in Kulitan script, combining the bilabial nasal consonant /m/ with the vowel /i/.',
     uses: [
@@ -646,7 +646,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
     category: 'Basic Consonant',
     rarity: 'Common',
     origin: 'Kapampangan Script',
-    type: 'Consonant-Vowel Combination',
+    type: 'Consonant-Vowel',
     soundDescription: 'Voiceless bilabial stop with "i" vowel',
     description: 'The syllable "PI" in Kulitan script, combining the voiceless bilabial consonant /p/ with the vowel /i/.',
     uses: [
@@ -674,7 +674,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
     category: 'Basic Consonant',
     rarity: 'Common',
     origin: 'Kapampangan Script',
-    type: 'Consonant-Vowel Combination',
+    type: 'Consonant-Vowel',
     soundDescription: 'Voiced bilabial stop with "i" vowel',
     description: 'The syllable "BI" in Kulitan script, combining the voiced bilabial consonant /b/ with the vowel /i/.',
     uses: [
@@ -730,7 +730,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
     category: 'Basic Consonant',
     rarity: 'Common',
     origin: 'Kapampangan Script',
-    type: 'Consonant-Vowel Combination',
+    type: 'Consonant-Vowel',
     soundDescription: 'Voiced velar stop with "u" vowel',
     description: 'The syllable "GU" in Kulitan script, combining the voiced velar consonant /g/ with the vowel /u/.',
     uses: [
@@ -758,7 +758,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
     category: 'Basic Consonant',
     rarity: 'Common',
     origin: 'Kapampangan Script',
-    type: 'Consonant-Vowel Combination',
+    type: 'Consonant-Vowel',
     soundDescription: 'Voiceless velar stop with "u" vowel',
     description: 'The syllable "KU" in Kulitan script, combining the voiceless velar consonant /k/ with the vowel /u/.',
     uses: [
@@ -786,7 +786,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
     category: 'Basic Consonant',
     rarity: 'Common',
     origin: 'Kapampangan Script',
-    type: 'Consonant-Vowel Combination',
+    type: 'Consonant-Vowel',
     soundDescription: 'Voiced velar nasal with "u" vowel',
     description: 'The syllable "NGU" in Kulitan script, combining the voiced velar nasal consonant /ŋ/ with the vowel /u/.',
     uses: [
@@ -814,7 +814,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
     category: 'Basic Consonant',
     rarity: 'Common',
     origin: 'Kapampangan Script',
-    type: 'Consonant-Vowel Combination',
+    type: 'Consonant-Vowel',
     soundDescription: 'Voiceless alveolar stop with "u" vowel',
     description: 'The syllable "TU" in Kulitan script, combining the voiceless alveolar consonant /t/ with the vowel /u/.',
     uses: [
@@ -842,7 +842,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
     category: 'Basic Consonant',
     rarity: 'Common',
     origin: 'Kapampangan Script',
-    type: 'Consonant-Vowel Combination',
+    type: 'Consonant-Vowel',
     soundDescription: 'Voiced alveolar stop with "u" vowel',
     description: 'The syllable "DU" in Kulitan script, combining the voiced alveolar consonant /d/ with the vowel /u/.',
     uses: [
@@ -870,7 +870,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
     category: 'Basic Consonant',
     rarity: 'Common',
     origin: 'Kapampangan Script',
-    type: 'Consonant-Vowel Combination',
+    type: 'Consonant-Vowel',
     soundDescription: 'Voiced alveolar nasal with "u" vowel',
     description: 'The syllable "NU" in Kulitan script, combining the voiced alveolar nasal consonant /n/ with the vowel /u/.',
     uses: [
@@ -898,7 +898,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
     category: 'Basic Consonant',
     rarity: 'Common',
     origin: 'Kapampangan Script',
-    type: 'Consonant-Vowel Combination',
+    type: 'Consonant-Vowel',
     soundDescription: 'Voiced alveolar lateral with "u" vowel',
     description: 'The syllable "LU" in Kulitan script, combining the voiced alveolar lateral consonant /l/ with the vowel /u/.',
     uses: [
@@ -926,7 +926,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
     category: 'Basic Consonant',
     rarity: 'Common',
     origin: 'Kapampangan Script',
-    type: 'Consonant-Vowel Combination',
+    type: 'Consonant-Vowel',
     soundDescription: 'Voiceless alveolar fricative with "e" vowel',
     description: 'The syllable "SE" in Kulitan script, combining the voiceless alveolar fricative consonant /s/ with the vowel /e/.',
     uses: [
@@ -954,7 +954,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
   category: 'Basic Consonant',
   rarity: 'Common',
   origin: 'Kapampangan Script',
-  type: 'Consonant-Vowel Combination',
+  type: 'Consonant-Vowel',
   soundDescription: 'Bilabial nasal with "u" vowel',
   description: 'The syllable "MU" in Kulitan script, combining the bilabial nasal consonant /m/ with the vowel /u/.',
   uses: [
@@ -982,7 +982,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
   category: 'Basic Consonant',
   rarity: 'Common',
   origin: 'Kapampangan Script',
-  type: 'Consonant-Vowel Combination',
+  type: 'Consonant-Vowel',
   soundDescription: 'Voiceless bilabial plosive with "u" vowel',
   description: 'The syllable "PU" in Kulitan script, combining the voiceless bilabial plosive consonant /p/ with the vowel /u/.',
   uses: [
@@ -1010,7 +1010,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
   category: 'Basic Consonant',
   rarity: 'Common',
   origin: 'Kapampangan Script',
-  type: 'Consonant-Vowel Combination',
+  type: 'Consonant-Vowel',
   soundDescription: 'Voiced bilabial plosive with "u" vowel',
   description: 'The syllable "BU" in Kulitan script, combining the voiced bilabial plosive consonant /b/ with the vowel /u/.',
   uses: [
@@ -1066,7 +1066,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
   category: 'Basic Consonant',
   rarity: 'Common',
   origin: 'Kapampangan Script',
-  type: 'Consonant-Vowel Combination',
+  type: 'Consonant-Vowel',
   soundDescription: 'Voiced velar plosive with "e" vowel',
   description: 'The syllable "GE" in Kulitan script, combining the voiced velar plosive consonant /g/ with the vowel /e/.',
   uses: [
@@ -1094,7 +1094,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
   category: 'Basic Consonant',
   rarity: 'Common',
   origin: 'Kapampangan Script',
-  type: 'Consonant-Vowel Combination',
+  type: 'Consonant-Vowel',
   soundDescription: 'Voiceless velar plosive with "e" vowel',
   description: 'The syllable "KE" in Kulitan script, combining the voiceless velar plosive consonant /k/ with the vowel /e/.',
   uses: [
@@ -1122,7 +1122,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
   category: 'Basic Consonant',
   rarity: 'Common',
   origin: 'Kapampangan Script',
-  type: 'Consonant-Vowel Combination',
+  type: 'Consonant-Vowel',
   soundDescription: 'Voiced velar nasal with "e" vowel',
   description: 'The syllable "NGE" in Kulitan script, combining the voiced velar nasal consonant /ŋ/ with the vowel /e/.',
   uses: [
@@ -1150,7 +1150,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
   category: 'Basic Consonant',
   rarity: 'Common',
   origin: 'Kapampangan Script',
-  type: 'Consonant-Vowel Combination',
+  type: 'Consonant-Vowel',
   soundDescription: 'Voiceless alveolar plosive with "e" vowel',
   description: 'The syllable "TE" in Kulitan script, combining the voiceless alveolar plosive consonant /t/ with the vowel /e/.',
   uses: [
@@ -1178,7 +1178,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
   category: 'Basic Consonant',
   rarity: 'Common',
   origin: 'Kapampangan Script',
-  type: 'Consonant-Vowel Combination',
+  type: 'Consonant-Vowel',
   soundDescription: 'Voiced alveolar plosive with "e" vowel',
   description: 'The syllable "DE" in Kulitan script, combining the voiced alveolar plosive consonant /d/ with the vowel /e/.',
   uses: [
@@ -1206,7 +1206,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
   category: 'Basic Consonant',
   rarity: 'Common',
   origin: 'Kapampangan Script',
-  type: 'Consonant-Vowel Combination',
+  type: 'Consonant-Vowel',
   soundDescription: 'Voiced alveolar nasal with "e" vowel',
   description: 'The syllable "NE" in Kulitan script, combining the voiced alveolar nasal consonant /n/ with the vowel /e/.',
   uses: [
@@ -1234,7 +1234,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
   category: 'Basic Consonant',
   rarity: 'Common',
   origin: 'Kapampangan Script',
-  type: 'Consonant-Vowel Combination',
+  type: 'Consonant-Vowel',
   soundDescription: 'Voiced alveolar lateral approximant with "e" vowel',
   description: 'The syllable "LE" in Kulitan script, combining the voiced alveolar lateral approximant consonant /l/ with the vowel /e/.',
   uses: [
@@ -1262,7 +1262,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
   category: 'Basic Consonant',
   rarity: 'Common',
   origin: 'Kapampangan Script',
-  type: 'Consonant-Vowel Combination',
+  type: 'Consonant-Vowel',
   soundDescription: 'Voiceless alveolar fricative with "e" vowel',
   description: 'The syllable "SE" in Kulitan script, combining the voiceless alveolar fricative consonant /s/ with the vowel /e/.',
   uses: [
@@ -1290,7 +1290,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
   category: 'Basic Consonant',
   rarity: 'Common',
   origin: 'Kapampangan Script',
-  type: 'Consonant-Vowel Combination',
+  type: 'Consonant-Vowel',
   soundDescription: 'Bilabial nasal with "e" vowel',
   description: 'The syllable "ME" in Kulitan script, combining the bilabial nasal consonant /m/ with the vowel /e/.',
   uses: [
@@ -1318,7 +1318,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
   category: 'Basic Consonant',
   rarity: 'Common',
   origin: 'Kapampangan Script',
-  type: 'Consonant-Vowel Combination',
+  type: 'Consonant-Vowel',
   soundDescription: 'Voiceless bilabial plosive with "e" vowel',
   description: 'The syllable "PE" in Kulitan script, combining the voiceless bilabial plosive consonant /p/ with the vowel /e/.',
   uses: [
@@ -1346,7 +1346,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
   category: 'Basic Consonant',
   rarity: 'Common',
   origin: 'Kapampangan Script',
-  type: 'Consonant-Vowel Combination',
+  type: 'Consonant-Vowel',
   soundDescription: 'Voiced bilabial plosive with "e" vowel',
   description: 'The syllable "BE" in Kulitan script, combining the voiced bilabial plosive consonant /b/ with the vowel /e/.',
   uses: [
@@ -1402,7 +1402,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
   category: 'Basic Consonant',
   rarity: 'Common',
   origin: 'Kapampangan Script',
-  type: 'Consonant-Vowel Combination',
+  type: 'Consonant-Vowel',
   soundDescription: 'Voiced velar plosive with "o" vowel',
   description: 'The syllable "GO" in Kulitan script, combining the voiced velar plosive consonant /g/ with the vowel /o/.',
   uses: [
@@ -1430,7 +1430,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
   category: 'Basic Consonant',
   rarity: 'Very Common',
   origin: 'Kapampangan Script',
-  type: 'Consonant-Vowel Combination',
+  type: 'Consonant-Vowel',
   soundDescription: 'Voiceless velar plosive with "o" vowel',
   description: 'The syllable "KO" in Kulitan script, combining the voiceless velar plosive consonant /k/ with the vowel /o/.',
   uses: [
@@ -1458,7 +1458,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
   category: 'Basic Consonant',
   rarity: 'Common',
   origin: 'Kapampangan Script',
-  type: 'Consonant-Vowel Combination',
+  type: 'Consonant-Vowel',
   soundDescription: 'Voiced velar nasal with "o" vowel',
   description: 'The syllable "NGO" in Kulitan script, combining the voiced velar nasal consonant /ŋ/ with the vowel /o/.',
   uses: [
@@ -1486,7 +1486,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
   category: 'Basic Consonant',
   rarity: 'Very Common',
   origin: 'Kapampangan Script',
-  type: 'Consonant-Vowel Combination',
+  type: 'Consonant-Vowel',
   soundDescription: 'Voiceless alveolar plosive with "o" vowel',
   description: 'The syllable "TO" in Kulitan script, combining the voiceless alveolar plosive consonant /t/ with the vowel /o/.',
   uses: [
@@ -1514,7 +1514,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
   category: 'Basic Consonant',
   rarity: 'Common',
   origin: 'Kapampangan Script',
-  type: 'Consonant-Vowel Combination',
+  type: 'Consonant-Vowel',
   soundDescription: 'Voiced alveolar plosive with "o" vowel',
   description: 'The syllable "DO" in Kulitan script, combining the voiced alveolar plosive consonant /d/ with the vowel /o/.',
   uses: [
@@ -1542,7 +1542,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
   category: 'Basic Consonant',
   rarity: 'Very Common',
   origin: 'Kapampangan Script',
-  type: 'Consonant-Vowel Combination',
+  type: 'Consonant-Vowel',
   soundDescription: 'Voiced alveolar nasal with "o" vowel',
   description: 'The syllable "NO" in Kulitan script, combining the voiced alveolar nasal consonant /n/ with the vowel /o/.',
   uses: [
@@ -1570,7 +1570,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
   category: 'Basic Consonant',
   rarity: 'Common',
   origin: 'Kapampangan Script',
-  type: 'Consonant-Vowel Combination',
+  type: 'Consonant-Vowel',
   soundDescription: 'Voiced alveolar lateral with "o" vowel',
   description: 'The syllable "LO" in Kulitan script, combining the voiced alveolar lateral consonant /l/ with the vowel /o/.',
   uses: [
@@ -1598,7 +1598,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
   category: 'Basic Consonant',
   rarity: 'Common',
   origin: 'Kapampangan Script',
-  type: 'Consonant-Vowel Combination',
+  type: 'Consonant-Vowel',
   soundDescription: 'Voiceless alveolar fricative with "o" vowel',
   description: 'The syllable "SO" in Kulitan script, combining the voiceless alveolar fricative consonant /s/ with the vowel /o/.',
   uses: [
@@ -1626,7 +1626,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
   category: 'Basic Consonant',
   rarity: 'Very Common',
   origin: 'Kapampangan Script',
-  type: 'Consonant-Vowel Combination',
+  type: 'Consonant-Vowel',
   soundDescription: 'Voiced bilabial nasal with "o" vowel',
   description: 'The syllable "MO" in Kulitan script, combining the voiced bilabial nasal consonant /m/ with the vowel /o/.',
   uses: [
@@ -1654,7 +1654,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
   category: 'Basic Consonant',
   rarity: 'Very Common',
   origin: 'Kapampangan Script',
-  type: 'Consonant-Vowel Combination',
+  type: 'Consonant-Vowel',
   soundDescription: 'Voiceless bilabial plosive with "o" vowel',
   description: 'The syllable "PO" in Kulitan script, combining the voiceless bilabial plosive consonant /p/ with the vowel /o/.',
   uses: [
@@ -1682,7 +1682,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
   category: 'Basic Consonant',
   rarity: 'Common',
   origin: 'Kapampangan Script',
-  type: 'Consonant-Vowel Combination',
+  type: 'Consonant-Vowel',
   soundDescription: 'Voiced bilabial plosive with "o" vowel',
   description: 'The syllable "BO" in Kulitan script, combining the voiced bilabial plosive consonant /b/ with the vowel /o/.',
   uses: [
@@ -1710,7 +1710,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
   category: 'Basic Consonant',
   rarity: 'Common',
   origin: 'Kapampangan Script',
-  type: 'Consonant-Vowel Combination',
+  type: 'Consonant-Vowel',
   soundDescription: 'Voiced velar plosive with "i" vowel',
   description: 'The syllable "GÍ" in Kulitan script, combining the voiced velar plosive consonant /g/ with the vowel /i/.',
   uses: [
@@ -1738,7 +1738,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
   category: 'Basic Consonant',
   rarity: 'Common',
   origin: 'Kapampangan Script',
-  type: 'Consonant-Vowel Combination',
+  type: 'Consonant-Vowel',
   soundDescription: 'Voiceless velar plosive with "i" vowel',
   description: 'The syllable "KÍ" in Kulitan script, combining the voiceless velar plosive consonant /k/ with the vowel /i/.',
   uses: [
@@ -1766,7 +1766,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
   category: 'Basic Consonant',
   rarity: 'Common',
   origin: 'Kapampangan Script',
-  type: 'Consonant-Vowel Combination',
+  type: 'Consonant-Vowel',
   soundDescription: 'Voiced velar nasal with "i" vowel',
   description: 'The syllable "NGÍ" in Kulitan script, combining the voiced velar nasal consonant /ŋ/ with the vowel /i/.',
   uses: [
@@ -1794,7 +1794,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
   category: 'Basic Consonant',
   rarity: 'Very Common',
   origin: 'Kapampangan Script',
-  type: 'Consonant-Vowel Combination',
+  type: 'Consonant-Vowel',
   soundDescription: 'Voiceless alveolar plosive with "i" vowel',
   description: 'The syllable "TÍ" in Kulitan script, combining the voiceless alveolar plosive consonant /t/ with the vowel /i/.',
   uses: [
@@ -1822,7 +1822,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
   category: 'Basic Consonant',
   rarity: 'Common',
   origin: 'Kapampangan Script',
-  type: 'Consonant-Vowel Combination',
+  type: 'Consonant-Vowel',
   soundDescription: 'Voiced alveolar plosive with "i" vowel',
   description: 'The syllable "DÍ" in Kulitan script, combining the voiced alveolar plosive consonant /d/ with the vowel /i/.',
   uses: [
@@ -1850,7 +1850,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
   category: 'Basic Consonant',
   rarity: 'Very Common',
   origin: 'Kapampangan Script',
-  type: 'Consonant-Vowel Combination',
+  type: 'Consonant-Vowel',
   soundDescription: 'Voiced alveolar nasal with "i" vowel',
   description: 'The syllable "NÍ" in Kulitan script, combining the voiced alveolar nasal consonant /n/ with the vowel /i/.',
   uses: [
@@ -1878,7 +1878,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
   category: 'Basic Consonant',
   rarity: 'Common',
   origin: 'Kapampangan Script',
-  type: 'Consonant-Vowel Combination',
+  type: 'Consonant-Vowel',
   soundDescription: 'Voiced alveolar lateral with "i" vowel',
   description: 'The syllable "LÍ" in Kulitan script, combining the voiced alveolar lateral consonant /l/ with the vowel /i/.',
   uses: [
@@ -1906,7 +1906,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
   category: 'Basic Consonant',
   rarity: 'Very Common',
   origin: 'Kapampangan Script',
-  type: 'Consonant-Vowel Combination',
+  type: 'Consonant-Vowel',
   soundDescription: 'Voiceless alveolar fricative with "i" vowel',
   description: 'The syllable "SÍ" in Kulitan script, combining the voiceless alveolar fricative consonant /s/ with the vowel /i/.',
   uses: [
@@ -1934,7 +1934,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
   category: 'Basic Consonant',
   rarity: 'Common',
   origin: 'Kapampangan Script',
-  type: 'Consonant-Vowel Combination',
+  type: 'Consonant-Vowel',
   soundDescription: 'Voiced bilabial nasal with "i" vowel',
   description: 'The syllable "MÍ" in Kulitan script, combining the voiced bilabial nasal consonant /m/ with the vowel /i/.',
   uses: [
@@ -1962,7 +1962,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
   category: 'Basic Consonant',
   rarity: 'Common',
   origin: 'Kapampangan Script',
-  type: 'Consonant-Vowel Combination',
+  type: 'Consonant-Vowel',
   soundDescription: 'Voiceless bilabial plosive with "i" vowel',
   description: 'The syllable "PÍ" in Kulitan script, combining the voiceless bilabial plosive consonant /p/ with the vowel /i/.',
   uses: [
@@ -1990,7 +1990,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
   category: 'Basic Consonant',
   rarity: 'Common',
   origin: 'Kapampangan Script',
-  type: 'Consonant-Vowel Combination',
+  type: 'Consonant-Vowel',
   soundDescription: 'Voiced bilabial plosive with "i" vowel',
   description: 'The syllable "BÍ" in Kulitan script, combining the voiced bilabial plosive consonant /b/ with the vowel /i/.',
   uses: [
@@ -2018,7 +2018,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
   category: 'Basic Consonant',
   rarity: 'Common',
   origin: 'Kapampangan Script',
-  type: 'Consonant-Vowel Combination',
+  type: 'Consonant-Vowel',
   soundDescription: 'Voiced velar plosive with "u" vowel',
   description: 'The syllable "GÚ" in Kulitan script, combining the voiced velar plosive consonant /g/ with the vowel /u/.',
   uses: [
@@ -2046,7 +2046,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
   category: 'Basic Consonant',
   rarity: 'Common',
   origin: 'Kapampangan Script',
-  type: 'Consonant-Vowel Combination',
+  type: 'Consonant-Vowel',
   soundDescription: 'Voiceless velar plosive with "u" vowel',
   description: 'The syllable "KÚ" in Kulitan script, combining the voiceless velar plosive consonant /k/ with the vowel /u/.',
   uses: [
@@ -2074,7 +2074,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
   category: 'Basic Consonant',
   rarity: 'Common',
   origin: 'Kapampangan Script',
-  type: 'Consonant-Vowel Combination',
+  type: 'Consonant-Vowel',
   soundDescription: 'Voiced velar nasal with "u" vowel',
   description: 'The syllable "NGÚ" in Kulitan script, combining the voiced velar nasal consonant /ŋ/ with the vowel /u/.',
   uses: [
@@ -2103,7 +2103,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
   category: 'Basic Consonant',
   rarity: 'Common',
   origin: 'Kapampangan Script',
-  type: 'Consonant-Vowel Combination',
+  type: 'Consonant-Vowel',
   soundDescription: 'Voiceless alveolar plosive with "u" vowel',
   description: 'The syllable "TÚ" in Kulitan script, combining the voiceless alveolar plosive consonant /t/ with the vowel /u/.',
   uses: [
@@ -2132,7 +2132,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
   category: 'Basic Consonant',
   rarity: 'Common',
   origin: 'Kapampangan Script',
-  type: 'Consonant-Vowel Combination',
+  type: 'Consonant-Vowel',
   soundDescription: 'Voiced alveolar plosive with "u" vowel',
   description: 'The syllable "DÚ" in Kulitan script, combining the voiced alveolar plosive consonant /d/ with the vowel /u/.',
   uses: [
@@ -2161,7 +2161,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
   category: 'Basic Consonant',
   rarity: 'Common',
   origin: 'Kapampangan Script',
-  type: 'Consonant-Vowel Combination',
+  type: 'Consonant-Vowel',
   soundDescription: 'Voiced alveolar nasal with "u" vowel',
   description: 'The syllable "NÚ" in Kulitan script, combining the voiced alveolar nasal consonant /n/ with the vowel /u/.',
   uses: [
@@ -2190,7 +2190,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
   category: 'Basic Consonant',
   rarity: 'Common',
   origin: 'Kapampangan Script',
-  type: 'Consonant-Vowel Combination',
+  type: 'Consonant-Vowel',
   soundDescription: 'Voiced alveolar lateral with "u" vowel',
   description: 'The syllable "LÚ" in Kulitan script, combining the voiced alveolar lateral consonant /l/ with the vowel /u/.',
   uses: [
@@ -2218,7 +2218,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
   category: 'Basic Consonant',
   rarity: 'Common',
   origin: 'Kapampangan Script',
-  type: 'Consonant-Vowel Combination',
+  type: 'Consonant-Vowel',
   soundDescription: 'Voiceless alveolar fricative with "u" vowel',
   description: 'The syllable "SÚ" in Kulitan script, combining the voiceless alveolar fricative consonant /s/ with the vowel /u/.',
   uses: [
@@ -2246,7 +2246,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
   category: 'Basic Consonant',
   rarity: 'Common',
   origin: 'Kapampangan Script',
-  type: 'Consonant-Vowel Combination',
+  type: 'Consonant-Vowel',
   soundDescription: 'Voiced bilabial nasal with "u" vowel',
   description: 'The syllable "MÚ" in Kulitan script, combining the voiced bilabial nasal consonant /m/ with the vowel /u/.',
   uses: [
@@ -2274,7 +2274,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
   category: 'Basic Consonant',
   rarity: 'Common',
   origin: 'Kapampangan Script',
-  type: 'Consonant-Vowel Combination',
+  type: 'Consonant-Vowel',
   soundDescription: 'Voiceless bilabial plosive with "u" vowel',
   description: 'The syllable "PÚ" in Kulitan script, combining the voiceless bilabial plosive consonant /p/ with the vowel /u/.',
   uses: [
@@ -2302,7 +2302,7 @@ export const sampleCharactersData: KulitanCharacter[] = [
   category: 'Basic Consonant',
   rarity: 'Common',
   origin: 'Kapampangan Script',
-  type: 'Consonant-Vowel Combination',
+  type: 'Consonant-Vowel',
   soundDescription: 'Voiced bilabial plosive with "u" vowel',
   description: 'The syllable "BÚ" in Kulitan script, combining the voiced bilabial plosive consonant /b/ with the vowel /u/.',
   uses: [
@@ -2712,9 +2712,7 @@ export const findCharacterByPronunciation = (pronunciation: string): KulitanChar
   );
   
   if (exactMatch) return exactMatch;
-  
-  // If no exact match, try partial matches for complex characters
-  // This handles cases where we might have "tang" but looking for "ta"
+
   return sampleCharactersData.find(character => 
     character.pronunciation.toLowerCase().includes(pronunciation.toLowerCase()) ||
     pronunciation.toLowerCase().includes(character.pronunciation.toLowerCase())
