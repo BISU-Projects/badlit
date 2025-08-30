@@ -612,7 +612,7 @@ const styles = StyleSheet.create({
   kulitanSymbol: {
     width: 80,
     height: 80,
-    backgroundColor: 'rgba(255, 255, 255, 0.2)',
+    backgroundColor: 'rgba(255, 255, 255, 1)',
     borderRadius: 40,
     alignItems: 'center',
     justifyContent: 'center',
