@@ -7,7 +7,6 @@ import {
   Dimensions,
   Platform,
   StatusBar as RNStatusBar,
-  Alert,
 } from 'react-native';
 import { Text, Surface, Chip, Divider } from 'react-native-paper';
 import { Image } from 'expo-image';
@@ -15,7 +14,6 @@ import { StatusBar } from 'expo-status-bar';
 import { useRouter, useLocalSearchParams, Stack } from 'expo-router';
 import { LinearGradient } from 'expo-linear-gradient';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
-import { AudioPlayer, useAudioPlayer, useAudioPlayerStatus } from 'expo-audio';
 import Animated, {
   useSharedValue,
   useAnimatedStyle,
@@ -51,38 +49,6 @@ export default function CharacterDetailScreen() {
   
   // Get character data from centralized source
   const character = getCharacterById(id || '1');
-  
-  // Audio player setup with new expo-audio
-  const player = useAudioPlayer();
-  const status = useAudioPlayerStatus(player);
-  
-  const isPlaying = status.isLoaded && status.playing;
-
-  const playCharacterSound = async () => {
-    if (!character) return;
-
-    try {
-      // Stop current playback if playing
-      if (isPlaying) {
-        player.pause();
-        return;
-      }
-
-      // Use the audio directly from character data
-      if (character.audio) {
-        player.replace(character.audio);
-        player.play();
-      } else {
-        // Fallback: Show alert with pronunciation
-        Alert.alert('Audio', `Pronunciation: /${character.pronunciation}/`);
-      }
-
-    } catch (error) {
-      console.error('Error playing sound:', error);
-      // Fallback alert
-      Alert.alert('Audio', `Pronunciation: /${character.pronunciation}/`);
-    }
-  };
 
   // Navigation to drawing screen
   const navigateToDrawing = () => {
@@ -185,23 +151,6 @@ export default function CharacterDetailScreen() {
                   />
                 </View>
                 
-                {/* Sound Button */}
-                {/* <TouchableOpacity
-                  style={styles.soundButton}
-                  // onPress={playCharacterSound}
-                >
-                  <MaterialCommunityIcons 
-                    name={isPlaying ? "pause" : "volume-medium"} 
-                    size={32} 
-                    color="white" 
-                  />
-                  {isPlaying && (
-                    <View style={styles.playingIndicator}>
-                      <MaterialCommunityIcons name="play" size={16} color={Colors.primary} />
-                    </View>
-                  )}
-                </TouchableOpacity> */}
-                
                 <LinearGradient
                   colors={['transparent', 'rgba(0,0,0,0.3)']}
                   style={styles.characterOverlay}
@@ -275,19 +224,11 @@ export default function CharacterDetailScreen() {
                     <Text style={styles.propertyValue}>{character.type}</Text>
                   </View>
                   
-                  {/* Enhanced Sound Property with Clickable Audio */}
-                  <TouchableOpacity 
-                    style={styles.propertyItem}
-                    // onPress={playCharacterSound}
-                  >
-                    <MaterialCommunityIcons 
-                      name={isPlaying ? "pause" : "volume-medium"} 
-                      size={24} 
-                      color={isPlaying ? Colors.primary : Colors.info} 
-                    />
-                    <Text style={styles.propertyLabel}>Sound (Tap to Play)</Text>
+                  <View style={styles.propertyItem}>
+                    <MaterialCommunityIcons name="volume-medium" size={24} color={Colors.info} />
+                    <Text style={styles.propertyLabel}>Pronunciation</Text>
                     <Text style={styles.propertyValue}>/{character.pronunciation}/</Text>
-                  </TouchableOpacity>
+                  </View>
                   
                   <View style={styles.propertyItem}>
                     <MaterialCommunityIcons name="map-marker" size={24} color={Colors.success} />
@@ -428,32 +369,6 @@ const styles = StyleSheet.create({
     width: 120,
     height: 120,
     borderRadius: 60,
-  },
-  
-  // Sound Button
-  soundButton: {
-    position: 'absolute',
-    bottom: 60,
-    right: 30,
-    width: 60,
-    height: 60,
-    borderRadius: 30,
-    backgroundColor: 'rgba(255,255,255,0.2)',
-    justifyContent: 'center',
-    alignItems: 'center',
-    borderWidth: 2,
-    borderColor: 'rgba(255,255,255,0.3)',
-  },
-  playingIndicator: {
-    position: 'absolute',
-    top: -5,
-    right: -5,
-    width: 20,
-    height: 20,
-    borderRadius: 10,
-    backgroundColor: 'white',
-    justifyContent: 'center',
-    alignItems: 'center',
   },
   
   characterOverlay: {
@@ -609,7 +524,7 @@ const styles = StyleSheet.create({
     backgroundColor: Colors.border,
   },
 
-  // Character Properties (Enhanced for Audio)
+  // Character Properties
   propertiesGrid: {
     flexDirection: 'row',
     flexWrap: 'wrap',
@@ -636,12 +551,6 @@ const styles = StyleSheet.create({
     color: Colors.textPrimary,
     textAlign: 'center',
     fontWeight: '500',
-  },
-  playingText: {
-    fontSize: 10,
-    color: Colors.primary,
-    marginTop: 4,
-    fontStyle: 'italic',
   },
 
   // Characteristics
