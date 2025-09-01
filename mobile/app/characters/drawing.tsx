@@ -25,6 +25,7 @@ import Animated, {
   FadeIn,
   SlideInUp,
 } from 'react-native-reanimated';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { Colors } from '@/constants/Colors';
 import { getCharacterById } from '@/data/characters';
@@ -42,6 +43,18 @@ const getStatusBarHeight = () => {
   }
 };
 
+// Helper function to detect if device has navigation buttons
+const hasNavigationBar = () => {
+  if (Platform.OS === 'ios') return false;
+  
+  // For Android, we can estimate based on screen dimensions
+  // Most modern Android devices with navigation bars have a bottom inset
+  const { height: screenHeight, width: screenWidth } = Dimensions.get('screen');
+  const { height: windowHeight, width: windowWidth } = Dimensions.get('window');
+  
+  return screenHeight !== windowHeight || screenWidth !== windowWidth;
+};
+
 interface PathData {
   data: string;
   color: string;
@@ -57,6 +70,7 @@ export default function DrawingScreen() {
   const router = useRouter();
   const { id, name } = useLocalSearchParams<{ id: string; name?: string }>();
   const statusBarHeight = getStatusBarHeight();
+  const insets = useSafeAreaInsets();
   
   // Character data
   const character = getCharacterById(id || '1');
@@ -292,6 +306,9 @@ export default function DrawingScreen() {
     };
   });
 
+  // Calculate bottom padding for devices with navigation bars
+  const bottomPadding = Math.max(insets.bottom, hasNavigationBar() ? 16 : 0);
+
   if (!character) {
     return (
       <View style={styles.container}>
@@ -305,11 +322,11 @@ export default function DrawingScreen() {
       <Stack.Screen options={{ headerShown: false }} />
       <StatusBar style="dark" />
       
-      <View style={styles.container}>
+      <View style={[styles.container, { paddingBottom: bottomPadding }]}>
         {/* Header */}
         <LinearGradient
           colors={[Colors.primary, Colors.primaryDark]}
-          style={[styles.header, { paddingTop: statusBarHeight + 10 }]}
+          style={[styles.header, { paddingTop: Math.max(statusBarHeight, insets.top) + 10 }]}
         >
           <TouchableOpacity style={styles.backButton} onPress={() => router.back()}>
             <MaterialCommunityIcons name="arrow-left" size={24} color="white" />
