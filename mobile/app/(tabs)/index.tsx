@@ -6,8 +6,6 @@ import {
   ScrollView,
   TouchableOpacity,
   Dimensions,
-  Platform,
-  StatusBar as RNStatusBar,
   TextInput,
   Alert,
   Modal,
@@ -21,15 +19,6 @@ import {
 import { findCharacterByPronunciation, KulitanCharacter, sampleCharactersData } from '@/data/characters';
 
 const { width } = Dimensions.get('window');
-
-// Get status bar height
-const getStatusBarHeight = () => {
-  if (Platform.OS === 'ios') {
-    return 44;
-  } else {
-    return RNStatusBar.currentHeight || 24;
-  }
-};
 
 type TranslationDirection = 'englishToKulitan' | 'tagalogToKulitan';
 
@@ -214,7 +203,6 @@ const translateTextWithImages = (input: string, direction: TranslationDirection)
 };
 
 export default function HomeScreen() {
-  const statusBarHeight = getStatusBarHeight();
   const [translationInput, setTranslationInput] = useState('');
   const [translationResults, setTranslationResults] = useState<EnhancedTranslationResult[]>([]);
   const [translationDirection, setTranslationDirection] = useState<TranslationDirection>('englishToKulitan');
@@ -277,7 +265,7 @@ export default function HomeScreen() {
       <StatusBar style="auto" translucent />
       <ScrollView style={styles.container} showsVerticalScrollIndicator={false}>
         {/* Header Section */}
-        <View style={[styles.header, { marginTop: statusBarHeight }]}>
+        <View style={styles.header}>
           <View style={styles.headerContent}>
             <Text style={styles.welcomeText}>Welcome to</Text>
             <Text style={styles.appName}>KuliTra</Text>
@@ -577,7 +565,7 @@ const styles = StyleSheet.create({
   },
   header: {
     paddingHorizontal: 24,
-    paddingTop: 20,
+    paddingTop: 60,
     paddingBottom: 40,
     backgroundColor: '#af1400',
     flexDirection: 'row',
@@ -915,8 +903,6 @@ const styles = StyleSheet.create({
     color: '#666',
     marginBottom: 2,
   },
-
-  // Features Styles
   featuresContainer: {
     paddingHorizontal: 24,
     paddingTop: 16,
