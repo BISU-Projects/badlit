@@ -1000,19 +1000,19 @@ const styles = StyleSheet.create({
     marginHorizontal: 4,
   },
   statNumber: {
-    fontSize: 24,
+    fontSize: 22,
     fontWeight: 'bold',
     color: '#af1400',
     marginBottom: 4,
   },
   statLabel: {
-    fontSize: 14,
+    fontSize: 12,
     fontWeight: '600',
     color: '#000000',
     marginBottom: 2,
   },
   statDesc: {
-    fontSize: 12,
+    fontSize: 10,
     color: '#666666',
     textAlign: 'center',
   },

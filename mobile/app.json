@@ -17,7 +17,11 @@
         "backgroundColor": "#ffffff"
       },
       "edgeToEdgeEnabled": true,
-      "package": "com.chaos23.KuliTra"
+      "package": "com.chaos23.KuliTra",
+      "permissions": [
+        "android.permission.RECORD_AUDIO",
+        "android.permission.MODIFY_AUDIO_SETTINGS"
+      ]
     },
     "web": {
       "bundler": "metro",
@@ -43,8 +47,9 @@
     "extra": {
       "router": {},
       "eas": {
-        "projectId": "351cc8e1-6725-4ad0-998d-abfbef332d58"
+        "projectId": "8b238a83-927e-48cc-a330-02366e178e62"
       }
-    }
+    },
+    "owner": "qweewq"
   }
 }

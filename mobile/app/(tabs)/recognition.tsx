@@ -126,8 +126,8 @@ export default function Recognition() {
     } else {
       // If species not found, show alert with suggestion
       Alert.alert(
-        "Species Not Found",
-        `"${className}" is not available in our species database yet. Please check if the species name is correct.`,
+        "Character Not Found",
+        `"${className}" is not available in our character database yet. Please check if the character name is correct.`,
         [{ text: "OK" }]
       );
     }
@@ -242,7 +242,7 @@ export default function Recognition() {
         
         <View style={styles.predictionCard}>
           <View style={styles.classSection}>
-            <Text style={styles.classLabel}>Species Detected:</Text>
+            <Text style={styles.classLabel}>Character Detected:</Text>
             <Text style={styles.className}>{className}</Text>
           </View>
           
@@ -330,7 +330,7 @@ export default function Recognition() {
             style={[styles.headerGradient, { paddingTop: statusBarHeight + 20 }]}
           >
             <Text style={styles.title}>Character Scanner</Text>
-            <Text style={styles.subtitle}>AI-powered species identification</Text>
+            <Text style={styles.subtitle}>AI-powered Kulitan Transliterator</Text>
           </LinearGradient>
         </View>
 
@@ -370,7 +370,7 @@ export default function Recognition() {
             <View style={styles.loadingCard}>
               <ActivityIndicator size="large" color={Colors.primary} />
               <Text style={styles.loadingTitle}>Analyzing Image</Text>
-              <Text style={styles.loadingText}>Our AI is identifying the character species...</Text>
+              <Text style={styles.loadingText}>Our AI is identifying the Kulitan Character...</Text>
             </View>
           </View>
         )}
