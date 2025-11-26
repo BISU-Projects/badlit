@@ -1,0 +1,5912 @@
+[
+  {
+    "Tagalog": "bahay",
+    "English": "house",
+    "Kapampangan": "bale",
+    "Definition": "A structure where people live."
+  },
+  {
+    "Tagalog": "tao",
+    "English": "person",
+    "Kapampangan": "tau",
+    "Definition": "A human being."
+  },
+  {
+    "Tagalog": "pagkain",
+    "English": "food",
+    "Kapampangan": "pamangan",
+    "Definition": "Anything eaten for nourishment."
+  },
+  {
+    "Tagalog": "tubig",
+    "English": "water",
+    "Kapampangan": "danum",
+    "Definition": "A clear liquid essential for life."
+  },
+  {
+    "Tagalog": "araw",
+    "English": "sun/day",
+    "Kapampangan": "aldo",
+    "Definition": "The star that gives light; also means \"day\"."
+  },
+  {
+    "Tagalog": "buwan",
+    "English": "moon/month",
+    "Kapampangan": "bulan",
+    "Definition": "The Earth’s natural satellite; also a calendar month."
+  },
+  {
+    "Tagalog": "lupa",
+    "English": "soil/earth",
+    "Kapampangan": "gabun",
+    "Definition": "Ground or land surface."
+  },
+  {
+    "Tagalog": "langit",
+    "English": "sky/heaven",
+    "Kapampangan": "kulal",
+    "Definition": "The space above Earth."
+  },
+  {
+    "Tagalog": "apoy",
+    "English": "fire",
+    "Kapampangan": "apuy",
+    "Definition": "Heat/light from burning."
+  },
+  {
+    "Tagalog": "hangin",
+    "English": "wind/air",
+    "Kapampangan": "angin",
+    "Definition": "Moving air."
+  },
+  {
+    "Tagalog": "ulan",
+    "English": "rain",
+    "Kapampangan": "tula",
+    "Definition": "Water that falls from the sky."
+  },
+  {
+    "Tagalog": "aso",
+    "English": "dog",
+    "Kapampangan": "asu",
+    "Definition": "A domesticated canine animal."
+  },
+  {
+    "Tagalog": "pusa",
+    "English": "cat",
+    "Kapampangan": "kutsing",
+    "Definition": "A domesticated feline animal."
+  },
+  {
+    "Tagalog": "ibon",
+    "English": "bird",
+    "Kapampangan": "ayup",
+    "Definition": "Feathered animal that flies."
+  },
+  {
+    "Tagalog": "isda",
+    "English": "fish",
+    "Kapampangan": "isda",
+    "Definition": "Aquatic animal."
+  },
+  {
+    "Tagalog": "kamay",
+    "English": "hand",
+    "Kapampangan": "ima",
+    "Definition": "Body part used for holding."
+  },
+  {
+    "Tagalog": "paa",
+    "English": "foot",
+    "Kapampangan": "bitis",
+    "Definition": "Body part used for walking."
+  },
+  {
+    "Tagalog": "ulo",
+    "English": "head",
+    "Kapampangan": "buntuk",
+    "Definition": "The uppermost part of the body."
+  },
+  {
+    "Tagalog": "mata",
+    "English": "eye",
+    "Kapampangan": "mata",
+    "Definition": "Organ for seeing."
+  },
+  {
+    "Tagalog": "tainga",
+    "English": "ear",
+    "Kapampangan": "taliṅga",
+    "Definition": "Organ for hearing."
+  },
+  {
+    "Tagalog": "ilong",
+    "English": "nose",
+    "Kapampangan": "nungus",
+    "Definition": "Organ for smelling."
+  },
+  {
+    "Tagalog": "bibig",
+    "English": "mouth",
+    "Kapampangan": "ngusu",
+    "Definition": "Opening through which a person eats or speaks."
+  },
+  {
+    "Tagalog": "buhok",
+    "English": "hair",
+    "Kapampangan": "bulu",
+    "Definition": "Strands growing from the head."
+  },
+  {
+    "Tagalog": "braso",
+    "English": "arm",
+    "Kapampangan": "gambang",
+    "Definition": "Limb used for lifting."
+  },
+  {
+    "Tagalog": "binti",
+    "English": "leg",
+    "Kapampangan": "bitis",
+    "Definition": "Limb used for standing and walking."
+  },
+  {
+    "Tagalog": "puso",
+    "English": "heart",
+    "Kapampangan": "puso",
+    "Definition": "Organ that pumps blood."
+  },
+  {
+    "Tagalog": "dugo",
+    "English": "blood",
+    "Kapampangan": "dara",
+    "Definition": "Red fluid circulating in the body."
+  },
+  {
+    "Tagalog": "damit",
+    "English": "clothes",
+    "Kapampangan": "sambal",
+    "Definition": "Items worn on the body."
+  },
+  {
+    "Tagalog": "sapatos",
+    "English": "shoes",
+    "Kapampangan": "sapatus",
+    "Definition": "Footwear."
+  },
+  {
+    "Tagalog": "bag",
+    "English": "bag",
+    "Kapampangan": "bayung",
+    "Definition": "Item used for carrying things."
+  },
+  {
+    "Tagalog": "mesa",
+    "English": "table",
+    "Kapampangan": "dulang",
+    "Definition": "A flat furniture surface."
+  },
+  {
+    "Tagalog": "upuan",
+    "English": "chair",
+    "Kapampangan": "sukuan",
+    "Definition": "Furniture for sitting."
+  },
+  {
+    "Tagalog": "pintuan",
+    "English": "door",
+    "Kapampangan": "pasbul",
+    "Definition": "Entryway of a house or room."
+  },
+  {
+    "Tagalog": "bintana",
+    "English": "window",
+    "Kapampangan": "durungawan",
+    "Definition": "Opening that lets light and air in."
+  },
+  {
+    "Tagalog": "kusina",
+    "English": "kitchen",
+    "Kapampangan": "kusina",
+    "Definition": "Place for cooking food."
+  },
+  {
+    "Tagalog": "kwarto",
+    "English": "room",
+    "Kapampangan": "kwartu",
+    "Definition": "A private room inside a house."
+  },
+  {
+    "Tagalog": "kama",
+    "English": "bed",
+    "Kapampangan": "kame",
+    "Definition": "Furniture used for sleeping."
+  },
+  {
+    "Tagalog": "plato",
+    "English": "plate",
+    "Kapampangan": "pinggan",
+    "Definition": "Container for serving food."
+  },
+  {
+    "Tagalog": "kutsara",
+    "English": "spoon",
+    "Kapampangan": "kutsara",
+    "Definition": "Utensil for scooping food."
+  },
+  {
+    "Tagalog": "tinidor",
+    "English": "fork",
+    "Kapampangan": "tinidur",
+    "Definition": "Utensil with prongs."
+  },
+  {
+    "Tagalog": "kutsilyo",
+    "English": "knife",
+    "Kapampangan": "sanduk",
+    "Definition": "Sharp tool for cutting."
+  },
+  {
+    "Tagalog": "aso",
+    "English": "smoke",
+    "Kapampangan": "asu (in some contexts)",
+    "Definition": "Visible vapor produced from fire."
+  },
+  {
+    "Tagalog": "trabaho",
+    "English": "work",
+    "Kapampangan": "obra",
+    "Definition": "Activity done to earn or accomplish something."
+  },
+  {
+    "Tagalog": "paaralan",
+    "English": "school",
+    "Kapampangan": "eskwela",
+    "Definition": "Place where students learn."
+  },
+  {
+    "Tagalog": "guro",
+    "English": "teacher",
+    "Kapampangan": "magturú",
+    "Definition": "Person who teaches students."
+  },
+  {
+    "Tagalog": "estudyante",
+    "English": "student",
+    "Kapampangan": "aduang",
+    "Definition": "Person who studies."
+  },
+  {
+    "Tagalog": "libro",
+    "English": "book",
+    "Kapampangan": "libru",
+    "Definition": "Written material for reading."
+  },
+  {
+    "Tagalog": "papel",
+    "English": "paper",
+    "Kapampangan": "papil",
+    "Definition": "Thin material for writing."
+  },
+  {
+    "Tagalog": "lapis",
+    "English": "pencil",
+    "Kapampangan": "lapis",
+    "Definition": "Writing instrument made of graphite."
+  },
+  {
+    "Tagalog": "bolpen",
+    "English": "pen",
+    "Kapampangan": "bolpen",
+    "Definition": "Ink writing instrument."
+  },
+  {
+    "Tagalog": "eroplano",
+    "English": "airplane",
+    "Kapampangan": "eroplanu",
+    "Definition": "Aircraft used for air travel."
+  },
+  {
+    "Tagalog": "sasakyan",
+    "English": "vehicle",
+    "Kapampangan": "sasakyan",
+    "Definition": "Machine used for transportation."
+  },
+  {
+    "Tagalog": "kotse",
+    "English": "car",
+    "Kapampangan": "kotse",
+    "Definition": "Four-wheeled personal vehicle."
+  },
+  {
+    "Tagalog": "motorsiklo",
+    "English": "motorcycle",
+    "Kapampangan": "motorsiklu",
+    "Definition": "Two-wheeled motor vehicle."
+  },
+  {
+    "Tagalog": "barko",
+    "English": "ship",
+    "Kapampangan": "barku",
+    "Definition": "Large water-travel vessel."
+  },
+  {
+    "Tagalog": "bangka",
+    "English": "boat",
+    "Kapampangan": "bangka",
+    "Definition": "Small watercraft."
+  },
+  {
+    "Tagalog": "ilaw",
+    "English": "light",
+    "Kapampangan": "sala",
+    "Definition": "Source of brightness."
+  },
+  {
+    "Tagalog": "dilim",
+    "English": "dark",
+    "Kapampangan": "sipnangan",
+    "Definition": "Absence of light."
+  },
+  {
+    "Tagalog": "babae",
+    "English": "woman",
+    "Kapampangan": "babai",
+    "Definition": "Adult female human."
+  },
+  {
+    "Tagalog": "lalaki",
+    "English": "man",
+    "Kapampangan": "lalake",
+    "Definition": "Adult male human."
+  },
+  {
+    "Tagalog": "bata",
+    "English": "child",
+    "Kapampangan": "anak",
+    "Definition": "Young human."
+  },
+  {
+    "Tagalog": "anak",
+    "English": "son/daughter",
+    "Kapampangan": "anak",
+    "Definition": "Offspring of parents."
+  },
+  {
+    "Tagalog": "kaibigan",
+    "English": "friend",
+    "Kapampangan": "kaluguran",
+    "Definition": "Someone with whom one has a friendly relationship."
+  },
+  {
+    "Tagalog": "pamilya",
+    "English": "family",
+    "Kapampangan": "pamilyang",
+    "Definition": "Group related by blood/marriage."
+  },
+  {
+    "Tagalog": "kapatid",
+    "English": "sibling",
+    "Kapampangan": "kapatad",
+    "Definition": "Brother or sister."
+  },
+  {
+    "Tagalog": "nanay",
+    "English": "mother",
+    "Kapampangan": "ima",
+    "Definition": "Female parent."
+  },
+  {
+    "Tagalog": "tatay",
+    "English": "father",
+    "Kapampangan": "tatang",
+    "Definition": "Male parent."
+  },
+  {
+    "Tagalog": "asawa",
+    "English": "spouse",
+    "Kapampangan": "asawa",
+    "Definition": "Husband or wife."
+  },
+  {
+    "Tagalog": "lolo",
+    "English": "grandfather",
+    "Kapampangan": "apu lalaki",
+    "Definition": "Father of a parent."
+  },
+  {
+    "Tagalog": "lola",
+    "English": "grandmother",
+    "Kapampangan": "apu babai",
+    "Definition": "Mother of a parent."
+  },
+  {
+    "Tagalog": "pagkain",
+    "English": "meal",
+    "Kapampangan": "pamangan",
+    "Definition": "Food eaten at one time."
+  },
+  {
+    "Tagalog": "kape",
+    "English": "coffee",
+    "Kapampangan": "kapi",
+    "Definition": "A drink made from roasted beans."
+  },
+  {
+    "Tagalog": "gatas",
+    "English": "milk",
+    "Kapampangan": "gatas",
+    "Definition": "Dairy liquid."
+  },
+  {
+    "Tagalog": "asin",
+    "English": "salt",
+    "Kapampangan": "asin",
+    "Definition": "Mineral used to season food."
+  },
+  {
+    "Tagalog": "asukal",
+    "English": "sugar",
+    "Kapampangan": "asukal",
+    "Definition": "Sweet crystalline substance."
+  },
+  {
+    "Tagalog": "bigas",
+    "English": "rice (uncooked)",
+    "Kapampangan": "bigas",
+    "Definition": "Uncooked rice grains."
+  },
+  {
+    "Tagalog": "kanin",
+    "English": "cooked rice",
+    "Kapampangan": "Nasi / kanin",
+    "Definition": "Rice after cooking."
+  },
+  {
+    "Tagalog": "gulay",
+    "English": "vegetables",
+    "Kapampangan": "gule",
+    "Definition": "Edible plant parts."
+  },
+  {
+    "Tagalog": "prutas",
+    "English": "fruits",
+    "Kapampangan": "prutas",
+    "Definition": "Edible sweet plant product."
+  },
+  {
+    "Tagalog": "isda",
+    "English": "fish",
+    "Kapampangan": "isda",
+    "Definition": "Aquatic animal eaten as food."
+  },
+  {
+    "Tagalog": "baboy",
+    "English": "pork/pig",
+    "Kapampangan": "babi",
+    "Definition": "Domesticated animal; meat."
+  },
+  {
+    "Tagalog": "manok",
+    "English": "chicken",
+    "Kapampangan": "manuk",
+    "Definition": "Poultry bird; also its meat."
+  },
+  {
+    "Tagalog": "baka",
+    "English": "cow/beef",
+    "Kapampangan": "damulag (for carabao) / baka",
+    "Definition": "Domesticated cattle; meat."
+  },
+  {
+    "Tagalog": "itlog",
+    "English": "egg",
+    "Kapampangan": "ibun",
+    "Definition": "Oval reproductive object of birds."
+  },
+  {
+    "Tagalog": "sopas",
+    "English": "soup",
+    "Kapampangan": "sopas",
+    "Definition": "Liquid food dish."
+  },
+  {
+    "Tagalog": "tinapay",
+    "English": "bread",
+    "Kapampangan": "tinape",
+    "Definition": "Baked food made of flour."
+  },
+  {
+    "Tagalog": "mantika",
+    "English": "oil",
+    "Kapampangan": "mantika",
+    "Definition": "Cooking fat."
+  },
+  {
+    "Tagalog": "merkado",
+    "English": "market",
+    "Kapampangan": "tiangge",
+    "Definition": "Place where goods are sold."
+  },
+  {
+    "Tagalog": "tindahan",
+    "English": "store",
+    "Kapampangan": "talipapa",
+    "Definition": "Small shop selling goods."
+  },
+  {
+    "Tagalog": "pera",
+    "English": "money",
+    "Kapampangan": "kuarta",
+    "Definition": "Medium of exchange."
+  },
+  {
+    "Tagalog": "presyo",
+    "English": "price",
+    "Kapampangan": "presyo",
+    "Definition": "Cost of an item."
+  },
+  {
+    "Tagalog": "bili",
+    "English": "buy",
+    "Kapampangan": "bayu",
+    "Definition": "Acquire something by paying."
+  },
+  {
+    "Tagalog": "benta",
+    "English": "sell",
+    "Kapampangan": "laku",
+    "Definition": "To offer goods for money."
+  },
+  {
+    "Tagalog": "lakad",
+    "English": "walk",
+    "Kapampangan": "miras",
+    "Definition": "Move on foot."
+  },
+  {
+    "Tagalog": "takbo",
+    "English": "run",
+    "Kapampangan": "salbid",
+    "Definition": "Move fast on foot."
+  },
+  {
+    "Tagalog": "talon",
+    "English": "jump",
+    "Kapampangan": "lundag",
+    "Definition": "Spring off the ground using legs."
+  },
+  {
+    "Tagalog": "upo",
+    "English": "sit",
+    "Kapampangan": "lukluk",
+    "Definition": "Rest the body on a chair."
+  },
+  {
+    "Tagalog": "tayo",
+    "English": "stand",
+    "Kapampangan": "tindig",
+    "Definition": "Be upright on one’s feet."
+  },
+  {
+    "Tagalog": "higa",
+    "English": "lie down",
+    "Kapampangan": "durus",
+    "Definition": "Rest by reclining."
+  },
+  {
+    "Tagalog": "tulog",
+    "English": "sleep",
+    "Kapampangan": "tundu",
+    "Definition": "State of rest with eyes closed."
+  },
+  {
+    "Tagalog": "Tagalog",
+    "English": "English",
+    "Kapampangan": "Kapampangan",
+    "Definition": "Definition"
+  },
+  {
+    "Tagalog": "gising",
+    "English": "wake up",
+    "Kapampangan": "mibangun",
+    "Definition": "To rise from sleep."
+  },
+  {
+    "Tagalog": "kain",
+    "English": "eat",
+    "Kapampangan": "mangan",
+    "Definition": "To consume food."
+  },
+  {
+    "Tagalog": "inom",
+    "English": "drink",
+    "Kapampangan": "minum",
+    "Definition": "To take liquid into the mouth."
+  },
+  {
+    "Tagalog": "luto",
+    "English": "cook",
+    "Kapampangan": "mislutu",
+    "Definition": "To prepare food using heat."
+  },
+  {
+    "Tagalog": "hugas",
+    "English": "wash",
+    "Kapampangan": "maghugas",
+    "Definition": "To clean with water."
+  },
+  {
+    "Tagalog": "laba",
+    "English": "do laundry",
+    "Kapampangan": "maglaba",
+    "Definition": "To wash clothes."
+  },
+  {
+    "Tagalog": "linis",
+    "English": "clean",
+    "Kapampangan": "maglinis",
+    "Definition": "Make something free from dirt."
+  },
+  {
+    "Tagalog": "ligpit",
+    "English": "tidy up",
+    "Kapampangan": "lilipitan",
+    "Definition": "Put things in order."
+  },
+  {
+    "Tagalog": "arrangement",
+    "English": "arrange",
+    "Kapampangan": "ayusan",
+    "Definition": "Organize or put in order."
+  },
+  {
+    "Tagalog": "tulong",
+    "English": "help",
+    "Kapampangan": "saup",
+    "Definition": "Assist or aid."
+  },
+  {
+    "Tagalog": "kuha",
+    "English": "get",
+    "Kapampangan": "kwa",
+    "Definition": "To take or obtain."
+  },
+  {
+    "Tagalog": "dala",
+    "English": "bring",
+    "Kapampangan": "dalan",
+    "Definition": "To carry something with you."
+  },
+  {
+    "Tagalog": "tapos",
+    "English": "finish",
+    "Kapampangan": "tapus",
+    "Definition": "To complete something."
+  },
+  {
+    "Tagalog": "simula",
+    "English": "start",
+    "Kapampangan": "umpisa",
+    "Definition": "To begin."
+  },
+  {
+    "Tagalog": "balik",
+    "English": "return",
+    "Kapampangan": "balik",
+    "Definition": "Go or give back."
+  },
+  {
+    "Tagalog": "alis",
+    "English": "leave",
+    "Kapampangan": "lumwal",
+    "Definition": "Depart from a place."
+  },
+  {
+    "Tagalog": "pasok",
+    "English": "enter",
+    "Kapampangan": "sulud",
+    "Definition": "Go inside."
+  },
+  {
+    "Tagalog": "labas",
+    "English": "outside",
+    "Kapampangan": "lual",
+    "Definition": "Exterior of a place."
+  },
+  {
+    "Tagalog": "taas",
+    "English": "high/up",
+    "Kapampangan": "atyu ing atas",
+    "Definition": "A point higher than another."
+  },
+  {
+    "Tagalog": "baba",
+    "English": "down/low",
+    "Kapampangan": "baba",
+    "Definition": "A lower position."
+  },
+  {
+    "Tagalog": "bago",
+    "English": "new",
+    "Kapampangan": "bayu",
+    "Definition": "Recent or unused."
+  },
+  {
+    "Tagalog": "luma",
+    "English": "old",
+    "Kapampangan": "matwa",
+    "Definition": "Not new; aged."
+  },
+  {
+    "Tagalog": "malinis",
+    "English": "clean",
+    "Kapampangan": "malinis",
+    "Definition": "Free from dirt."
+  },
+  {
+    "Tagalog": "marumi",
+    "English": "dirty",
+    "Kapampangan": "marok",
+    "Definition": "Covered with dirt."
+  },
+  {
+    "Tagalog": "mahaba",
+    "English": "long",
+    "Kapampangan": "malaung",
+    "Definition": "Having great length."
+  },
+  {
+    "Tagalog": "maiksi",
+    "English": "short",
+    "Kapampangan": "maputut",
+    "Definition": "Having small length."
+  },
+  {
+    "Tagalog": "malaki",
+    "English": "big",
+    "Kapampangan": "maragul",
+    "Definition": "Large in size."
+  },
+  {
+    "Tagalog": "maliit",
+    "English": "small",
+    "Kapampangan": "malati",
+    "Definition": "Small in size."
+  },
+  {
+    "Tagalog": "mabigat",
+    "English": "heavy",
+    "Kapampangan": "mabigat",
+    "Definition": "Hard to lift due to weight."
+  },
+  {
+    "Tagalog": "magaan",
+    "English": "light (weight)",
+    "Kapampangan": "magaang",
+    "Definition": "Easy to lift."
+  },
+  {
+    "Tagalog": "mabilis",
+    "English": "fast",
+    "Kapampangan": "mabilis",
+    "Definition": "Moving quickly."
+  },
+  {
+    "Tagalog": "mabagal",
+    "English": "slow",
+    "Kapampangan": "makupad",
+    "Definition": "Moving at low speed."
+  },
+  {
+    "Tagalog": "maingay",
+    "English": "noisy",
+    "Kapampangan": "makalukluk",
+    "Definition": "Producing loud sounds."
+  },
+  {
+    "Tagalog": "tahimik",
+    "English": "quiet",
+    "Kapampangan": "mitahimik",
+    "Definition": "Without noise."
+  },
+  {
+    "Tagalog": "malamig",
+    "English": "cold",
+    "Kapampangan": "malalamig",
+    "Definition": "Low temperature."
+  },
+  {
+    "Tagalog": "mainit",
+    "English": "hot",
+    "Kapampangan": "mapali",
+    "Definition": "High temperature."
+  },
+  {
+    "Tagalog": "araw-araw",
+    "English": "everyday",
+    "Kapampangan": "aldo-aldo",
+    "Definition": "Occurring daily."
+  },
+  {
+    "Tagalog": "linggo",
+    "English": "week/Sunday",
+    "Kapampangan": "Domingo",
+    "Definition": "Seven-day period; day of worship."
+  },
+  {
+    "Tagalog": "buwan",
+    "English": "month",
+    "Kapampangan": "bulan",
+    "Definition": "One unit of the calendar cycle."
+  },
+  {
+    "Tagalog": "taon",
+    "English": "year",
+    "Kapampangan": "banwa",
+    "Definition": "12-month period."
+  },
+  {
+    "Tagalog": "oras",
+    "English": "hour",
+    "Kapampangan": "oras",
+    "Definition": "Unit of time with 60 minutes."
+  },
+  {
+    "Tagalog": "minuto",
+    "English": "minute",
+    "Kapampangan": "minutu",
+    "Definition": "Unit of time with 60 seconds."
+  },
+  {
+    "Tagalog": "segundo",
+    "English": "second",
+    "Kapampangan": "segundo",
+    "Definition": "Smallest common unit of time."
+  },
+  {
+    "Tagalog": "ngayon",
+    "English": "now/today",
+    "Kapampangan": "ngeni",
+    "Definition": "At the present moment."
+  },
+  {
+    "Tagalog": "kahapon",
+    "English": "yesterday",
+    "Kapampangan": "napun",
+    "Definition": "The day before today."
+  },
+  {
+    "Tagalog": "bukas",
+    "English": "tomorrow",
+    "Kapampangan": "bukas",
+    "Definition": "The day after today."
+  },
+  {
+    "Tagalog": "gabi",
+    "English": "night",
+    "Kapampangan": "bengi",
+    "Definition": "Period after sunset."
+  },
+  {
+    "Tagalog": "umaga",
+    "English": "morning",
+    "Kapampangan": "abak",
+    "Definition": "Period after sunrise."
+  },
+  {
+    "Tagalog": "tanghali",
+    "English": "noon",
+    "Kapampangan": "atlung gatpanapun",
+    "Definition": "Middle of the day."
+  },
+  {
+    "Tagalog": "hapon",
+    "English": "afternoon",
+    "Kapampangan": "gatpanapun",
+    "Definition": "Time between noon and evening."
+  },
+  {
+    "Tagalog": "lakas",
+    "English": "strength",
+    "Kapampangan": "pwersa",
+    "Definition": "Physical or mental power."
+  },
+  {
+    "Tagalog": "pagod",
+    "English": "tired",
+    "Kapampangan": "pepagalan",
+    "Definition": "Needing rest."
+  },
+  {
+    "Tagalog": "saya",
+    "English": "happiness",
+    "Kapampangan": "ligaya",
+    "Definition": "Feeling of joy."
+  },
+  {
+    "Tagalog": "lungkot",
+    "English": "sadness",
+    "Kapampangan": "kapali",
+    "Definition": "Feeling of sorrow."
+  },
+  {
+    "Tagalog": "galit",
+    "English": "anger",
+    "Kapampangan": "kapungut",
+    "Definition": "Strong feeling of displeasure."
+  },
+  {
+    "Tagalog": "takot",
+    "English": "fear",
+    "Kapampangan": "metakut",
+    "Definition": "Unpleasant emotion caused by danger."
+  },
+  {
+    "Tagalog": "gulat",
+    "English": "surprise",
+    "Kapampangan": "migulat",
+    "Definition": "Being startled."
+  },
+  {
+    "Tagalog": "saya",
+    "English": "skirt/dress",
+    "Kapampangan": "saya",
+    "Definition": "Clothing worn by women."
+  },
+  {
+    "Tagalog": "damit",
+    "English": "dress/clothes",
+    "Kapampangan": "sambal",
+    "Definition": "Garment worn by a person."
+  },
+  {
+    "Tagalog": "pantalon",
+    "English": "pants",
+    "Kapampangan": "salawal",
+    "Definition": "Clothing for the lower body."
+  },
+  {
+    "Tagalog": "damit-pangtrabaho",
+    "English": "uniform",
+    "Kapampangan": "uniporme",
+    "Definition": "Specific attire for work."
+  },
+  {
+    "Tagalog": "relo",
+    "English": "watch/clock",
+    "Kapampangan": "orasan",
+    "Definition": "Device that shows time."
+  },
+  {
+    "Tagalog": "salamin",
+    "English": "mirror",
+    "Kapampangan": "salamin",
+    "Definition": "Reflective surface."
+  },
+  {
+    "Tagalog": "cellphone",
+    "English": "cellphone",
+    "Kapampangan": "selpon",
+    "Definition": "Mobile communication device."
+  },
+  {
+    "Tagalog": "computer",
+    "English": "computer",
+    "Kapampangan": "kompyuter",
+    "Definition": "Electronic device for processing data."
+  },
+  {
+    "Tagalog": "radyo",
+    "English": "radio",
+    "Kapampangan": "radyo",
+    "Definition": "Device for receiving audio broadcasts."
+  },
+  {
+    "Tagalog": "telebisyon",
+    "English": "television",
+    "Kapampangan": "telebisyun",
+    "Definition": "Electronic device for video."
+  },
+  {
+    "Tagalog": "kamera",
+    "English": "camera",
+    "Kapampangan": "kamera",
+    "Definition": "Device for capturing images."
+  },
+  {
+    "Tagalog": "ilaw",
+    "English": "lamp/light",
+    "Kapampangan": "silaw",
+    "Definition": "Something that produces light."
+  },
+  {
+    "Tagalog": "kandila",
+    "English": "candle",
+    "Kapampangan": "kandila",
+    "Definition": "Wax cylinder for fire-lighting."
+  },
+  {
+    "Tagalog": "semento",
+    "English": "cement",
+    "Kapampangan": "semento",
+    "Definition": "Construction binding material."
+  },
+  {
+    "Tagalog": "buhangin",
+    "English": "sand",
+    "Kapampangan": "darat",
+    "Definition": "Tiny grains of rock."
+  },
+  {
+    "Tagalog": "bato",
+    "English": "stone",
+    "Kapampangan": "batu",
+    "Definition": "Hard natural material."
+  },
+  {
+    "Tagalog": "kahoy",
+    "English": "wood",
+    "Kapampangan": "kayu",
+    "Definition": "Material from trees."
+  },
+  {
+    "Tagalog": "pako",
+    "English": "nail (for wood)",
+    "Kapampangan": "paku",
+    "Definition": "Metal spike used for fastening."
+  },
+  {
+    "Tagalog": "martilyo",
+    "English": "hammer",
+    "Kapampangan": "martilyu",
+    "Definition": "Tool for pounding nails."
+  },
+  {
+    "Tagalog": "lagari",
+    "English": "saw",
+    "Kapampangan": "lagari",
+    "Definition": "Tool for cutting wood."
+  },
+  {
+    "Tagalog": "kutsilyo",
+    "English": "kitchen knife",
+    "Kapampangan": "sanduk",
+    "Definition": "Cutting tool."
+  },
+  {
+    "Tagalog": "kawali",
+    "English": "frying pan",
+    "Kapampangan": "kawa",
+    "Definition": "Cooking pan."
+  },
+  {
+    "Tagalog": "kaserola",
+    "English": "pot",
+    "Kapampangan": "kaserola",
+    "Definition": "Vessel for boiling."
+  },
+  {
+    "Tagalog": "kalan",
+    "English": "stove",
+    "Kapampangan": "kalan",
+    "Definition": "Cooking apparatus."
+  },
+  {
+    "Tagalog": "refrigerator",
+    "English": "refrigerator",
+    "Kapampangan": "refrijerator",
+    "Definition": "Cooling appliance."
+  },
+  {
+    "Tagalog": "walis",
+    "English": "broom",
+    "Kapampangan": "walis",
+    "Definition": "Tool for sweeping."
+  },
+  {
+    "Tagalog": "timba",
+    "English": "bucket",
+    "Kapampangan": "tase",
+    "Definition": "Container for carrying liquids."
+  },
+  {
+    "Tagalog": "tabo",
+    "English": "dipper",
+    "Kapampangan": "tabung",
+    "Definition": "Small container for scooping water."
+  },
+  {
+    "Tagalog": "basahan",
+    "English": "rag",
+    "Kapampangan": "basahan",
+    "Definition": "Cloth used for cleaning."
+  },
+  {
+    "Tagalog": "kurtina",
+    "English": "curtain",
+    "Kapampangan": "kurtina",
+    "Definition": "Fabric covering windows."
+  },
+  {
+    "Tagalog": "unan",
+    "English": "pillow",
+    "Kapampangan": "ulunan",
+    "Definition": "Cushion for the head."
+  },
+  {
+    "Tagalog": "kumot",
+    "English": "blanket",
+    "Kapampangan": "kumut",
+    "Definition": "Cloth used to keep warm."
+  },
+  {
+    "Tagalog": "banig",
+    "English": "mat",
+    "Kapampangan": "banig",
+    "Definition": "Woven sleeping mat."
+  },
+  {
+    "Tagalog": "sahig",
+    "English": "floor",
+    "Kapampangan": "salug",
+    "Definition": "Surface of a room where people walk."
+  },
+  {
+    "Tagalog": "bubong",
+    "English": "roof",
+    "Kapampangan": "atup",
+    "Definition": "Top covering of a building."
+  },
+  {
+    "Tagalog": "dingding",
+    "English": "wall",
+    "Kapampangan": "pader",
+    "Definition": "Vertical structure enclosing a room."
+  },
+  {
+    "Tagalog": "poste",
+    "English": "post/pillar",
+    "Kapampangan": "poste",
+    "Definition": "Supporting column."
+  },
+  {
+    "Tagalog": "hagdan",
+    "English": "stairs",
+    "Kapampangan": "hagdan",
+    "Definition": "Steps leading upward/downward."
+  },
+  {
+    "Tagalog": "pader",
+    "English": "wall",
+    "Kapampangan": "pader",
+    "Definition": "Vertical dividing structure."
+  },
+  {
+    "Tagalog": "simbahan",
+    "English": "church",
+    "Kapampangan": "pisamban",
+    "Definition": "Religious building."
+  },
+  {
+    "Tagalog": "ospital",
+    "English": "hospital",
+    "Kapampangan": "hospital",
+    "Definition": "Place for medical treatment."
+  },
+  {
+    "Tagalog": "botika",
+    "English": "pharmacy",
+    "Kapampangan": "botika",
+    "Definition": "Store that sells medicine."
+  },
+  {
+    "Tagalog": "gamot",
+    "English": "medicine",
+    "Kapampangan": "gamut",
+    "Definition": "Substance used to treat illness."
+  },
+  {
+    "Tagalog": "Tagalog",
+    "English": "English",
+    "Kapampangan": "Kapampangan",
+    "Definition": "Definition"
+  },
+  {
+    "Tagalog": "sugat",
+    "English": "wound",
+    "Kapampangan": "sugat",
+    "Definition": "Injury to the skin or flesh."
+  },
+  {
+    "Tagalog": "sakit",
+    "English": "illness",
+    "Kapampangan": "kasakit",
+    "Definition": "Condition of being unwell."
+  },
+  {
+    "Tagalog": "lagnat",
+    "English": "fever",
+    "Kapampangan": "kalagnat",
+    "Definition": "High body temperature."
+  },
+  {
+    "Tagalog": "ubo",
+    "English": "cough",
+    "Kapampangan": "ubo",
+    "Definition": "Expelling air noisily from the lungs."
+  },
+  {
+    "Tagalog": "sipon",
+    "English": "cold (illness)",
+    "Kapampangan": "sipun",
+    "Definition": "Nasal congestion."
+  },
+  {
+    "Tagalog": "hilo",
+    "English": "dizzy",
+    "Kapampangan": "milulu",
+    "Definition": "Feeling unsteady."
+  },
+  {
+    "Tagalog": "pagod",
+    "English": "fatigue",
+    "Kapampangan": "pepagal",
+    "Definition": "Extreme tiredness."
+  },
+  {
+    "Tagalog": "bali",
+    "English": "fracture",
+    "Kapampangan": "bali",
+    "Definition": "Breaking of a bone or object."
+  },
+  {
+    "Tagalog": "gamot",
+    "English": "medicine",
+    "Kapampangan": "gamut",
+    "Definition": "Substance used to heal illness."
+  },
+  {
+    "Tagalog": "doktor",
+    "English": "doctor",
+    "Kapampangan": "doktor",
+    "Definition": "Medical professional."
+  },
+  {
+    "Tagalog": "nars",
+    "English": "nurse",
+    "Kapampangan": "nars",
+    "Definition": "Health professional assisting patients."
+  },
+  {
+    "Tagalog": "operasyon",
+    "English": "surgery",
+    "Kapampangan": "operasyon",
+    "Definition": "Medical procedure involving cutting."
+  },
+  {
+    "Tagalog": "turok",
+    "English": "injection",
+    "Kapampangan": "turok",
+    "Definition": "Medicine injected using a needle."
+  },
+  {
+    "Tagalog": "reseta",
+    "English": "prescription",
+    "Kapampangan": "reseta",
+    "Definition": "Written order for medication."
+  },
+  {
+    "Tagalog": "pahinga",
+    "English": "rest",
+    "Kapampangan": "mapanyaya",
+    "Definition": "To relax or take a break."
+  },
+  {
+    "Tagalog": "kalusugan",
+    "English": "health",
+    "Kapampangan": "salud",
+    "Definition": "State of physical and mental well-being."
+  },
+  {
+    "Tagalog": "malusog",
+    "English": "healthy",
+    "Kapampangan": "masalud",
+    "Definition": "Being in good health."
+  },
+  {
+    "Tagalog": "mahina",
+    "English": "weak",
+    "Kapampangan": "mabayyu",
+    "Definition": "Lacking strength."
+  },
+  {
+    "Tagalog": "malakas",
+    "English": "strong",
+    "Kapampangan": "maragul a pwersa",
+    "Definition": "Having great strength."
+  },
+  {
+    "Tagalog": "sakay",
+    "English": "ride",
+    "Kapampangan": "sumakay",
+    "Definition": "To board a vehicle."
+  },
+  {
+    "Tagalog": "bumaba",
+    "English": "get off",
+    "Kapampangan": "lumubas",
+    "Definition": "Exit from a vehicle."
+  },
+  {
+    "Tagalog": "sakahan",
+    "English": "farm",
+    "Kapampangan": "saka",
+    "Definition": "Land used for growing crops."
+  },
+  {
+    "Tagalog": "bukid",
+    "English": "field",
+    "Kapampangan": "bukid",
+    "Definition": "Open land for farming."
+  },
+  {
+    "Tagalog": "palay",
+    "English": "rice grain",
+    "Kapampangan": "palay",
+    "Definition": "Unhusked rice grain."
+  },
+  {
+    "Tagalog": "niyog",
+    "English": "coconut",
+    "Kapampangan": "niyug",
+    "Definition": "Large fruit from coconut tree."
+  },
+  {
+    "Tagalog": "mangga",
+    "English": "mango",
+    "Kapampangan": "mangga",
+    "Definition": "Sweet tropical fruit."
+  },
+  {
+    "Tagalog": "saging",
+    "English": "banana",
+    "Kapampangan": "saging",
+    "Definition": "Long yellow fruit."
+  },
+  {
+    "Tagalog": "papaya",
+    "English": "papaya",
+    "Kapampangan": "kapaya",
+    "Definition": "Soft orange fruit."
+  },
+  {
+    "Tagalog": "mais",
+    "English": "corn",
+    "Kapampangan": "mais",
+    "Definition": "Grain crop."
+  },
+  {
+    "Tagalog": "gulay",
+    "English": "vegetables",
+    "Kapampangan": "gule",
+    "Definition": "Edible plant parts."
+  },
+  {
+    "Tagalog": "tanim",
+    "English": "plant (verb)",
+    "Kapampangan": "mananim",
+    "Definition": "To place in ground to grow."
+  },
+  {
+    "Tagalog": "ani",
+    "English": "harvest",
+    "Kapampangan": "ani",
+    "Definition": "Gathering crops."
+  },
+  {
+    "Tagalog": "araro",
+    "English": "plow",
+    "Kapampangan": "araru",
+    "Definition": "Tool for turning the soil."
+  },
+  {
+    "Tagalog": "kalabaw",
+    "English": "carabao",
+    "Kapampangan": "damulag",
+    "Definition": "Farm animal used for plowing."
+  },
+  {
+    "Tagalog": "baka",
+    "English": "cow",
+    "Kapampangan": "baka",
+    "Definition": "Large domesticated animal."
+  },
+  {
+    "Tagalog": "kabayo",
+    "English": "horse",
+    "Kapampangan": "kabayu",
+    "Definition": "Animal used for riding/transport."
+  },
+  {
+    "Tagalog": "kambing",
+    "English": "goat",
+    "Kapampangan": "kambing",
+    "Definition": "Horned farm animal."
+  },
+  {
+    "Tagalog": "tupa",
+    "English": "sheep",
+    "Kapampangan": "tupa",
+    "Definition": "Wool-producing animal."
+  },
+  {
+    "Tagalog": "manok",
+    "English": "chicken",
+    "Kapampangan": "manuk",
+    "Definition": "Poultry animal."
+  },
+  {
+    "Tagalog": "patuka",
+    "English": "feed (animals)",
+    "Kapampangan": "patuka",
+    "Definition": "Food for animals."
+  },
+  {
+    "Tagalog": "balutan",
+    "English": "wrap",
+    "Kapampangan": "balut",
+    "Definition": "Cover something completely."
+  },
+  {
+    "Tagalog": "gupit",
+    "English": "cut",
+    "Kapampangan": "gupit",
+    "Definition": "Divide with scissors."
+  },
+  {
+    "Tagalog": "sulat",
+    "English": "write",
+    "Kapampangan": "sulat",
+    "Definition": "Forming letters or words on surface."
+  },
+  {
+    "Tagalog": "basa",
+    "English": "read",
+    "Kapampangan": "basa",
+    "Definition": "To look at and interpret written words."
+  },
+  {
+    "Tagalog": "turo",
+    "English": "teach",
+    "Kapampangan": "turo",
+    "Definition": "To give knowledge or instruction."
+  },
+  {
+    "Tagalog": "aral",
+    "English": "lesson",
+    "Kapampangan": "leksyon",
+    "Definition": "Knowledge or skill learned."
+  },
+  {
+    "Tagalog": "tanong",
+    "English": "question",
+    "Kapampangan": "pamisabi",
+    "Definition": "Expression seeking information."
+  },
+  {
+    "Tagalog": "sagot",
+    "English": "answer",
+    "Kapampangan": "sabla",
+    "Definition": "Reply to a question."
+  },
+  {
+    "Tagalog": "kuwento",
+    "English": "story",
+    "Kapampangan": "istorya",
+    "Definition": "Narrative of events."
+  },
+  {
+    "Tagalog": "salita",
+    "English": "word",
+    "Kapampangan": "amanu",
+    "Definition": "Unit of language."
+  },
+  {
+    "Tagalog": "wika",
+    "English": "language",
+    "Kapampangan": "amanu",
+    "Definition": "Communication system of a community."
+  },
+  {
+    "Tagalog": "pangungusap",
+    "English": "sentence",
+    "Kapampangan": "pangungusap",
+    "Definition": "Group of words expressing a complete thought."
+  },
+  {
+    "Tagalog": "titik",
+    "English": "letter (alphabet)",
+    "Kapampangan": "titik",
+    "Definition": "Written symbol of a sound."
+  },
+  {
+    "Tagalog": "pahina",
+    "English": "page",
+    "Kapampangan": "pahina",
+    "Definition": "One side of a sheet in a book."
+  },
+  {
+    "Tagalog": "aklatan",
+    "English": "library",
+    "Kapampangan": "aklatan",
+    "Definition": "Place where books are stored."
+  },
+  {
+    "Tagalog": "guhit",
+    "English": "line/draw",
+    "Kapampangan": "guhit",
+    "Definition": "Mark made on a surface."
+  },
+  {
+    "Tagalog": "pinta",
+    "English": "paint",
+    "Kapampangan": "pinta",
+    "Definition": "Apply colored substance."
+  },
+  {
+    "Tagalog": "litrato",
+    "English": "picture",
+    "Kapampangan": "retratu",
+    "Definition": "Image captured by camera/artist."
+  },
+  {
+    "Tagalog": "kulay",
+    "English": "color",
+    "Kapampangan": "kulur",
+    "Definition": "Visual perception categories."
+  },
+  {
+    "Tagalog": "itim",
+    "English": "black",
+    "Kapampangan": "itim",
+    "Definition": "Darkest color."
+  },
+  {
+    "Tagalog": "puti",
+    "English": "white",
+    "Kapampangan": "pute",
+    "Definition": "Lightest color."
+  },
+  {
+    "Tagalog": "pula",
+    "English": "red",
+    "Kapampangan": "pula",
+    "Definition": "Primary color resembling blood."
+  },
+  {
+    "Tagalog": "asul",
+    "English": "blue",
+    "Kapampangan": "asul",
+    "Definition": "Color of the sky or ocean."
+  },
+  {
+    "Tagalog": "berde",
+    "English": "green",
+    "Kapampangan": "berding",
+    "Definition": "Color of grass and leaves."
+  },
+  {
+    "Tagalog": "dilaw",
+    "English": "yellow",
+    "Kapampangan": "dilaw",
+    "Definition": "Color of banana peel or sun."
+  },
+  {
+    "Tagalog": "kayumanggi",
+    "English": "brown",
+    "Kapampangan": "kayumanggi",
+    "Definition": "Earth-like color."
+  },
+  {
+    "Tagalog": "rosas",
+    "English": "pink",
+    "Kapampangan": "rosas",
+    "Definition": "Light red color."
+  },
+  {
+    "Tagalog": "kahel",
+    "English": "orange",
+    "Kapampangan": "kahel",
+    "Definition": "Mix of red and yellow."
+  },
+  {
+    "Tagalog": "violet",
+    "English": "purple",
+    "Kapampangan": "bayulit",
+    "Definition": "Color associated with royalty."
+  },
+  {
+    "Tagalog": "abo",
+    "English": "gray",
+    "Kapampangan": "abung",
+    "Definition": "Mixture of white and black."
+  },
+  {
+    "Tagalog": "ginto",
+    "English": "gold",
+    "Kapampangan": "gintu",
+    "Definition": "Precious yellow-colored metal."
+  },
+  {
+    "Tagalog": "pilak",
+    "English": "silver",
+    "Kapampangan": "pilak",
+    "Definition": "Shiny gray-white metal."
+  },
+  {
+    "Tagalog": "pera",
+    "English": "money",
+    "Kapampangan": "kuarta",
+    "Definition": "Medium used for buying goods."
+  },
+  {
+    "Tagalog": "bayad",
+    "English": "payment",
+    "Kapampangan": "bayad",
+    "Definition": "Exchange money for goods/services."
+  },
+  {
+    "Tagalog": "utang",
+    "English": "debt",
+    "Kapampangan": "utang",
+    "Definition": "Something owed."
+  },
+  {
+    "Tagalog": "suweldo",
+    "English": "salary",
+    "Kapampangan": "sweldu",
+    "Definition": "Money paid for work."
+  },
+  {
+    "Tagalog": "presyo",
+    "English": "price",
+    "Kapampangan": "presyo",
+    "Definition": "Cost of goods/items."
+  },
+  {
+    "Tagalog": "tubo",
+    "English": "profit",
+    "Kapampangan": "tubo",
+    "Definition": "Earnings in business."
+  },
+  {
+    "Tagalog": "barya",
+    "English": "coins",
+    "Kapampangan": "barya",
+    "Definition": "Small denominations of money."
+  },
+  {
+    "Tagalog": "palit",
+    "English": "exchange/trade",
+    "Kapampangan": "sali",
+    "Definition": "Giving one item for another."
+  },
+  {
+    "Tagalog": "bukas",
+    "English": "open",
+    "Kapampangan": "buka",
+    "Definition": "Allow entry or removal."
+  },
+  {
+    "Tagalog": "sarado",
+    "English": "closed",
+    "Kapampangan": "sara",
+    "Definition": "Not open."
+  },
+  {
+    "Tagalog": "sira",
+    "English": "broken",
+    "Kapampangan": "misira",
+    "Definition": "Damaged or not working."
+  },
+  {
+    "Tagalog": "ayos",
+    "English": "fixed",
+    "Kapampangan": "ayus",
+    "Definition": "Repaired or set in good order."
+  },
+  {
+    "Tagalog": "bago",
+    "English": "new",
+    "Kapampangan": "bayu",
+    "Definition": "Recently made or acquired."
+  },
+  {
+    "Tagalog": "lumang",
+    "English": "old (object)",
+    "Kapampangan": "matwa",
+    "Definition": "Not new; aged."
+  },
+  {
+    "Tagalog": "bilis",
+    "English": "speed",
+    "Kapampangan": "bilis",
+    "Definition": "Rate of motion."
+  },
+  {
+    "Tagalog": "ingay",
+    "English": "noise",
+    "Kapampangan": "ingay",
+    "Definition": "Loud or unpleasant sound."
+  },
+  {
+    "Tagalog": "amoy",
+    "English": "smell",
+    "Kapampangan": "amuy",
+    "Definition": "Scent detected by the nose."
+  },
+  {
+    "Tagalog": "lasa",
+    "English": "taste",
+    "Kapampangan": "lakhang",
+    "Definition": "Flavor detected by the tongue."
+  },
+  {
+    "Tagalog": "hawak",
+    "English": "hold",
+    "Kapampangan": "hawak",
+    "Definition": "Grasp with the hands."
+  },
+  {
+    "Tagalog": "tingin",
+    "English": "look",
+    "Kapampangan": "lawen",
+    "Definition": "Direct your sight toward something."
+  },
+  {
+    "Tagalog": "dinig",
+    "English": "hear",
+    "Kapampangan": "dangdang",
+    "Definition": "Perceive sound."
+  },
+  {
+    "Tagalog": "galaw",
+    "English": "move",
+    "Kapampangan": "galaw",
+    "Definition": "Change position."
+  },
+  {
+    "Tagalog": "talbog",
+    "English": "bounce",
+    "Kapampangan": "talsik",
+    "Definition": "Rebound after hitting surface."
+  },
+  {
+    "Tagalog": "takot",
+    "English": "fear",
+    "Kapampangan": "metakut",
+    "Definition": "Emotion of feeling unsafe."
+  },
+  {
+    "Tagalog": "tuwa",
+    "English": "joy",
+    "Kapampangan": "metuwa",
+    "Definition": "Feeling of delight."
+  },
+  {
+    "Tagalog": "saya",
+    "English": "happiness",
+    "Kapampangan": "ligaya",
+    "Definition": "Pleasant emotion."
+  },
+  {
+    "Tagalog": "lungkot",
+    "English": "sadness",
+    "Kapampangan": "kapali",
+    "Definition": "Feeling of sorrow."
+  },
+  {
+    "Tagalog": "pangarap",
+    "English": "dream/aspiration",
+    "Kapampangan": "pangaral",
+    "Definition": "Something one hopes to achieve."
+  },
+  {
+    "Tagalog": "Tagalog",
+    "English": "English",
+    "Kapampangan": "Kapampangan",
+    "Definition": "Definition"
+  },
+  {
+    "Tagalog": "plano",
+    "English": "plan",
+    "Kapampangan": "plano",
+    "Definition": "A detailed proposal for action."
+  },
+  {
+    "Tagalog": "proyekto",
+    "English": "project",
+    "Kapampangan": "proyekto",
+    "Definition": "Planned task or work."
+  },
+  {
+    "Tagalog": "trabaho",
+    "English": "job/work",
+    "Kapampangan": "obra",
+    "Definition": "Activity done to earn or produce."
+  },
+  {
+    "Tagalog": "opisina",
+    "English": "office",
+    "Kapampangan": "opisina",
+    "Definition": "Workplace for administrative tasks."
+  },
+  {
+    "Tagalog": "empleyado",
+    "English": "employee",
+    "Kapampangan": "empleyadu",
+    "Definition": "A person hired to work."
+  },
+  {
+    "Tagalog": "amo",
+    "English": "boss",
+    "Kapampangan": "boss",
+    "Definition": "Person in charge."
+  },
+  {
+    "Tagalog": "pulong",
+    "English": "meeting",
+    "Kapampangan": "miting",
+    "Definition": "Gathering to discuss matters."
+  },
+  {
+    "Tagalog": "ulat",
+    "English": "report",
+    "Kapampangan": "report",
+    "Definition": "Written or spoken account of events."
+  },
+  {
+    "Tagalog": "pirma",
+    "English": "signature",
+    "Kapampangan": "pirma",
+    "Definition": "Personal handwritten name."
+  },
+  {
+    "Tagalog": "papel",
+    "English": "document",
+    "Kapampangan": "papil",
+    "Definition": "Written or printed sheet of information."
+  },
+  {
+    "Tagalog": "file",
+    "English": "file",
+    "Kapampangan": "payl",
+    "Definition": "Collection of data/information."
+  },
+  {
+    "Tagalog": "folder",
+    "English": "folder",
+    "Kapampangan": "pulyar",
+    "Definition": "Storage envelope for papers."
+  },
+  {
+    "Tagalog": "telepono",
+    "English": "telephone",
+    "Kapampangan": "telepunu",
+    "Definition": "Device for voice communication."
+  },
+  {
+    "Tagalog": "mensahe",
+    "English": "message",
+    "Kapampangan": "mensahi",
+    "Definition": "Communication sent/received."
+  },
+  {
+    "Tagalog": "balita",
+    "English": "news",
+    "Kapampangan": "balita",
+    "Definition": "Report of recent events."
+  },
+  {
+    "Tagalog": "anunsyo",
+    "English": "announcement",
+    "Kapampangan": "anunsyu",
+    "Definition": "Public statement."
+  },
+  {
+    "Tagalog": "paalala",
+    "English": "reminder",
+    "Kapampangan": "paalala",
+    "Definition": "Something that calls attention."
+  },
+  {
+    "Tagalog": "pahintulot",
+    "English": "permission",
+    "Kapampangan": "pahintulut",
+    "Definition": "Allowing someone to do something."
+  },
+  {
+    "Tagalog": "utos",
+    "English": "command",
+    "Kapampangan": "utus",
+    "Definition": "Order to do something."
+  },
+  {
+    "Tagalog": "pagbabago",
+    "English": "change",
+    "Kapampangan": "bayungari",
+    "Definition": "Becoming different."
+  },
+  {
+    "Tagalog": "dahilan",
+    "English": "reason",
+    "Kapampangan": "dahilan",
+    "Definition": "Cause or explanation."
+  },
+  {
+    "Tagalog": "resulta",
+    "English": "result",
+    "Kapampangan": "risulta",
+    "Definition": "Outcome of an action or event."
+  },
+  {
+    "Tagalog": "desisyon",
+    "English": "decision",
+    "Kapampangan": "desisyun",
+    "Definition": "A choice made after consideration."
+  },
+  {
+    "Tagalog": "isyu",
+    "English": "issue",
+    "Kapampangan": "isyu",
+    "Definition": "Topic or problem."
+  },
+  {
+    "Tagalog": "problema",
+    "English": "problem",
+    "Kapampangan": "problema",
+    "Definition": "Something difficult to solve."
+  },
+  {
+    "Tagalog": "solusyon",
+    "English": "solution",
+    "Kapampangan": "solusyun",
+    "Definition": "Means of solving a problem."
+  },
+  {
+    "Tagalog": "oportunidad",
+    "English": "opportunity",
+    "Kapampangan": "oportunidad",
+    "Definition": "Favorable chance."
+  },
+  {
+    "Tagalog": "panganib",
+    "English": "danger",
+    "Kapampangan": "panganib",
+    "Definition": "Risk of harm."
+  },
+  {
+    "Tagalog": "ligtas",
+    "English": "safe",
+    "Kapampangan": "makaligtas",
+    "Definition": "Free from danger."
+  },
+  {
+    "Tagalog": "bawal",
+    "English": "prohibited",
+    "Kapampangan": "bawal",
+    "Definition": "Not allowed."
+  },
+  {
+    "Tagalog": "dapat",
+    "English": "should",
+    "Kapampangan": "dapat",
+    "Definition": "What must be done."
+  },
+  {
+    "Tagalog": "pwede",
+    "English": "allowed/may",
+    "Kapampangan": "puedi",
+    "Definition": "Something permitted."
+  },
+  {
+    "Tagalog": "kailangan",
+    "English": "need",
+    "Kapampangan": "kailangan",
+    "Definition": "Something essential."
+  },
+  {
+    "Tagalog": "gusto",
+    "English": "want",
+    "Kapampangan": "buri",
+    "Definition": "Desire for something."
+  },
+  {
+    "Tagalog": "ayaw",
+    "English": "don’t want",
+    "Kapampangan": "e buri",
+    "Definition": "Declining something."
+  },
+  {
+    "Tagalog": "kaya",
+    "English": "can/ability",
+    "Kapampangan": "aya",
+    "Definition": "Capability to do something."
+  },
+  {
+    "Tagalog": "hindi kaya",
+    "English": "cannot",
+    "Kapampangan": "ali aya",
+    "Definition": "Lack of ability."
+  },
+  {
+    "Tagalog": "mahirap",
+    "English": "difficult",
+    "Kapampangan": "masakit",
+    "Definition": "Hard to do."
+  },
+  {
+    "Tagalog": "madali",
+    "English": "easy",
+    "Kapampangan": "madali",
+    "Definition": "Not difficult."
+  },
+  {
+    "Tagalog": "tama",
+    "English": "correct/right",
+    "Kapampangan": "ustu",
+    "Definition": "In accordance with truth."
+  },
+  {
+    "Tagalog": "mali",
+    "English": "wrong",
+    "Kapampangan": "sala",
+    "Definition": "Incorrect or false."
+  },
+  {
+    "Tagalog": "oo",
+    "English": "yes",
+    "Kapampangan": "wa",
+    "Definition": "Expression of agreement."
+  },
+  {
+    "Tagalog": "hindi",
+    "English": "no",
+    "Kapampangan": "ali",
+    "Definition": "Expression of disagreement."
+  },
+  {
+    "Tagalog": "baka",
+    "English": "maybe",
+    "Kapampangan": "baka",
+    "Definition": "Not certain."
+  },
+  {
+    "Tagalog": "sigurado",
+    "English": "sure",
+    "Kapampangan": "sigurado",
+    "Definition": "Certain or confident."
+  },
+  {
+    "Tagalog": "kasama",
+    "English": "companion",
+    "Kapampangan": "kasaup",
+    "Definition": "One who joins another."
+  },
+  {
+    "Tagalog": "kalaban",
+    "English": "enemy",
+    "Kapampangan": "kalaban",
+    "Definition": "One who opposes or fights."
+  },
+  {
+    "Tagalog": "bisita",
+    "English": "visitor",
+    "Kapampangan": "bisita",
+    "Definition": "Someone who visits."
+  },
+  {
+    "Tagalog": "lider",
+    "English": "leader",
+    "Kapampangan": "lider",
+    "Definition": "One who leads a group."
+  },
+  {
+    "Tagalog": "miyembro",
+    "English": "member",
+    "Kapampangan": "miyembro",
+    "Definition": "Part of a group."
+  },
+  {
+    "Tagalog": "ka-team",
+    "English": "teammate",
+    "Kapampangan": "kasapi",
+    "Definition": "Team member."
+  },
+  {
+    "Tagalog": "grupo",
+    "English": "group",
+    "Kapampangan": "grupo",
+    "Definition": "Collection of people."
+  },
+  {
+    "Tagalog": "komunidad",
+    "English": "community",
+    "Kapampangan": "komunidad",
+    "Definition": "Group of people living together."
+  },
+  {
+    "Tagalog": "barangay",
+    "English": "village",
+    "Kapampangan": "barangay",
+    "Definition": "Small local administrative area."
+  },
+  {
+    "Tagalog": "bayan",
+    "English": "town",
+    "Kapampangan": "balen",
+    "Definition": "Local urban center."
+  },
+  {
+    "Tagalog": "lungsod",
+    "English": "city",
+    "Kapampangan": "siudad",
+    "Definition": "Highly urbanized area."
+  },
+  {
+    "Tagalog": "probinsya",
+    "English": "province",
+    "Kapampangan": "probinsya",
+    "Definition": "Regional sub-division within a country."
+  },
+  {
+    "Tagalog": "bansa",
+    "English": "country",
+    "Kapampangan": "bansa",
+    "Definition": "Nation with its own government."
+  },
+  {
+    "Tagalog": "mundo",
+    "English": "world",
+    "Kapampangan": "yatu",
+    "Definition": "The earth and its inhabitants."
+  },
+  {
+    "Tagalog": "kalikasan",
+    "English": "nature",
+    "Kapampangan": "kalikasan",
+    "Definition": "Natural environment."
+  },
+  {
+    "Tagalog": "bundok",
+    "English": "mountain",
+    "Kapampangan": "bunduk",
+    "Definition": "Elevated land."
+  },
+  {
+    "Tagalog": "dagat",
+    "English": "sea",
+    "Kapampangan": "dagat",
+    "Definition": "Large body of salt water."
+  },
+  {
+    "Tagalog": "ilog",
+    "English": "river",
+    "Kapampangan": "ilug",
+    "Definition": "Natural flowing water."
+  },
+  {
+    "Tagalog": "lawa",
+    "English": "lake",
+    "Kapampangan": "danum",
+    "Definition": "Large inland body of water."
+  },
+  {
+    "Tagalog": "talon",
+    "English": "waterfall",
+    "Kapampangan": "busluban",
+    "Definition": "Falling water from height."
+  },
+  {
+    "Tagalog": "gubat",
+    "English": "forest",
+    "Kapampangan": "gubat",
+    "Definition": "Land covered with trees."
+  },
+  {
+    "Tagalog": "kapatagan",
+    "English": "plain",
+    "Kapampangan": "kapatagan",
+    "Definition": "Large flat area of land."
+  },
+  {
+    "Tagalog": "burol",
+    "English": "hill",
+    "Kapampangan": "burol",
+    "Definition": "Small elevated mound of land."
+  },
+  {
+    "Tagalog": "disyerto",
+    "English": "desert",
+    "Kapampangan": "disyertu",
+    "Definition": "Dry barren land."
+  },
+  {
+    "Tagalog": "isla",
+    "English": "island",
+    "Kapampangan": "isla",
+    "Definition": "Land surrounded by water."
+  },
+  {
+    "Tagalog": "kapuluan",
+    "English": "archipelago",
+    "Kapampangan": "kapuluan",
+    "Definition": "Group of islands."
+  },
+  {
+    "Tagalog": "panahon",
+    "English": "weather",
+    "Kapampangan": "panaun",
+    "Definition": "Atmospheric conditions."
+  },
+  {
+    "Tagalog": "klima",
+    "English": "climate",
+    "Kapampangan": "klima",
+    "Definition": "Long-term weather pattern."
+  },
+  {
+    "Tagalog": "tag-init",
+    "English": "summer",
+    "Kapampangan": "panas",
+    "Definition": "Hot season."
+  },
+  {
+    "Tagalog": "tag-ulan",
+    "English": "rainy season",
+    "Kapampangan": "panulan",
+    "Definition": "Season of frequent rain."
+  },
+  {
+    "Tagalog": "bagyo",
+    "English": "typhoon",
+    "Kapampangan": "bagyu",
+    "Definition": "Strong tropical storm."
+  },
+  {
+    "Tagalog": "baha",
+    "English": "flood",
+    "Kapampangan": "baha",
+    "Definition": "Overflowing water."
+  },
+  {
+    "Tagalog": "lindol",
+    "English": "earthquake",
+    "Kapampangan": "albug",
+    "Definition": "Shaking of the ground."
+  },
+  {
+    "Tagalog": "apoy",
+    "English": "fire",
+    "Kapampangan": "apuy",
+    "Definition": "Burning flame."
+  },
+  {
+    "Tagalog": "pagsabog",
+    "English": "explosion",
+    "Kapampangan": "pamandagul",
+    "Definition": "Violent release of energy."
+  },
+  {
+    "Tagalog": "aksidente",
+    "English": "accident",
+    "Kapampangan": "aksidenti",
+    "Definition": "Unexpected harmful event."
+  },
+  {
+    "Tagalog": "trapiko",
+    "English": "traffic",
+    "Kapampangan": "trapiku",
+    "Definition": "Movement of vehicles."
+  },
+  {
+    "Tagalog": "kalsada",
+    "English": "road",
+    "Kapampangan": "kalsada",
+    "Definition": "Public path for vehicles."
+  },
+  {
+    "Tagalog": "tulay",
+    "English": "bridge",
+    "Kapampangan": "tulay",
+    "Definition": "Structure that connects two points over water/land."
+  },
+  {
+    "Tagalog": "poste",
+    "English": "pole",
+    "Kapampangan": "poste",
+    "Definition": "Tall cylindrical support."
+  },
+  {
+    "Tagalog": "ilaw-trapiko",
+    "English": "stoplight",
+    "Kapampangan": "semapur",
+    "Definition": "Light device controlling vehicles."
+  },
+  {
+    "Tagalog": "gasolinahan",
+    "English": "gas station",
+    "Kapampangan": "gasolinahan",
+    "Definition": "Place where fuel is sold."
+  },
+  {
+    "Tagalog": "mekaniko",
+    "English": "mechanic",
+    "Kapampangan": "mekaniku",
+    "Definition": "Vehicle repair specialist."
+  },
+  {
+    "Tagalog": "platero",
+    "English": "welder",
+    "Kapampangan": "manlutu",
+    "Definition": "Craftsman joining metals."
+  },
+  {
+    "Tagalog": "karpintero",
+    "English": "carpenter",
+    "Kapampangan": "karpinteru",
+    "Definition": "Woodworker."
+  },
+  {
+    "Tagalog": "tubero",
+    "English": "plumber",
+    "Kapampangan": "tuberu",
+    "Definition": "Worker who fixes pipes."
+  },
+  {
+    "Tagalog": "elektrisyan",
+    "English": "electrician",
+    "Kapampangan": "elektrisyan",
+    "Definition": "Worker who installs/fixes electrical systems."
+  },
+  {
+    "Tagalog": "pintor",
+    "English": "painter",
+    "Kapampangan": "pintur",
+    "Definition": "Person who paints walls or art."
+  },
+  {
+    "Tagalog": "tsuper",
+    "English": "driver",
+    "Kapampangan": "tsuper",
+    "Definition": "Person who drives vehicles."
+  },
+  {
+    "Tagalog": "pasahero",
+    "English": "passenger",
+    "Kapampangan": "pasahiru",
+    "Definition": "Person riding in a vehicle."
+  },
+  {
+    "Tagalog": "byahe",
+    "English": "trip",
+    "Kapampangan": "biyahe",
+    "Definition": "Travel from one place to another."
+  },
+  {
+    "Tagalog": "direksyon",
+    "English": "direction",
+    "Kapampangan": "direksyun",
+    "Definition": "Path or orientation."
+  },
+  {
+    "Tagalog": "kanan",
+    "English": "right",
+    "Kapampangan": "wanan",
+    "Definition": "Direction opposite of left."
+  },
+  {
+    "Tagalog": "kaliwa",
+    "English": "left",
+    "Kapampangan": "walya",
+    "Definition": "Direction opposite of right."
+  },
+  {
+    "Tagalog": "diretso",
+    "English": "straight",
+    "Kapampangan": "diretso",
+    "Definition": "Without turning."
+  },
+  {
+    "Tagalog": "bilis",
+    "English": "speed",
+    "Kapampangan": "bilis",
+    "Definition": "Rate of movement."
+  },
+  {
+    "Tagalog": "bagal",
+    "English": "slowness",
+    "Kapampangan": "kabagal",
+    "Definition": "Lack of speed."
+  },
+  {
+    "Tagalog": "lakad",
+    "English": "walk",
+    "Kapampangan": "miras",
+    "Definition": "Move step by step."
+  },
+  {
+    "Tagalog": "takbo",
+    "English": "run",
+    "Kapampangan": "salbid",
+    "Definition": "Move at high speed on foot."
+  },
+  {
+    "Tagalog": "talon",
+    "English": "jump",
+    "Kapampangan": "lundag",
+    "Definition": "Push oneself off the ground."
+  },
+  {
+    "Tagalog": "ikot",
+    "English": "turn",
+    "Kapampangan": "ikot",
+    "Definition": "Move around in a circle."
+  },
+  {
+    "Tagalog": "balik",
+    "English": "return",
+    "Kapampangan": "balik",
+    "Definition": "Come or go back."
+  },
+  {
+    "Tagalog": "lipad",
+    "English": "fly",
+    "Kapampangan": "lipad",
+    "Definition": "Move through air."
+  },
+  {
+    "Tagalog": "langoy",
+    "English": "swim",
+    "Kapampangan": "lumaw",
+    "Definition": "Move through water."
+  },
+  {
+    "Tagalog": "hilera",
+    "English": "row/line",
+    "Kapampangan": "hilera",
+    "Definition": "Arrangement in a row."
+  },
+  {
+    "Tagalog": "hanay",
+    "English": "column",
+    "Kapampangan": "hanay",
+    "Definition": "Vertical alignment of items."
+  },
+  {
+    "Tagalog": "grupo",
+    "English": "group",
+    "Kapampangan": "grupo",
+    "Definition": "Collection of people or objects."
+  },
+  {
+    "Tagalog": "pares",
+    "English": "pair",
+    "Kapampangan": "pares",
+    "Definition": "Two items together."
+  },
+  {
+    "Tagalog": "tatlo",
+    "English": "three",
+    "Kapampangan": "atlu",
+    "Definition": "Number after two."
+  },
+  {
+    "Tagalog": "apat",
+    "English": "four",
+    "Kapampangan": "apat",
+    "Definition": "Number after three."
+  },
+  {
+    "Tagalog": "lima",
+    "English": "five",
+    "Kapampangan": "lima",
+    "Definition": "Number after four."
+  },
+  {
+    "Tagalog": "anim",
+    "English": "six",
+    "Kapampangan": "anam",
+    "Definition": "Number after five."
+  },
+  {
+    "Tagalog": "pito",
+    "English": "seven",
+    "Kapampangan": "pitu",
+    "Definition": "Number after six."
+  },
+  {
+    "Tagalog": "walo",
+    "English": "eight",
+    "Kapampangan": "walu",
+    "Definition": "Number after seven."
+  },
+  {
+    "Tagalog": "siyam",
+    "English": "nine",
+    "Kapampangan": "siyam",
+    "Definition": "Number after eight."
+  },
+  {
+    "Tagalog": "sampu",
+    "English": "ten",
+    "Kapampangan": "apat a pulut metung",
+    "Definition": "Number after nine."
+  },
+  {
+    "Tagalog": "dalawampu",
+    "English": "twenty",
+    "Kapampangan": "aduang pulu",
+    "Definition": "Number equal to two tens."
+  },
+  {
+    "Tagalog": "tatlumpu",
+    "English": "thirty",
+    "Kapampangan": "atlung pulu",
+    "Definition": "Number equal to three tens."
+  },
+  {
+    "Tagalog": "apatnapu",
+    "English": "forty",
+    "Kapampangan": "apat a pulu",
+    "Definition": "Number equal to four tens."
+  },
+  {
+    "Tagalog": "limampu",
+    "English": "fifty",
+    "Kapampangan": "limang pulu",
+    "Definition": "Number equal to five tens."
+  },
+  {
+    "Tagalog": "oras",
+    "English": "time",
+    "Kapampangan": "oras",
+    "Definition": "Ongoing sequence of events."
+  },
+  {
+    "Tagalog": "petsa",
+    "English": "date",
+    "Kapampangan": "petsa",
+    "Definition": "Specific day/month/year."
+  },
+  {
+    "Tagalog": "kalendaryo",
+    "English": "calendar",
+    "Kapampangan": "kalendaryu",
+    "Definition": "Chart of days, weeks, months."
+  },
+  {
+    "Tagalog": "panahon",
+    "English": "season/weather",
+    "Kapampangan": "panaun",
+    "Definition": "State of atmosphere or time period."
+  },
+  {
+    "Tagalog": "taglamig",
+    "English": "cold season",
+    "Kapampangan": "malalamig a panaun",
+    "Definition": "Season of low temperature."
+  },
+  {
+    "Tagalog": "araw",
+    "English": "day",
+    "Kapampangan": "aldo",
+    "Definition": "24-hour period."
+  },
+  {
+    "Tagalog": "gabi",
+    "English": "night",
+    "Kapampangan": "bengi",
+    "Definition": "Time of darkness."
+  },
+  {
+    "Tagalog": "tanghali",
+    "English": "noon",
+    "Kapampangan": "atlung gatpanapun",
+    "Definition": "Middle of the day."
+  },
+  {
+    "Tagalog": "hapon",
+    "English": "afternoon",
+    "Kapampangan": "gatpanapun",
+    "Definition": "Time between noon and evening."
+  },
+  {
+    "Tagalog": "madaling araw",
+    "English": "dawn",
+    "Kapampangan": "banua",
+    "Definition": "Very early morning."
+  },
+  {
+    "Tagalog": "tiyahin",
+    "English": "aunt",
+    "Kapampangan": "ima-ning",
+    "Definition": "Sister of a parent."
+  },
+  {
+    "Tagalog": "tiyuhin",
+    "English": "uncle",
+    "Kapampangan": "ima-maning",
+    "Definition": "Brother of a parent."
+  },
+  {
+    "Tagalog": "pinsan",
+    "English": "cousin",
+    "Kapampangan": "kabagyan",
+    "Definition": "Child of one's aunt/uncle."
+  },
+  {
+    "Tagalog": "pamangkin",
+    "English": "niece/nephew",
+    "Kapampangan": "pamangking",
+    "Definition": "Child of one's sibling."
+  },
+  {
+    "Tagalog": "asawa",
+    "English": "spouse",
+    "Kapampangan": "asawa",
+    "Definition": "Married partner."
+  },
+  {
+    "Tagalog": "kasal",
+    "English": "wedding",
+    "Kapampangan": "kasal",
+    "Definition": "Marriage ceremony."
+  },
+  {
+    "Tagalog": "diborsyo",
+    "English": "divorce",
+    "Kapampangan": "diborsyu",
+    "Definition": "Legal dissolution of marriage."
+  },
+  {
+    "Tagalog": "kaarawan",
+    "English": "birthday",
+    "Kapampangan": "kayaldawan",
+    "Definition": "Date marking someone’s birth."
+  },
+  {
+    "Tagalog": "pista",
+    "English": "feast",
+    "Kapampangan": "pista",
+    "Definition": "Celebration or festival."
+  },
+  {
+    "Tagalog": "sayawan",
+    "English": "dance event",
+    "Kapampangan": "sayawan",
+    "Definition": "Gathering for dancing."
+  },
+  {
+    "Tagalog": "salu-salo",
+    "English": "gathering",
+    "Kapampangan": "salu-salu",
+    "Definition": "Social gathering with food."
+  },
+  {
+    "Tagalog": "okasyon",
+    "English": "occasion",
+    "Kapampangan": "okasyon",
+    "Definition": "Special event."
+  },
+  {
+    "Tagalog": "handa",
+    "English": "prepare",
+    "Kapampangan": "andam",
+    "Definition": "To get things ready."
+  },
+  {
+    "Tagalog": "celebrate",
+    "English": "celebrate",
+    "Kapampangan": "selebreyt",
+    "Definition": "To observe a special day."
+  },
+  {
+    "Tagalog": "sigaw",
+    "English": "shout",
+    "Kapampangan": "sukak",
+    "Definition": "Loud cry or yell."
+  },
+  {
+    "Tagalog": "bulong",
+    "English": "whisper",
+    "Kapampangan": "bulung",
+    "Definition": "Speak softly."
+  },
+  {
+    "Tagalog": "iyak",
+    "English": "cry",
+    "Kapampangan": "miriyak",
+    "Definition": "Shed tears."
+  },
+  {
+    "Tagalog": "tawa",
+    "English": "laugh",
+    "Kapampangan": "mitawa",
+    "Definition": "Express amusement."
+  },
+  {
+    "Tagalog": "ngiti",
+    "English": "smile",
+    "Kapampangan": "ngiti",
+    "Definition": "Expression of happiness."
+  },
+  {
+    "Tagalog": "galit",
+    "English": "angry",
+    "Kapampangan": "kapungut",
+    "Definition": "Feeling of strong displeasure."
+  },
+  {
+    "Tagalog": "inis",
+    "English": "annoyed",
+    "Kapampangan": "mininis",
+    "Definition": "Irritated feeling."
+  },
+  {
+    "Tagalog": "bait",
+    "English": "kindness",
+    "Kapampangan": "kabaitan",
+    "Definition": "Being good and gentle."
+  },
+  {
+    "Tagalog": "tapat",
+    "English": "honest",
+    "Kapampangan": "tapat",
+    "Definition": "Being truthful."
+  },
+  {
+    "Tagalog": "sinungaling",
+    "English": "liar",
+    "Kapampangan": "manluko",
+    "Definition": "One who tells untruths."
+  },
+  {
+    "Tagalog": "tapang",
+    "English": "bravery",
+    "Kapampangan": "katapang",
+    "Definition": "Courageousness."
+  },
+  {
+    "Tagalog": "duwag",
+    "English": "coward",
+    "Kapampangan": "duwag",
+    "Definition": "Lacking courage."
+  },
+  {
+    "Tagalog": "inggit",
+    "English": "envy",
+    "Kapampangan": "kainggit",
+    "Definition": "Desire for others' belongings."
+  },
+  {
+    "Tagalog": "pagmamahal",
+    "English": "love",
+    "Kapampangan": "lugud",
+    "Definition": "Deep affection."
+  },
+  {
+    "Tagalog": "pagkakaibigan",
+    "English": "friendship",
+    "Kapampangan": "pikaluguran",
+    "Definition": "Relationship between friends."
+  },
+  {
+    "Tagalog": "respeto",
+    "English": "respect",
+    "Kapampangan": "respeto",
+    "Definition": "High regard for someone."
+  },
+  {
+    "Tagalog": "galang",
+    "English": "courtesy",
+    "Kapampangan": "galang",
+    "Definition": "Showing polite behavior."
+  },
+  {
+    "Tagalog": "sama ng loob",
+    "English": "resentment",
+    "Kapampangan": "masamang laob",
+    "Definition": "Feeling of deep hurt or offense."
+  },
+  {
+    "Tagalog": "bait",
+    "English": "good behavior",
+    "Kapampangan": "kabaitan",
+    "Definition": "Being well-mannered."
+  },
+  {
+    "Tagalog": "ugali",
+    "English": "behavior",
+    "Kapampangan": "ugali",
+    "Definition": "Way a person acts."
+  },
+  {
+    "Tagalog": "asal",
+    "English": "attitude",
+    "Kapampangan": "asali",
+    "Definition": "A person's disposition."
+  },
+  {
+    "Tagalog": "isip",
+    "English": "mind",
+    "Kapampangan": "isip",
+    "Definition": "Mental faculty of thinking."
+  },
+  {
+    "Tagalog": "utak",
+    "English": "brain",
+    "Kapampangan": "utak",
+    "Definition": "Organ controlling thoughts."
+  },
+  {
+    "Tagalog": "ideya",
+    "English": "idea",
+    "Kapampangan": "ideya",
+    "Definition": "Thought or concept."
+  },
+  {
+    "Tagalog": "plano",
+    "English": "plan",
+    "Kapampangan": "plano",
+    "Definition": "Intended set of actions."
+  },
+  {
+    "Tagalog": "solusyon",
+    "English": "solution",
+    "Kapampangan": "solusyun",
+    "Definition": "Way to solve a problem."
+  },
+  {
+    "Tagalog": "estratehiya",
+    "English": "strategy",
+    "Kapampangan": "estratihiya",
+    "Definition": "Plan to achieve goals."
+  },
+  {
+    "Tagalog": "paniniwala",
+    "English": "belief",
+    "Kapampangan": "kapanayan",
+    "Definition": "Something accepted as true."
+  },
+  {
+    "Tagalog": "tiwala",
+    "English": "trust",
+    "Kapampangan": "kapanayan",
+    "Definition": "Firm belief in someone’s reliability."
+  },
+  {
+    "Tagalog": "duda",
+    "English": "doubt",
+    "Kapampangan": "duda",
+    "Definition": "Feeling of uncertainty."
+  },
+  {
+    "Tagalog": "pangako",
+    "English": "promise",
+    "Kapampangan": "pangaku",
+    "Definition": "Commitment to do something."
+  },
+  {
+    "Tagalog": "salita",
+    "English": "speech",
+    "Kapampangan": "amanu",
+    "Definition": "Act of speaking."
+  },
+  {
+    "Tagalog": "tawag",
+    "English": "call",
+    "Kapampangan": "tawag",
+    "Definition": "To summon or contact someone."
+  },
+  {
+    "Tagalog": "tanong",
+    "English": "question",
+    "Kapampangan": "pamisabi",
+    "Definition": "Inquiry seeking answer."
+  },
+  {
+    "Tagalog": "sagot",
+    "English": "answer",
+    "Kapampangan": "sabla",
+    "Definition": "Reply to a question."
+  },
+  {
+    "Tagalog": "paliwanag",
+    "English": "explanation",
+    "Kapampangan": "paliwanag",
+    "Definition": "Clarification of information."
+  },
+  {
+    "Tagalog": "usapan",
+    "English": "conversation",
+    "Kapampangan": "pakikipag-usap",
+    "Definition": "Verbal exchange."
+  },
+  {
+    "Tagalog": "balita",
+    "English": "news",
+    "Kapampangan": "balita",
+    "Definition": "Information about recent events."
+  },
+  {
+    "Tagalog": "tsismis",
+    "English": "gossip",
+    "Kapampangan": "pakibalita",
+    "Definition": "Idle talk about others."
+  },
+  {
+    "Tagalog": "lihim",
+    "English": "secret",
+    "Kapampangan": "sekreto",
+    "Definition": "Something kept hidden."
+  },
+  {
+    "Tagalog": "pangalan",
+    "English": "name",
+    "Kapampangan": "lagyu",
+    "Definition": "Word identifying a person or thing."
+  },
+  {
+    "Tagalog": "titulo",
+    "English": "title",
+    "Kapampangan": "titulo",
+    "Definition": "Name of a work/position."
+  },
+  {
+    "Tagalog": "numero",
+    "English": "number",
+    "Kapampangan": "numero",
+    "Definition": "Symbol representing quantity."
+  },
+  {
+    "Tagalog": "address",
+    "English": "address",
+    "Kapampangan": "adres",
+    "Definition": "Location of a place."
+  },
+  {
+    "Tagalog": "trabaho",
+    "English": "work",
+    "Kapampangan": "obra",
+    "Definition": "Activity done to produce or earn."
+  },
+  {
+    "Tagalog": "negosyo",
+    "English": "business",
+    "Kapampangan": "negosyu",
+    "Definition": "Commercial activity."
+  },
+  {
+    "Tagalog": "puhunan",
+    "English": "capital",
+    "Kapampangan": "puhunan",
+    "Definition": "Money used to start business."
+  },
+  {
+    "Tagalog": "kalakal",
+    "English": "goods",
+    "Kapampangan": "kalakal",
+    "Definition": "Items for sale."
+  },
+  {
+    "Tagalog": "transaksyon",
+    "English": "transaction",
+    "Kapampangan": "transaksyun",
+    "Definition": "Business exchange."
+  },
+  {
+    "Tagalog": "resibo",
+    "English": "receipt",
+    "Kapampangan": "resibu",
+    "Definition": "Proof of payment."
+  },
+  {
+    "Tagalog": "kontrata",
+    "English": "contract",
+    "Kapampangan": "kontrata",
+    "Definition": "Legal agreement between parties."
+  },
+  {
+    "Tagalog": "Tagalog",
+    "English": "English",
+    "Kapampangan": "Kapampangan",
+    "Definition": "Definition"
+  },
+  {
+    "Tagalog": "batas",
+    "English": "law",
+    "Kapampangan": "bate",
+    "Definition": "Rules created by government."
+  },
+  {
+    "Tagalog": "alituntunin",
+    "English": "guidelines",
+    "Kapampangan": "alituntunin",
+    "Definition": "Set of rules or instructions."
+  },
+  {
+    "Tagalog": "karapatan",
+    "English": "rights",
+    "Kapampangan": "karapatan",
+    "Definition": "Legal or moral entitlements."
+  },
+  {
+    "Tagalog": "obligasyon",
+    "English": "obligation",
+    "Kapampangan": "obligasyun",
+    "Definition": "Responsibility one must fulfill."
+  },
+  {
+    "Tagalog": "parusa",
+    "English": "punishment",
+    "Kapampangan": "parusa",
+    "Definition": "Penalty for wrongdoing."
+  },
+  {
+    "Tagalog": "kaso",
+    "English": "case",
+    "Kapampangan": "kaso",
+    "Definition": "Legal or situational problem."
+  },
+  {
+    "Tagalog": "hukuman",
+    "English": "court",
+    "Kapampangan": "hukuman",
+    "Definition": "Place where legal cases are heard."
+  },
+  {
+    "Tagalog": "pulis",
+    "English": "police",
+    "Kapampangan": "pulis",
+    "Definition": "Authority maintaining peace and order."
+  },
+  {
+    "Tagalog": "sundalo",
+    "English": "soldier",
+    "Kapampangan": "sundalu",
+    "Definition": "Member of the armed forces."
+  },
+  {
+    "Tagalog": "kriminal",
+    "English": "criminal",
+    "Kapampangan": "kriminal",
+    "Definition": "Person who commits a crime."
+  },
+  {
+    "Tagalog": "saksi",
+    "English": "witness",
+    "Kapampangan": "saksi",
+    "Definition": "Person who saw an event."
+  },
+  {
+    "Tagalog": "abogado",
+    "English": "lawyer",
+    "Kapampangan": "abogado",
+    "Definition": "Legal advisor or representative."
+  },
+  {
+    "Tagalog": "hatol",
+    "English": "verdict",
+    "Kapampangan": "hatul",
+    "Definition": "Decision made by judge/jury."
+  },
+  {
+    "Tagalog": "kulungan",
+    "English": "jail",
+    "Kapampangan": "kulungan",
+    "Definition": "Facility for imprisoned individuals."
+  },
+  {
+    "Tagalog": "sigarilyo",
+    "English": "cigarette",
+    "Kapampangan": "sigarilyu",
+    "Definition": "Tobacco rolled for smoking."
+  },
+  {
+    "Tagalog": "alak",
+    "English": "alcohol",
+    "Kapampangan": "alak",
+    "Definition": "Drink containing ethanol."
+  },
+  {
+    "Tagalog": "droga",
+    "English": "drugs",
+    "Kapampangan": "droga",
+    "Definition": "Illegal or harmful substance."
+  },
+  {
+    "Tagalog": "bawal",
+    "English": "prohibited",
+    "Kapampangan": "bawal",
+    "Definition": "Not allowed."
+  },
+  {
+    "Tagalog": "payo",
+    "English": "advice",
+    "Kapampangan": "payu",
+    "Definition": "Recommendation or guidance."
+  },
+  {
+    "Tagalog": "tulong",
+    "English": "assistance",
+    "Kapampangan": "saup",
+    "Definition": "Help given to someone."
+  },
+  {
+    "Tagalog": "suporta",
+    "English": "support",
+    "Kapampangan": "suporta",
+    "Definition": "Aid provided emotionally or physically."
+  },
+  {
+    "Tagalog": "gabay",
+    "English": "guidance",
+    "Kapampangan": "gabay",
+    "Definition": "Advice that directs actions."
+  },
+  {
+    "Tagalog": "plano",
+    "English": "plan",
+    "Kapampangan": "plano",
+    "Definition": "Intended set of actions."
+  },
+  {
+    "Tagalog": "layunin",
+    "English": "goal",
+    "Kapampangan": "layunin",
+    "Definition": "Something one aims to achieve."
+  },
+  {
+    "Tagalog": "misyon",
+    "English": "mission",
+    "Kapampangan": "misyun",
+    "Definition": "Important task or purpose."
+  },
+  {
+    "Tagalog": "bisyon",
+    "English": "vision",
+    "Kapampangan": "bisyun",
+    "Definition": "Clear idea of future direction."
+  },
+  {
+    "Tagalog": "proyekto",
+    "English": "project",
+    "Kapampangan": "proyekto",
+    "Definition": "Planned activity or task."
+  },
+  {
+    "Tagalog": "hakbang",
+    "English": "step",
+    "Kapampangan": "hakbang",
+    "Definition": "One action in a process."
+  },
+  {
+    "Tagalog": "proseso",
+    "English": "process",
+    "Kapampangan": "proseso",
+    "Definition": "Series of actions to achieve something."
+  },
+  {
+    "Tagalog": "resulta",
+    "English": "result",
+    "Kapampangan": "risulta",
+    "Definition": "Outcome of actions taken."
+  },
+  {
+    "Tagalog": "tagumpay",
+    "English": "success",
+    "Kapampangan": "tagumpe",
+    "Definition": "Achievement of a goal."
+  },
+  {
+    "Tagalog": "kabiguan",
+    "English": "failure",
+    "Kapampangan": "kabiguán",
+    "Definition": "Lack of success."
+  },
+  {
+    "Tagalog": "pagsusumikap",
+    "English": "effort",
+    "Kapampangan": "pamisumikap",
+    "Definition": "Exerting energy to achieve a goal."
+  },
+  {
+    "Tagalog": "determinasyon",
+    "English": "determination",
+    "Kapampangan": "determinasyun",
+    "Definition": "Strong resolve to accomplish something."
+  },
+  {
+    "Tagalog": "tiyaga",
+    "English": "perseverance",
+    "Kapampangan": "tiyaga",
+    "Definition": "Ability to continue despite difficulty."
+  },
+  {
+    "Tagalog": "sipag",
+    "English": "diligence",
+    "Kapampangan": "sipag",
+    "Definition": "Hardworking attitude."
+  },
+  {
+    "Tagalog": "talento",
+    "English": "talent",
+    "Kapampangan": "talento",
+    "Definition": "Natural ability or skill."
+  },
+  {
+    "Tagalog": "kakayahan",
+    "English": "capability",
+    "Kapampangan": "kakayahan",
+    "Definition": "One’s ability to do something."
+  },
+  {
+    "Tagalog": "kahinaan",
+    "English": "weakness",
+    "Kapampangan": "kahinanaan",
+    "Definition": "Lack of strength or ability."
+  },
+  {
+    "Tagalog": "lakas",
+    "English": "strength",
+    "Kapampangan": "pwersa",
+    "Definition": "Physical or mental power."
+  },
+  {
+    "Tagalog": "utak",
+    "English": "intelligence",
+    "Kapampangan": "utak",
+    "Definition": "Ability to think and understand."
+  },
+  {
+    "Tagalog": "bait",
+    "English": "wisdom",
+    "Kapampangan": "kebaitan",
+    "Definition": "Good judgment and knowledge."
+  },
+  {
+    "Tagalog": "diskarte",
+    "English": "strategy/initiative",
+    "Kapampangan": "diskarte",
+    "Definition": "Clever way of solving problems."
+  },
+  {
+    "Tagalog": "taktika",
+    "English": "tactic",
+    "Kapampangan": "taktika",
+    "Definition": "Specific method used to achieve a goal."
+  },
+  {
+    "Tagalog": "pagsubok",
+    "English": "trial/challenge",
+    "Kapampangan": "pagsubuk",
+    "Definition": "Test of ability or strength."
+  },
+  {
+    "Tagalog": "oportunidad",
+    "English": "opportunity",
+    "Kapampangan": "oportunidad",
+    "Definition": "Favorable chance or moment."
+  },
+  {
+    "Tagalog": "panganib",
+    "English": "risk",
+    "Kapampangan": "panganib",
+    "Definition": "Possibility of harm."
+  },
+  {
+    "Tagalog": "kalamangan",
+    "English": "advantage",
+    "Kapampangan": "kalamangan",
+    "Definition": "Beneficial position or trait."
+  },
+  {
+    "Tagalog": "kahinaan",
+    "English": "disadvantage",
+    "Kapampangan": "kasakitan",
+    "Definition": "Unfavorable condition."
+  },
+  {
+    "Tagalog": "ideya",
+    "English": "idea",
+    "Kapampangan": "ideya",
+    "Definition": "Thought or concept."
+  },
+  {
+    "Tagalog": "opinyon",
+    "English": "opinion",
+    "Kapampangan": "opinyun",
+    "Definition": "Personal view or belief."
+  },
+  {
+    "Tagalog": "katotohanan",
+    "English": "truth",
+    "Kapampangan": "katutwanan",
+    "Definition": "Something factual."
+  },
+  {
+    "Tagalog": "kasinungalingan",
+    "English": "lie",
+    "Kapampangan": "lulub",
+    "Definition": "False statement."
+  },
+  {
+    "Tagalog": "haka-haka",
+    "English": "assumption",
+    "Kapampangan": "haka-haka",
+    "Definition": "Belief without solid proof."
+  },
+  {
+    "Tagalog": "balak",
+    "English": "plan/intention",
+    "Kapampangan": "balak",
+    "Definition": "What someone is planning to do."
+  },
+  {
+    "Tagalog": "pangarap",
+    "English": "dream/aspiration",
+    "Kapampangan": "pangaral",
+    "Definition": "Desired future."
+  },
+  {
+    "Tagalog": "tagumpay",
+    "English": "accomplishment",
+    "Kapampangan": "tagumpe",
+    "Definition": "Achievement after effort."
+  },
+  {
+    "Tagalog": "laban",
+    "English": "fight",
+    "Kapampangan": "laban",
+    "Definition": "Physical or verbal conflict."
+  },
+  {
+    "Tagalog": "kapayapaan",
+    "English": "peace",
+    "Kapampangan": "kapayapan",
+    "Definition": "State of calm and harmony."
+  },
+  {
+    "Tagalog": "digmaan",
+    "English": "war",
+    "Kapampangan": "digma",
+    "Definition": "Armed conflict between groups."
+  },
+  {
+    "Tagalog": "pader",
+    "English": "wall",
+    "Kapampangan": "pader",
+    "Definition": "Vertical barrier of a structure."
+  },
+  {
+    "Tagalog": "bahay",
+    "English": "house",
+    "Kapampangan": "bale",
+    "Definition": "Structure for living."
+  },
+  {
+    "Tagalog": "gusali",
+    "English": "building",
+    "Kapampangan": "gusali",
+    "Definition": "Large structure with walls and roof."
+  },
+  {
+    "Tagalog": "silid",
+    "English": "room",
+    "Kapampangan": "silid",
+    "Definition": "Part of a building enclosed by walls."
+  },
+  {
+    "Tagalog": "sala",
+    "English": "living room",
+    "Kapampangan": "sala",
+    "Definition": "Room for receiving guests."
+  },
+  {
+    "Tagalog": "banyo",
+    "English": "bathroom",
+    "Kapampangan": "banyo",
+    "Definition": "Room for bathing/toilet needs."
+  },
+  {
+    "Tagalog": "kusina",
+    "English": "kitchen",
+    "Kapampangan": "kusina",
+    "Definition": "Place for preparing food."
+  },
+  {
+    "Tagalog": "garahe",
+    "English": "garage",
+    "Kapampangan": "garahe",
+    "Definition": "Place to park vehicles."
+  },
+  {
+    "Tagalog": "bakod",
+    "English": "fence",
+    "Kapampangan": "bakud",
+    "Definition": "Barrier enclosing an area."
+  },
+  {
+    "Tagalog": "bubong",
+    "English": "roof",
+    "Kapampangan": "atup",
+    "Definition": "Top covering of a house."
+  },
+  {
+    "Tagalog": "sahig",
+    "English": "floor",
+    "Kapampangan": "salug",
+    "Definition": "Bottom surface of a room."
+  },
+  {
+    "Tagalog": "dingding",
+    "English": "wall",
+    "Kapampangan": "pader",
+    "Definition": "Interior/exterior vertical partition."
+  },
+  {
+    "Tagalog": "paso",
+    "English": "flower pot",
+    "Kapampangan": "paso",
+    "Definition": "Container for plants."
+  },
+  {
+    "Tagalog": "halaman",
+    "English": "plant",
+    "Kapampangan": "halaman",
+    "Definition": "Living organism that grows in soil."
+  },
+  {
+    "Tagalog": "puno",
+    "English": "tree",
+    "Kapampangan": "punu",
+    "Definition": "Large plant with trunk and branches."
+  },
+  {
+    "Tagalog": "sanga",
+    "English": "branch",
+    "Kapampangan": "sanga",
+    "Definition": "Secondary limb of a tree."
+  },
+  {
+    "Tagalog": "dahon",
+    "English": "leaf",
+    "Kapampangan": "dapu",
+    "Definition": "Leafy part of a plant."
+  },
+  {
+    "Tagalog": "bulaklak",
+    "English": "flower",
+    "Kapampangan": "sampaga",
+    "Definition": "Colorful reproductive part of a plant."
+  },
+  {
+    "Tagalog": "bunga",
+    "English": "fruit",
+    "Kapampangan": "bunga",
+    "Definition": "Edible reproductive part of plants."
+  },
+  {
+    "Tagalog": "ugat",
+    "English": "root",
+    "Kapampangan": "ugat",
+    "Definition": "Underground part of plant for support."
+  },
+  {
+    "Tagalog": "binhi",
+    "English": "seed",
+    "Kapampangan": "binhi",
+    "Definition": "Reproductive plant unit."
+  },
+  {
+    "Tagalog": "damo",
+    "English": "grass",
+    "Kapampangan": "damo",
+    "Definition": "Small green plants covering the ground."
+  },
+  {
+    "Tagalog": "damuhan",
+    "English": "grassy field",
+    "Kapampangan": "damuhan",
+    "Definition": "Area covered with grass."
+  },
+  {
+    "Tagalog": "taniman",
+    "English": "garden",
+    "Kapampangan": "taniman",
+    "Definition": "Place where plants are grown."
+  },
+  {
+    "Tagalog": "patubig",
+    "English": "irrigation",
+    "Kapampangan": "patubig",
+    "Definition": "System of watering crops."
+  },
+  {
+    "Tagalog": "timba",
+    "English": "bucket",
+    "Kapampangan": "tase",
+    "Definition": "Container for liquids."
+  },
+  {
+    "Tagalog": "hose",
+    "English": "hose",
+    "Kapampangan": "hose",
+    "Definition": "Flexible tube for water."
+  },
+  {
+    "Tagalog": "pala",
+    "English": "shovel",
+    "Kapampangan": "pala",
+    "Definition": "Tool for digging or lifting soil."
+  },
+  {
+    "Tagalog": "kalaykay",
+    "English": "rake",
+    "Kapampangan": "kalaykay",
+    "Definition": "Tool for gathering leaves/soil."
+  },
+  {
+    "Tagalog": "gulok",
+    "English": "machete",
+    "Kapampangan": "guluk",
+    "Definition": "Heavy knife for clearing plants."
+  },
+  {
+    "Tagalog": "lambat",
+    "English": "fishing net",
+    "Kapampangan": "lambat",
+    "Definition": "Tool for catching fish."
+  },
+  {
+    "Tagalog": "pamingwit",
+    "English": "fishing rod",
+    "Kapampangan": "pamingwit",
+    "Definition": "Long pole for fishing."
+  },
+  {
+    "Tagalog": "baga",
+    "English": "lungs",
+    "Kapampangan": "baga",
+    "Definition": "Organ for breathing."
+  },
+  {
+    "Tagalog": "atay",
+    "English": "liver",
+    "Kapampangan": "atay",
+    "Definition": "Organ that detoxifies body."
+  },
+  {
+    "Tagalog": "bituka",
+    "English": "intestines",
+    "Kapampangan": "bituka",
+    "Definition": "Digestive organ."
+  },
+  {
+    "Tagalog": "kuko",
+    "English": "nail (body)",
+    "Kapampangan": "kuku",
+    "Definition": "Hard covering on fingers/toes."
+  },
+  {
+    "Tagalog": "kasu-kasuan",
+    "English": "joints",
+    "Kapampangan": "kasu-kasuan",
+    "Definition": "Connection between bones."
+  },
+  {
+    "Tagalog": "kalamnan",
+    "English": "muscles",
+    "Kapampangan": "kalamnan",
+    "Definition": "Body tissue producing movement."
+  },
+  {
+    "Tagalog": "buto",
+    "English": "bone",
+    "Kapampangan": "butu",
+    "Definition": "Hard structural part of body."
+  },
+  {
+    "Tagalog": "balat",
+    "English": "skin",
+    "Kapampangan": "balat",
+    "Definition": "Outer covering of body."
+  },
+  {
+    "Tagalog": "Tagalog",
+    "English": "English",
+    "Kapampangan": "Kapampangan",
+    "Definition": "Definition"
+  },
+  {
+    "Tagalog": "puso",
+    "English": "heart",
+    "Kapampangan": "puso",
+    "Definition": "Organ that pumps blood; also symbolizes emotion."
+  },
+  {
+    "Tagalog": "utak",
+    "English": "brain",
+    "Kapampangan": "utak",
+    "Definition": "Organ controlling thoughts and actions."
+  },
+  {
+    "Tagalog": "kaluluwa",
+    "English": "soul",
+    "Kapampangan": "kaladua",
+    "Definition": "Spiritual essence of a person."
+  },
+  {
+    "Tagalog": "isip",
+    "English": "mind",
+    "Kapampangan": "isip",
+    "Definition": "Faculty of thinking and understanding."
+  },
+  {
+    "Tagalog": "alaala",
+    "English": "memory",
+    "Kapampangan": "ala-ala",
+    "Definition": "Ability to recall past events."
+  },
+  {
+    "Tagalog": "pang-amoy",
+    "English": "sense of smell",
+    "Kapampangan": "pang-amuy",
+    "Definition": "Ability to detect odors."
+  },
+  {
+    "Tagalog": "pandinig",
+    "English": "hearing",
+    "Kapampangan": "pandinig",
+    "Definition": "Ability to perceive sound."
+  },
+  {
+    "Tagalog": "paningin",
+    "English": "sight",
+    "Kapampangan": "panintu",
+    "Definition": "Ability to see."
+  },
+  {
+    "Tagalog": "panlasa",
+    "English": "taste",
+    "Kapampangan": "panlasa",
+    "Definition": "Ability to taste flavors."
+  },
+  {
+    "Tagalog": "pakiramdam",
+    "English": "feeling/sense",
+    "Kapampangan": "pakiramdam",
+    "Definition": "Sensation or emotional response."
+  },
+  {
+    "Tagalog": "puso",
+    "English": "core/center",
+    "Kapampangan": "puso",
+    "Definition": "Central point of something."
+  },
+  {
+    "Tagalog": "sakit ng ulo",
+    "English": "headache",
+    "Kapampangan": "sakit king buntuk",
+    "Definition": "Pain in the head."
+  },
+  {
+    "Tagalog": "sakit ng tiyan",
+    "English": "stomach ache",
+    "Kapampangan": "sakit king tiyan",
+    "Definition": "Pain in the stomach area."
+  },
+  {
+    "Tagalog": "pagduduwal",
+    "English": "nausea",
+    "Kapampangan": "manlaway",
+    "Definition": "Feeling of wanting to vomit."
+  },
+  {
+    "Tagalog": "pagsusuka",
+    "English": "vomiting",
+    "Kapampangan": "sumuka",
+    "Definition": "Forcefully ejecting stomach contents."
+  },
+  {
+    "Tagalog": "pamamaga",
+    "English": "swelling",
+    "Kapampangan": "pamaglang",
+    "Definition": "Enlargement due to injury or infection."
+  },
+  {
+    "Tagalog": "impeksiyon",
+    "English": "infection",
+    "Kapampangan": "impeksyon",
+    "Definition": "Invasion by harmful organisms."
+  },
+  {
+    "Tagalog": "bali",
+    "English": "break (bone)",
+    "Kapampangan": "bali",
+    "Definition": "Separation of bone."
+  },
+  {
+    "Tagalog": "pilay",
+    "English": "sprain/limp",
+    "Kapampangan": "pilay",
+    "Definition": "Injury affecting movement."
+  },
+  {
+    "Tagalog": "paso",
+    "English": "burn",
+    "Kapampangan": "paso",
+    "Definition": "Skin damage from heat."
+  },
+  {
+    "Tagalog": "hiwa",
+    "English": "cut",
+    "Kapampangan": "hiwa",
+    "Definition": "Incision caused by sharp object."
+  },
+  {
+    "Tagalog": "galos",
+    "English": "scratch",
+    "Kapampangan": "garus",
+    "Definition": "Light cut on the skin."
+  },
+  {
+    "Tagalog": "paghilom",
+    "English": "healing",
+    "Kapampangan": "paghilum",
+    "Definition": "Recovery process."
+  },
+  {
+    "Tagalog": "gamot pampawala sakit",
+    "English": "painkiller",
+    "Kapampangan": "gamut pang-sakit",
+    "Definition": "Medicine to reduce pain."
+  },
+  {
+    "Tagalog": "bitamina",
+    "English": "vitamins",
+    "Kapampangan": "bitamina",
+    "Definition": "Nutrients needed for health."
+  },
+  {
+    "Tagalog": "mineral",
+    "English": "minerals",
+    "Kapampangan": "mineral",
+    "Definition": "Nutrients needed in small amounts."
+  },
+  {
+    "Tagalog": "ehersisyo",
+    "English": "exercise",
+    "Kapampangan": "ehersisyu",
+    "Definition": "Planned physical activity."
+  },
+  {
+    "Tagalog": "lakad",
+    "English": "stroll",
+    "Kapampangan": "miras-miras",
+    "Definition": "Casual walking."
+  },
+  {
+    "Tagalog": "takbo",
+    "English": "jog/run",
+    "Kapampangan": "salbid",
+    "Definition": "Quick movement using legs."
+  },
+  {
+    "Tagalog": "laro",
+    "English": "play/game",
+    "Kapampangan": "dula",
+    "Definition": "Recreational activity."
+  },
+  {
+    "Tagalog": "sports",
+    "English": "sports",
+    "Kapampangan": "sports",
+    "Definition": "Physical competitive games."
+  },
+  {
+    "Tagalog": "basketball",
+    "English": "basketball",
+    "Kapampangan": "basketball",
+    "Definition": "Ball sport played in teams."
+  },
+  {
+    "Tagalog": "volleyball",
+    "English": "volleyball",
+    "Kapampangan": "volleyball",
+    "Definition": "Sport where teams hit a ball over net."
+  },
+  {
+    "Tagalog": "soccer",
+    "English": "soccer",
+    "Kapampangan": "soccer",
+    "Definition": "Football played by teams."
+  },
+  {
+    "Tagalog": "badminton",
+    "English": "badminton",
+    "Kapampangan": "badminton",
+    "Definition": "Racket sport with shuttlecock."
+  },
+  {
+    "Tagalog": "swimming",
+    "English": "swimming",
+    "Kapampangan": "langoy",
+    "Definition": "Act of moving in water."
+  },
+  {
+    "Tagalog": "takdang-aralin",
+    "English": "homework",
+    "Kapampangan": "takdang-aralin",
+    "Definition": "School task done at home."
+  },
+  {
+    "Tagalog": "pagsusulit",
+    "English": "examination",
+    "Kapampangan": "exam",
+    "Definition": "Formal test of knowledge."
+  },
+  {
+    "Tagalog": "grado",
+    "English": "grade",
+    "Kapampangan": "grado",
+    "Definition": "Rating of student performance."
+  },
+  {
+    "Tagalog": "klase",
+    "English": "class",
+    "Kapampangan": "klase",
+    "Definition": "Group of students."
+  },
+  {
+    "Tagalog": "leksiyon",
+    "English": "lesson",
+    "Kapampangan": "leksyon",
+    "Definition": "Knowledge topic taught."
+  },
+  {
+    "Tagalog": "proyekto",
+    "English": "project",
+    "Kapampangan": "proyekto",
+    "Definition": "Task to be completed by students."
+  },
+  {
+    "Tagalog": "pagsusuri",
+    "English": "analysis",
+    "Kapampangan": "pagsusuri",
+    "Definition": "Detailed study of something."
+  },
+  {
+    "Tagalog": "pananaliksik",
+    "English": "research",
+    "Kapampangan": "panaliksik",
+    "Definition": "Systematic investigation."
+  },
+  {
+    "Tagalog": "tala",
+    "English": "notes",
+    "Kapampangan": "tala",
+    "Definition": "Written record of key points."
+  },
+  {
+    "Tagalog": "sulatin",
+    "English": "written work",
+    "Kapampangan": "sulatin",
+    "Definition": "Composition or writing task."
+  },
+  {
+    "Tagalog": "libro",
+    "English": "book",
+    "Kapampangan": "libru",
+    "Definition": "Written and printed work."
+  },
+  {
+    "Tagalog": "kuwaderno",
+    "English": "notebook",
+    "Kapampangan": "kuwadernu",
+    "Definition": "Book for writing notes."
+  },
+  {
+    "Tagalog": "ballpen",
+    "English": "pen",
+    "Kapampangan": "ballpen",
+    "Definition": "Writing instrument with ink."
+  },
+  {
+    "Tagalog": "lapis",
+    "English": "pencil",
+    "Kapampangan": "lapis",
+    "Definition": "Writing tool with graphite."
+  },
+  {
+    "Tagalog": "pambura",
+    "English": "eraser",
+    "Kapampangan": "pambura",
+    "Definition": "Tool for removing pencil marks."
+  },
+  {
+    "Tagalog": "ruler",
+    "English": "ruler",
+    "Kapampangan": "ruler",
+    "Definition": "Tool for measuring."
+  },
+  {
+    "Tagalog": "bag",
+    "English": "bag",
+    "Kapampangan": "bayung",
+    "Definition": "Item for carrying belongings."
+  },
+  {
+    "Tagalog": "uniporme",
+    "English": "uniform",
+    "Kapampangan": "unipormi",
+    "Definition": "Required school/work attire."
+  },
+  {
+    "Tagalog": "sapatos",
+    "English": "shoes",
+    "Kapampangan": "sapatus",
+    "Definition": "Footwear worn outside."
+  },
+  {
+    "Tagalog": "tsinelas",
+    "English": "slippers",
+    "Kapampangan": "tsinelas",
+    "Definition": "Light indoor/outdoor footwear."
+  },
+  {
+    "Tagalog": "sombrero",
+    "English": "hat",
+    "Kapampangan": "sumbreru",
+    "Definition": "Head covering."
+  },
+  {
+    "Tagalog": "payong",
+    "English": "umbrella",
+    "Kapampangan": "payung",
+    "Definition": "Handheld device for rain protection."
+  },
+  {
+    "Tagalog": "relo",
+    "English": "watch",
+    "Kapampangan": "orasan",
+    "Definition": "Device for showing time."
+  },
+  {
+    "Tagalog": "singsing",
+    "English": "ring",
+    "Kapampangan": "singsing",
+    "Definition": "Jewelry worn on the finger."
+  },
+  {
+    "Tagalog": "kuwintas",
+    "English": "necklace",
+    "Kapampangan": "kuwintas",
+    "Definition": "Jewelry worn around the neck."
+  },
+  {
+    "Tagalog": "hikaw",
+    "English": "earrings",
+    "Kapampangan": "hikaw",
+    "Definition": "Jewelry worn on ears."
+  },
+  {
+    "Tagalog": "pulseras",
+    "English": "bracelet",
+    "Kapampangan": "pulseras",
+    "Definition": "Jewelry worn on wrist."
+  },
+  {
+    "Tagalog": "kwintas",
+    "English": "necklace",
+    "Kapampangan": "kwintas",
+    "Definition": "Jewelry around the neck."
+  },
+  {
+    "Tagalog": "damit",
+    "English": "clothing",
+    "Kapampangan": "sambal",
+    "Definition": "Garments worn on body."
+  },
+  {
+    "Tagalog": "damit-pangaraw",
+    "English": "casual wear",
+    "Kapampangan": "sambal pang-aldó",
+    "Definition": "Clothes for daily use."
+  },
+  {
+    "Tagalog": "barong",
+    "English": "barong",
+    "Kapampangan": "barung",
+    "Definition": "Traditional Filipino formal wear."
+  },
+  {
+    "Tagalog": "saya",
+    "English": "skirt",
+    "Kapampangan": "saya",
+    "Definition": "Lower body garment for women."
+  },
+  {
+    "Tagalog": "bestida",
+    "English": "dress",
+    "Kapampangan": "bestida",
+    "Definition": "One-piece garment."
+  },
+  {
+    "Tagalog": "pantalon",
+    "English": "pants",
+    "Kapampangan": "salawal",
+    "Definition": "Lower body clothing."
+  },
+  {
+    "Tagalog": "jacket",
+    "English": "jacket",
+    "Kapampangan": "dyaket",
+    "Definition": "Outer garment for warmth."
+  },
+  {
+    "Tagalog": "sweater",
+    "English": "sweater",
+    "Kapampangan": "sweater",
+    "Definition": "Knitted top for warmth."
+  },
+  {
+    "Tagalog": "medyas",
+    "English": "socks",
+    "Kapampangan": "medyas",
+    "Definition": "Foot coverings inside shoes."
+  },
+  {
+    "Tagalog": "suklay",
+    "English": "comb",
+    "Kapampangan": "suklay",
+    "Definition": "Tool for arranging hair."
+  },
+  {
+    "Tagalog": "sepilyo",
+    "English": "toothbrush",
+    "Kapampangan": "sepilyu",
+    "Definition": "Tool for cleaning teeth."
+  },
+  {
+    "Tagalog": "sabon",
+    "English": "soap",
+    "Kapampangan": "sabon",
+    "Definition": "Cleaning substance for body or objects."
+  },
+  {
+    "Tagalog": "shampoo",
+    "English": "shampoo",
+    "Kapampangan": "syampu",
+    "Definition": "Liquid for washing hair."
+  },
+  {
+    "Tagalog": "towel",
+    "English": "towel",
+    "Kapampangan": "towel",
+    "Definition": "Absorbent cloth for drying."
+  },
+  {
+    "Tagalog": "colonya",
+    "English": "cologne",
+    "Kapampangan": "kolonya",
+    "Definition": "Light fragrance."
+  },
+  {
+    "Tagalog": "pabango",
+    "English": "perfume",
+    "Kapampangan": "pabangu",
+    "Definition": "Strong fragrance."
+  },
+  {
+    "Tagalog": "pulbos",
+    "English": "powder",
+    "Kapampangan": "pulbus",
+    "Definition": "Fine dry substance for body use."
+  },
+  {
+    "Tagalog": "lipstick",
+    "English": "lipstick",
+    "Kapampangan": "lipstick",
+    "Definition": "Cosmetic applied to lips."
+  },
+  {
+    "Tagalog": "makeup",
+    "English": "makeup",
+    "Kapampangan": "makeup",
+    "Definition": "Cosmetics for enhancing appearance."
+  },
+  {
+    "Tagalog": "gunting",
+    "English": "scissors",
+    "Kapampangan": "gunting",
+    "Definition": "Tool for cutting."
+  },
+  {
+    "Tagalog": "karayom",
+    "English": "needle",
+    "Kapampangan": "karayum",
+    "Definition": "Small tool for sewing."
+  },
+  {
+    "Tagalog": "sinulid",
+    "English": "thread",
+    "Kapampangan": "sinulid",
+    "Definition": "Thin string for sewing."
+  },
+  {
+    "Tagalog": "tela",
+    "English": "cloth",
+    "Kapampangan": "tela",
+    "Definition": "Fabric material."
+  },
+  {
+    "Tagalog": "tahi",
+    "English": "sew",
+    "Kapampangan": "manahi",
+    "Definition": "Attach fabrics together with thread."
+  },
+  {
+    "Tagalog": "plantsa",
+    "English": "iron",
+    "Kapampangan": "plantsa",
+    "Definition": "Tool for flattening clothes."
+  },
+  {
+    "Tagalog": "labada",
+    "English": "laundry",
+    "Kapampangan": "labada",
+    "Definition": "Washing clothes."
+  },
+  {
+    "Tagalog": "sabon panglaba",
+    "English": "laundry soap",
+    "Kapampangan": "sabon panglaba",
+    "Definition": "Soap used for washing clothes."
+  },
+  {
+    "Tagalog": "batya",
+    "English": "basin",
+    "Kapampangan": "banyu",
+    "Definition": "Large bowl for washing."
+  },
+  {
+    "Tagalog": "sampayan",
+    "English": "clothesline",
+    "Kapampangan": "sampayan",
+    "Definition": "Place for hanging wet clothes."
+  },
+  {
+    "Tagalog": "timba",
+    "English": "pail/bucket",
+    "Kapampangan": "tase",
+    "Definition": "Container for water."
+  },
+  {
+    "Tagalog": "tabo",
+    "English": "dipper",
+    "Kapampangan": "tabung",
+    "Definition": "Small water scoop."
+  },
+  {
+    "Tagalog": "gripo",
+    "English": "faucet",
+    "Kapampangan": "gripo",
+    "Definition": "Valve controlling water flow."
+  },
+  {
+    "Tagalog": "poso",
+    "English": "water pump",
+    "Kapampangan": "posu",
+    "Definition": "Pump for drawing water."
+  },
+  {
+    "Tagalog": "fireplace",
+    "English": "kalan",
+    "Kapampangan": "kalan",
+    "Definition": "Cooking stove or fire chamber."
+  },
+  {
+    "Tagalog": "uling",
+    "English": "charcoal",
+    "Kapampangan": "uling",
+    "Definition": "Burnt wood used as fuel."
+  },
+  {
+    "Tagalog": "kahoy panggatong",
+    "English": "firewood",
+    "Kapampangan": "kayu panggatung",
+    "Definition": "Wood used for making fire."
+  },
+  {
+    "Tagalog": "Tagalog",
+    "English": "English",
+    "Kapampangan": "Kapampangan",
+    "Definition": "Definition"
+  },
+  {
+    "Tagalog": "hangin",
+    "English": "air",
+    "Kapampangan": "angin",
+    "Definition": "Invisible gas essential for breathing."
+  },
+  {
+    "Tagalog": "ulap",
+    "English": "cloud",
+    "Kapampangan": "dampul",
+    "Definition": "Visible mass of condensed water vapor."
+  },
+  {
+    "Tagalog": "kidlat",
+    "English": "lightning",
+    "Kapampangan": "kidlat",
+    "Definition": "Sudden flash of light in the sky."
+  },
+  {
+    "Tagalog": "kulog",
+    "English": "thunder",
+    "Kapampangan": "kulug",
+    "Definition": "Loud sound after lightning."
+  },
+  {
+    "Tagalog": "ulan",
+    "English": "rain",
+    "Kapampangan": "tula",
+    "Definition": "Water droplets falling from the sky."
+  },
+  {
+    "Tagalog": "ambon",
+    "English": "drizzle",
+    "Kapampangan": "ambun",
+    "Definition": "Light rain."
+  },
+  {
+    "Tagalog": "baha",
+    "English": "flood",
+    "Kapampangan": "baha",
+    "Definition": "Overflow of water onto land."
+  },
+  {
+    "Tagalog": "bagyo",
+    "English": "storm",
+    "Kapampangan": "bagyu",
+    "Definition": "Violent atmospheric disturbance."
+  },
+  {
+    "Tagalog": "init",
+    "English": "heat",
+    "Kapampangan": "pamanas",
+    "Definition": "Warm temperature."
+  },
+  {
+    "Tagalog": "lamig",
+    "English": "cold",
+    "Kapampangan": "malalamig",
+    "Definition": "Low temperature."
+  },
+  {
+    "Tagalog": "hangin",
+    "English": "wind",
+    "Kapampangan": "angin",
+    "Definition": "Moving air."
+  },
+  {
+    "Tagalog": "alon",
+    "English": "wave",
+    "Kapampangan": "alun",
+    "Definition": "Movement on the water surface."
+  },
+  {
+    "Tagalog": "buhangin",
+    "English": "sand",
+    "Kapampangan": "darat",
+    "Definition": "Fine grains on beaches/deserts."
+  },
+  {
+    "Tagalog": "bato",
+    "English": "rock/stone",
+    "Kapampangan": "batu",
+    "Definition": "Hard natural mineral material."
+  },
+  {
+    "Tagalog": "lupa",
+    "English": "soil",
+    "Kapampangan": "gabun",
+    "Definition": "Earth material where plants grow."
+  },
+  {
+    "Tagalog": "putik",
+    "English": "mud",
+    "Kapampangan": "putik",
+    "Definition": "Wet, soft earth."
+  },
+  {
+    "Tagalog": "lawa",
+    "English": "lake",
+    "Kapampangan": "danum",
+    "Definition": "Large body of inland water."
+  },
+  {
+    "Tagalog": "sapa",
+    "English": "creek",
+    "Kapampangan": "sapa",
+    "Definition": "Small stream."
+  },
+  {
+    "Tagalog": "dagat",
+    "English": "sea",
+    "Kapampangan": "dagat",
+    "Definition": "Large saltwater body."
+  },
+  {
+    "Tagalog": "isla",
+    "English": "island",
+    "Kapampangan": "isla",
+    "Definition": "Land surrounded by water."
+  },
+  {
+    "Tagalog": "baybayin",
+    "English": "shore",
+    "Kapampangan": "baybayin",
+    "Definition": "Land at the edge of the sea."
+  },
+  {
+    "Tagalog": "talon",
+    "English": "waterfall",
+    "Kapampangan": "busluban",
+    "Definition": "Water flowing downward over a cliff."
+  },
+  {
+    "Tagalog": "bukal",
+    "English": "spring",
+    "Kapampangan": "bukal",
+    "Definition": "Natural water source from the ground."
+  },
+  {
+    "Tagalog": "kabundukan",
+    "English": "mountain range",
+    "Kapampangan": "kabundukan",
+    "Definition": "Series of mountains."
+  },
+  {
+    "Tagalog": "kagubatan",
+    "English": "forest",
+    "Kapampangan": "gubat",
+    "Definition": "Large area with trees."
+  },
+  {
+    "Tagalog": "disyerto",
+    "English": "desert",
+    "Kapampangan": "disyertu",
+    "Definition": "Dry, barren land."
+  },
+  {
+    "Tagalog": "kapatagan",
+    "English": "plain",
+    "Kapampangan": "kapatagan",
+    "Definition": "Wide, flat land area."
+  },
+  {
+    "Tagalog": "bulkan",
+    "English": "volcano",
+    "Kapampangan": "bulkan",
+    "Definition": "Mountain that erupts lava."
+  },
+  {
+    "Tagalog": "lindol",
+    "English": "earthquake",
+    "Kapampangan": "albug",
+    "Definition": "Shaking of the ground."
+  },
+  {
+    "Tagalog": "tsunami",
+    "English": "tsunami",
+    "Kapampangan": "tsunami",
+    "Definition": "Large sea wave caused by earthquake."
+  },
+  {
+    "Tagalog": "buwan",
+    "English": "moon",
+    "Kapampangan": "bulan",
+    "Definition": "Earth’s natural satellite."
+  },
+  {
+    "Tagalog": "bituin",
+    "English": "star",
+    "Kapampangan": "bituin",
+    "Definition": "Celestial body which emits light."
+  },
+  {
+    "Tagalog": "planeta",
+    "English": "planet",
+    "Kapampangan": "planeta",
+    "Definition": "Large body orbiting a star."
+  },
+  {
+    "Tagalog": "mundo",
+    "English": "world",
+    "Kapampangan": "yatu",
+    "Definition": "The Earth and its inhabitants."
+  },
+  {
+    "Tagalog": "kalawakan",
+    "English": "space/universe",
+    "Kapampangan": "kalawakan",
+    "Definition": "Vast region beyond Earth's atmosphere."
+  },
+  {
+    "Tagalog": "araw",
+    "English": "sun",
+    "Kapampangan": "aldo",
+    "Definition": "Star at the center of our solar system."
+  },
+  {
+    "Tagalog": "eklipse",
+    "English": "eclipse",
+    "Kapampangan": "eklipse",
+    "Definition": "Obscuring of light from one heavenly body."
+  },
+  {
+    "Tagalog": "orbit",
+    "English": "orbit",
+    "Kapampangan": "orbit",
+    "Definition": "Path of a celestial body."
+  },
+  {
+    "Tagalog": "teleskopyo",
+    "English": "telescope",
+    "Kapampangan": "teleskopyu",
+    "Definition": "Device for observing distant objects."
+  },
+  {
+    "Tagalog": "astronomiya",
+    "English": "astronomy",
+    "Kapampangan": "astronomiya",
+    "Definition": "Study of celestial objects."
+  },
+  {
+    "Tagalog": "hayop",
+    "English": "animal",
+    "Kapampangan": "ayup",
+    "Definition": "Living organism able to move."
+  },
+  {
+    "Tagalog": "ibon",
+    "English": "bird",
+    "Kapampangan": "ayup",
+    "Definition": "Feathered animal capable of flight."
+  },
+  {
+    "Tagalog": "isda",
+    "English": "fish",
+    "Kapampangan": "isda",
+    "Definition": "Animal that lives in water."
+  },
+  {
+    "Tagalog": "kuneho",
+    "English": "rabbit",
+    "Kapampangan": "kunehu",
+    "Definition": "Small hopping mammal."
+  },
+  {
+    "Tagalog": "daga",
+    "English": "mouse/rat",
+    "Kapampangan": "daga",
+    "Definition": "Small rodent."
+  },
+  {
+    "Tagalog": "palaka",
+    "English": "frog",
+    "Kapampangan": "pakakal",
+    "Definition": "Amphibian that jumps."
+  },
+  {
+    "Tagalog": "ahas",
+    "English": "snake",
+    "Kapampangan": "dahas",
+    "Definition": "Legless reptile."
+  },
+  {
+    "Tagalog": "bayawak",
+    "English": "monitor lizard",
+    "Kapampangan": "bayawak",
+    "Definition": "Large lizard species."
+  },
+  {
+    "Tagalog": "pating",
+    "English": "shark",
+    "Kapampangan": "pating",
+    "Definition": "Large carnivorous fish."
+  },
+  {
+    "Tagalog": "pawikan",
+    "English": "sea turtle",
+    "Kapampangan": "pawikan",
+    "Definition": "Marine reptile with shell."
+  },
+  {
+    "Tagalog": "gagamba",
+    "English": "spider",
+    "Kapampangan": "gagamba",
+    "Definition": "Arachnid with eight legs."
+  },
+  {
+    "Tagalog": "langgam",
+    "English": "ant",
+    "Kapampangan": "langgam",
+    "Definition": "Small insect in colonies."
+  },
+  {
+    "Tagalog": "lamok",
+    "English": "mosquito",
+    "Kapampangan": "lamuk",
+    "Definition": "Small biting insect."
+  },
+  {
+    "Tagalog": "ipis",
+    "English": "cockroach",
+    "Kapampangan": "ipis",
+    "Definition": "Pest insect living indoors."
+  },
+  {
+    "Tagalog": "bubuyog",
+    "English": "bee",
+    "Kapampangan": "bubuyug",
+    "Definition": "Insect that produces honey."
+  },
+  {
+    "Tagalog": "paru-paro",
+    "English": "butterfly",
+    "Kapampangan": "paruparu",
+    "Definition": "Insect with colorful wings."
+  },
+  {
+    "Tagalog": "kuliglig",
+    "English": "cricket",
+    "Kapampangan": "kuliglig",
+    "Definition": "Insect making chirping sounds."
+  },
+  {
+    "Tagalog": "kabayo",
+    "English": "horse",
+    "Kapampangan": "kabayu",
+    "Definition": "Mammal used for riding."
+  },
+  {
+    "Tagalog": "baka",
+    "English": "cow",
+    "Kapampangan": "baka",
+    "Definition": "Large domestic bovine animal."
+  },
+  {
+    "Tagalog": "baboy",
+    "English": "pig",
+    "Kapampangan": "babi",
+    "Definition": "Domesticated swine."
+  },
+  {
+    "Tagalog": "tupa",
+    "English": "sheep",
+    "Kapampangan": "tupa",
+    "Definition": "Wool-producing animal."
+  },
+  {
+    "Tagalog": "pato",
+    "English": "duck",
+    "Kapampangan": "padu",
+    "Definition": "Water bird."
+  },
+  {
+    "Tagalog": "gansa",
+    "English": "goose",
+    "Kapampangan": "gansa",
+    "Definition": "Larger water bird."
+  },
+  {
+    "Tagalog": "pabo",
+    "English": "turkey",
+    "Kapampangan": "pabu",
+    "Definition": "Large bird often domesticated."
+  },
+  {
+    "Tagalog": "kalapati",
+    "English": "dove",
+    "Kapampangan": "palapatí",
+    "Definition": "Bird symbolizing peace."
+  },
+  {
+    "Tagalog": "agila",
+    "English": "eagle",
+    "Kapampangan": "agila",
+    "Definition": "Large powerful bird of prey."
+  },
+  {
+    "Tagalog": "uwak",
+    "English": "crow",
+    "Kapampangan": "uwak",
+    "Definition": "Black bird known for intelligence."
+  },
+  {
+    "Tagalog": "bayawak",
+    "English": "lizard",
+    "Kapampangan": "bayawak",
+    "Definition": "Large reptile species."
+  },
+  {
+    "Tagalog": "pagong",
+    "English": "turtle",
+    "Kapampangan": "pagung",
+    "Definition": "Reptile with protective shell."
+  },
+  {
+    "Tagalog": "butiki",
+    "English": "lizard",
+    "Kapampangan": "butiki",
+    "Definition": "Small reptile common in houses."
+  },
+  {
+    "Tagalog": "aso",
+    "English": "dog",
+    "Kapampangan": "asu",
+    "Definition": "Domesticated canine."
+  },
+  {
+    "Tagalog": "pusa",
+    "English": "cat",
+    "Kapampangan": "kutsing",
+    "Definition": "Domesticated feline."
+  },
+  {
+    "Tagalog": "unggoy",
+    "English": "monkey",
+    "Kapampangan": "ungguy",
+    "Definition": "Primate known for agility."
+  },
+  {
+    "Tagalog": "leon",
+    "English": "lion",
+    "Kapampangan": "leon",
+    "Definition": "Large wild cat."
+  },
+  {
+    "Tagalog": "tigre",
+    "English": "tiger",
+    "Kapampangan": "tigri",
+    "Definition": "Big striped wild cat."
+  },
+  {
+    "Tagalog": "elepante",
+    "English": "elephant",
+    "Kapampangan": "elepanti",
+    "Definition": "Large mammal with trunk."
+  },
+  {
+    "Tagalog": "zebra",
+    "English": "zebra",
+    "Kapampangan": "zebra",
+    "Definition": "Striped wild horse species."
+  },
+  {
+    "Tagalog": "giraffe",
+    "English": "giraffe",
+    "Kapampangan": "giraffe",
+    "Definition": "Tall mammal with long neck."
+  },
+  {
+    "Tagalog": "oso",
+    "English": "bear",
+    "Kapampangan": "oso",
+    "Definition": "Large wild mammal."
+  },
+  {
+    "Tagalog": "lobo",
+    "English": "wolf",
+    "Kapampangan": "lobo",
+    "Definition": "Wild canine species."
+  },
+  {
+    "Tagalog": "kabibe",
+    "English": "seashell",
+    "Kapampangan": "kabibe",
+    "Definition": "Hard outer shell of sea animals."
+  },
+  {
+    "Tagalog": "talaba",
+    "English": "oyster",
+    "Kapampangan": "talaba",
+    "Definition": "Shellfish often eaten as seafood."
+  },
+  {
+    "Tagalog": "hipon",
+    "English": "shrimp",
+    "Kapampangan": "hipun",
+    "Definition": "Small crustacean."
+  },
+  {
+    "Tagalog": "alimango",
+    "English": "crab",
+    "Kapampangan": "alimanggu",
+    "Definition": "Hard-shelled crustacean."
+  },
+  {
+    "Tagalog": "sugpo",
+    "English": "prawn",
+    "Kapampangan": "sugpu",
+    "Definition": "Large shrimp."
+  },
+  {
+    "Tagalog": "pusit",
+    "English": "squid",
+    "Kapampangan": "pusit",
+    "Definition": "Marine animal with tentacles."
+  },
+  {
+    "Tagalog": "isdang-dagat",
+    "English": "saltwater fish",
+    "Kapampangan": "isda king dagat",
+    "Definition": "Fish living in the sea."
+  },
+  {
+    "Tagalog": "isdang-tabang",
+    "English": "freshwater fish",
+    "Kapampangan": "isda king danum",
+    "Definition": "Fish living in rivers/lakes."
+  },
+  {
+    "Tagalog": "unano",
+    "English": "dwarf",
+    "Kapampangan": "unanu",
+    "Definition": "Very short person or creature."
+  },
+  {
+    "Tagalog": "higante",
+    "English": "giant",
+    "Kapampangan": "higanti",
+    "Definition": "Very tall or large person/being."
+  },
+  {
+    "Tagalog": "duwende",
+    "English": "dwarf elf",
+    "Kapampangan": "duwende",
+    "Definition": "Small mythical creature."
+  },
+  {
+    "Tagalog": "tikbalang",
+    "English": "demon horse",
+    "Kapampangan": "tikbalang",
+    "Definition": "Filipino mythical half-horse creature."
+  },
+  {
+    "Tagalog": "manananggal",
+    "English": "manananggal",
+    "Kapampangan": "manananggal",
+    "Definition": "Mythical creature separating upper body."
+  },
+  {
+    "Tagalog": "kapre",
+    "English": "tree giant",
+    "Kapampangan": "kapri",
+    "Definition": "Large smoking giant of folklore."
+  },
+  {
+    "Tagalog": "tiyanak",
+    "English": "demon child",
+    "Kapampangan": "tiyanak",
+    "Definition": "Evil spirit resembling a baby."
+  },
+  {
+    "Tagalog": "aswang",
+    "English": "ghoul",
+    "Kapampangan": "aswang",
+    "Definition": "Creature that eats humans."
+  },
+  {
+    "Tagalog": "multo",
+    "English": "ghost",
+    "Kapampangan": "multu",
+    "Definition": "Spirit of the dead."
+  },
+  {
+    "Tagalog": "diwata",
+    "English": "fairy",
+    "Kapampangan": "dewata",
+    "Definition": "Nature spirit or goddess."
+  },
+  {
+    "Tagalog": "engkanto",
+    "English": "elemental spirit",
+    "Kapampangan": "engkantu",
+    "Definition": "Mysterious supernatural being."
+  },
+  {
+    "Tagalog": "anito",
+    "English": "ancestor spirit",
+    "Kapampangan": "anitu",
+    "Definition": "Ancient spirit worshipped by natives."
+  },
+  {
+    "Tagalog": "Tagalog",
+    "English": "English",
+    "Kapampangan": "Kapampangan",
+    "Definition": "Definition"
+  },
+  {
+    "Tagalog": "bahay-bata",
+    "English": "womb",
+    "Kapampangan": "bahay-bata",
+    "Definition": "Organ where a fetus develops."
+  },
+  {
+    "Tagalog": "sanggol",
+    "English": "infant",
+    "Kapampangan": "sanggul",
+    "Definition": "Very young baby."
+  },
+  {
+    "Tagalog": "bata",
+    "English": "child",
+    "Kapampangan": "anak",
+    "Definition": "Young human."
+  },
+  {
+    "Tagalog": "binata",
+    "English": "young man",
+    "Kapampangan": "lalaki",
+    "Definition": "Male who is no longer a boy."
+  },
+  {
+    "Tagalog": "dalaga",
+    "English": "young woman",
+    "Kapampangan": "dalaga",
+    "Definition": "Female who is no longer a girl."
+  },
+  {
+    "Tagalog": "matanda",
+    "English": "elderly",
+    "Kapampangan": "matwa",
+    "Definition": "Old person."
+  },
+  {
+    "Tagalog": "sanggol",
+    "English": "newborn",
+    "Kapampangan": "sanggu",
+    "Definition": "Very young infant."
+  },
+  {
+    "Tagalog": "buntis",
+    "English": "pregnant",
+    "Kapampangan": "buntis",
+    "Definition": "Woman carrying a baby in the womb."
+  },
+  {
+    "Tagalog": "panganay",
+    "English": "eldest",
+    "Kapampangan": "panganay",
+    "Definition": "First-born child."
+  },
+  {
+    "Tagalog": "bunso",
+    "English": "youngest",
+    "Kapampangan": "bunso",
+    "Definition": "Last-born child in a family."
+  },
+  {
+    "Tagalog": "asawa",
+    "English": "husband/wife",
+    "Kapampangan": "asawa",
+    "Definition": "One's spouse."
+  },
+  {
+    "Tagalog": "kasintahan",
+    "English": "boyfriend/girlfriend",
+    "Kapampangan": "luguran",
+    "Definition": "Romantic partner."
+  },
+  {
+    "Tagalog": "magulang",
+    "English": "parents",
+    "Kapampangan": "pengari",
+    "Definition": "Mother and father."
+  },
+  {
+    "Tagalog": "anak",
+    "English": "offspring",
+    "Kapampangan": "anak",
+    "Definition": "Someone’s child."
+  },
+  {
+    "Tagalog": "pamilya",
+    "English": "family",
+    "Kapampangan": "pamilyang",
+    "Definition": "Group of people related by blood or marriage."
+  },
+  {
+    "Tagalog": "paslit",
+    "English": "toddler",
+    "Kapampangan": "paslit",
+    "Definition": "Very young child learning to walk."
+  },
+  {
+    "Tagalog": "babae",
+    "English": "woman",
+    "Kapampangan": "babai",
+    "Definition": "Adult female."
+  },
+  {
+    "Tagalog": "lalaki",
+    "English": "man",
+    "Kapampangan": "lalake",
+    "Definition": "Adult male."
+  },
+  {
+    "Tagalog": "kamag-anak",
+    "English": "relative",
+    "Kapampangan": "kabagyan",
+    "Definition": "Person connected by blood or marriage."
+  },
+  {
+    "Tagalog": "ninong",
+    "English": "godfather",
+    "Kapampangan": "ninung",
+    "Definition": "Male baptismal sponsor."
+  },
+  {
+    "Tagalog": "ninang",
+    "English": "godmother",
+    "Kapampangan": "ninang",
+    "Definition": "Female baptismal sponsor."
+  },
+  {
+    "Tagalog": "kumpare",
+    "English": "co-godfather",
+    "Kapampangan": "kumpare",
+    "Definition": "Male relationship via baptism."
+  },
+  {
+    "Tagalog": "kumare",
+    "English": "co-godmother",
+    "Kapampangan": "kumare",
+    "Definition": "Female relationship via baptism."
+  },
+  {
+    "Tagalog": "bayaw",
+    "English": "brother-in-law",
+    "Kapampangan": "bayaw",
+    "Definition": "Husband of one's sibling or brother of spouse."
+  },
+  {
+    "Tagalog": "hipag",
+    "English": "sister-in-law",
+    "Kapampangan": "hipag",
+    "Definition": "Wife of one’s sibling or sister of spouse."
+  },
+  {
+    "Tagalog": "biyenan",
+    "English": "in-law (parent)",
+    "Kapampangan": "biyenan",
+    "Definition": "Parent of one’s spouse."
+  },
+  {
+    "Tagalog": "manugang",
+    "English": "son/daughter-in-law",
+    "Kapampangan": "manugang",
+    "Definition": "Child’s spouse."
+  },
+  {
+    "Tagalog": "kapitbahay",
+    "English": "neighbor",
+    "Kapampangan": "kapitBalen",
+    "Definition": "Person living near another."
+  },
+  {
+    "Tagalog": "kaopisina",
+    "English": "officemate",
+    "Kapampangan": "kaopisina",
+    "Definition": "Person working in the same office."
+  },
+  {
+    "Tagalog": "kaklase",
+    "English": "classmate",
+    "Kapampangan": "kaklase",
+    "Definition": "Person in the same class."
+  },
+  {
+    "Tagalog": "barkada",
+    "English": "close friends",
+    "Kapampangan": "barkada",
+    "Definition": "Group of close friends."
+  },
+  {
+    "Tagalog": "kaaway",
+    "English": "foe",
+    "Kapampangan": "kaaway",
+    "Definition": "Someone hostile towards you."
+  },
+  {
+    "Tagalog": "kasama",
+    "English": "companion",
+    "Kapampangan": "kasaup",
+    "Definition": "One who accompanies."
+  },
+  {
+    "Tagalog": "kaibigan",
+    "English": "friend",
+    "Kapampangan": "kaluguran",
+    "Definition": "Person with whom one has a bond."
+  },
+  {
+    "Tagalog": "guro",
+    "English": "teacher",
+    "Kapampangan": "magturu",
+    "Definition": "Person who educates others."
+  },
+  {
+    "Tagalog": "estudyante",
+    "English": "student",
+    "Kapampangan": "aduang",
+    "Definition": "Person who studies in school."
+  },
+  {
+    "Tagalog": "principal",
+    "English": "school principal",
+    "Kapampangan": "prinsipal",
+    "Definition": "Head of a school."
+  },
+  {
+    "Tagalog": "propesor",
+    "English": "professor",
+    "Kapampangan": "propesor",
+    "Definition": "College instructor."
+  },
+  {
+    "Tagalog": "nars",
+    "English": "nurse",
+    "Kapampangan": "nars",
+    "Definition": "Person trained to care for the sick."
+  },
+  {
+    "Tagalog": "doktor",
+    "English": "doctor",
+    "Kapampangan": "doktor",
+    "Definition": "Licensed medical practitioner."
+  },
+  {
+    "Tagalog": "dentista",
+    "English": "dentist",
+    "Kapampangan": "dentista",
+    "Definition": "Doctor specializing in teeth."
+  },
+  {
+    "Tagalog": "beterinaryo",
+    "English": "veterinarian",
+    "Kapampangan": "beterinario",
+    "Definition": "Animal doctor."
+  },
+  {
+    "Tagalog": "inhinyero",
+    "English": "engineer",
+    "Kapampangan": "inhinyeru",
+    "Definition": "Designer/builder of machines or structures."
+  },
+  {
+    "Tagalog": "arkitekto",
+    "English": "architect",
+    "Kapampangan": "arkitekto",
+    "Definition": "Designer of buildings."
+  },
+  {
+    "Tagalog": "mekaniko",
+    "English": "mechanic",
+    "Kapampangan": "mekaniku",
+    "Definition": "Repairer of machines/vehicles."
+  },
+  {
+    "Tagalog": "tubero",
+    "English": "plumber",
+    "Kapampangan": "tuberu",
+    "Definition": "Worker fixing water pipes."
+  },
+  {
+    "Tagalog": "karpintero",
+    "English": "carpenter",
+    "Kapampangan": "karpinteru",
+    "Definition": "Worker who builds with wood."
+  },
+  {
+    "Tagalog": "elektrisyan",
+    "English": "electrician",
+    "Kapampangan": "elektrisyan",
+    "Definition": "Specialist in electrical systems."
+  },
+  {
+    "Tagalog": "abogado",
+    "English": "lawyer",
+    "Kapampangan": "abogado",
+    "Definition": "Legal expert representing clients."
+  },
+  {
+    "Tagalog": "pulis",
+    "English": "police officer",
+    "Kapampangan": "pulis",
+    "Definition": "Enforcer of law and order."
+  },
+  {
+    "Tagalog": "sundalo",
+    "English": "soldier",
+    "Kapampangan": "sundalu",
+    "Definition": "Member of the armed forces."
+  },
+  {
+    "Tagalog": "mangingisda",
+    "English": "fisherman",
+    "Kapampangan": "manasud",
+    "Definition": "One who catches fish."
+  },
+  {
+    "Tagalog": "magsasaka",
+    "English": "farmer",
+    "Kapampangan": "magsasaka",
+    "Definition": "Person who grows crops."
+  },
+  {
+    "Tagalog": "tsuper",
+    "English": "driver",
+    "Kapampangan": "tsuper",
+    "Definition": "One who drives a vehicle."
+  },
+  {
+    "Tagalog": "konduktor",
+    "English": "conductor",
+    "Kapampangan": "kondoktor",
+    "Definition": "Bus assistant collecting fares."
+  },
+  {
+    "Tagalog": "tindera",
+    "English": "saleslady",
+    "Kapampangan": "tindera",
+    "Definition": "Female seller in a shop."
+  },
+  {
+    "Tagalog": "tindero",
+    "English": "salesman",
+    "Kapampangan": "tindiru",
+    "Definition": "Male seller in a shop."
+  },
+  {
+    "Tagalog": "negosyante",
+    "English": "businessman",
+    "Kapampangan": "negosyanti",
+    "Definition": "Person engaged in trade."
+  },
+  {
+    "Tagalog": "pintor",
+    "English": "painter",
+    "Kapampangan": "pintur",
+    "Definition": "Artist or wall painter."
+  },
+  {
+    "Tagalog": "mananahi",
+    "English": "tailor",
+    "Kapampangan": "manahi",
+    "Definition": "One who sews clothing."
+  },
+  {
+    "Tagalog": "musikero",
+    "English": "musician",
+    "Kapampangan": "musikiru",
+    "Definition": "Person who performs music."
+  },
+  {
+    "Tagalog": "mang-aawit",
+    "English": "singer",
+    "Kapampangan": "manganta",
+    "Definition": "One who sings."
+  },
+  {
+    "Tagalog": "mananayaw",
+    "English": "dancer",
+    "Kapampangan": "manatayaw",
+    "Definition": "Person who dances."
+  },
+  {
+    "Tagalog": "artista",
+    "English": "actor/actress",
+    "Kapampangan": "artista",
+    "Definition": "Performer in shows or movies."
+  },
+  {
+    "Tagalog": "pulitiko",
+    "English": "politician",
+    "Kapampangan": "pulitiku",
+    "Definition": "Person in public office."
+  },
+  {
+    "Tagalog": "presidente",
+    "English": "president",
+    "Kapampangan": "presidente",
+    "Definition": "Head of an organization or country."
+  },
+  {
+    "Tagalog": "kapitan",
+    "English": "captain",
+    "Kapampangan": "kapitan",
+    "Definition": "Head of a barangay or ship leader."
+  },
+  {
+    "Tagalog": "senador",
+    "English": "senator",
+    "Kapampangan": "senador",
+    "Definition": "Member of a legislative body."
+  },
+  {
+    "Tagalog": "alkalde",
+    "English": "mayor",
+    "Kapampangan": "alkalde",
+    "Definition": "Head of a city or town."
+  },
+  {
+    "Tagalog": "gobernador",
+    "English": "governor",
+    "Kapampangan": "gobernador",
+    "Definition": "Head of a province."
+  },
+  {
+    "Tagalog": "empleyado",
+    "English": "employee",
+    "Kapampangan": "empleyadu",
+    "Definition": "Worker hired by a company."
+  },
+  {
+    "Tagalog": "boss",
+    "English": "boss",
+    "Kapampangan": "amo",
+    "Definition": "Leader or superior at work."
+  },
+  {
+    "Tagalog": "trabaho",
+    "English": "job/work",
+    "Kapampangan": "obra",
+    "Definition": "Action done to earn a living."
+  },
+  {
+    "Tagalog": "sahod",
+    "English": "salary",
+    "Kapampangan": "sweldu",
+    "Definition": "Payment for work."
+  },
+  {
+    "Tagalog": "kita",
+    "English": "income",
+    "Kapampangan": "kita",
+    "Definition": "Money earned from work or business."
+  },
+  {
+    "Tagalog": "tubo",
+    "English": "profit",
+    "Kapampangan": "tubo",
+    "Definition": "Money gained in business."
+  },
+  {
+    "Tagalog": "gastos",
+    "English": "expenses",
+    "Kapampangan": "gastos",
+    "Definition": "Money spent."
+  },
+  {
+    "Tagalog": "ipon",
+    "English": "savings",
+    "Kapampangan": "impun",
+    "Definition": "Money kept for future use."
+  },
+  {
+    "Tagalog": "utang",
+    "English": "debt",
+    "Kapampangan": "utang",
+    "Definition": "Borrowed money to be repaid."
+  },
+  {
+    "Tagalog": "bayad",
+    "English": "payment",
+    "Kapampangan": "bayad",
+    "Definition": "Act of paying money."
+  },
+  {
+    "Tagalog": "resibo",
+    "English": "receipt",
+    "Kapampangan": "resibu",
+    "Definition": "Written proof of payment."
+  },
+  {
+    "Tagalog": "presyo",
+    "English": "price",
+    "Kapampangan": "presyo",
+    "Definition": "Cost of a product or service."
+  },
+  {
+    "Tagalog": "tindahan",
+    "English": "store",
+    "Kapampangan": "talipapa",
+    "Definition": "Place where goods are sold."
+  },
+  {
+    "Tagalog": "palengke",
+    "English": "market",
+    "Kapampangan": "pamilihan",
+    "Definition": "Public place for buying/selling goods."
+  },
+  {
+    "Tagalog": "bangko",
+    "English": "bank",
+    "Kapampangan": "bangku",
+    "Definition": "Institution for money transactions."
+  },
+  {
+    "Tagalog": "merkado",
+    "English": "marketplace",
+    "Kapampangan": "tiangge",
+    "Definition": "Area for trade."
+  },
+  {
+    "Tagalog": "negosyo",
+    "English": "business",
+    "Kapampangan": "negosyu",
+    "Definition": "Commercial or trade activity."
+  },
+  {
+    "Tagalog": "puhunan",
+    "English": "capital",
+    "Kapampangan": "puhunan",
+    "Definition": "Money/investment used to start a business."
+  },
+  {
+    "Tagalog": "stock",
+    "English": "shares",
+    "Kapampangan": "stock",
+    "Definition": "Ownership units in a company."
+  },
+  {
+    "Tagalog": "ekonomiya",
+    "English": "economy",
+    "Kapampangan": "ekonomiya",
+    "Definition": "System of production and consumption."
+  },
+  {
+    "Tagalog": "buwis",
+    "English": "tax",
+    "Kapampangan": "buis",
+    "Definition": "Required payment to government."
+  },
+  {
+    "Tagalog": "badyet",
+    "English": "budget",
+    "Kapampangan": "badyet",
+    "Definition": "Financial plan."
+  },
+  {
+    "Tagalog": "kwenta",
+    "English": "calculation",
+    "Kapampangan": "kwenta",
+    "Definition": "Mathematical computation."
+  },
+  {
+    "Tagalog": "tubo",
+    "English": "interest (money)",
+    "Kapampangan": "tubo",
+    "Definition": "Money earned from lending."
+  },
+  {
+    "Tagalog": "paninda",
+    "English": "goods for sale",
+    "Kapampangan": "paninda",
+    "Definition": "Merchandise."
+  },
+  {
+    "Tagalog": "benta",
+    "English": "sale",
+    "Kapampangan": "laku",
+    "Definition": "Act of selling something."
+  },
+  {
+    "Tagalog": "supply",
+    "English": "supply",
+    "Kapampangan": "suplay",
+    "Definition": "Stock or availability of goods."
+  },
+  {
+    "Tagalog": "demand",
+    "English": "demand",
+    "Kapampangan": "demand",
+    "Definition": "Need or desire for goods."
+  },
+  {
+    "Tagalog": "import",
+    "English": "import",
+    "Kapampangan": "import",
+    "Definition": "Bringing goods from abroad."
+  },
+  {
+    "Tagalog": "export",
+    "English": "export",
+    "Kapampangan": "export",
+    "Definition": "Selling goods to another country."
+  },
+  {
+    "Tagalog": "Tagalog",
+    "English": "English",
+    "Kapampangan": "Kapampangan",
+    "Definition": "Definition"
+  },
+  {
+    "Tagalog": "kalakalan",
+    "English": "trade",
+    "Kapampangan": "kalakalan",
+    "Definition": "Exchange of goods and services."
+  },
+  {
+    "Tagalog": "kontrata",
+    "English": "contract",
+    "Kapampangan": "kontrata",
+    "Definition": "Legal agreement between parties."
+  },
+  {
+    "Tagalog": "pahintulot",
+    "English": "authorization",
+    "Kapampangan": "pahintulut",
+    "Definition": "Permission given officially."
+  },
+  {
+    "Tagalog": "permiso",
+    "English": "permit",
+    "Kapampangan": "permiso",
+    "Definition": "Official document allowing an activity."
+  },
+  {
+    "Tagalog": "lisensya",
+    "English": "license",
+    "Kapampangan": "lisensya",
+    "Definition": "Legal permission to perform certain actions."
+  },
+  {
+    "Tagalog": "negosyo",
+    "English": "enterprise",
+    "Kapampangan": "negosyu",
+    "Definition": "Business organization."
+  },
+  {
+    "Tagalog": "serbisyo",
+    "English": "service",
+    "Kapampangan": "serbisyo",
+    "Definition": "Work done for others."
+  },
+  {
+    "Tagalog": "produkto",
+    "English": "product",
+    "Kapampangan": "produkto",
+    "Definition": "Something produced for sale."
+  },
+  {
+    "Tagalog": "kita",
+    "English": "revenue",
+    "Kapampangan": "kita",
+    "Definition": "Total earnings before expenses."
+  },
+  {
+    "Tagalog": "puhunan",
+    "English": "investment",
+    "Kapampangan": "puhunan",
+    "Definition": "Money invested in a venture."
+  },
+  {
+    "Tagalog": "diskwento",
+    "English": "discount",
+    "Kapampangan": "diskwentu",
+    "Definition": "Price reduction."
+  },
+  {
+    "Tagalog": "benta",
+    "English": "retail sale",
+    "Kapampangan": "laku",
+    "Definition": "Sale of goods to consumers."
+  },
+  {
+    "Tagalog": "wholesale",
+    "English": "pakyawan",
+    "Kapampangan": "pakyawan",
+    "Definition": "Selling in large quantities."
+  },
+  {
+    "Tagalog": "tseke",
+    "English": "cheque",
+    "Kapampangan": "tseke",
+    "Definition": "Written order to pay money."
+  },
+  {
+    "Tagalog": "cash",
+    "English": "cash",
+    "Kapampangan": "cash",
+    "Definition": "Physical money."
+  },
+  {
+    "Tagalog": "sukli",
+    "English": "change (money)",
+    "Kapampangan": "suklian",
+    "Definition": "Money returned after payment."
+  },
+  {
+    "Tagalog": "tindera",
+    "English": "vendor",
+    "Kapampangan": "tindera",
+    "Definition": "Female seller of goods."
+  },
+  {
+    "Tagalog": "premyo",
+    "English": "prize",
+    "Kapampangan": "premyu",
+    "Definition": "Reward for winning."
+  },
+  {
+    "Tagalog": "paligsahan",
+    "English": "contest",
+    "Kapampangan": "paligsahan",
+    "Definition": "Competition or organized event."
+  },
+  {
+    "Tagalog": "laro",
+    "English": "game",
+    "Kapampangan": "dula",
+    "Definition": "Activity played for enjoyment."
+  },
+  {
+    "Tagalog": "kompetisyon",
+    "English": "competition",
+    "Kapampangan": "kompetisyun",
+    "Definition": "Contest between individuals or groups."
+  },
+  {
+    "Tagalog": "tropeo",
+    "English": "trophy",
+    "Kapampangan": "tropeo",
+    "Definition": "Award given to winners."
+  },
+  {
+    "Tagalog": "medalya",
+    "English": "medal",
+    "Kapampangan": "medalya",
+    "Definition": "Metal award worn around the neck."
+  },
+  {
+    "Tagalog": "titulo",
+    "English": "title",
+    "Kapampangan": "titulo",
+    "Definition": "Formal name assigned to winner or rank."
+  },
+  {
+    "Tagalog": "laban",
+    "English": "match/fight",
+    "Kapampangan": "laban",
+    "Definition": "Event or contest of strength/skill."
+  },
+  {
+    "Tagalog": "manlalaro",
+    "English": "player",
+    "Kapampangan": "manlalaru",
+    "Definition": "One who participates in a game or sport."
+  },
+  {
+    "Tagalog": "coach",
+    "English": "coach",
+    "Kapampangan": "coach",
+    "Definition": "Person who trains players."
+  },
+  {
+    "Tagalog": "referee",
+    "English": "referee",
+    "Kapampangan": "referee",
+    "Definition": "Official who enforces rules."
+  },
+  {
+    "Tagalog": "panalo",
+    "English": "win",
+    "Kapampangan": "panalo",
+    "Definition": "Act of achieving victory."
+  },
+  {
+    "Tagalog": "talo",
+    "English": "loss",
+    "Kapampangan": "talu",
+    "Definition": "Failure to win."
+  },
+  {
+    "Tagalog": "puntos",
+    "English": "points",
+    "Kapampangan": "puntos",
+    "Definition": "Scoring units in games."
+  },
+  {
+    "Tagalog": "oras",
+    "English": "time",
+    "Kapampangan": "oras",
+    "Definition": "Time measurement."
+  },
+  {
+    "Tagalog": "petsa",
+    "English": "date",
+    "Kapampangan": "petsa",
+    "Definition": "Calendar day."
+  },
+  {
+    "Tagalog": "linggo",
+    "English": "week",
+    "Kapampangan": "Domingo",
+    "Definition": "Duration of seven days."
+  },
+  {
+    "Tagalog": "buwan",
+    "English": "month",
+    "Kapampangan": "bulan",
+    "Definition": "One of twelve yearly divisions."
+  },
+  {
+    "Tagalog": "taon",
+    "English": "year",
+    "Kapampangan": "banwa",
+    "Definition": "12-month period of time."
+  },
+  {
+    "Tagalog": "dekada",
+    "English": "decade",
+    "Kapampangan": "dekada",
+    "Definition": "Period of 10 years."
+  },
+  {
+    "Tagalog": "siglo",
+    "English": "century",
+    "Kapampangan": "siglo",
+    "Definition": "Period of 100 years."
+  },
+  {
+    "Tagalog": "kahapon",
+    "English": "yesterday",
+    "Kapampangan": "napun",
+    "Definition": "The day before today."
+  },
+  {
+    "Tagalog": "ngayon",
+    "English": "today",
+    "Kapampangan": "ngeni",
+    "Definition": "The present day."
+  },
+  {
+    "Tagalog": "bukas",
+    "English": "tomorrow",
+    "Kapampangan": "bukas",
+    "Definition": "The day after today."
+  },
+  {
+    "Tagalog": "madaling araw",
+    "English": "dawn",
+    "Kapampangan": "banua",
+    "Definition": "Early morning before sunrise."
+  },
+  {
+    "Tagalog": "tanghali",
+    "English": "midday",
+    "Kapampangan": "gatpanapun",
+    "Definition": "Middle of the day."
+  },
+  {
+    "Tagalog": "hapon",
+    "English": "afternoon",
+    "Kapampangan": "hapon",
+    "Definition": "Time between noon and evening."
+  },
+  {
+    "Tagalog": "gabi",
+    "English": "evening/night",
+    "Kapampangan": "bengi",
+    "Definition": "Time after sunset."
+  },
+  {
+    "Tagalog": "trapiko",
+    "English": "traffic",
+    "Kapampangan": "trapiku",
+    "Definition": "Movement of vehicles on the road."
+  },
+  {
+    "Tagalog": "biyahe",
+    "English": "travel",
+    "Kapampangan": "biyahe",
+    "Definition": "Act of going from one place to another."
+  },
+  {
+    "Tagalog": "sakay",
+    "English": "ride",
+    "Kapampangan": "sumakay",
+    "Definition": "To board a vehicle."
+  },
+  {
+    "Tagalog": "hintuan",
+    "English": "station/stop",
+    "Kapampangan": "hintuan",
+    "Definition": "Designated place where vehicles stop."
+  },
+  {
+    "Tagalog": "kanto",
+    "English": "corner",
+    "Kapampangan": "kantu",
+    "Definition": "Point where two roads meet."
+  },
+  {
+    "Tagalog": "gilid",
+    "English": "side",
+    "Kapampangan": "gilid",
+    "Definition": "Edge or border of something."
+  },
+  {
+    "Tagalog": "harap",
+    "English": "front",
+    "Kapampangan": "sálang",
+    "Definition": "Side facing forward."
+  },
+  {
+    "Tagalog": "likod",
+    "English": "back",
+    "Kapampangan": "likud",
+    "Definition": "Rear side of something."
+  },
+  {
+    "Tagalog": "loob",
+    "English": "inside",
+    "Kapampangan": "lulub",
+    "Definition": "Interior area."
+  },
+  {
+    "Tagalog": "labas",
+    "English": "outside",
+    "Kapampangan": "lual",
+    "Definition": "Exterior area."
+  },
+  {
+    "Tagalog": "taas",
+    "English": "top",
+    "Kapampangan": "atas",
+    "Definition": "Upper part."
+  },
+  {
+    "Tagalog": "ibaba",
+    "English": "bottom",
+    "Kapampangan": "baba",
+    "Definition": "Lower part."
+  },
+  {
+    "Tagalog": "ibabaw",
+    "English": "surface",
+    "Kapampangan": "ibabau",
+    "Definition": "Top visible layer."
+  },
+  {
+    "Tagalog": "ilalim",
+    "English": "underneath",
+    "Kapampangan": "lalam",
+    "Definition": "Space below something."
+  },
+  {
+    "Tagalog": "harapan",
+    "English": "frontage",
+    "Kapampangan": "harapan",
+    "Definition": "Front-facing side."
+  },
+  {
+    "Tagalog": "likuran",
+    "English": "backside",
+    "Kapampangan": "likuran",
+    "Definition": "Rear side or back."
+  },
+  {
+    "Tagalog": "gitna",
+    "English": "middle/center",
+    "Kapampangan": "gitna",
+    "Definition": "Central part of area/object."
+  },
+  {
+    "Tagalog": "sulok",
+    "English": "corner",
+    "Kapampangan": "suluk",
+    "Definition": "Angle or edge of a room."
+  },
+  {
+    "Tagalog": "paligid",
+    "English": "surroundings",
+    "Kapampangan": "palibut",
+    "Definition": "Area around something."
+  },
+  {
+    "Tagalog": "direksyon",
+    "English": "direction",
+    "Kapampangan": "direksyun",
+    "Definition": "Path or orientation."
+  },
+  {
+    "Tagalog": "kanan",
+    "English": "right",
+    "Kapampangan": "wanan",
+    "Definition": "Direction opposite left."
+  },
+  {
+    "Tagalog": "kaliwa",
+    "English": "left",
+    "Kapampangan": "walya",
+    "Definition": "Direction opposite right."
+  },
+  {
+    "Tagalog": "diretso",
+    "English": "straight",
+    "Kapampangan": "diretso",
+    "Definition": "Without turning."
+  },
+  {
+    "Tagalog": "paakyat",
+    "English": "upward",
+    "Kapampangan": "paakyat",
+    "Definition": "Direction going up."
+  },
+  {
+    "Tagalog": "pababa",
+    "English": "downward",
+    "Kapampangan": "pababa",
+    "Definition": "Direction going down."
+  },
+  {
+    "Tagalog": "pasulong",
+    "English": "forward",
+    "Kapampangan": "pasulong",
+    "Definition": "Moving ahead."
+  },
+  {
+    "Tagalog": "paatras",
+    "English": "backward",
+    "Kapampangan": "paatras",
+    "Definition": "Moving backward."
+  },
+  {
+    "Tagalog": "umupo",
+    "English": "sit",
+    "Kapampangan": "lukluk",
+    "Definition": "Place oneself on a seat."
+  },
+  {
+    "Tagalog": "tumayo",
+    "English": "stand",
+    "Kapampangan": "tindig",
+    "Definition": "Rise to feet."
+  },
+  {
+    "Tagalog": "humiga",
+    "English": "lie down",
+    "Kapampangan": "durus",
+    "Definition": "Rest horizontally."
+  },
+  {
+    "Tagalog": "sumandal",
+    "English": "lean",
+    "Kapampangan": "sumandal",
+    "Definition": "Rest body against support."
+  },
+  {
+    "Tagalog": "yumuko",
+    "English": "bend",
+    "Kapampangan": "yumuku",
+    "Definition": "Lower top p"
+  }
+]

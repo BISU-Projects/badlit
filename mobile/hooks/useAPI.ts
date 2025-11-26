@@ -19,7 +19,7 @@ interface UseApiReturn {
   clearResult: () => void;
 }
 
-const API_ENDPOINT = "https://problema-qjrc.onrender.com/predict";
+const API_ENDPOINT = "https://kulitan-server.onrender.com/predict";
 
 export const useApi = (): UseApiReturn => {
   const [result, setResult] = useState<PredictionResult | null>(null);
