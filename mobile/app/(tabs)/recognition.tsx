@@ -110,24 +110,24 @@ export default function Recognition() {
     // Clean up the className - remove any extra whitespace or special characters
     const cleanClassName = className.trim().toLowerCase();
     
-    // Search for the species in your database with improved logic
-    const foundSpecies = searchCharacters(cleanClassName);
+    // Search for the character in your database with improved logic
+    const foundCharacter = searchCharacters(cleanClassName);
     
     console.log(`Searching for: "${cleanClassName}"`); // Debug log
-    console.log(`Found species:`, foundSpecies); // Debug log
+    console.log(`Found character:`, foundCharacter); // Debug log
     
-    if (foundSpecies.length > 0) {
+    if (foundCharacter.length > 0) {
       // If multiple matches, you might want to show a selection dialog
       // For now, we'll take the first (most exact) match
       router.push({
         pathname: '/characters/detail',
-        params: { id: foundSpecies[0].id }
+        params: { id: foundCharacter[0].id }
       });
     } else {
-      // If species not found, show alert with suggestion
+      // If character not found, show alert with suggestion
       Alert.alert(
-        "Species Not Found",
-        `"${className}" is not available in our species database yet. Please check if the species name is correct.`,
+        "Character Not Found",
+        `"${className}" is not available in our character database yet. Please check if the character name is correct.`,
         [{ text: "OK" }]
       );
     }
@@ -230,9 +230,9 @@ export default function Recognition() {
     const className = result.class || result.predicted_class || result.label || 'Unknown';
     const confidence = result.confidence || result.probability || result.score;
     
-    // Check if species exists in database
-    const foundSpecies = searchCharacters(className);
-    const hasSpeciesInfo = foundSpecies.length > 0;
+    // Check if character exists in database
+    const foundCharacter = searchCharacters(className);
+    const hasCharacterInfo = foundCharacter.length > 0;
 
     return (
       <View style={styles.resultContainer}>
@@ -242,7 +242,7 @@ export default function Recognition() {
         
         <View style={styles.predictionCard}>
           <View style={styles.classSection}>
-            <Text style={styles.classLabel}>Species Detected:</Text>
+            <Text style={styles.classLabel}>Character Detected:</Text>
             <Text style={styles.className}>{className}</Text>
           </View>
           
@@ -276,22 +276,22 @@ export default function Recognition() {
             <TouchableOpacity 
               style={[
                 styles.seeMoreButton,
-                !hasSpeciesInfo && styles.seeMoreButtonDisabled
+                !hasCharacterInfo && styles.seeMoreButtonDisabled
               ]} 
               onPress={handleSeeMore}
-              disabled={!hasSpeciesInfo}
+              disabled={!hasCharacterInfo}
             >
               <LinearGradient
-                colors={hasSpeciesInfo ? [Colors.primary, Colors.primaryMid] : ['#C7C7CC', '#C7C7CC']}
+                colors={hasCharacterInfo ? [Colors.primary, Colors.primaryMid] : ['#C7C7CC', '#C7C7CC']}
                 start={{ x: 0, y: 0 }}
                 end={{ x: 1, y: 0 }}
                 style={styles.seeMoreButtonGradient}
               >
                 <Text style={[
                   styles.seeMoreButtonText,
-                  !hasSpeciesInfo && styles.seeMoreButtonTextDisabled
+                  !hasCharacterInfo && styles.seeMoreButtonTextDisabled
                 ]}>
-                  {hasSpeciesInfo ? 'See More Details' : 'No Additional Info Available'}
+                  {hasCharacterInfo ? 'See More Details' : 'No Additional Info Available'}
                 </Text>
               </LinearGradient>
             </TouchableOpacity>
@@ -330,7 +330,7 @@ export default function Recognition() {
             style={[styles.headerGradient, { paddingTop: statusBarHeight + 20 }]}
           >
             <Text style={styles.title}>Character Scanner</Text>
-            <Text style={styles.subtitle}>AI-powered species identification</Text>
+            <Text style={styles.subtitle}>AI-powered character identification</Text>
           </LinearGradient>
         </View>
 
@@ -370,7 +370,7 @@ export default function Recognition() {
             <View style={styles.loadingCard}>
               <ActivityIndicator size="large" color={Colors.primary} />
               <Text style={styles.loadingTitle}>Analyzing Image</Text>
-              <Text style={styles.loadingText}>Our AI is identifying the character species...</Text>
+              <Text style={styles.loadingText}>Our AI is identifying the character...</Text>
             </View>
           </View>
         )}

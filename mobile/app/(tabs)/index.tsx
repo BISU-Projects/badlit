@@ -500,14 +500,15 @@ export default function HomeScreen() {
 
           {/* Simplified Input Field - Works with both English and Tagalog */}
           <View style={styles.inputContainer}>
+            <Text style={styles.inputLabel}>English or Tagalog Word</Text>
             <TextInput
               style={styles.translationInput}
               value={translationInput}
-              onChangeText={handleInputChange} // Changed from setTranslationInput
-              placeholder="Enter English or Tagalog word... (e.g., 'house')"
+              onChangeText={handleInputChange}
+              placeholder="e.g., house"
               placeholderTextColor="#999"
-              multiline={false} // Changed to false for single line
-              numberOfLines={1} // Changed to 1
+              multiline={false}
+              numberOfLines={1}
             />
           </View>
           {/* Add this right after the inputContainer View and before the Action Buttons */}
@@ -565,120 +566,115 @@ export default function HomeScreen() {
             <View style={styles.translationResultsContainer}>
               <Text style={styles.resultsLabel}>Translation:</Text>
 
-              <ScrollView
-                style={styles.resultsDisplay}
-                nestedScrollEnabled={true}
-              >
-                {translationResults.some((r) => r.isTranslatable) && (
-                  <View style={styles.combinedResultsContainer}>
-                    <Text style={styles.combinedResultsLabel}>
-                      Complete Translation:
-                    </Text>
-                    <View style={styles.allCharactersContainer}>
-                      <ScrollView
-                        horizontal
-                        showsHorizontalScrollIndicator={false}
-                        contentContainerStyle={styles.allCharactersScroll}
-                        nestedScrollEnabled={true}
-                      >
-                        {translationResults.map((result, wordIndex) => (
-                          <View key={wordIndex} style={styles.wordGroup}>
-                            {result.characterImages.map(
-                              (charResult, charIndex) => (
-                                <View
-                                  key={`${wordIndex}-${charIndex}`}
-                                  style={styles.characterImageItem}
-                                >
-                                  <View style={styles.imageContainer}>
-                                    {charResult.character ? (
+              {translationResults.some((r) => r.isTranslatable) && (
+                <View style={styles.combinedResultsContainer}>
+                  <Text style={styles.combinedResultsLabel}>
+                    Complete Translation:
+                  </Text>
+                  <View style={styles.allCharactersContainer}>
+                    <ScrollView
+                      horizontal
+                      showsHorizontalScrollIndicator={false}
+                      contentContainerStyle={styles.allCharactersScroll}
+                      nestedScrollEnabled={true}
+                    >
+                      {translationResults.map((result, wordIndex) => (
+                        <View key={wordIndex} style={styles.wordGroup}>
+                          {result.characterImages.map(
+                            (charResult, charIndex) => (
+                              <View
+                                key={`${wordIndex}-${charIndex}`}
+                                style={styles.characterImageItem}
+                              >
+                                <View style={styles.imageContainer}>
+                                  {charResult.character ? (
+                                    <Image
+                                      source={charResult.character.image}
+                                      style={styles.characterImage}
+                                      resizeMode="contain"
+                                    />
+                                  ) : (
+                                    <View style={styles.placeholderContainer}>
                                       <Image
-                                        source={charResult.character.image}
-                                        style={styles.characterImage}
+                                        source={require("@/assets/images/kt-logo1.png")}
+                                        style={styles.placeholderLogo}
                                         resizeMode="contain"
                                       />
-                                    ) : (
-                                      <View style={styles.placeholderContainer}>
-                                        <Image
-                                          source={require("@/assets/images/kt-logo1.png")}
-                                          style={styles.placeholderLogo}
-                                          resizeMode="contain"
-                                        />
-                                      </View>
-                                    )}
-                                  </View>
-                                  <Text style={styles.syllableText}>
-                                    {charResult.character
-                                      ? charResult.character.name
-                                      : charResult.syllable.toUpperCase()}
-                                  </Text>
+                                    </View>
+                                  )}
                                 </View>
-                              )
-                            )}
-                            {wordIndex < translationResults.length - 1 && (
-                              <View style={styles.wordSeparator}>
-                                <Text style={styles.separatorText}>•</Text>
+                                <Text style={styles.syllableText}>
+                                  {charResult.character
+                                    ? charResult.character.name
+                                    : charResult.syllable.toUpperCase()}
+                                </Text>
                               </View>
-                            )}
-                          </View>
-                        ))}
-                      </ScrollView>
-                    </View>
+                            )
+                          )}
+                          {wordIndex < translationResults.length - 1 && (
+                            <View style={styles.wordSeparator}>
+                              <Text style={styles.separatorText}>•</Text>
+                            </View>
+                          )}
+                        </View>
+                      ))}
+                    </ScrollView>
                   </View>
-                )}
+                </View>
+              )}
 
-                {/* Dictionary Entries Section */}
-                {translationResults.some((r) => r.dictionaryEntry) && (
-                  <View style={styles.dictionarySection}>
-                    <Text style={styles.dictionarySectionTitle}>
-                      Dictionary Entries:
-                    </Text>
-                    {translationResults.map((result, index) =>
-                      result.dictionaryEntry ? (
-                        <View key={index} style={styles.dictionaryCard}>
-                          <View style={styles.dictionaryHeader}>
-                            <Text style={styles.dictionaryWord}>
-                              {result.dictionaryEntry.Kapampangan}
-                            </Text>
-                            <View style={styles.dictionaryBadge}>
-                              <Text style={styles.dictionaryBadgeText}>
-                                Kapampangan
-                              </Text>
-                            </View>
-                          </View>
-
-                          <View style={styles.translationRow}>
-                            <View style={styles.translationItem}>
-                              <Text style={styles.translationLabel}>
-                                English:
-                              </Text>
-                              <Text style={styles.translationValue}>
-                                {result.dictionaryEntry.English}
-                              </Text>
-                            </View>
-                            <View style={styles.translationItem}>
-                              <Text style={styles.translationLabel}>
-                                Tagalog:
-                              </Text>
-                              <Text style={styles.translationValue}>
-                                {result.dictionaryEntry.Tagalog}
-                              </Text>
-                            </View>
-                          </View>
-
-                          <View style={styles.definitionContainer}>
-                            <Text style={styles.definitionLabel}>
-                              Definition:
-                            </Text>
-                            <Text style={styles.definitionText}>
-                              {result.dictionaryEntry.Definition}
+              {/* Dictionary Entries Section */}
+              {translationResults.some((r) => r.dictionaryEntry) && (
+                <View style={styles.dictionarySection}>
+                  <Text style={styles.dictionarySectionTitle}>
+                    Dictionary Entries:
+                  </Text>
+                  {translationResults.map((result, index) =>
+                    result.dictionaryEntry ? (
+                      <View key={index} style={styles.dictionaryCard}>
+                        <View style={styles.dictionaryHeader}>
+                          <Text style={styles.dictionaryWord}>
+                            {result.dictionaryEntry.Kapampangan}
+                          </Text>
+                          <View style={styles.dictionaryBadge}>
+                            <Text style={styles.dictionaryBadgeText}>
+                              Kapampangan
                             </Text>
                           </View>
                         </View>
-                      ) : null
-                    )}
-                  </View>
-                )}
-              </ScrollView>
+
+                        <View style={styles.translationRow}>
+                          <View style={styles.translationItem}>
+                            <Text style={styles.translationLabel}>
+                              English:
+                            </Text>
+                            <Text style={styles.translationValue}>
+                              {result.dictionaryEntry.English}
+                            </Text>
+                          </View>
+                          <View style={styles.translationItem}>
+                            <Text style={styles.translationLabel}>
+                              Tagalog:
+                            </Text>
+                            <Text style={styles.translationValue}>
+                              {result.dictionaryEntry.Tagalog}
+                            </Text>
+                          </View>
+                        </View>
+
+                        <View style={styles.definitionContainer}>
+                          <Text style={styles.definitionLabel}>
+                            Definition:
+                          </Text>
+                          <Text style={styles.definitionText}>
+                            {result.dictionaryEntry.Definition}
+                          </Text>
+                        </View>
+                      </View>
+                    ) : null
+                  )}
+                </View>
+              )}
             </View>
           )}
         </View>
@@ -879,17 +875,12 @@ const styles = StyleSheet.create({
     padding: 16,
     borderWidth: 1,
     borderColor: "#E0E0E0",
-    maxHeight: 500,
   },
   resultsLabel: {
     fontSize: 16,
     fontWeight: "600",
     color: "#000",
     marginBottom: 12,
-  },
-  resultsDisplay: {
-    maxHeight: 400,
-    marginBottom: 16,
   },
   combinedResultsContainer: {
     backgroundColor: "#FFFFFF",
@@ -969,7 +960,7 @@ const styles = StyleSheet.create({
     paddingTop: 16,
   },
   sectionTitle: {
-    fontSize: 24,
+    fontSize: 16,
     fontWeight: "bold",
     color: "#000000",
     marginBottom: 20,
@@ -1236,5 +1227,11 @@ const styles = StyleSheet.create({
     fontSize: 16,
     color: "#af1400",
     fontWeight: "bold",
+  },
+  inputLabel: {
+    fontSize: 14,
+    fontWeight: "600",
+    color: "#000",
+    marginBottom: 8,
   },
 });
