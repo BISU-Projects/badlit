@@ -560,11 +560,21 @@ export default function HomeScreen() {
             )}
           </View>
 
-          {/* Translation Results */}
-          {/* Translation Results */}
+           {/* Translation Results */}
           {showTranslation && (
             <View style={styles.translationResultsContainer}>
               <Text style={styles.resultsLabel}>Translation:</Text>
+              
+              {/* Check if word is not in dictionary */}
+              {!translationResults.some((r) => r.dictionaryEntry) && (
+                <View style={styles.noDataContainer}>
+                  <Text style={styles.noDataIcon}>📝</Text>
+                  <Text style={styles.noDataTitle}>No Data Yet</Text>
+                  <Text style={styles.noDataMessage}>
+                    "{translationInput}" is not found in our dictionary
+                  </Text>
+                </View>
+              )}
 
               {translationResults.some((r) => r.isTranslatable) && (
                 <View style={styles.combinedResultsContainer}>
@@ -1234,4 +1244,30 @@ const styles = StyleSheet.create({
     color: "#000",
     marginBottom: 8,
   },
+  noDataContainer: {
+  backgroundColor: "#FFF9F0",
+  borderRadius: 12,
+  padding: 24,
+  alignItems: "center",
+  justifyContent: "center",
+  borderWidth: 1,
+  borderColor: "#FFE5CC",
+  marginTop: 12,
+},
+noDataIcon: {
+  fontSize: 48,
+  marginBottom: 12,
+},
+noDataTitle: {
+  fontSize: 18,
+  fontWeight: "bold",
+  color: "#af1400",
+  marginBottom: 8,
+},
+noDataMessage: {
+  fontSize: 14,
+  color: "#666",
+  textAlign: "center",
+  lineHeight: 20,
+},
 });

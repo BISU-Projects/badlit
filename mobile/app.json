@@ -47,8 +47,9 @@
     "extra": {
       "router": {},
       "eas": {
-        "projectId": "10141183-26a0-4a79-ab60-79747877ba4b"
+        "projectId": "351cc8e1-6725-4ad0-998d-abfbef332d58"
       }
-    }
+    },
+    "owner": "chaos23"
   }
 }
